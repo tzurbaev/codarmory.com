@@ -1,0 +1,52 @@
+[
+    {
+        "id": "assault-rifles",
+        "name": "Assault Rifles",
+        "alias": null
+    },
+    {
+        "id": "battle-rifles",
+        "name": "Battle Rifles",
+        "alias": null
+    },
+    {
+        "id": "shotguns",
+        "name": "Shotguns",
+        "alias": null
+    },
+    {
+        "id": "smgs",
+        "name": "SMGs",
+        "alias": "Submachine guns"
+    },
+    {
+        "id": "lmgs",
+        "name": "LMGs",
+        "alias": "Light machine guns"
+    },
+    {
+        "id": "marksman-rifles",
+        "name": "Marksman Rifles",
+        "alias": null
+    },
+    {
+        "id": "sniper-rifles",
+        "name": "Sniper Rifles",
+        "alias": null
+    },
+    {
+        "id": "handguns",
+        "name": "Handguns",
+        "alias": null
+    },
+    {
+        "id": "launchers",
+        "name": "Launchers",
+        "alias": null
+    },
+    {
+        "id": "melee",
+        "name": "Melee",
+        "alias": null
+    }
+]

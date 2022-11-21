@@ -1,0 +1,74 @@
+[
+    {
+        "id": "barrels",
+        "name": "Barrels"
+    },
+    {
+        "id": "optics",
+        "name": "Optics"
+    },
+    {
+        "id": "stocks",
+        "name": "Stocks"
+    },
+    {
+        "id": "bolts",
+        "name": "Bolts"
+    },
+    {
+        "id": "rear-grips",
+        "name": "Rear Grips"
+    },
+    {
+        "id": "magazines",
+        "name": "Magazines"
+    },
+    {
+        "id": "ammunition",
+        "name": "Ammunition"
+    },
+    {
+        "id": "underbarrels",
+        "name": "Underbarrels"
+    },
+    {
+        "id": "muzzles",
+        "name": "Muzzles"
+    },
+    {
+        "id": "lasers",
+        "name": "Lasers"
+    },
+    {
+        "id": "guards",
+        "name": "Guards"
+    },
+    {
+        "id": "combs",
+        "name": "Combs"
+    },
+    {
+        "id": "trigger-actions",
+        "name": "Trigger Actions"
+    },
+    {
+        "id": "receivers",
+        "name": "Receivers"
+    },
+    {
+        "id": "rails",
+        "name": "Rails"
+    },
+    {
+        "id": "rear-grip-comb",
+        "name": "Rear Grip \/ Comb"
+    },
+    {
+        "id": "levers",
+        "name": "Levers"
+    },
+    {
+        "id": "loaders",
+        "name": "Loaders"
+    }
+]

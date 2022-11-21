@@ -1,0 +1,98 @@
+[
+    {
+        "id": "m4",
+        "name": "M4 Platform"
+    },
+    {
+        "id": "taq",
+        "name": "Tactique Verte Platform"
+    },
+    {
+        "id": "kastovia",
+        "name": "Kastovia Platform"
+    },
+    {
+        "id": "bruen-ops",
+        "name": "Bruen Ops Platform"
+    },
+    {
+        "id": "lachmann",
+        "name": "Lachmann & Meer Platform"
+    },
+    {
+        "id": "bruen-bullpup",
+        "name": "Bruen Bullpup Platform"
+    },
+    {
+        "id": "ordnance",
+        "name": "Ordnance Weapon Platform"
+    },
+    {
+        "id": "lmp",
+        "name": "LMP Platform"
+    },
+    {
+        "id": "taq-defense",
+        "name": "Tactique Defense Platform"
+    },
+    {
+        "id": "fennec",
+        "name": "Fennec Platform"
+    },
+    {
+        "id": "lockwood",
+        "name": "Lockwood Sport Platform"
+    },
+    {
+        "id": "expedite",
+        "name": "Expedite Platform"
+    },
+    {
+        "id": "bryson-800",
+        "name": "Bryson 800 Series Platform"
+    },
+    {
+        "id": "sakin",
+        "name": "Sakin MG Platform"
+    },
+    {
+        "id": "raal",
+        "name": "Raal MG Platform"
+    },
+    {
+        "id": "bryson-long",
+        "name": "Bryson Long Rifle Platform"
+    },
+    {
+        "id": "mark-2",
+        "name": "Mark 2 Platform"
+    },
+    {
+        "id": "mrba",
+        "name": "MRBA Platform"
+    },
+    {
+        "id": "imperatorium",
+        "name": "Imperatorium Platform"
+    },
+    {
+        "id": "signal",
+        "name": "Signal Platform"
+    },
+    {
+        "id": "bruen-890",
+        "name": "Bruen 890 Platform"
+    },
+    {
+        "id": "sakin-g",
+        "name": "Sakin G Series Platform"
+    },
+    {
+        "id": "xrk",
+        "name": "XRK Platform"
+    },
+    {
+        "id": "basilisk-500",
+        "name": "Basilisk 500 Platform"
+    }
+]
