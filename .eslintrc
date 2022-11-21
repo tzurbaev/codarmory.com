@@ -1,0 +1,43 @@
+{
+  "root": true,
+  "env": {
+    "node": true
+  },
+  "extends": [
+    "plugin:vue/vue3-essential",
+    "@vue/airbnb",
+    "@vue/typescript/recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2020
+  },
+  "rules": {
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-empty-interface": "off",
+    "@typescript-eslint/no-shadow": "error",
+    "import/extensions": ["error", "ignorePackages", {
+      "js": "never",
+      "jsx": "never",
+      "ts": "never",
+      "tsx": "never"
+    }],
+    "import/prefer-default-export": "off",
+    "max-len": "off",
+    "no-console": "off",
+    "no-debugger": "off",
+    "no-else-return": "off",
+    "no-restricted-globals": "off",
+    "no-shadow": "off",
+    "vue/first-attribute-linebreak": ["error", {
+      "singleline": "ignore",
+      "multiline": "beside"
+    }],
+    "vue/max-len": "off",
+    "vue/multi-word-component-names": "off"
+  },
+  "settings": {
+    "import/resolver": {
+      "typescript": {}
+    }
+  }
+}
