@@ -1,66 +1,101 @@
 <template>
-  <Disclosure as="section" aria-labelledby="filter-heading" class="grid items-center border-b border-gray-300">
-    <h2 id="filter-heading" class="sr-only">Filters</h2>
-    <div class="relative col-start-1 row-start-1 py-4">
-      <div class="flex space-x-6 divide-x divide-gray-300 text-sm">
-        <div>
-          <DisclosureButton class="group flex items-center font-medium text-gray-200">
-            <FunnelIcon class="mr-2 h-5 w-5 flex-none text-white group-hover:text-gray-300" aria-hidden="true" />
-            Filters
-          </DisclosureButton>
-        </div>
-        <div v-if="hasFilters" class="pl-6">
-          <button type="button" class="text-white" @click="$emit('reset')">Clear all</button>
-        </div>
-      </div>
+  <div>
+    <div>
+      <button type="button" class="text-sm text-white" @click="open = true">Open Filters Window</button>
     </div>
-    <DisclosurePanel class="border-t border-gray-300 py-10">
-      <div class="text-sm">
-        <div class="max-w-4xl grid grid-cols-1 md:gap-6">
-          <div class="col-span-1">
-            <TextInputGroup v-model="value.search">
-              <InputLabel><span class="text-white">Search</span></InputLabel>
-              <TextInput type="search" placeholder="Filter attachments by name" />
-            </TextInputGroup>
-          </div>
-          <div class="col-span-1">
-            <div>
-              <CheckboxesInputGroup v-model="value.pros" type="grid">
-                <InputLabel><span class="text-white">Pros</span></InputLabel>
-                <CheckboxesInput :checkboxes="pros" grid="grid grid-cols-1 sm:grid-cols-3 gap-4" />
-              </CheckboxesInputGroup>
+    <TransitionRoot as="template" :show="open">
+      <Dialog as="div" class="relative z-10" @close="open = false">
+        <TransitionChild as="template"
+                         enter="ease-in-out duration-500"
+                         enter-from="opacity-0"
+                         enter-to="opacity-100"
+                         leave="ease-in-out duration-500"
+                         leave-from="opacity-100"
+                         leave-to="opacity-0"
+        >
+          <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" />
+        </TransitionChild>
+
+        <div class="fixed inset-0 overflow-hidden">
+          <div class="absolute inset-0 overflow-hidden">
+            <div class="pointer-events-none fixed inset-y-0 left-0 flex max-w-full pr-10">
+              <TransitionChild as="template"
+                               enter="transform transition ease-in-out duration-200 sm:duration-700"
+                               enter-from="-translate-x-full"
+                               enter-to="translate-x-0"
+                               leave="transform transition ease-in-out duration-200 sm:duration-700"
+                               leave-from="translate-x-0"
+                               leave-to="-translate-x-full"
+              >
+                <DialogPanel class="pointer-events-auto w-screen max-w-3xl">
+                  <div class="flex h-full flex-col overflow-y-scroll bg-white py-6 shadow-xl">
+                    <div class="px-4 sm:px-6">
+                      <div class="flex items-start justify-between">
+                        <DialogTitle class="text-lg font-medium text-gray-900">Attachments Filters</DialogTitle>
+                        <div class="ml-3 flex h-7 items-center">
+                          <button type="button" class="rounded-md bg-white text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2" @click="open = false">
+                            <span class="sr-only">Close filters</span>
+                            <XMarkIcon class="h-6 w-6" aria-hidden="true" />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="relative mt-6 flex-1 px-4 sm:px-6">
+                      <div class="absolute inset-0 px-4 sm:px-6">
+                        <div>
+                          <TextInputGroup v-model="value.search">
+                            <InputLabel>Search</InputLabel>
+                            <TextInput type="search" placeholder="Filter attachments by name" />
+                          </TextInputGroup>
+                        </div>
+
+                        <div class="mt-4 bg-gray-100 rounded-md p-3 shadow space-y-4">
+                          <div>
+                            <ResourceCombobox label="Pros" :items="pros" :multiple="true" v-model="value.pros" />
+                          </div>
+                          <div>
+                            <RadioInputGroup v-model="value.prosMode">
+                              <InputLabel>Mode</InputLabel>
+                              <CardsRadioInput :options="modes" class="grid grid-cols-2 gap-4" />
+                            </RadioInputGroup>
+                          </div>
+                        </div>
+
+                        <div class="mt-4 bg-gray-100 rounded-md p-3 shadow space-y-4">
+                          <div>
+                            <ResourceCombobox label="Cons" :items="cons" :multiple="true" v-model="value.cons" />
+                          </div>
+                          <div>
+                            <RadioInputGroup v-model="value.consMode">
+                              <InputLabel>Mode</InputLabel>
+                              <CardsRadioInput :options="modes" class="grid grid-cols-2 gap-4" />
+                            </RadioInputGroup>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /End replace -->
+                    </div>
+                  </div>
+                </DialogPanel>
+              </TransitionChild>
             </div>
-            <RadioInputGroup v-model="value.prosMode">
-              <InputLabel>Pros Match</InputLabel>
-              <CardsRadioInput :options="modes" />
-            </RadioInputGroup>
-          </div>
-          <div class="col-span-1">
-            <div>
-              <CheckboxesInputGroup v-model="value.cons" type="grid">
-                <InputLabel><span class="text-white">Cons</span></InputLabel>
-                <CheckboxesInput :checkboxes="cons" grid="grid grid-cols-1 sm:grid-cols-6 gap-4" />
-              </CheckboxesInputGroup>
-            </div>
-            <RadioInputGroup v-model="value.consMode">
-              <InputLabel><span class="text-white">Cons Match</span></InputLabel>
-              <CardsRadioInput :options="modes" />
-            </RadioInputGroup>
           </div>
         </div>
-      </div>
-    </DisclosurePanel>
-  </Disclosure>
+      </Dialog>
+    </TransitionRoot>
+  </div>
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue';
+import { computed, ref } from 'vue';
 import {
-  Disclosure, DisclosureButton, DisclosurePanel,
+  Dialog, DialogPanel, DialogTitle, TransitionChild, TransitionRoot,
 } from '@headlessui/vue';
-import { FunnelIcon } from '@heroicons/vue/20/solid';
+import { XMarkIcon } from '@heroicons/vue/24/outline';
 import { AttachmentsFilters, AttachmentStat } from '@/attachments/types';
-import { InputLabel, TextInputGroup, TextInput, SelectInputGroup, SelectInput, RadioInputGroup, CardsRadioInput, CheckboxesInputGroup, CheckboxesInput } from '@zenky/forms-vue';
+import {
+  InputLabel, TextInputGroup, TextInput, RadioInputGroup, CardsRadioInput, CheckboxesInputGroup, CheckboxesInput,
+} from '@zenky/forms-vue';
 import ResourceCombobox from '@/forms/components/ResourceCombobox.vue';
 
 const props = defineProps<{
@@ -79,4 +114,5 @@ const modes = [
   { id: 'or', name: 'Any', description: 'Will show attachments with any of selected stats.' },
   { id: 'and', name: 'All', description: 'Will show attachments with all of selected stats.' },
 ];
+const open = ref(false);
 </script>

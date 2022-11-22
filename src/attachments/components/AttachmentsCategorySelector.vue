@@ -4,7 +4,7 @@
       <label for="attachment-category-selector" class="sr-only">Select a category</label>
       <select id="attachment-category-selector"
               name="tabs"
-              class="block w-full rounded-md border-gray-300 py-2 pl-3 pr-10 text-base focus:border-purple-500 focus:outline-none focus:ring-purple-500 sm:text-sm"
+              class="block w-full rounded-md border-gray-300 py-2 pl-3 pr-10 text-base focus:border-primary-500 focus:outline-none focus:ring-primary-500 sm:text-sm"
               v-model="value"
       >
         <option v-for="group in groups"
@@ -21,7 +21,7 @@
           <a v-for="group in groups"
              :key="group.category.id"
              href="javascript:;"
-             :class="[value === group.category.id ? 'border-purple-500 text-purple-600' : 'border-transparent text-white hover:text-purple-600 hover:border-purple-500', 'whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm']"
+             :class="[value === group.category.id ? 'border-primary-500 text-primary-600' : 'border-transparent text-white hover:text-primary-600 hover:border-primary-500', 'whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm']"
              :aria-current="value === group.category.id ? 'page' : undefined"
              @click="$emit('select', group.category.id)"
           >

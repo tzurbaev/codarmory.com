@@ -128,9 +128,9 @@ export function useFilteredAttachments(group: ComputedRef<AttachmentsGroup | nul
   const filters: Ref<AttachmentsFilters> = ref({
     search: '',
     pros: [],
-    prosMode: 'and',
+    prosMode: 'or',
     cons: [],
-    consMode: 'and',
+    consMode: 'or',
   });
 
   const pros: ComputedRef<AttachmentStat[]> = computed(() => {
