@@ -27,7 +27,6 @@
           </div>
         </div>
       </div>
-
     </div>
   </div>
 </template>
@@ -38,7 +37,6 @@ import AttachmentsCategorySelector from '@/attachments/components/AttachmentsCat
 import { useCategoryAttachments, useFilteredAttachments } from '@/attachments/composables/attachments';
 import { computed } from 'vue';
 import AttachmentGridCard from '@/attachments/components/AttachmentGridCard.vue';
-import AttachmentsListFilters from '@/attachments/components/AttachmentsListFilters.vue';
 import AttachmentsFiltersForm from '@/attachments/components/AttachmentsFiltersForm.vue';
 
 const props = defineProps<{
