@@ -4,11 +4,10 @@
       <span class="font-bold">{{ attachment.name }}</span> is a starting attachment.
     </template>
     <template v-else-if="attachment.unlock_type === UnlockType.Level">
-      Reach <span class="font-bold">Rank {{ attachment.unlock_level }}</span> to unlock <span class="font-bold">{{ attachment.name }}</span>.
+      Reach <span class="font-bold">Rank {{ attachment.unlock_level }}</span>.
     </template>
     <template v-else-if="attachment.unlock_type === UnlockType.Weapon && attachment.weapon">
-      Reach <span class="font-bold">Level {{ attachment.unlock_level }}</span> with <span class="font-bold">{{ attachment.weapon.name }}</span>
-      to unlock <span class="font-bold">{{ attachment.name }}</span>.
+      Reach <span class="font-bold">Level {{ attachment.unlock_level }}</span> with <span class="font-bold">{{ attachment.weapon.name }}</span>.
     </template>
     <template v-else-if="attachment.unlock_type === UnlockType.BattlePass">
       Unlock by progressing in <span class="font-bold">Season 0{{ attachment.unlock_level}} Battle Pass</span>.
