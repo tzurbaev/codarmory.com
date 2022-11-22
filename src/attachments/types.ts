@@ -1,5 +1,6 @@
 import { Unlockable } from '@/unlocks/types';
 import {Weapon} from "@/weapons/types";
+import {Ref} from "vue";
 
 export interface AttachmentCategory {
   id: string;
@@ -28,4 +29,17 @@ export interface Attachment extends Unlockable {
     cons: AttachmentStat[];
   };
   weapon?: Weapon | null;
+}
+
+export interface AttachmentsFilters {
+  search: string;
+  pros: string[];
+  prosMode: string;
+  cons: string[];
+  consMode: string;
+}
+
+export interface AttachmentsGroup {
+  category: AttachmentCategory;
+  attachments: Attachment[];
 }

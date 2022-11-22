@@ -19,7 +19,7 @@
           </nav>
         </div>
 
-        <div class="col-span-5 grid grid-cols-1 gap-4 py-8">
+        <div class="col-span-5 grid grid-cols-1 lg:grid-cols-3 gap-4 py-8">
           <div v-for="weapon in weapons"
                :key="`weapon-${weapon.id}`"
                class="p-8 rounded-lg shadow-lg hover:shadow-xl bg-gray-900"

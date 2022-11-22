@@ -1,9 +1,10 @@
-import {computed, ComputedRef} from 'vue';
-import {Weapon, WeaponAttachmentsList} from '@/weapons/types';
-import {useWeaponsStore} from '@/weapons/stores/weapons';
-import {UnlockType} from '@/unlocks/types';
-import {Attachment} from '@/attachments/types';
-import {useAttachmentsStore} from '@/attachments/stores/attachments';
+import { computed, ComputedRef } from 'vue';
+import { Weapon } from '@/weapons/types';
+import { useWeaponsStore } from '@/weapons/stores/weapons';
+import { UnlockType } from '@/unlocks/types';
+import { Attachment, AttachmentsGroup } from '@/attachments/types';
+import { useAttachmentsStore } from '@/attachments/stores/attachments';
+import {useAttachmentsGroups} from "@/attachments/composables/attachments";
 
 const weaponsStore = useWeaponsStore();
 
@@ -40,7 +41,7 @@ export function useWeaponsList(categoryId: ComputedRef<string | null>): { weapon
   return { weapons };
 }
 
-export function useWeapon(weaponId: ComputedRef<string | null>): { weapon: ComputedRef<Weapon | null>, attachments: ComputedRef<WeaponAttachmentsList[]> } {
+export function useWeapon(weaponId: ComputedRef<string | null>): { weapon: ComputedRef<Weapon | null>, groups: ComputedRef<AttachmentsGroup[]> } {
   const weapon: ComputedRef<Weapon | null> = computed(() => {
     if (!weaponId.value) {
       return null;
@@ -58,44 +59,18 @@ export function useWeapon(weaponId: ComputedRef<string | null>): { weapon: Compu
     };
   });
 
-  const attachmentsStore = useAttachmentsStore();
-
-  const ungrouppedAttachments: ComputedRef<Attachment[]> = computed(() => {
+  const attachments = computed(() => {
     if (!weapon.value || !weapon.value?.attachments || !weapon.value?.attachments.length) {
       return [];
     }
 
-    return attachmentsStore.extendedAttachments.filter((attachment: Attachment) => weapon.value?.attachments.indexOf(attachment.id) !== -1);
+    return weapon.value.attachments;
   });
 
-  const attachments: ComputedRef<WeaponAttachmentsList[]> = computed(() => {
-    if (!ungrouppedAttachments.value.length) {
-      return [];
-    }
-
-    const groups: WeaponAttachmentsList[] = [];
-    const indexes: any = {};
-
-    ungrouppedAttachments.value.forEach((attachment: Attachment) => {
-      if (!attachment.category || !attachment.category.id) {
-        return;
-      } else if (typeof indexes[attachment.category.id] !== 'undefined') {
-        groups[indexes[attachment.category.id]].attachments.push(attachment);
-
-        return;
-      }
-
-      indexes[attachment.category.id] = groups.push({
-        category: attachment.category,
-        attachments: [attachment],
-      }) - 1;
-    });
-
-    return groups;
-  });
+  const { groups } = useAttachmentsGroups(attachments);
 
   return {
     weapon,
-    attachments,
+    groups,
   };
 }
