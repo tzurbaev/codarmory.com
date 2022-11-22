@@ -34,8 +34,10 @@ export interface AttachmentsFilters {
   search: string;
   pros: string[];
   prosMode: string;
+  matchAllPros: boolean;
   cons: string[];
   consMode: string;
+  matchAllCons: boolean;
 }
 
 export interface AttachmentsGroup {

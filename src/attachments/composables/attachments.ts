@@ -6,8 +6,8 @@ import {
 } from '@/attachments/types';
 import { useAttachmentsStore } from '@/attachments/stores/attachments';
 
-function passesStatsModeFilter(stats: string[], mode: string, attachmentStats: string[]): boolean {
-  if (mode === 'or') {
+function passesStatsModeFilter(stats: string[], matchAll: boolean, attachmentStats: string[]): boolean {
+  if (!matchAll) {
     return attachmentStats.some((item: string) => stats.indexOf(item) !== -1);
   }
 
@@ -17,9 +17,9 @@ function passesStatsModeFilter(stats: string[], mode: string, attachmentStats: s
 function passesStatsFilter(filters: AttachmentsFilters, attachment: Attachment): boolean {
   if (!filters.pros.length && !filters.cons.length) {
     return true;
-  } else if (filters.pros.length > 0 && passesStatsModeFilter(filters.pros, filters.prosMode, attachment.pros)) {
+  } else if (filters.pros.length > 0 && passesStatsModeFilter(filters.pros, filters.matchAllPros, attachment.pros)) {
     return true;
-  } else if (filters.cons.length > 0 && passesStatsModeFilter(filters.cons, filters.consMode, attachment.cons)) {
+  } else if (filters.cons.length > 0 && passesStatsModeFilter(filters.cons, filters.matchAllCons, attachment.cons)) {
     return true;
   }
 
@@ -129,8 +129,10 @@ export function useFilteredAttachments(group: ComputedRef<AttachmentsGroup | nul
     search: '',
     pros: [],
     prosMode: 'or',
+    matchAllPros: false,
     cons: [],
     consMode: 'or',
+    matchAllCons: false,
   });
 
   const pros: ComputedRef<AttachmentStat[]> = computed(() => {

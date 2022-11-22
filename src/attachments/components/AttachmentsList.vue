@@ -12,14 +12,22 @@
         <template v-else>{{ attachments.length }} attachments</template>
       </p>
 
-      <AttachmentsListFilters :pros="pros" :cons="cons" :has-filters="hasFilters" v-model="filters" @reset="reset" />
-
-      <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 lg:gap-8">
-        <AttachmentGridCard v-for="attachment in attachments"
-                            :key="`AttachmentGridCard-${attachment.id}`"
-                            :attachment="attachment"
-        />
+      <div class="mt-4 grid grid-cols-1 sm:grid-cols-6 gap-6">
+        <div class="col-span-1">
+          <div class="space-y-4 lg:sticky lg:top-[10%]">
+            <AttachmentsFiltersForm :pros="pros" :cons="cons" :has-filters="hasFilters" v-model="filters" @reset="reset" />
+          </div>
+        </div>
+        <div class="col-span-1 sm:col-span-5">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 lg:gap-4">
+            <AttachmentGridCard v-for="attachment in attachments"
+                                :key="`AttachmentGridCard-${attachment.id}`"
+                                :attachment="attachment"
+            />
+          </div>
+        </div>
       </div>
+
     </div>
   </div>
 </template>
@@ -31,6 +39,7 @@ import { useCategoryAttachments, useFilteredAttachments } from '@/attachments/co
 import { computed } from 'vue';
 import AttachmentGridCard from '@/attachments/components/AttachmentGridCard.vue';
 import AttachmentsListFilters from '@/attachments/components/AttachmentsListFilters.vue';
+import AttachmentsFiltersForm from '@/attachments/components/AttachmentsFiltersForm.vue';
 
 const props = defineProps<{
   groups: AttachmentsGroup[];

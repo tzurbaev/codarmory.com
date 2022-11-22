@@ -4,11 +4,10 @@
       <span class="font-bold">{{ weapon.name }}</span> is a starting weapon.
     </template>
     <template v-else-if="weapon.unlock_type === UnlockType.Level">
-      Reach <span class="font-bold">Rank {{ weapon.unlock_level }}</span> to unlock <span class="font-bold">{{ weapon.name }}</span>.
+      Reach <span class="font-bold">Rank {{ weapon.unlock_level }}</span>.
     </template>
     <template v-else-if="weapon.unlock_type === UnlockType.Weapon && weapon.parent">
-      Reach <span class="font-bold">Level {{ weapon.unlock_level }}</span> with <span class="font-bold">{{ weapon.parent.name }}</span>
-      to unlock <span class="font-bold">{{ weapon.name }}</span>.
+      Reach <span class="font-bold">Level {{ weapon.unlock_level }}</span> with <span class="font-bold">{{ weapon.parent.name }}</span>.
     </template>
     <template v-else-if="weapon.unlock_type === UnlockType.BattlePass">
       Unlock by progressing in <span class="font-bold">Season 0{{ weapon.unlock_level}} Battle Pass</span>.
