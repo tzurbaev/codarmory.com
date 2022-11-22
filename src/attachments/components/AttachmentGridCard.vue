@@ -31,7 +31,7 @@
       </div>
     </div>
 
-    <AttachmentUnlockDescription :attachment="attachment" class="text-purple-500/60 text-sm align-bottom mt-4" />
+    <AttachmentUnlockDescription :attachment="attachment" class="text-purple-500 text-sm align-bottom mt-4" />
   </div>
 </template>
 
