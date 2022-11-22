@@ -2,9 +2,8 @@ import { computed, ComputedRef } from 'vue';
 import { Weapon } from '@/weapons/types';
 import { useWeaponsStore } from '@/weapons/stores/weapons';
 import { UnlockType } from '@/unlocks/types';
-import { Attachment, AttachmentsGroup } from '@/attachments/types';
-import { useAttachmentsStore } from '@/attachments/stores/attachments';
-import {useAttachmentsGroups} from "@/attachments/composables/attachments";
+import { AttachmentsGroup } from '@/attachments/types';
+import { useAttachmentsGroups } from '@/attachments/composables/attachments';
 
 const weaponsStore = useWeaponsStore();
 

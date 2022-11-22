@@ -1,9 +1,8 @@
 import { defineStore } from 'pinia';
 import { Weapon } from '@/weapons/types';
 import weapons from '@/database/weapons.json';
-import {useWeaponCategories} from "@/weapons/composables/categories";
-import {useWeaponPlatforms} from "@/weapons/composables/platforms";
-import {computed} from "vue";
+import { useWeaponCategories } from '@/weapons/composables/categories';
+import { useWeaponPlatforms } from '@/weapons/composables/platforms';
 
 interface WeaponsState {
   weapons: Weapon[];

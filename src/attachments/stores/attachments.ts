@@ -1,11 +1,11 @@
-import {defineStore} from "pinia";
+import { defineStore } from 'pinia';
 import attachments from '@/database/attachments.json';
 import stats from '@/database/attachment-stats.json';
 import categories from '@/database/attachment-categories.json';
-import {Attachment, AttachmentCategory, AttachmentStat} from "@/attachments/types";
-import {UnlockType} from "@/unlocks/types";
-import {Weapon} from "@/weapons/types";
-import {useWeaponsStore} from "@/weapons/stores/weapons";
+import { Attachment, AttachmentCategory, AttachmentStat } from '@/attachments/types';
+import { UnlockType } from '@/unlocks/types';
+import { Weapon } from '@/weapons/types';
+import { useWeaponsStore } from '@/weapons/stores/weapons';
 
 interface AttachmentsState {
   attachments: Attachment[];

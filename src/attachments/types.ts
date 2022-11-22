@@ -1,6 +1,5 @@
 import { Unlockable } from '@/unlocks/types';
-import {Weapon} from "@/weapons/types";
-import {Ref} from "vue";
+import { Weapon } from '@/weapons/types';
 
 export interface AttachmentCategory {
   id: string;

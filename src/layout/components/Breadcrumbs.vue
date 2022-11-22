@@ -25,7 +25,6 @@
 
 <script setup lang="ts">
 import { ChevronRightIcon, HomeIcon } from '@heroicons/vue/20/solid';
-import { RouteRecordRaw } from 'vue-router';
 
 defineProps<{
   pages: {
