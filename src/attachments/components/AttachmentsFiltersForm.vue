@@ -1,9 +1,7 @@
 <template>
   <div>
     <TextInputGroup v-model="value.search">
-      <InputLabel>
-        <span class="text-white">Search</span>
-      </InputLabel>
+      <InputLabel>Search</InputLabel>
       <TextInput type="search" placeholder="Filter attachments by name" />
     </TextInputGroup>
   </div>
@@ -16,14 +14,8 @@
     <ToggleInputGroup v-model="value.matchAllPros">
       <ToggleInput />
       <ToggleInputDescription>
-        <InputLabel>
-          <span class="text-white">Match all pros</span>
-        </InputLabel>
-        <InputHint>
-          <span class="text-gray-400">
-            Select to match all choosen pros.
-          </span>
-        </InputHint>
+        <InputLabel>Match all pros</InputLabel>
+        <InputHint>Select to match all choosen pros.</InputHint>
       </ToggleInputDescription>
     </ToggleInputGroup>
   </div>
@@ -36,14 +28,8 @@
     <ToggleInputGroup v-model="value.matchAllCons">
       <ToggleInput />
       <ToggleInputDescription>
-        <InputLabel>
-          <span class="text-white">Match all cons</span>
-        </InputLabel>
-        <InputHint>
-          <span class="text-gray-400">
-            Select to match all choosen cons.
-          </span>
-        </InputHint>
+        <InputLabel>Match all cons</InputLabel>
+        <InputHint>Select to match all choosen cons.</InputHint>
       </ToggleInputDescription>
     </ToggleInputGroup>
   </div>
