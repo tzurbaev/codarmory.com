@@ -1,7 +1,9 @@
 <template>
   <div>
     <ComboboxInputGroup v-model="value" :multiple="multiple">
-      <InputLabel class="text-white text-sm">{{ label }}</InputLabel>
+      <InputLabel>
+        <span class="text-white">{{ label }}</span>
+      </InputLabel>
       <ComboboxInput :options="options" @change="query = $event">
         <template v-slot:empty>Please select {{ label.toLowerCase() }}</template>
         <template v-slot:item="{ active, selected, item }">

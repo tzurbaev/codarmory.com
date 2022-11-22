@@ -12,6 +12,8 @@
         <template v-else>{{ attachments.length }} attachments</template>
       </p>
 
+      <AttachmentsListFilters :pros="pros" :cons="cons" :has-filters="hasFilters" v-model="filters" @reset="reset" />
+
       <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 lg:gap-8">
         <AttachmentGridCard v-for="attachment in attachments"
                             :key="`AttachmentGridCard-${attachment.id}`"
@@ -28,6 +30,7 @@ import AttachmentsCategorySelector from '@/attachments/components/AttachmentsCat
 import { useCategoryAttachments, useFilteredAttachments } from '@/attachments/composables/attachments';
 import { computed } from 'vue';
 import AttachmentGridCard from '@/attachments/components/AttachmentGridCard.vue';
+import AttachmentsListFilters from '@/attachments/components/AttachmentsListFilters.vue';
 
 const props = defineProps<{
   groups: AttachmentsGroup[];
