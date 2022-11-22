@@ -1,8 +1,20 @@
+const colors = require('tailwindcss/colors');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./index.html', './src/**/*.{vue,ts}'],
+  content: [
+    './index.html',
+    './src/**/*.{vue,ts}',
+    './node_modules/@zenky/forms-vue/dist/**/*.js',
+  ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: colors.purple,
+      },
+    },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
 }

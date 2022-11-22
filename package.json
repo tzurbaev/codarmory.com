@@ -10,11 +10,15 @@
     "lint": "eslint --fix \"./src/**/*.{vue,ts,html,js}\""
   },
   "dependencies": {
+    "@headlessui/vue": "^1.7.4",
+    "@heroicons/vue": "^2.0.13",
+    "@zenky/forms-vue": "^0.9.7",
     "pinia": "^2.0.22",
     "vue": "^3.2.37",
     "vue-router": "^4.1.5"
   },
   "devDependencies": {
+    "@tailwindcss/forms": "^0.5.3",
     "@types/node": "^18.8.0",
     "@typescript-eslint/eslint-plugin": "^5.38.1",
     "@typescript-eslint/parser": "^5.38.1",

@@ -7,6 +7,18 @@ const routes: RouteRecordRaw[] = [
     component: () => import('@/views/HomeView.vue'),
   },
   {
+    name: 'weapons.index',
+    path: '/weapons/:categoryId?',
+    component: () => import('@/weapons/views/WeaponsView.vue'),
+    props: true,
+  },
+  {
+    name: 'weapons.show',
+    path: '/weapons/:categoryId/:weaponId',
+    component: () => import('@/weapons/views/WeaponView.vue'),
+    props: true,
+  },
+  {
     path: '/:pathMatch(.*)*',
     name: 'errors.404',
     component: () => import('@/views/Error404.vue'),
@@ -16,4 +28,11 @@ const routes: RouteRecordRaw[] = [
 export default createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes,
+  scrollBehavior(from, to) {
+    if (from && to && from.path === to.path) {
+      return false;
+    }
+
+    return { top: 0 };
+  },
 });
