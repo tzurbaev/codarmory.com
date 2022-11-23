@@ -38,12 +38,12 @@ import { computed } from 'vue';
 import { AttachmentsGroup } from '@/attachments/types';
 
 const props = defineProps<{
-  modelValue: string;
+  modelValue: string | null;
   groups: AttachmentsGroup[];
 }>();
 const emit = defineEmits(['update:modelValue', 'select']);
 const value = computed({
   get: () => props.modelValue,
-  set: (val: string) => emit('update:modelValue', val),
+  set: (val: string | null) => emit('update:modelValue', val),
 });
 </script>

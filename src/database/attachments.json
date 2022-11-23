@@ -88,24 +88,6 @@
         "unlock_description": null
     },
     {
-        "id": "97c5409699ca51f8",
-        "category_id": "underbarrels",
-        "slug": "fss-sharkfin-90",
-        "name": "FSS Sharkfin 90",
-        "description": "Well-rounded angled foregrip for those who prefer accuract while on the move.",
-        "completed": true,
-        "has_errors": false,
-        "comment": "m4 version",
-        "pros": [
-            "aiming_idle_stability"
-        ],
-        "cons": [],
-        "unlock_type": "weapon",
-        "unlock_id": "m4",
-        "unlock_level": 6,
-        "unlock_description": null
-    },
-    {
         "id": "97c5480eade4a401",
         "category_id": "stocks",
         "slug": "corio-precio-factory",
@@ -6451,12 +6433,20 @@
         "category_id": "barrels",
         "slug": "18-demo-firewall",
         "name": "18'' DEMO Firewall",
-        "description": null,
-        "completed": false,
+        "description": "A long an light barrel from Demo Weapon Systems. Increased movement speed and precision.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "ads_speed",
+            "movement_speed",
+            "wider_pellet_spread"
+        ],
+        "cons": [
+            "damage_range",
+            "bullet_velocity",
+            "recoil_control"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "bryson-800",
         "unlock_level": 2,
@@ -6467,12 +6457,17 @@
         "category_id": "stocks",
         "slug": "ftac-apollo-stock",
         "name": "FTAC Apollo Stock",
-        "description": null,
-        "completed": false,
+        "description": "A polymer stock with better stability when walking and aiming.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "aiming_stability"
+        ],
+        "cons": [
+            "aim_walking_speed",
+            "sprint_speed"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "bryson-800",
         "unlock_level": 3,
@@ -6483,12 +6478,18 @@
         "category_id": "muzzles",
         "slug": "bryson-improved-choke",
         "name": "Bryson Improved Choke",
-        "description": null,
-        "completed": false,
+        "description": "A shorter choke that keeps pellets tight and increases damage range.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "tighter_pellet_spread",
+            "damage_range"
+        ],
+        "cons": [
+            "recoil_steadiness",
+            "ads_speed"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "bryson-800",
         "unlock_level": 4,
@@ -6499,12 +6500,18 @@
         "category_id": "optics",
         "slug": "corio-cqc-scope",
         "name": "Corio CQC Scope",
-        "description": null,
-        "completed": false,
+        "description": "A low-zoom, 5.5x scope for precision in close-range combat.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "55x_magnification"
+        ],
+        "cons": [
+            "small_sniper_glint",
+            "ads_speed",
+            "aim_walking_movement_speed"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "bryson-800",
         "unlock_level": 5,
@@ -6515,12 +6522,19 @@
         "category_id": "guards",
         "slug": "lockwood-series-ii",
         "name": "Lockwood Series II",
-        "description": null,
-        "completed": false,
+        "description": "A wooden pump from Lockwood. Superior design improves recoil control and rechambering stability. Reduces flinch when under fire.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "rechambering_accuracy",
+            "recoil_steadiness",
+            "flinch_resistance"
+        ],
+        "cons": [
+            "ads_speed",
+            "rechambering_speed"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "bryson-800",
         "unlock_level": 6,
@@ -6553,12 +6567,21 @@
         "category_id": "stocks",
         "slug": "sawed-off-mod",
         "name": "Sawed Off Mod",
-        "description": null,
-        "completed": false,
+        "description": "A completely removed stock that significantly enhances speed and mobility. This is the shotgun modification for a aggressive operator.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "ads_speed",
+            "sprint_to_fire_speed",
+            "movement_speed",
+            "hip_recoil_control"
+        ],
+        "cons": [
+            "aiming_stability",
+            "aiming_recoil_control",
+            "flinch_resistance"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "bryson-800",
         "unlock_level": 8,
@@ -6569,12 +6592,21 @@
         "category_id": "barrels",
         "slug": "8-xrk-cqb-barrel",
         "name": "8'' XRK CQB Barrel",
-        "description": null,
-        "completed": false,
+        "description": "Small and powerful. The shortest shotgun barrel with a built-in foregrip that helps mitigate recoil. The ultimate speed mod. Blocks underbarrel attachments and holds 3 shells of 12 gauge.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "ads_speed",
+            "movement_speed",
+            "wider_pellet_spread",
+            "recoil_control"
+        ],
+        "cons": [
+            "tube_ammo_capacity",
+            "damage_range",
+            "bullet_velocity"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "bryson-800",
         "unlock_level": 9,
@@ -6604,12 +6636,20 @@
         "category_id": "muzzles",
         "slug": "sa-mx-50",
         "name": "SA MX-50",
-        "description": null,
-        "completed": false,
+        "description": "This silencer's extra length offers maximum range and bullet velocity at the expense of some stability.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "sound_suppression",
+            "bullet_velocity",
+            "damage_range",
+            "recoil_smoothness"
+        ],
+        "cons": [
+            "ads_speed",
+            "aiming_stability"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "bryson-800",
         "unlock_level": 11,
@@ -6620,12 +6660,20 @@
         "category_id": "stocks",
         "slug": "fss-watchman",
         "name": "FSS Watchman",
-        "description": null,
-        "completed": false,
+        "description": "An ergonomic stock designed by FSS gunsmiths. Increased aim down sight speed.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "crouch_movement_speed",
+            "sprint_speed",
+            "ads_speed",
+            "aim_walking_speed"
+        ],
+        "cons": [
+            "recoil_control",
+            "aiming_stability"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "bryson-800",
         "unlock_level": 12,
@@ -6636,12 +6684,19 @@
         "category_id": "ammunition",
         "slug": "12-gauge-explosive",
         "name": "12 Gauge Explosive",
-        "description": null,
-        "completed": false,
+        "description": "An explosive slug that detonates on contact, dealing extra damage at the point of impact. Effective against vehicles.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "explosive_slug_rounds",
+            "damage_range",
+            "vehicle_damage"
+        ],
+        "cons": [
+            "damage_radius",
+            "bullet_velocity"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "bryson-800",
         "unlock_level": 13,
@@ -6652,12 +6707,18 @@
         "category_id": "barrels",
         "slug": "295-rifled-barrel",
         "name": "29.5'' Rifled Barrel",
-        "description": null,
-        "completed": false,
+        "description": "The longest barrel for the Bryson shotgun family. Superior accuracy comes with the added length. Tube holds 6 shells of 12 gauge.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "damage_range",
+            "tighter_pellet_spread",
+            "bullet_velocity"
+        ],
+        "cons": [
+            "ads_speed"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "bryson-800",
         "unlock_level": 14,
@@ -6668,12 +6729,21 @@
         "category_id": "muzzles",
         "slug": "sa-schweigen-xs",
         "name": "SA Schweigen XS",
-        "description": null,
-        "completed": false,
+        "description": "A slightly shorter version of the DX silencer. Offers smooth recoil and increased bullet velocity, but reduces damage range.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "sound_suppression",
+            "bullet_velocity",
+            "recoil_smoothness",
+            "recoil_control"
+        ],
+        "cons": [
+            "ads_speed",
+            "aim_walking_speed",
+            "aiming_stability"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "bryson-800",
         "unlock_level": 15,
@@ -6700,12 +6770,19 @@
         "category_id": "guards",
         "slug": "demo-x50-tactical-pump",
         "name": "DEMO X50 Tactical Pump",
-        "description": null,
-        "completed": false,
+        "description": "Faster movement when crouched, improved aiming time, and faster rechambering.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "crouch_movement_speed",
+            "ads_speed",
+            "rechambering_speed"
+        ],
+        "cons": [
+            "sprint_speed",
+            "rechambering_accuracy"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "bryson-800",
         "unlock_level": 17,
@@ -6716,12 +6793,18 @@
         "category_id": "muzzles",
         "slug": "lockwood-smoothfire-12",
         "name": "Lockwood Smoothfire 12",
-        "description": null,
-        "completed": false,
+        "description": "A heavy compensator that offers superior recoil control at the cost of some handling.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "vertical_recoil_control",
+            "horizontal_recoil_control"
+        ],
+        "cons": [
+            "ads_speed",
+            "aiming_stability"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "bryson-800",
         "unlock_level": 18,
@@ -6732,12 +6815,19 @@
         "category_id": "barrels",
         "slug": "215-bryson-shredder",
         "name": "21.5'' Bryson Shredder",
-        "description": null,
-        "completed": false,
+        "description": "This shotgun barrel is longer and heavier, providing better recoil control at precision. Slight decrease in speed. Tube holds 8 shells of 12 gauge.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "tube_ammo_capacity",
+            "recoil_control",
+            "bullet_velocity"
+        ],
+        "cons": [
+            "movement_speed",
+            "ads_speed"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "bryson-800",
         "unlock_level": 19,
@@ -6748,12 +6838,18 @@
         "category_id": "muzzles",
         "slug": "xten-quadflash",
         "name": "XTen Quadflash",
-        "description": null,
-        "completed": false,
+        "description": "A flash hider from XTEN. Conceals muzzle flash and stabilizes recoil for more accurate shots.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "muzzle_flash_concealment",
+            "recoil_stabilization"
+        ],
+        "cons": [
+            "ads_speed",
+            "aiming_stability"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "bryson-800",
         "unlock_level": 20,
@@ -6764,12 +6860,20 @@
         "category_id": "barrels",
         "slug": "215-recourse",
         "name": "21.5'' Recourse",
-        "description": null,
-        "completed": false,
+        "description": "A heavy, long barrel that was designed for accuracy and recoil control.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "bullet_velocity",
+            "damage_range",
+            "recoil_control",
+            "tighter_pellet_spread"
+        ],
+        "cons": [
+            "movement_speed",
+            "ads_speed"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "bryson-890",
         "unlock_level": 3,
@@ -6800,12 +6904,19 @@
         "category_id": "magazines",
         "slug": "5-shell-mag",
         "name": "5-Shell Mag",
-        "description": null,
-        "completed": false,
+        "description": "A small magazine that holds five 12 gauge shells.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "movement_speed",
+            "ads_speed",
+            "sprint_to_fire_speed",
+            "reload_quickness"
+        ],
+        "cons": [
+            "magazine_ammo_capacity"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "bryson-890",
         "unlock_level": 6,
@@ -6816,12 +6927,18 @@
         "category_id": "guards",
         "slug": "demo-dropzone-pump",
         "name": "DEMO Dropzone Pump",
-        "description": null,
-        "completed": false,
+        "description": "A grippier pump from Demo Weapon Systems that allows for improved movement and speed. Slight increase to flinch and recoil.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "sprint_speed",
+            "hip_walking_speed"
+        ],
+        "cons": [
+            "flinch_resistance",
+            "recoil_steadiness"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "bryson-890",
         "unlock_level": 7,
@@ -6832,12 +6949,21 @@
         "category_id": "stocks",
         "slug": "stockless-pistol-grip",
         "name": "Stockless Pistol Grip",
-        "description": null,
-        "completed": false,
-        "has_errors": false,
-        "comment": null,
-        "pros": [],
-        "cons": [],
+        "description": "A pistol grip with no stock. This attachment greatly increases speed and mobility.",
+        "completed": true,
+        "has_errors": true,
+        "comment": "not used yet",
+        "pros": [
+            "ads_speed",
+            "sprint_to_fire_speed",
+            "movement_speed",
+            "hip_recoil_control"
+        ],
+        "cons": [
+            "aiming_stability",
+            "aiming_recoil_control",
+            "flinch_resistance"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "bryson-890",
         "unlock_level": 10,
@@ -6848,12 +6974,17 @@
         "category_id": "muzzles",
         "slug": "ovl-70-comp",
         "name": "OVL-70 Comp",
-        "description": null,
-        "completed": false,
+        "description": "A compensator that expels gasses to the sides in order to reduce horizontal recoil. Slows aiming and reduces aiming stability.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "horizontal_recoil_control"
+        ],
+        "cons": [
+            "ads_speed",
+            "aiming_stability"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "bryson-890",
         "unlock_level": 11,
@@ -6862,14 +6993,23 @@
     {
         "id": "97c5400fa65118c7",
         "category_id": "stocks",
-        "slug": "stockless-pistol-grip-2",
-        "name": "Stockless Pistol Grip (2)",
-        "description": null,
-        "completed": false,
+        "slug": "stockless-pistol-grip",
+        "name": "Stockless Pistol Grip",
+        "description": "A pistol grip with no stock. This attachment greatly increases speed and mobility.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "ads_speed",
+            "sprint_to_fire_speed",
+            "movement_speed",
+            "hip_recoil_control"
+        ],
+        "cons": [
+            "aiming_recoil_control",
+            "aiming_stability",
+            "flinch_resistance"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "bryson-890",
         "unlock_level": 13,
@@ -6878,14 +7018,22 @@
     {
         "id": "97c54dc0ad22850c",
         "category_id": "barrels",
-        "slug": "16-bryson-factory",
-        "name": "16'' Bryson Factory",
-        "description": null,
-        "completed": false,
+        "slug": "16-bryson-factory-barrel",
+        "name": "16'' Bryson Factory Barrel",
+        "description": "The 16'' factory barrel for Bryson 800 Series shotguns. Tube holds 5 shells of 12 gauge.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "ads_speed",
+            "wider_pellet_spread",
+            "movement_speed"
+        ],
+        "cons": [
+            "tube_ammo_capacity",
+            "damage_range",
+            "bullet_velocity"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "bryson-890",
         "unlock_level": 14,
@@ -6896,12 +7044,17 @@
         "category_id": "muzzles",
         "slug": "bryson-choke",
         "name": "Bryson Choke",
-        "description": null,
-        "completed": false,
+        "description": "Improves accuracy with a narrow pellet spread. Aiming is slowed and kick is harder to control.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "tighter_pellet_spread"
+        ],
+        "cons": [
+            "recoil_steadiness",
+            "ads_speed"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "bryson-890",
         "unlock_level": 15,
@@ -6912,12 +7065,20 @@
         "category_id": "stocks",
         "slug": "fss-guardian-stock",
         "name": "FSS Guardian Stock",
-        "description": null,
-        "completed": false,
+        "description": "An FSS tactical stock engineered for better walking stability while aiming as well as increased aiming speed.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "crouch_movement_speed",
+            "ads_speed",
+            "sprint_speed",
+            "aiming_stability"
+        ],
+        "cons": [
+            "recoil_control",
+            "aim_walking_speed"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "bryson-890",
         "unlock_level": 17,
@@ -6928,12 +7089,21 @@
         "category_id": "barrels",
         "slug": "16-bryson-shockwave",
         "name": "16'' Bryson Shockwave",
-        "description": null,
-        "completed": false,
+        "description": "A short barrel with a heavy rail system. Slight increase to recoil control and aiming speed. Tube holds 5 shells of 12 gauge.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "recoil_control",
+            "bullet_velocity",
+            "wider_pellet_spread"
+        ],
+        "cons": [
+            "tube_ammo_capacity",
+            "movement_speed",
+            "damage_range",
+            "ads_speed"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "bryson-890",
         "unlock_level": 18,
@@ -6944,12 +7114,19 @@
         "category_id": "stocks",
         "slug": "xten-ripcord-stock",
         "name": "XTen Ripcord Stock",
-        "description": null,
-        "completed": false,
+        "description": "A combat stock with a pistol grip that focuses on speed and mobility.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "aim_walking_speed",
+            "sprint_speed",
+            "ads_speed"
+        ],
+        "cons": [
+            "aiming_stability",
+            "recoil_control"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "bryson-890",
         "unlock_level": 19,
@@ -6960,12 +7137,17 @@
         "category_id": "muzzles",
         "slug": "ftac-tridentcore",
         "name": "FTAC Tridentcore",
-        "description": null,
-        "completed": false,
+        "description": "A Forge Tac suppressor that keeps weapon noise down and increased recoil smoothness.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "sound_suppression",
+            "recoil_smoothness"
+        ],
+        "cons": [
+            "damage_range"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "bryson-890",
         "unlock_level": 20,
@@ -6976,12 +7158,19 @@
         "category_id": "magazines",
         "slug": "12-shell-mag",
         "name": "12 Shell Mag",
-        "description": null,
-        "completed": false,
+        "description": "A small magazine that holds twelve 12 gauge shells.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "magazine_ammo_capacity"
+        ],
+        "cons": [
+            "movement_speed",
+            "ads_speed",
+            "reload_quickness",
+            "sprint_to_fire_speed"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "bryson-890",
         "unlock_level": 21,
@@ -8446,8 +8635,8 @@
         "name": "Silentfire XG6",
         "description": "Keep a low but deadly profile and hide your location with this silencer.",
         "completed": true,
-        "has_errors": false,
-        "comment": null,
+        "has_errors": true,
+        "comment": "unknown unlock",
         "pros": [
             "sound_suppression",
             "bullet_velocity",
@@ -8459,9 +8648,9 @@
             "aim_walking_speed",
             "aiming_stability"
         ],
-        "unlock_type": "weapon",
-        "unlock_id": "m13b",
-        "unlock_level": 6,
+        "unlock_type": "unknown",
+        "unlock_id": null,
+        "unlock_level": null,
         "unlock_description": null
     },
     {
@@ -8786,28 +8975,6 @@
         "unlock_type": "weapon",
         "unlock_id": "vel-46",
         "unlock_level": 2,
-        "unlock_description": null
-    },
-    {
-        "id": "97c64803a8682d9b",
-        "category_id": "underbarrels",
-        "slug": "operator-foregrip",
-        "name": "Operator Foregrip",
-        "description": "Practice close-range tactics with increased hip-fire recoil control and accuracy.",
-        "completed": true,
-        "has_errors": false,
-        "comment": "from m4",
-        "pros": [
-            "hip_fire_accuracy",
-            "aim_walking_steadiness",
-            "hip_recoil_control"
-        ],
-        "cons": [
-            "hip_walking_speed"
-        ],
-        "unlock_type": "weapon",
-        "unlock_id": "vel-46",
-        "unlock_level": 3,
         "unlock_description": null
     },
     {
@@ -9861,14 +10028,21 @@
     {
         "id": "97c6427895cb3859",
         "category_id": "barrels",
-        "slug": "95-duke-300",
-        "name": "9.5'' Duke-300",
-        "description": null,
-        "completed": false,
+        "slug": "95-duke-30",
+        "name": "9.5'' Duke-30",
+        "description": "The shortest barrel for the PDSW 528. Designed for quick action and agility on the battlefield.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "ads_speed",
+            "hip_recoil_control"
+        ],
+        "cons": [
+            "damage_range",
+            "hip_fire_accuracy",
+            "bullet_velocity"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "pdsw-528",
         "unlock_level": 2,
@@ -9879,12 +10053,16 @@
         "category_id": "rear-grips",
         "slug": "bruen-g305-grip-wrap",
         "name": "Bruen G305 Grip Wrap",
-        "description": null,
-        "completed": false,
+        "description": "Granulated grip tape hat provides better handling in firefights. Reduces flinch when under fire.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "flinch_resistance"
+        ],
+        "cons": [
+            "aim_walking_movement_speed"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "pdsw-528",
         "unlock_level": 3,
@@ -9916,12 +10094,18 @@
         "category_id": "stocks",
         "slug": "cqb-stock",
         "name": "CQB Stock",
-        "description": null,
-        "completed": false,
+        "description": "A tactical stock that increases aiming speed for faster target elimination.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "crouch_movement_speed",
+            "sprint_speed",
+            "ads_speed"
+        ],
+        "cons": [
+            "recoil_control"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "pdsw-528",
         "unlock_level": 5,
@@ -9932,12 +10116,18 @@
         "category_id": "rails",
         "slug": "integrated-reflex-rail",
         "name": "Integrated Reflex Rail",
-        "description": null,
-        "completed": false,
+        "description": "This rail system from Tactique Verte brings a built-in reflex sight to the weapon, eliminating the need for an attached optic. Blocks optics.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "precision_sight_picture",
+            "movement_speed"
+        ],
+        "cons": [
+            "recoil_control",
+            "optic_rail_mount"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "pdsw-528",
         "unlock_level": 6,
@@ -9991,12 +10181,21 @@
         "category_id": "barrels",
         "slug": "ftac-series-ix-145",
         "name": "FTAC Series IX 14.5''",
-        "description": null,
-        "completed": false,
+        "description": "A long barrel that has been fluted to reduce weight. A faster, more precise barrel.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "damage_range",
+            "hip_fire_accuracy",
+            "movement_speed",
+            "bullet_velocity"
+        ],
+        "cons": [
+            "hip_recoil_control",
+            "ads_speed",
+            "recoil_control"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "pdsw-528",
         "unlock_level": 9,
@@ -10007,12 +10206,17 @@
         "category_id": "combs",
         "slug": "ftac-h86-cheek-rest",
         "name": "FTAC H86 Cheek Rest",
-        "description": null,
-        "completed": false,
+        "description": "Keep your target in sight in a firefight. Reduces flinch when under fire.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "flinch_resistance"
+        ],
+        "cons": [
+            "sprint_speed",
+            "sprint_to_fire_speed"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "pdsw-528",
         "unlock_level": 10,
@@ -10023,12 +10227,17 @@
         "category_id": "stocks",
         "slug": "fss-heavy-stock-pro",
         "name": "FSS Heavy Stock Pro",
-        "description": null,
-        "completed": false,
+        "description": "Keep on target when aiming and moving with this stable, heavy stock extension.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "aiming_stability"
+        ],
+        "cons": [
+            "aim_walking_speed",
+            "sprint_speed"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "pdsw-528",
         "unlock_level": 11,
@@ -10085,12 +10294,17 @@
         "category_id": "rails",
         "slug": "gr33-light-rail",
         "name": "GR33 Light Rail",
-        "description": null,
-        "completed": false,
+        "description": "Grünläch rail system built to be lightweight and quick for the PDSW 528.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "movement_speed"
+        ],
+        "cons": [
+            "optic_rail_size",
+            "recoil_control"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "pdsw-528",
         "unlock_level": 14,
@@ -10101,12 +10315,21 @@
         "category_id": "barrels",
         "slug": "17-corvus-prorange",
         "name": "17'' Corvus Prorange",
-        "description": null,
-        "completed": false,
+        "description": "A barrel designed for distance shooting with better recoil and precision at the expense of speed.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "bullet_velocity",
+            "damage_range",
+            "recoil_control",
+            "hip_fire_accuracy"
+        ],
+        "cons": [
+            "ads_speed",
+            "movement_speed",
+            "hip_recoil_control"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "pdsw-528",
         "unlock_level": 15,
@@ -10117,12 +10340,18 @@
         "category_id": "underbarrels",
         "slug": "operator-foregrip",
         "name": "Operator Foregrip",
-        "description": null,
-        "completed": false,
-        "has_errors": true,
-        "comment": null,
-        "pros": [],
-        "cons": [],
+        "description": "Practice close-range tactics with increased hip-fire recoil control and accuracy.",
+        "completed": true,
+        "has_errors": false,
+        "comment": "pdsw-only",
+        "pros": [
+            "hip_fire_accuracy",
+            "aim_walking_steadiness",
+            "hip_recoil_control"
+        ],
+        "cons": [
+            "hip_walking_speed"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "pdsw-528",
         "unlock_level": 16,
@@ -10153,12 +10382,16 @@
         "category_id": "rear-grips",
         "slug": "stip-40-grip",
         "name": "STIP-40 Grip",
-        "description": null,
-        "completed": false,
+        "description": "Stippled grip tape for better grip on most firearms. Added texture creates better recoil control.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "recoil_control"
+        ],
+        "cons": [
+            "aiming_stability"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "pdsw-528",
         "unlock_level": 18,
@@ -10169,12 +10402,17 @@
         "category_id": "stocks",
         "slug": "guard-duty-stock",
         "name": "Guard Duty Stock",
-        "description": null,
-        "completed": false,
+        "description": "This larger, rubber stock provides better recoil control in combat.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "recoil_control"
+        ],
+        "cons": [
+            "ads_speed",
+            "crouch_movement_speed"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "pdsw-528",
         "unlock_level": 19,
@@ -10185,12 +10423,21 @@
         "category_id": "barrels",
         "slug": "ftac-defense-145",
         "name": "FTAC Defense 14.5''",
-        "description": null,
-        "completed": false,
+        "description": "A heavy and long tactical barrel designed for the PDSW 528. Increased range and helps with recoil control.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "damage_range",
+            "bullet_velocity",
+            "hip_fire_accuracy",
+            "recoil_control"
+        ],
+        "cons": [
+            "ads_speed",
+            "hip_recoil_control",
+            "movement_speed"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "pdsw-528",
         "unlock_level": 20,
@@ -10243,12 +10490,18 @@
         "category_id": "combs",
         "slug": "tv-taccomb",
         "name": "TV TacComb",
-        "description": null,
-        "completed": false,
+        "description": "A tactical comb designed by Tactique Verte for their PDSW 528 weapon system. Enhances weapon speed when aiming.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "sprint_to_fire_speed",
+            "ads_speed"
+        ],
+        "cons": [
+            "aiming_stability",
+            "aim_walking_speed"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "pdsw-528",
         "unlock_level": 23,
@@ -10259,12 +10512,21 @@
         "category_id": "barrels",
         "slug": "16-cloak-90",
         "name": "16'' Cloak 90",
-        "description": null,
-        "completed": false,
+        "description": "A silenced barrel from Corvus Defense. The added weight helps control recoil and the longer barrel provides better accuracy.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "sound_suppression",
+            "bullet_velocity",
+            "recoil_control",
+            "hip_fire_accuracy"
+        ],
+        "cons": [
+            "ads_speed",
+            "movement_speed",
+            "hip_recoil_control"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "pdsw-528",
         "unlock_level": 24,
@@ -10275,12 +10537,17 @@
         "category_id": "rear-grips",
         "slug": "bruen-q900-grip",
         "name": "Bruen Q900 Grip",
-        "description": null,
-        "completed": false,
+        "description": "Rubber grip tape with a smooth texture to enhance speed. Increase to sprint speed, aiming speed, and drawing speed.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "sprint_to_fire_speed",
+            "ads_speed"
+        ],
+        "cons": [
+            "recoil_control"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "pdsw-528",
         "unlock_level": 25,
@@ -10291,12 +10558,18 @@
         "category_id": "combs",
         "slug": "mack-8-ontrack-comb",
         "name": "Mack 8 Ontrack Comb",
-        "description": null,
-        "completed": false,
+        "description": "A heavy, tactical comb designed by Mac 8 Armory. Provides better cheek support for more stable aiming.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "aiming_stability",
+            "recoil_steadiness"
+        ],
+        "cons": [
+            "movement_speed",
+            "ads_speed"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "pdsw-528",
         "unlock_level": 26,
@@ -10323,12 +10596,21 @@
         "category_id": "barrels",
         "slug": "1875-cloak-90",
         "name": "18.75'' Cloak 90",
-        "description": null,
-        "completed": false,
+        "description": "An enhanced silenced barrel from Corvus Defense. The extra weight and length provide superior recoil mitigation and precision.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "sound_suppression",
+            "bullet_velocity",
+            "recoil_control",
+            "damage_range"
+        ],
+        "cons": [
+            "ads_speed",
+            "movement_speed",
+            "hip_recoil_control"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "pdsw-528",
         "unlock_level": 28,
@@ -10361,11 +10643,13 @@
         "category_id": "underbarrels",
         "slug": "fss-sharkfin-90",
         "name": "FSS Sharkfin 90",
-        "description": null,
-        "completed": false,
+        "description": "Well-rounded angled foregrip for those who prefer accuract while on the move.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
+        "pros": [
+            "aiming_idle_stability"
+        ],
         "cons": [],
         "unlock_type": "weapon",
         "unlock_id": "fennec-45",
@@ -10413,12 +10697,16 @@
         "category_id": "rear-grips",
         "slug": "fennec-stippled-grip",
         "name": "Fennec Stippled Grip",
-        "description": null,
-        "completed": false,
+        "description": "A stippled grip that provides better recoil control.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "recoil_control"
+        ],
+        "cons": [
+            "aiming_stability"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "fennec-45",
         "unlock_level": 5,
@@ -10429,12 +10717,21 @@
         "category_id": "stocks",
         "slug": "ftac-stock-cap",
         "name": "FTAC Stock Cap",
-        "description": null,
-        "completed": false,
+        "description": "Speed is key with this Fennec SMG modification that removes the stock.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "ads_speed",
+            "sprint_to_fire_speed",
+            "movement_speed",
+            "hip_recoil_control"
+        ],
+        "cons": [
+            "aiming_recoil_control",
+            "aiming_stability",
+            "flinch_resistance"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "fennec-45",
         "unlock_level": 6,
@@ -10464,12 +10761,21 @@
         "category_id": "barrels",
         "slug": "55-fennec-minitac",
         "name": "5.5'' Fennec Minitac",
-        "description": null,
-        "completed": false,
+        "description": "The shortest barrel for the Fennec 45. Swift and deadly, this barrel is for those who keep moving and rely less on accuracy.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "ads_speed",
+            "movement_speed",
+            "hip_recoil_control"
+        ],
+        "cons": [
+            "damage_range",
+            "bullet_velocity",
+            "hip_fire_accuracy",
+            "recoil_control"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "fennec-45",
         "unlock_level": 8,
@@ -10512,12 +10818,17 @@
         "category_id": "ammunition",
         "slug": "45-auto-hollowpoint",
         "name": ".45 Auto Hollowpoint",
-        "description": null,
-        "completed": false,
+        "description": "Hollowpoint rounds deform on impact, slowing the target and disabling sprint for a short time.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "crippling_power"
+        ],
+        "cons": [
+            "bullet_velocity",
+            "bullet_penetration"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "fennec-45",
         "unlock_level": 11,
@@ -10528,12 +10839,16 @@
         "category_id": "rear-grips",
         "slug": "fennec-textured-grip",
         "name": "Fennec Textured Grip",
-        "description": null,
-        "completed": false,
+        "description": "A rough textured grip that allows for a firmer grasp in a firefight. Reduces flinch when under fire.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "flinch_resistance"
+        ],
+        "cons": [
+            "aim_walking_movement_speed"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "fennec-45",
         "unlock_level": 12,
@@ -10544,12 +10859,21 @@
         "category_id": "muzzles",
         "slug": "shikra-silencer",
         "name": "Shikra Silencer",
-        "description": null,
-        "completed": false,
+        "description": "This large, angular silencer provides superior sound suppression due to the extra internal volume and baffled design.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "sound_suppression",
+            "bullet_velocity",
+            "damage_range",
+            "recoil_smoothness"
+        ],
+        "cons": [
+            "ads_speed",
+            "aiming_stability",
+            "aim_walking_speed"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "fennec-45",
         "unlock_level": 13,
@@ -10560,12 +10884,21 @@
         "category_id": "barrels",
         "slug": "zlr-165-ignition-barrel",
         "name": "ZLR 16.5'' Ignition Barrel",
-        "description": null,
-        "completed": false,
+        "description": "This ZLR masterpiece is the longest barrel for the Fennec weapon system. Stable, accurate and lethal.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "damage_range",
+            "bullet_velocity",
+            "hip_fire_accuracy",
+            "recoil_control"
+        ],
+        "cons": [
+            "ads_speed",
+            "hip_recoil_control",
+            "movement_speed"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "fennec-45",
         "unlock_level": 14,
@@ -10576,12 +10909,19 @@
         "category_id": "magazines",
         "slug": "fennec-mag-45",
         "name": "Fennec Mag 45",
-        "description": null,
-        "completed": false,
+        "description": "A high-capcity 45 round drum magazine of .45 Auto ammunition.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "magazine_ammo_capacity"
+        ],
+        "cons": [
+            "movement_speed",
+            "ads_speed",
+            "reload_quickness",
+            "sprint_to_fire_speed"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "fennec-45",
         "unlock_level": 15,
@@ -10614,12 +10954,18 @@
         "category_id": "barrels",
         "slug": "ftac-85-recon",
         "name": "FTAC 8.5'' Recon",
-        "description": null,
-        "completed": false,
+        "description": "This short barrel from Forge Tac is a premium lightweight option when speed is necessary.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "movement_speed",
+            "ads_speed"
+        ],
+        "cons": [
+            "bullet_velocity",
+            "recoil_control"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "fennec-45",
         "unlock_level": 17,
@@ -10630,12 +10976,17 @@
         "category_id": "stocks",
         "slug": "fennec-bullfighter",
         "name": "Fennec Bullfighter",
-        "description": null,
-        "completed": false,
+        "description": "Control the Fennec's high fire and control the warzone with this solid, stable stock.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "aiming_stability"
+        ],
+        "cons": [
+            "aim_walking_speed",
+            "sprint_speed"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "fennec-45",
         "unlock_level": 18,
@@ -10667,12 +11018,20 @@
         "category_id": "barrels",
         "slug": "fennec-covert-force",
         "name": "Fennec Covert Force",
-        "description": null,
-        "completed": false,
+        "description": "This barrel with integrated silencer keeps the fight covert and your cover secure.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "sound_suppression",
+            "damage_range",
+            "hip_fire_accuracy",
+            "bullet_velocity"
+        ],
+        "cons": [
+            "ads_speed",
+            "hip_recoil_control"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "fennec-45",
         "unlock_level": 20,
@@ -10683,12 +11042,17 @@
         "category_id": "rear-grips",
         "slug": "fennec-rubber-grip",
         "name": "Fennec Rubber Grip",
-        "description": null,
-        "completed": false,
+        "description": "Rubberized grip tape that allows for faster aiming.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "sprint_to_fire_speed",
+            "ads_speed"
+        ],
+        "cons": [
+            "recoil_control"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "fennec-45",
         "unlock_level": 21,
@@ -10699,12 +11063,18 @@
         "category_id": "stocks",
         "slug": "ftac-locktight-stock",
         "name": "FTAC Locktight Stock",
-        "description": null,
-        "completed": false,
+        "description": "Get on target faster with this tactical stock from Forge Tac.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "crouch_movement_speed",
+            "sprint_speed",
+            "ads_speed"
+        ],
+        "cons": [
+            "recoil_control"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "fennec-45",
         "unlock_level": 22,
@@ -10715,12 +11085,21 @@
         "category_id": "barrels",
         "slug": "forge-tac-ninja",
         "name": "Forge Tac Ninja",
-        "description": null,
-        "completed": false,
+        "description": "A heavy, silenced barrel from the gunsmiths at Forge Tac. Extra weight and length provide stability and accuracy on the battlefield.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "sound_suppression",
+            "bullet_velocity",
+            "damage_range",
+            "recoil_control"
+        ],
+        "cons": [
+            "ads_speed",
+            "hip_recoil_control",
+            "movement_speed"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "fennec-45",
         "unlock_level": 23,
@@ -10731,12 +11110,20 @@
         "category_id": "magazines",
         "slug": "fennec-double-tap-mod",
         "name": "Fennec Double Tap Mod",
-        "description": null,
-        "completed": false,
+        "description": "Single-stack 12 round magazine of high-grain .45 Auto ammunition. Sets weapon to 2-round burst fire mode to make sure every round counts.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "high_grain_ammunition",
+            "movement_speed",
+            "ads_speed",
+            "sprint_to_fire_speed"
+        ],
+        "cons": [
+            "magazine_ammo_capacity",
+            "full_auto"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "fennec-45",
         "unlock_level": 24,
@@ -10747,12 +11134,20 @@
         "category_id": "stocks",
         "slug": "agile-assault-7-stock",
         "name": "Agile Assault-7 Stock",
-        "description": null,
-        "completed": false,
+        "description": "An aggressive Tempus Armament stock that provides streamlined support which results in a large increase in mobility.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "sprint_speed",
+            "aim_walking_speed",
+            "crouch_movement_speed",
+            "ads_speed"
+        ],
+        "cons": [
+            "aiming_stability",
+            "recoil_control"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "fennec-45",
         "unlock_level": 25,
@@ -10763,12 +11158,16 @@
         "category_id": "ammunition",
         "slug": "45-auto-overpressured-p",
         "name": ".45 Auto Overpressured +P",
-        "description": null,
-        "completed": false,
+        "description": "Suppress and control with hotter rounds that afflict the target with increased flinch.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "target_flinch"
+        ],
+        "cons": [
+            "recoil_control"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "fennec-45",
         "unlock_level": 26,
@@ -10779,12 +11178,20 @@
         "category_id": "muzzles",
         "slug": "sakin-db107",
         "name": "Sakin DB107",
-        "description": null,
-        "completed": false,
+        "description": "Sakin Arms manufactured suppressor that offers maximum range and bullet velocity along with a quite sound signature.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "sound_suppression",
+            "bullet_velocity",
+            "damage_range",
+            "recoil_smoothness"
+        ],
+        "cons": [
+            "ads_speed",
+            "aiming_stability"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "lockwood-300",
         "unlock_level": 2,
@@ -10795,12 +11202,17 @@
         "category_id": "stocks",
         "slug": "cronen-marshal-stock",
         "name": "Cronen Marshal Stock",
-        "description": null,
-        "completed": false,
+        "description": "An enhanced stock designed by Cronen. Increases aiming stability and recoil control.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "recoil_control"
+        ],
+        "cons": [
+            "ads_speed",
+            "crouch_movement_speed"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "lockwood-300",
         "unlock_level": 3,
@@ -10829,12 +11241,20 @@
         "category_id": "barrels",
         "slug": "711mm-matuzek-d50",
         "name": "711mm Matuzek D50",
-        "description": null,
-        "completed": false,
+        "description": "A long and elegant barrel from Matuzek. Premium materials were used to add length for accuracy without adding weight.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "bullet_velocity",
+            "damage_range",
+            "recoil_control",
+            "tighter_pellet_spread"
+        ],
+        "cons": [
+            "ads_speed",
+            "movement_speed"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "lockwood-300",
         "unlock_level": 5,
@@ -10845,12 +11265,18 @@
         "category_id": "optics",
         "slug": "daunt-c80",
         "name": "Daunt-C80",
-        "description": null,
-        "completed": false,
+        "description": "A close-range scope manufactured for combat in tight spaces.",
+        "completed": true,
         "has_errors": false,
-        "comment": null,
-        "pros": [],
-        "cons": [],
+        "comment": "misleading description",
+        "pros": [
+            "63x_magnification"
+        ],
+        "cons": [
+            "small_sniper_glint",
+            "ads_speed",
+            "aim_walking_movement_speed"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "lockwood-300",
         "unlock_level": 6,
@@ -10861,12 +11287,16 @@
         "category_id": "muzzles",
         "slug": "xten-v13-choke",
         "name": "XTen v1.3 Choke",
-        "description": null,
-        "completed": false,
+        "description": "XTEN muzzle device that increases range and projectile damage.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "damage_range"
+        ],
+        "cons": [
+            "ads_speed"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "lockwood-300",
         "unlock_level": 7,
@@ -10900,12 +11330,17 @@
         "category_id": "stocks",
         "slug": "bryson-natural-series-stock",
         "name": "Bryson Natural Series Stock",
-        "description": null,
-        "completed": false,
+        "description": "A heavy wooden stock from Bryson that enhances recoil control and aiming stability.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "aiming_stability"
+        ],
+        "cons": [
+            "aim_walking_speed",
+            "sprint_speed"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "lockwood-300",
         "unlock_level": 9,
@@ -10916,12 +11351,17 @@
         "category_id": "muzzles",
         "slug": "db-dread-comp",
         "name": "DB-Dread Comp",
-        "description": null,
-        "completed": false,
+        "description": "A compensator specifically designed to reduce the violent vertical recoil on 12-gauge shells.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "vertical_recoil_control"
+        ],
+        "cons": [
+            "ads_speed",
+            "aiming_stability"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "lockwood-300",
         "unlock_level": 10,
@@ -10932,12 +11372,18 @@
         "category_id": "barrels",
         "slug": "597mm-matuzek-inferno",
         "name": "597mm Matuzek Inferno",
-        "description": null,
-        "completed": false,
+        "description": "A long and accurate barrel. A slight weight increase provides better recoil control.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "recoil_control",
+            "bullet_velocity"
+        ],
+        "cons": [
+            "movement_speed",
+            "ads_speed"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "lockwood-300",
         "unlock_level": 11,
@@ -10948,12 +11394,17 @@
         "category_id": "muzzles",
         "slug": "tempus-vox",
         "name": "Tempus Vox",
-        "description": null,
-        "completed": false,
+        "description": "A double-barrel shotgun silencer from Tempus Armament. Reduced sound signature and increased recoil smoothness.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "sound_suppression",
+            "recoil_smoothness"
+        ],
+        "cons": [
+            "damage_range"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "lockwood-300",
         "unlock_level": 12,
@@ -10964,12 +11415,17 @@
         "category_id": "guards",
         "slug": "buck-pro",
         "name": "Buck-Pro",
-        "description": null,
-        "completed": false,
+        "description": "A shotgun guard that reduces rechamber speed and aiming speed while increasing crouched movement speed.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "crouch_movement_speed",
+            "ads_speed"
+        ],
+        "cons": [
+            "sprint_speed"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "lockwood-300",
         "unlock_level": 13,
@@ -10980,12 +11436,20 @@
         "category_id": "barrels",
         "slug": "matuzek-812-barrel",
         "name": "Matuzek 812 Barrel",
-        "description": null,
-        "completed": false,
+        "description": "The considerable length of this Matuzek barrel increases accuracy for a shotgun with superior range.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "damage_range",
+            "bullet_velocity",
+            "tighter_pellet_spread",
+            "recoil_control"
+        ],
+        "cons": [
+            "ads_speed",
+            "movement_speed"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "lockwood-300",
         "unlock_level": 14,
@@ -10996,12 +11460,18 @@
         "category_id": "muzzles",
         "slug": "xten-v20-choke",
         "name": "XTen v2.0 Choke",
-        "description": null,
-        "completed": false,
+        "description": "XTEN muzzle device with a slightly reduced shotgun pellet spread and damage range.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "damage_range",
+            "tighter_pellet_spread"
+        ],
+        "cons": [
+            "ads_speed",
+            "recoil_steadiness"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "lockwood-300",
         "unlock_level": 15,
@@ -11012,12 +11482,17 @@
         "category_id": "guards",
         "slug": "bryson-natural-series-handguard",
         "name": "Bryson Natural Series Handguard",
-        "description": null,
-        "completed": false,
+        "description": "A heavy wooden handguard that reduces flinch and enhances recoil control and rechambering.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "recoil_steadiness",
+            "flinch_resistance"
+        ],
+        "cons": [
+            "ads_speed"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "lockwood-300",
         "unlock_level": 16,
@@ -11028,12 +11503,18 @@
         "category_id": "muzzles",
         "slug": "reckoner-comp",
         "name": "Reckoner Comp",
-        "description": null,
-        "completed": false,
+        "description": "Significant increase to recoil control, both horizontal and vertical.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "horizontal_recoil_control",
+            "vertical_recoil_control"
+        ],
+        "cons": [
+            "ads_speed",
+            "aiming_stability"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "lockwood-300",
         "unlock_level": 17,
@@ -11044,12 +11525,18 @@
         "category_id": "stocks",
         "slug": "sweetspot-stock",
         "name": "Sweetspot Stock",
-        "description": null,
-        "completed": false,
+        "description": "An elegant wooden stock designed around getting on target faster. Increases aiming down sight speed.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "crouch_movement_speed",
+            "sprint_speed",
+            "ads_speed"
+        ],
+        "cons": [
+            "recoil_control"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "lockwood-300",
         "unlock_level": 18,
@@ -11060,12 +11547,18 @@
         "category_id": "muzzles",
         "slug": "bryson-series-ix-choke",
         "name": "Bryson Series IX Choke",
-        "description": null,
-        "completed": false,
+        "description": "Increased range and reduces shotgun pellet spread so more pellets strike the target.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "tighter_pellet_spread",
+            "damage_range"
+        ],
+        "cons": [
+            "recoil_steadiness",
+            "ads_speed"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "lockwood-300",
         "unlock_level": 19,
@@ -11076,12 +11569,20 @@
         "category_id": "barrels",
         "slug": "11-bryson-special",
         "name": "11'' Bryson Special",
-        "description": null,
-        "completed": false,
+        "description": "Bryson has trimmed barrel length to the minimum possible size. This is a speed-focused attachment for running and gunning.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "ads_speed",
+            "movement_speed",
+            "wider_pellet_spread"
+        ],
+        "cons": [
+            "damage_range",
+            "bullet_velocity",
+            "recoil_control"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "lockwood-300",
         "unlock_level": 20,
@@ -11092,12 +11593,17 @@
         "category_id": "muzzles",
         "slug": "db-big-bore-comp",
         "name": "DB-Big Bore Comp",
-        "description": null,
-        "completed": false,
+        "description": "A double-barrel compensator that significantly reduces horizontal shotgun recoil.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "horizontal_recoil_control"
+        ],
+        "cons": [
+            "ads_speed",
+            "aiming_stability"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "lockwood-300",
         "unlock_level": 21,
@@ -11107,13 +11613,17 @@
         "id": "97c64fab91dd76c7",
         "category_id": "muzzles",
         "slug": "mack8-shotgun-breach",
-        "name": "MACK8 Shotgun Breach",
-        "description": null,
-        "completed": false,
+        "name": "Mack8 Shotgun Breach",
+        "description": "A breacher from Mack 8 that increases melee damage and reduces aiming speed.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "melee_damage"
+        ],
+        "cons": [
+            "ads_speed"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "lockwood-300",
         "unlock_level": 22,
@@ -11124,12 +11634,21 @@
         "category_id": "stocks",
         "slug": "heist-stock-mod",
         "name": "Heist Stock Mod",
-        "description": null,
-        "completed": false,
+        "description": "The stock has been removed and the pistol grip wrapped in tape. This no-budget mod increases speed and handling with a serious impact to handling and recoil control.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "ads_speed",
+            "sprint_to_fire_speed",
+            "movement_speed",
+            "hip_recoil_control"
+        ],
+        "cons": [
+            "aiming_stability",
+            "aiming_recoil_control",
+            "flinch_resistance"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "lockwood-300",
         "unlock_level": 23,
@@ -11140,12 +11659,21 @@
         "category_id": "muzzles",
         "slug": "gw-max-99",
         "name": "GW MAX-99",
-        "description": null,
-        "completed": false,
+        "description": "Gerhard & Wolf's pinnacle suppressor built for over\/under shotguns. Maximum recoil smoothness and range and velocity.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "sound_suppression",
+            "bullet_velocity",
+            "damage_range",
+            "recoil_smoothness"
+        ],
+        "cons": [
+            "ads_speed",
+            "aiming_stability",
+            "aim_walking_speed"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "lockwood-300",
         "unlock_level": 24,
@@ -11156,12 +11684,18 @@
         "category_id": "guards",
         "slug": "demo-carbon-guard",
         "name": "DEMO Carbon Guard",
-        "description": null,
-        "completed": false,
+        "description": "This lightweight yet resilient handguard increased speed with a slight hit to recoil control. Increases flinch.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "sprint_speed",
+            "hip_walking_speed"
+        ],
+        "cons": [
+            "flinch_resistance",
+            "recoil_steadiness"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "lockwood-300",
         "unlock_level": 25,
@@ -11172,12 +11706,17 @@
         "category_id": "muzzles",
         "slug": "bryson-series-xii-choke",
         "name": "Bryson Series XII Choke",
-        "description": null,
-        "completed": false,
+        "description": "Significantly reduced spread keeps shotgun pellets tight at the cost of increased kick.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "tighter_pellet_spread"
+        ],
+        "cons": [
+            "recoil_steadiness",
+            "ads_speed"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "lockwood-300",
         "unlock_level": 26,
@@ -11188,12 +11727,18 @@
         "category_id": "ammunition",
         "slug": "12-gauge-slug",
         "name": "12 Gauge Slug",
-        "description": null,
-        "completed": false,
+        "description": "Immensely powerful 437.5 grain slugs with increased range and accuracy.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "damage_range",
+            "bullet_velocity",
+            "slug_rounds"
+        ],
+        "cons": [
+            "damage_radius"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "lockwood-300",
         "unlock_level": 27,
@@ -11204,12 +11749,16 @@
         "category_id": "bolts",
         "slug": "expedite-l-bolt",
         "name": "Expedite L-Bolt",
-        "description": null,
-        "completed": false,
+        "description": "A light bolt for the Expedite 12 that increased fire rate with a reduction to recoil control.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "fire_rate"
+        ],
+        "cons": [
+            "recoil_control"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "expedite-12",
         "unlock_level": 2,
@@ -11236,12 +11785,17 @@
         "category_id": "barrels",
         "slug": "185-emperor-barrel",
         "name": "18.5'' Emperor Barrel",
-        "description": null,
-        "completed": false,
+        "description": "A light 18.5'' barrel for the Expedite 12. Magazine tube holds five 12-gauge shotgun shells.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "movement_speed",
+            "ads_speed"
+        ],
+        "cons": [
+            "tube_ammo_capacity"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "expedite-12",
         "unlock_level": 4,
@@ -11252,12 +11806,17 @@
         "category_id": "stocks",
         "slug": "fss-frame-stock",
         "name": "FSS Frame Stock",
-        "description": null,
-        "completed": false,
+        "description": "A minimalist stock from FSS. Light and maneuverable for speed-focused operators.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "aim_walking_speed",
+            "sprint_speed"
+        ],
+        "cons": [
+            "aiming_stability"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "expedite-12",
         "unlock_level": 5,
@@ -11268,12 +11827,16 @@
         "category_id": "rear-grip-comb",
         "slug": "schlager-fang-grip",
         "name": "Schlager Fang Grip",
-        "description": null,
-        "completed": false,
+        "description": "A skeletonized grip that helps mitigate the high recoil of 12 gauge shells.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "recoil_control"
+        ],
+        "cons": [
+            "aiming_stability"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "expedite-12",
         "unlock_level": 6,
@@ -11304,12 +11867,21 @@
         "category_id": "muzzles",
         "slug": "sa-schweigen-dx",
         "name": "SA Schweigen DX",
-        "description": null,
-        "completed": false,
+        "description": "The top silencer available for recoil smoothness and range. Significant decrease in speed and recoil control.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "sound_suppression",
+            "bullet_velocity",
+            "damage_range",
+            "recoil_smoothness"
+        ],
+        "cons": [
+            "ads_speed",
+            "aiming_stability",
+            "aim_walking_speed"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "expedite-12",
         "unlock_level": 8,
@@ -11320,12 +11892,20 @@
         "category_id": "barrels",
         "slug": "14-polarize-barrel",
         "name": "14'' Polarize Barrel",
-        "description": null,
-        "completed": false,
+        "description": "A 14'' barrel that holds 5 rounds of 12 gauge shotgun shells.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "ads_speed",
+            "wider_pellet_spread",
+            "movement_speed"
+        ],
+        "cons": [
+            "tube_ammo_capacity",
+            "damage_range",
+            "bullet_velocity"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "expedite-12",
         "unlock_level": 9,
@@ -11336,12 +11916,21 @@
         "category_id": "stocks",
         "slug": "resonance-stock-collapsed",
         "name": "Resonance Stock Collapsed",
-        "description": null,
-        "completed": false,
+        "description": "A short, collapsed Schlager stock. The ultimate stock to pair with other speed-based modifications.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "ads_speed",
+            "sprint_to_fire_speed",
+            "movement_speed",
+            "hip_recoil_control"
+        ],
+        "cons": [
+            "aiming_recoil_control",
+            "aiming_stability",
+            "flinch_resistance"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "expedite-12",
         "unlock_level": 10,
@@ -11374,12 +11963,16 @@
         "category_id": "muzzles",
         "slug": "vulture-claw-breacher",
         "name": "Vulture Claw Breacher",
-        "description": null,
-        "completed": false,
+        "description": "A breach device of Russian make. Increases melee damage. Reduces handling.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "melee_damage"
+        ],
+        "cons": [
+            "ads_speed"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "expedite-12",
         "unlock_level": 12,
@@ -11390,12 +11983,16 @@
         "category_id": "rear-grip-comb",
         "slug": "fss-ammo-sleeve",
         "name": "FSS Ammo Sleeve",
-        "description": null,
-        "completed": false,
+        "description": "A shotgun shell sleeve made by First Signal Solutions.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "ammo_reserve"
+        ],
+        "cons": [
+            "ads_speed"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "expedite-12",
         "unlock_level": 13,
@@ -11422,12 +12019,18 @@
         "category_id": "stocks",
         "slug": "schlager-resonance",
         "name": "Schlager Resonance",
-        "description": null,
-        "completed": false,
+        "description": "A robust tactical stock from Schlager that increased aim down sight speed.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "crouch_movement_speed",
+            "sprint_speed",
+            "ads_speed"
+        ],
+        "cons": [
+            "recoil_control"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "expedite-12",
         "unlock_level": 15,
@@ -11438,12 +12041,18 @@
         "category_id": "muzzles",
         "slug": "rmge-7",
         "name": "RMGE-7",
-        "description": null,
-        "completed": false,
+        "description": "A large muzzle brake for 12 gauge shotguns. Significantly increases recoil control.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "horizontal_recoil_control",
+            "vertical_recoil_control"
+        ],
+        "cons": [
+            "ads_speed",
+            "aiming_stability"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "expedite-12",
         "unlock_level": 16,
@@ -11454,12 +12063,17 @@
         "category_id": "rear-grip-comb",
         "slug": "schlager-void-grip",
         "name": "Schlager Void Grip",
-        "description": null,
-        "completed": false,
+        "description": "A streamlined grip from Schlager Tactical. Aim down sights faster for quick, devastating fire.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "sprint_to_fire_speed",
+            "ads_speed"
+        ],
+        "cons": [
+            "recoil_control"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "expedite-12",
         "unlock_level": 17,
@@ -11470,12 +12084,18 @@
         "category_id": "barrels",
         "slug": "14-shorty-barrel",
         "name": "14'' Shorty Barrel",
-        "description": null,
-        "completed": false,
+        "description": "A short barrel for those who like to move quickly on the battlefield. 7-shell magazine. Blocks muzzle devices.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "ads_speed",
+            "wider_pellet_spread"
+        ],
+        "cons": [
+            "damage_range",
+            "bullet_velocity"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "expedite-12",
         "unlock_level": 18,
@@ -11486,12 +12106,18 @@
         "category_id": "muzzles",
         "slug": "flash-twist-90",
         "name": "Flash Twist-90",
-        "description": null,
-        "completed": false,
+        "description": "This device conceals muzzle flash and assists with gun kick with a slight impact to accuracy and handling.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "muzzle_flash_concealment",
+            "recoil_steadiness"
+        ],
+        "cons": [
+            "ads_speed",
+            "aiming_stability"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "expedite-12",
         "unlock_level": 19,
@@ -11502,12 +12128,16 @@
         "category_id": "bolts",
         "slug": "expedite-hz3-bolt",
         "name": "Expedite HZ3 Bolt",
-        "description": null,
-        "completed": false,
+        "description": "A heavy bolt designed for the Expedite 12. Decreased fire rate but offers an increase to recoil control.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "recoil_control"
+        ],
+        "cons": [
+            "fire_rate"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "expedite-12",
         "unlock_level": 20,
@@ -11518,12 +12148,18 @@
         "category_id": "rear-grip-comb",
         "slug": "padded-shotgun-comb",
         "name": "Padded Shotgun Comb",
-        "description": null,
-        "completed": false,
+        "description": "A padded comb for the Expedite 12 shotgun.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "aiming_stability",
+            "recoil_steadiness"
+        ],
+        "cons": [
+            "movement_speed",
+            "ads_speed"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "expedite-12",
         "unlock_level": 21,
@@ -11534,12 +12170,20 @@
         "category_id": "stocks",
         "slug": "bryson-reverb-55-stock",
         "name": "Bryson Reverb-55 Stock",
-        "description": null,
-        "completed": false,
+        "description": "A Bryson heavy stock that helps manage shotgun recoil.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "aiming_stability",
+            "recoil_control"
+        ],
+        "cons": [
+            "aim_walking_speed",
+            "sprint_speed",
+            "ads_speed",
+            "sprint_to_fire_speed"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "expedite-12",
         "unlock_level": 22,
@@ -11550,12 +12194,16 @@
         "category_id": "muzzles",
         "slug": "xten-full-choke",
         "name": "XTen Full Choke",
-        "description": null,
-        "completed": false,
+        "description": "This XTEN shotgun choke increases damage range while somewhat decreasing aiming speed.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "damage_range"
+        ],
+        "cons": [
+            "ads_speed"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "expedite-12",
         "unlock_level": 23,
@@ -11566,12 +12214,19 @@
         "category_id": "barrels",
         "slug": "419mm-schlager-salvo",
         "name": "419mm Schlager Salvo",
-        "description": null,
-        "completed": false,
+        "description": "A heavy barrel for the Expedite 12 that mitigates some recoil due to the added weight.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "recoil_control",
+            "bullet_velocity"
+        ],
+        "cons": [
+            "tube_ammo_capacity",
+            "movement_speed",
+            "ads_speed"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "expedite-12",
         "unlock_level": 24,
@@ -11598,12 +12253,16 @@
         "category_id": "rear-grip-comb",
         "slug": "goliath-77-grip",
         "name": "Goliath 77 Grip",
-        "description": null,
-        "completed": false,
+        "description": "Stay calm and on target when under fire with this grooved and controllable grip.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "flinch_resistance"
+        ],
+        "cons": [
+            "aim_walking_movement_speed"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "expedite-12",
         "unlock_level": 26,
@@ -11614,12 +12273,17 @@
         "category_id": "barrels",
         "slug": "185-battlemaster",
         "name": "18.5'' Battlemaster",
-        "description": null,
-        "completed": false,
+        "description": "18.5'' barrel with and extended magazine tube. Holds 10 shot shells. Blocks muzzle devices.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "tube_ammo_capacity"
+        ],
+        "cons": [
+            "movement_speed",
+            "ads_speed"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "expedite-12",
         "unlock_level": 27,
@@ -11630,12 +12294,18 @@
         "category_id": "ammunition",
         "slug": "12-gauge-dragons-breath",
         "name": "12 Gauge Dragon's Breath",
-        "description": null,
-        "completed": false,
+        "description": "These 12-gauge shotgun shells spray blistering magnesium pellets that ignite targets, dealing severe damage over time.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "incendiary_damage"
+        ],
+        "cons": [
+            "bullet_velocity",
+            "damage_range",
+            "bullet_penetration"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "expedite-12",
         "unlock_level": 28,
@@ -11646,12 +12316,18 @@
         "category_id": "muzzles",
         "slug": "xten-modified-choke",
         "name": "XTen Modified Choke",
-        "description": null,
-        "completed": false,
+        "description": "A tighter pellet spread and increased damage range. Slows aiming speed and reduces some kick control.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "tighter_pellet_spread",
+            "damage_range"
+        ],
+        "cons": [
+            "ads_speed",
+            "recoil_steadiness"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "expedite-12",
         "unlock_level": 29,
@@ -11678,12 +12354,17 @@
         "category_id": "rear-grips",
         "slug": "bruen-q900-grip-wrap",
         "name": "Bruen Q900 Grip Wrap",
-        "description": null,
-        "completed": false,
+        "description": "Rubber grip tape with a smooth extra texture to enhance speed. Increase to sprint speed, aiming speed, and drawing speed.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "sprint_to_fire_speed",
+            "ads_speed"
+        ],
+        "cons": [
+            "recoil_control"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "sakin-mg38",
         "unlock_level": 3,
@@ -11694,12 +12375,17 @@
         "category_id": "stocks",
         "slug": "cheetah-stm-stock",
         "name": "Cheetah STM Stock",
-        "description": null,
-        "completed": false,
+        "description": "With a focus on agility, this narrow metal stock is ideal for operators who prefer to keep on the move. Increased sprint speed and speed while aiming.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "aim_walking_speed",
+            "sprint_speed"
+        ],
+        "cons": [
+            "aiming_stability"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "sakin-mg38",
         "unlock_level": 4,
@@ -11733,12 +12419,19 @@
         "category_id": "magazines",
         "slug": "125-round-belt-mag",
         "name": "125 Round Belt Mag",
-        "description": null,
-        "completed": false,
+        "description": "A belt-fed magazine that holds 125 rounds of 7.62 ammunition.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "magazine_ammo_capacity"
+        ],
+        "cons": [
+            "movement_speed",
+            "ads_speed",
+            "reload_quickness",
+            "sprint_to_fire_speed"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "sakin-mg38",
         "unlock_level": 6,
@@ -11765,12 +12458,19 @@
         "category_id": "barrels",
         "slug": "kyzyl-dawn-barrel",
         "name": "Kyzyl Dawn Barrel",
-        "description": null,
-        "completed": false,
+        "description": "This no-frills barrel is designed to increase accuracy at range, giving you the upper hand in mid-range fights.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "damage_range",
+            "hip_fire_accuracy",
+            "bullet_velocity"
+        ],
+        "cons": [
+            "ads_speed",
+            "hip_recoil_control"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "sakin-mg38",
         "unlock_level": 9,
@@ -11781,12 +12481,16 @@
         "category_id": "rear-grips",
         "slug": "bruen-g305-grip-wrap",
         "name": "Bruen G305 Grip Wrap",
-        "description": null,
-        "completed": false,
+        "description": "Granulated grip tape that provides better handling in firefights. Reduces flinch when under fire.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "recoil_control"
+        ],
+        "cons": [
+            "aiming_stability"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "sakin-mg38",
         "unlock_level": 10,
@@ -11797,12 +12501,17 @@
         "category_id": "stocks",
         "slug": "ftac-condor-stock",
         "name": "FTAC Condor Stock",
-        "description": null,
-        "completed": false,
+        "description": "A heavy stock with a built-in cheek riser, this Forge Tac stock offers better-than-average recoil control.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "recoil_control"
+        ],
+        "cons": [
+            "ads_speed",
+            "crouch_movement_speed"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "sakin-mg38",
         "unlock_level": 11,
@@ -11815,8 +12524,8 @@
         "name": "Bruen Warrior Grip",
         "description": "Take superior kick control and increased hip-fire accuracy into battle with this foregrip from Bruen.",
         "completed": true,
-        "has_errors": true,
-        "comment": "unknown unlock",
+        "has_errors": false,
+        "comment": null,
         "pros": [
             "hip_fire_accuracy",
             "hip_recoil_control",
@@ -11827,9 +12536,9 @@
             "hip_walking_speed",
             "ads_speed"
         ],
-        "unlock_type": "unknown",
-        "unlock_id": null,
-        "unlock_level": null,
+        "unlock_type": "weapon",
+        "unlock_id": "vel-46",
+        "unlock_level": 3,
         "unlock_description": null
     },
     {
@@ -11876,12 +12585,19 @@
         "category_id": "magazines",
         "slug": "150-round-box-magazine",
         "name": "150-Round Box Magazine",
-        "description": null,
-        "completed": false,
+        "description": "A high-capacity 150-round box magazine.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "magazine_ammo_capacity"
+        ],
+        "cons": [
+            "movement_speed",
+            "ads_speed",
+            "reload_quickness",
+            "sprint_to_fire_speed"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "sakin-mg38",
         "unlock_level": 15,
@@ -11892,12 +12608,21 @@
         "category_id": "barrels",
         "slug": "20-bruen-silver-series-barrel",
         "name": "20'' Bruen Silver Series Barrel",
-        "description": null,
-        "completed": false,
+        "description": "An extreme combat barrel designed by Bruen. Long and heavy, this barrel is easier to control and offers better precision at the cost of speed.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "bullet_velocity",
+            "damage_range",
+            "recoil_control",
+            "hip_fire_accuracy"
+        ],
+        "cons": [
+            "ads_speed",
+            "movement_speed",
+            "hip_recoil_control"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "sakin-mg38",
         "unlock_level": 16,
@@ -11924,12 +12649,16 @@
         "category_id": "rear-grips",
         "slug": "stip-40-grip",
         "name": "STIP-40 Grip",
-        "description": null,
-        "completed": false,
+        "description": "Stippled grip tape for better grip on most firearms. Added texture creates better recoil control.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "flinch_resistance"
+        ],
+        "cons": [
+            "aim_walking_movement_speed"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "sakin-mg38",
         "unlock_level": 18,
@@ -11940,12 +12669,17 @@
         "category_id": "stocks",
         "slug": "sakin-riptide-stock",
         "name": "Sakin Riptide Stock",
-        "description": null,
-        "completed": false,
+        "description": "Keep steady and eliminate targets with this steady and accurate stock from Sakin Arms.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "aiming_stability"
+        ],
+        "cons": [
+            "aim_walking_speed",
+            "sprint_speed"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "sakin-mg38",
         "unlock_level": 19,
@@ -14026,12 +14760,17 @@
         "category_id": "ammunition",
         "slug": "45-auto-frangible",
         "name": ".45 Auto Frangible",
-        "description": null,
-        "completed": false,
+        "description": "Frangible rounds shatter on impact, which temporarily delays healing.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "inflict_wounding_effect"
+        ],
+        "cons": [
+            "bullet_penetration",
+            "damage_range"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "p890",
         "unlock_level": 3,
@@ -14142,12 +14881,17 @@
         "category_id": "ammunition",
         "slug": "45-auto-armor-piercing",
         "name": ".45 Auto Armor Piercing",
-        "description": null,
-        "completed": false,
+        "description": "A tungsten-core round that increases bullet penetration, dealing higher damage when passing through cover. Slight increase to vehicle damage.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "bullet_penetration",
+            "vehicle_damage"
+        ],
+        "cons": [
+            "bullet_velocity"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "p890",
         "unlock_level": 10,
@@ -15266,8 +16010,8 @@
             "aim_walking_movement_speed"
         ],
         "unlock_type": "weapon",
-        "unlock_id": "bas-p",
-        "unlock_level": 5,
+        "unlock_id": "vaznev-9k",
+        "unlock_level": 15,
         "unlock_description": null
     },
     {
@@ -15300,8 +16044,8 @@
         "name": "FTAC Tiger Grip",
         "description": "Small and agile, this angled grip increased hip fire accuracy and recoil stability for quick engagements.",
         "completed": true,
-        "has_errors": true,
-        "comment": "unknown unlock",
+        "has_errors": false,
+        "comment": null,
         "pros": [
             "aiming_idle_stability",
             "hip_fire_accuracy",
@@ -15311,9 +16055,9 @@
             "walking_speed",
             "ads_speed"
         ],
-        "unlock_type": "unknown",
-        "unlock_id": null,
-        "unlock_level": null,
+        "unlock_type": "weapon",
+        "unlock_id": "m4",
+        "unlock_level": 6,
         "unlock_description": null
     },
     {
@@ -15741,6 +16485,186 @@
         "unlock_type": "unknown",
         "unlock_id": null,
         "unlock_level": null,
+        "unlock_description": null
+    },
+    {
+        "id": "97d04583b428565f",
+        "category_id": "stocks",
+        "slug": "hollow-extended-stock",
+        "name": "Hollow Extended Stock",
+        "description": "A lightweight stock extension that enhances speed.",
+        "completed": true,
+        "has_errors": true,
+        "comment": "unknown unlock",
+        "pros": [
+            "aim_walking_speed",
+            "sprint_speed"
+        ],
+        "cons": [
+            "aiming_stability"
+        ],
+        "unlock_type": "unknown",
+        "unlock_id": null,
+        "unlock_level": null,
+        "unlock_description": null
+    },
+    {
+        "id": "97d04c23a6d3ddb2",
+        "category_id": "stocks",
+        "slug": "ftac-xcommand-stock",
+        "name": "FTac XCommand Stock",
+        "description": "A polymer stock from Forge Tac that provides superior recoil control at the expense of some speed.",
+        "completed": true,
+        "has_errors": false,
+        "comment": null,
+        "pros": [
+            "recoil_control"
+        ],
+        "cons": [
+            "ads_speed",
+            "crouch_movement_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "fennec-45",
+        "unlock_level": 9,
+        "unlock_description": null
+    },
+    {
+        "id": "97d047299e6425a0",
+        "category_id": "muzzles",
+        "slug": "mack8-frost-bite",
+        "name": "Mack8 Frost Bite",
+        "description": "This jagged breaching muzzle device increases melee damage. Impacts mobility.",
+        "completed": true,
+        "has_errors": true,
+        "comment": "unknown unlock",
+        "pros": [
+            "melee_damage"
+        ],
+        "cons": [
+            "hip_walking_speed"
+        ],
+        "unlock_type": "unknown",
+        "unlock_id": null,
+        "unlock_level": null,
+        "unlock_description": null
+    },
+    {
+        "id": "97d04e8c91237054",
+        "category_id": "barrels",
+        "slug": "215-recourse-barrel",
+        "name": "21.5'' Recourse Barrel",
+        "description": "A heavy, long barrel that was designed for accuracy and recoil control. Tube holds 8 shells of 12 gauge.",
+        "completed": true,
+        "has_errors": true,
+        "comment": null,
+        "pros": [
+            "bullet_velocity",
+            "tube_ammo_capacity",
+            "recoil_control"
+        ],
+        "cons": [
+            "movement_speed",
+            "ads_speed"
+        ],
+        "unlock_type": "unknown",
+        "unlock_id": null,
+        "unlock_level": 3,
+        "unlock_description": null
+    },
+    {
+        "id": "97d0476896394e0b",
+        "category_id": "barrels",
+        "slug": "215-bryson-tacfire",
+        "name": "21.5'' Bryson Tacfire",
+        "description": "The factory barrel for the Bryson 800. Designed for accuracy thanks to the addition length of the barrel.",
+        "completed": true,
+        "has_errors": true,
+        "comment": "unknown unlock",
+        "pros": [
+            "damage_range",
+            "tighter_pellet_spread",
+            "bullet_velocity"
+        ],
+        "cons": [
+            "ads_speed"
+        ],
+        "unlock_type": "unknown",
+        "unlock_id": null,
+        "unlock_level": null,
+        "unlock_description": null
+    },
+    {
+        "id": "97d047169c18f77c",
+        "category_id": "stocks",
+        "slug": "bryson-800-factory-stock",
+        "name": "Bryson 800 Factory Stock",
+        "description": "The factory stock for the Bryson 800 shotgun.",
+        "completed": true,
+        "has_errors": true,
+        "comment": "unknown unlock",
+        "pros": [
+            "aiming_stability",
+            "recoil_control"
+        ],
+        "cons": [
+            "aim_walking_speed",
+            "ads_speed",
+            "sprint_speed",
+            "crouch_movement_speed"
+        ],
+        "unlock_type": "unknown",
+        "unlock_id": null,
+        "unlock_level": null,
+        "unlock_description": null
+    },
+    {
+        "id": "97d043a7bc6c6d76",
+        "category_id": "barrels",
+        "slug": "355mm-hgs-55",
+        "name": "355mm HGS-55",
+        "description": "The shortest barrel for the Sakin MG38. A chrome-lined MILSPEC barrel designed for faster gunplay.",
+        "completed": true,
+        "has_errors": true,
+        "comment": "unknown unlock",
+        "pros": [
+            "ads_speed",
+            "hip_recoil_control"
+        ],
+        "cons": [
+            "damage_range",
+            "hip_fire_accuracy",
+            "bullet_velocity"
+        ],
+        "unlock_type": "unknown",
+        "unlock_id": null,
+        "unlock_level": null,
+        "unlock_description": null
+    },
+    {
+        "id": "97d040c39a865ef2",
+        "category_id": "underbarrels",
+        "slug": "bruen-warrior-grip",
+        "name": "Bruen Warrior Grip",
+        "description": "A comfortable side grip for the Sakin MG38, designed for the heavy recoil of an LMG.",
+        "completed": true,
+        "has_errors": false,
+        "comment": "sakin",
+        "pros": [
+            "aiming_idle_stability",
+            "aim_walking_steadiness",
+            "recoil_steadiness",
+            "recoil_stabilization"
+        ],
+        "cons": [
+            "sprint_to_fire_speed",
+            "ads_speed",
+            "crouch_movement_speed",
+            "aim_walking_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "sakin-mg38",
+        "unlock_level": 12,
         "unlock_description": null
     }
 ]

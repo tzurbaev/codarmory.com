@@ -278,5 +278,49 @@
     {
         "id": "full_auto",
         "name": "Full Auto"
+    },
+    {
+        "id": "optic_rail_mount",
+        "name": "Optic Rail Mount"
+    },
+    {
+        "id": "optic_rail_size",
+        "name": "Optic Rail Size"
+    },
+    {
+        "id": "tighter_pellet_spread",
+        "name": "Tighter Pellet Spread"
+    },
+    {
+        "id": "wider_pellet_spread",
+        "name": "Wider Pellet Spread"
+    },
+    {
+        "id": "slug_rounds",
+        "name": "Slug Rounds"
+    },
+    {
+        "id": "explosive_slug_rounds",
+        "name": "Explosive Slug Rounds"
+    },
+    {
+        "id": "damage_radius",
+        "name": "Damage Radius"
+    },
+    {
+        "id": "tube_ammo_capacity",
+        "name": "Tube Ammo Capacity"
+    },
+    {
+        "id": "fire_rate",
+        "name": "Fire Rate"
+    },
+    {
+        "id": "rechambering_speed",
+        "name": "Rechambering Speed"
+    },
+    {
+        "id": "rechambering_accuracy",
+        "name": "Rechambering Accuracy"
     }
 ]

@@ -77,7 +77,7 @@
   </Disclosure>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import {
   Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems,
 } from '@headlessui/vue';
@@ -94,6 +94,6 @@ const navigation = [
 const route = useRoute();
 const routes = computed(() => navigation.map((item) => ({
   ...item,
-  active: route.name && route.name.startsWith(item.path),
+  active: route.name && route.name.toString().startsWith(item.path),
 })));
 </script>

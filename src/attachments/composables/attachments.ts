@@ -208,34 +208,22 @@ export function useAttachment(id: ComputedRef<string | null>): { attachment: Com
   return { attachment };
 }
 
-export function useAttachmentRoutes(attachment: ComputedRef<Attachment | null>) {
-  const categoryRoute = computed(() => {
-    if (!attachment.value || !attachment.value.category) {
-      return null;
-    }
+export function useAttachmentRoutes(attachment: ComputedRef<Attachment>) {
+  const categoryRoute = computed(() => ({
+    name: 'attachments.index',
+    params: {
+      categoryId: attachment.value.category ? attachment.value.category.id : attachment.value.category_id,
+    },
+  }));
 
-    return {
-      name: 'attachments.index',
-      params: {
-        categoryId: attachment.value.category.id,
-      },
-    };
-  });
-
-  const attachmentRoute = computed(() => {
-    if (!attachment.value) {
-      return null;
-    }
-
-    return {
-      name: 'attachments.show',
-      params: {
-        categoryId: attachment.value.category ? attachment.value.category.id : attachment.value.category_id,
-        slug: attachment.value.slug,
-        attachmentId: attachment.value.id,
-      },
-    };
-  });
+  const attachmentRoute = computed(() => ({
+    name: 'attachments.show',
+    params: {
+      categoryId: attachment.value.category ? attachment.value.category.id : attachment.value.category_id,
+      slug: attachment.value.slug,
+      attachmentId: attachment.value.id,
+    },
+  }));
 
   return {
     categoryRoute,

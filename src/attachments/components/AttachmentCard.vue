@@ -21,7 +21,7 @@
       {{ attachment.description }}
     </p>
 
-    <div v-if="hasStats" class="mt-8 attachments-grid:mt-4 grid grid-cols-1 sm:grid-cols-2 attachments-grid:grid-cols-1 max-w-2xl attachments-grid:max-w-auto gap-8 attachments-grid:gap-4">
+    <div v-if="attachment.stats" class="mt-8 attachments-grid:mt-4 grid grid-cols-1 sm:grid-cols-2 attachments-grid:grid-cols-1 max-w-2xl attachments-grid:max-w-auto gap-8 attachments-grid:gap-4">
       <div>
         <h3 class="text-green-500 text-base attachments-grid:text-xs font-bold">Pros</h3>
         <ul class="list-inside">
@@ -51,7 +51,7 @@
 <script setup lang="ts">
 import { Attachment } from '@/attachments/types';
 import AttachmentUnlockDescription from '@/unlocks/components/attachments/AttachmentUnlockDescription.vue';
-import { computed, ComputedRef } from 'vue';
+import { computed } from 'vue';
 import { useAttachmentRoutes } from '@/attachments/composables/attachments';
 
 const props = defineProps<{
@@ -60,12 +60,4 @@ const props = defineProps<{
 }>();
 
 const { categoryRoute, attachmentRoute } = useAttachmentRoutes(computed(() => props.attachment));
-
-const hasStats: ComputedRef<boolean> = computed(() => {
-  if (!props.attachment.stats) {
-    return false;
-  }
-
-  return props.attachment.stats.pros.length > 0 || props.attachment.stats.cons.length > 0;
-});
 </script>
