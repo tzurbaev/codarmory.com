@@ -90,7 +90,7 @@ export function useWeapon(weaponId: ComputedRef<string | null>): { weapon: Compu
 export function useWeaponUnlockPath(weapon: ComputedRef<Weapon | null>) {
   const parent: Ref<Weapon[]> = ref([]);
   const children: Ref<Weapon[]> = ref([]);
-  const { weapons } = useWeaponsList(computed(() => null));
+  const { weapons } = useWeaponsList(computed(() => null), computed(() => null));
 
   const findParent = (id: string | null) => {
     if (!id) {
