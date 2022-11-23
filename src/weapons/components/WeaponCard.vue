@@ -29,24 +29,12 @@
 import { Weapon } from '@/weapons/types';
 import { computed } from 'vue';
 import WeaponUnlockDescription from '@/unlocks/components/weapons/WeaponUnlockDescription.vue';
+import { useWeaponRoutes } from '@/weapons/composables/weapons';
 
 const props = defineProps<{
   weapon: Weapon;
   type: string;
 }>();
 
-const categoryRoute = computed(() => ({
-  name: 'weapons.index',
-  params: {
-    categoryId: props.weapon.category?.id,
-  },
-}));
-
-const weaponRoute = computed(() => ({
-  name: 'weapons.show',
-  params: {
-    categoryId: props.weapon.category_id,
-    weaponId: props.weapon.id,
-  },
-}));
+const { categoryRoute, weaponRoute } = useWeaponRoutes(computed(() => props.weapon));
 </script>

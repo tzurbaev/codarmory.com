@@ -25,6 +25,7 @@
       </template>
     </WeaponUnlockModalBody>
   </template>
+  <AttachmentUnlockDescription v-else :attachment="attachment" class="mt-4 text-white" />
 </template>
 
 <script setup lang="ts">

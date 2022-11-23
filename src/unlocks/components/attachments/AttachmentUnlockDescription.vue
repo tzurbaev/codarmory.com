@@ -1,11 +1,9 @@
 <template>
   <p>
     <a href="javascript:;"
-       class="border-b border-transparent hover:border-dotted hover:border-primary-500 inline-flex items-center gap-1"
+       class="border-b border-transparent hover:border-dotted hover:border-primary-500"
        @click="openAttachment(attachment)"
     >
-      <QuestionMarkCircleIcon v-if="attachment.unlock_type !== UnlockType.Unknown" class="w-4 h-4 inline" />
-
       <template v-if="attachment.unlock_type === UnlockType.Auto">
         <span class="font-bold">{{ attachment.name }}</span> is a starting attachment
       </template>
@@ -34,7 +32,6 @@
 <script setup lang="ts">
 import { UnlockType } from '@/unlocks/types';
 import { Attachment } from '@/attachments/types';
-import { QuestionMarkCircleIcon } from '@heroicons/vue/24/outline';
 import { useUnlockModal } from '@/unlocks/composables/unlocks';
 
 defineProps<{

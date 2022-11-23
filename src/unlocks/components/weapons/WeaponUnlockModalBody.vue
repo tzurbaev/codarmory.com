@@ -1,17 +1,10 @@
 <template>
   <div class="space-y-4 mt-2">
     <p v-if="parent.length > 0 || mode === 'attachment'" class="text-white/90">
-      You need to unlock
-      <template v-if="mode === 'attachment'">
-        <template v-if="parent.length === 0">one weapon</template>
-        <template v-else> and level {{ parent.length + 1 }} weapons</template>
-        before you can use <span class="font-bold">{{ name }}</span>.
-      </template>
-      <template v-else>
-        <template v-if="parent.length === 1">one weapon</template>
-        <template v-else>{{ parent.length }} weapons</template>
-        before you can use <span class="font-bold">{{ name || weapon.name }}</span>.
-      </template>
+      You need to unlock and level
+      <template v-if="totalCount === 1">one weapon</template>
+      <template v-else>{{ totalCount }} weapons</template>
+      before you can use <span class="font-bold">{{ name || weapon.name }}</span>.
     </p>
     <WeaponUnlockModalCard v-for="(item, index) in parent"
                            :key="`Weapon-${weapon.id}-ParentUnlock-${item.id}`"
@@ -57,4 +50,11 @@ const props = defineProps<{
 }>();
 
 const { parent, children } = useWeaponUnlockPath(computed(() => props.weapon));
+const totalCount = computed(() => {
+  if (props.mode === 'attachment') {
+    return parent.value.length + 1;
+  }
+
+  return parent.value.length;
+});
 </script>

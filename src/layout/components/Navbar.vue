@@ -22,7 +22,7 @@
               <router-link v-for="item in routes"
                            :key="item.name"
                            :to="{ name: item.route }"
-                           :class="[item.active ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white', 'px-3 py-2 rounded-md text-sm font-medium']"
+                           :class="[item.active ? 'bg-gray-900 text-primary-500' : 'text-gray-300 hover:bg-gray-700 hover:text-white', 'px-3 py-2 rounded-md text-sm font-medium']"
                            :aria-current="item.active ? 'page' : undefined"
               >
                 {{ item.name }}
@@ -67,7 +67,7 @@
         <DisclosureButton v-for="item in routes"
                           :key="item.name"
                           as="a"
-                          :class="[item.active ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white', 'block px-3 py-2 rounded-md text-base font-medium']"
+                          :class="[item.active ? 'bg-gray-900 text-primary-500' : 'text-gray-300 hover:bg-gray-700 hover:text-white', 'block px-3 py-2 rounded-md text-base font-medium']"
                           :aria-current="item.active ? 'page' : undefined"
         >
           <router-link :to="{ name: item.route }" @click="close()">{{ item.name }}</router-link>
@@ -87,8 +87,8 @@ import { useRoute } from 'vue-router';
 
 const navigation = [
   { name: 'Weapons', route: 'weapons.index', path: 'weapons.' },
-  { name: 'Attachments', route: 'weapons.index', path: 'weapons.' },
-  { name: 'Loadouts', route: 'weapons.index', path: 'weapons.' },
+  { name: 'Attachments', route: 'attachments.index', path: 'attachments.' },
+  { name: 'Loadouts', route: 'weapons.index', path: 'loadouts.' },
 ];
 
 const route = useRoute();

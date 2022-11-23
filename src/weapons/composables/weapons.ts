@@ -134,3 +134,34 @@ export function useWeaponUnlockPath(weapon: ComputedRef<Weapon | null>) {
 
   return { parent, children };
 }
+
+export function useWeaponRoutes(weapon: ComputedRef<Weapon | null>) {
+  const categoryRoute = computed(() => {
+    if (!weapon.value) {
+      return null;
+    }
+
+    return {
+      name: 'weapons.index',
+      params: {
+        categoryId: weapon.value.category?.id,
+      },
+    };
+  });
+
+  const weaponRoute = computed(() => {
+    if (!weapon.value) {
+      return null;
+    }
+
+    return {
+      name: 'weapons.show',
+      params: {
+        categoryId: weapon.value.category ? weapon.value.category.id : weapon.value.category_id,
+        weaponId: weapon.value.id,
+      },
+    };
+  });
+
+  return { categoryRoute, weaponRoute };
+}

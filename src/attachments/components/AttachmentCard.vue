@@ -52,33 +52,14 @@
 import { Attachment } from '@/attachments/types';
 import AttachmentUnlockDescription from '@/unlocks/components/attachments/AttachmentUnlockDescription.vue';
 import { computed, ComputedRef } from 'vue';
+import { useAttachmentRoutes } from '@/attachments/composables/attachments';
 
 const props = defineProps<{
   attachment: Attachment;
   type: string;
 }>();
 
-const categoryRoute = computed(() => {
-  if (!props.attachment.category) {
-    return null;
-  }
-
-  return {
-    name: 'attachments.index',
-    params: {
-      categoryId: props.attachment.category.id,
-    },
-  };
-});
-
-const attachmentRoute = computed(() => ({
-  name: 'attachments.show',
-  params: {
-    categoryId: props.attachment.category ? props.attachment.category.id : props.attachment.category_id,
-    slug: props.attachment.slug,
-    attachmentId: props.attachment.id,
-  },
-}));
+const { categoryRoute, attachmentRoute } = useAttachmentRoutes(computed(() => props.attachment));
 
 const hasStats: ComputedRef<boolean> = computed(() => {
   if (!props.attachment.stats) {
