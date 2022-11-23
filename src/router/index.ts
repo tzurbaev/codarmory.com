@@ -19,6 +19,18 @@ const routes: RouteRecordRaw[] = [
     props: true,
   },
   {
+    name: 'attachments.index',
+    path: '/attachments/:categoryId?',
+    component: () => import('@/attachments/views/AttachmentsView.vue'),
+    props: true,
+  },
+  {
+    name: 'attachments.show',
+    path: '/attachments/:categoryId/:attachmentId/:slug',
+    component: () => import('@/attachments/views/AttachmentView.vue'),
+    props: true,
+  },
+  {
     path: '/:pathMatch(.*)*',
     name: 'errors.404',
     component: () => import('@/views/Error404.vue'),

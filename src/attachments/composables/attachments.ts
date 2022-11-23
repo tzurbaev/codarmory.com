@@ -188,3 +188,22 @@ export function useFilteredAttachments(group: ComputedRef<AttachmentsGroup | nul
     attachments,
   };
 }
+
+export function useAttachment(id: ComputedRef<string | null>): { attachment: ComputedRef<Attachment | null> } {
+  const attachmentsStore = useAttachmentsStore();
+  const attachment = computed(() => {
+    if (!id.value) {
+      return null;
+    }
+
+    const index = attachmentsStore.extendedAttachments.findIndex((item: Attachment) => item.id === id.value);
+
+    if (index === -1) {
+      return null;
+    }
+
+    return attachmentsStore.extendedAttachments[index];
+  });
+
+  return { attachment };
+}

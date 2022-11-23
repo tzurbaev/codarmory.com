@@ -1100,12 +1100,19 @@
         "category_id": "barrels",
         "slug": "fss-cannonade-16",
         "name": "FSS Cannonade 16''",
-        "description": null,
-        "completed": false,
+        "description": "This long, heavier barrel reduces recoil and increases accuracy for stable shots.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "damage_range",
+            "hip_fire_accuracy",
+            "bullet_velocity"
+        ],
+        "cons": [
+            "ads_speed",
+            "hip_recoil_control"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "fss-hurricane",
         "unlock_level": 7,
@@ -1116,12 +1123,21 @@
         "category_id": "stocks",
         "slug": "demo-quicksilver-collapsed",
         "name": "Demo Quicksilver Collapsed",
-        "description": null,
-        "completed": false,
+        "description": "Move even faster with Demo Weapon Systems' thinnest, lightest-weight stock wire stock in the collapsed position.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "ads_speed",
+            "sprint_to_fire_speed",
+            "movement_speed",
+            "hip_recoil_control"
+        ],
+        "cons": [
+            "aiming_recoil_control",
+            "aiming_stability",
+            "flinch_resistance"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "fss-hurricane",
         "unlock_level": 9,
@@ -1132,12 +1148,21 @@
         "category_id": "barrels",
         "slug": "fss-x7-barrel",
         "name": "FSS-X7 Barrel",
-        "description": null,
-        "completed": false,
+        "description": "A versatile and deadly barrel system with integrated silencer and rails.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "sound_suppression",
+            "bullet_velocity",
+            "damage_range",
+            "hip_fire_accuracy"
+        ],
+        "cons": [
+            "ads_speed",
+            "hip_recoil_control",
+            "movement_speed"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "fss-hurricane",
         "unlock_level": 10,
@@ -1148,12 +1173,17 @@
         "category_id": "ammunition",
         "slug": "57x28mm-hollow-point",
         "name": "5.7x28mm Hollow Point",
-        "description": null,
-        "completed": false,
+        "description": "Hollow Point rounds deform on impact, slowing the target and disabling sprint for a short time.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "crippling_power"
+        ],
+        "cons": [
+            "bullet_velocity",
+            "bullet_penetration"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "fss-hurricane",
         "unlock_level": 11,
@@ -1206,12 +1236,20 @@
         "category_id": "stocks",
         "slug": "demo-quicksilver-stock",
         "name": "Demo Quicksilver Stock",
-        "description": null,
-        "completed": false,
+        "description": "Demo Weapon Systems' thinnest, lightest-weight stock. Fire and maneuver with this minimalist modification.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "sprint_speed",
+            "aim_walking_speed",
+            "crouch_movement_speed",
+            "ads_speed"
+        ],
+        "cons": [
+            "aiming_stability",
+            "recoil_control"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "fss-hurricane",
         "unlock_level": 14,
@@ -2847,12 +2885,17 @@
         "category_id": "ammunition",
         "slug": "9mm-hollowpoint",
         "name": "9mm Hollowpoint",
-        "description": null,
-        "completed": false,
+        "description": "Hollow Point rounds deform on impact, slowing the target and disabling sprint for a short time. Subsonic rounds hide enemy death markers.",
+        "completed": true,
         "has_errors": false,
-        "comment": null,
-        "pros": [],
-        "cons": [],
+        "comment": "subsonic",
+        "pros": [
+            "crippling_power"
+        ],
+        "cons": [
+            "bullet_velocity",
+            "bullet_penetration"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "minibak",
         "unlock_level": 3,
@@ -2863,12 +2906,19 @@
         "category_id": "barrels",
         "slug": "bak-9-279mm-barrel",
         "name": "BAK-9 279mm Barrel",
-        "description": null,
-        "completed": false,
+        "description": "A longer barrel built around the Minibak weapon system. The added length provides superior range.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "damage_range",
+            "hip_fire_accuracy",
+            "bullet_velocity"
+        ],
+        "cons": [
+            "ads_speed",
+            "hip_recoil_control"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "minibak",
         "unlock_level": 5,
@@ -2905,12 +2955,17 @@
         "category_id": "ammunition",
         "slug": "9mm-frangible",
         "name": "9mm Frangible",
-        "description": null,
-        "completed": false,
+        "description": "Frangible rounds shatter on impact, which temporarily delays healing. Subsonic rounds hide enemy death markers.",
+        "completed": true,
         "has_errors": false,
-        "comment": null,
-        "pros": [],
-        "cons": [],
+        "comment": "subsonic",
+        "pros": [
+            "inflict_wounding_effect"
+        ],
+        "cons": [
+            "bullet_penetration",
+            "damage_range"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "minibak",
         "unlock_level": 8,
@@ -2943,12 +2998,18 @@
         "category_id": "ammunition",
         "slug": "9mm-armor-piercing",
         "name": "9mm Armor Piercing",
-        "description": null,
-        "completed": false,
+        "description": "A tungsten-core round that increases bullet penetration, dealing higher damage when passing through cover. Slight increase to vehicle damage.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "crippling_power",
+            "bullet_penetration",
+            "vehicle_damage"
+        ],
+        "cons": [
+            "bullet_penetration"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "minibak",
         "unlock_level": 11,
@@ -2979,12 +3040,17 @@
         "category_id": "magazines",
         "slug": "minibak-grip-mag",
         "name": "Minibak Grip Mag",
-        "description": null,
-        "completed": false,
+        "description": "A polymer magazine that carries 64 rounds of 9mm ammunition. Added texture provides better weapon stability.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "aiming_idle_stability",
+            "recoil_stabilization"
+        ],
+        "cons": [
+            "ads_speed"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "minibak",
         "unlock_level": 13,
@@ -2995,12 +3061,16 @@
         "category_id": "ammunition",
         "slug": "9mm-overpressured-p",
         "name": "9mm Overpressured +P",
-        "description": null,
-        "completed": false,
+        "description": "Suppress and control with hotter rounds that afflict the target with increased flinch.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "target_flinch"
+        ],
+        "cons": [
+            "recoil_control"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "minibak",
         "unlock_level": 14,
@@ -3603,12 +3673,21 @@
         "category_id": "barrels",
         "slug": "sa-response-iii",
         "name": "SA Response III",
-        "description": null,
-        "completed": false,
+        "description": "A heavier combat barrel that provides added recoil control and precision.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "bullet_velocity",
+            "recoil_control",
+            "damage_range",
+            "hip_fire_accuracy"
+        ],
+        "cons": [
+            "ads_speed",
+            "movement_speed",
+            "hip_recoil_control"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "vaznev-9k",
         "unlock_level": 7,
@@ -3702,12 +3781,19 @@
         "category_id": "barrels",
         "slug": "kas-1-381mm",
         "name": "KAS-1 381mm",
-        "description": null,
-        "completed": false,
+        "description": "This long barrel for the Vaznev-9K increases precision for operators who engage from mid-range.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "damage_range",
+            "hip_fire_accuracy",
+            "bullet_velocity"
+        ],
+        "cons": [
+            "ads_speed",
+            "hip_recoil_control"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "vaznev-9k",
         "unlock_level": 13,
@@ -4583,12 +4669,21 @@
         "category_id": "barrels",
         "slug": "ftac-m-sub-12",
         "name": "FTAC M-Sub 12''",
-        "description": null,
-        "completed": false,
+        "description": "Give the Lachmann Sub extra control and accuracy with this heavy, long barrel from Forge Tac.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "bullet_velocity",
+            "damage_range",
+            "recoil_control",
+            "hip_fire_accuracy"
+        ],
+        "cons": [
+            "ads_speed",
+            "movement_speed",
+            "hip_recoil_control"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "lachmann-sub",
         "unlock_level": 3,
@@ -4599,12 +4694,19 @@
         "category_id": "magazines",
         "slug": "50-round-drum",
         "name": "50 Round Drum",
-        "description": null,
-        "completed": false,
+        "description": "A high-capacity drum magazine that holds 50 rounds of 9mm ammunition.",
+        "completed": true,
         "has_errors": false,
-        "comment": null,
-        "pros": [],
-        "cons": [],
+        "comment": "9mm ammo",
+        "pros": [
+            "magazine_ammo_capacity"
+        ],
+        "cons": [
+            "movement_speed",
+            "ads_speed",
+            "reload_quickness",
+            "sprint_to_fire_speed"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "lachmann-sub",
         "unlock_level": 5,
@@ -4615,12 +4717,18 @@
         "category_id": "barrels",
         "slug": "l38-falcon-226mm",
         "name": "L38 Falcon 226mm",
-        "description": null,
-        "completed": false,
+        "description": "A lightweight 9mm barrel for speed and aggressive target engagement.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "movement_speed",
+            "ads_speed"
+        ],
+        "cons": [
+            "bullet_velocity",
+            "recoil_control"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "lachmann-sub",
         "unlock_level": 7,
@@ -4737,12 +4845,17 @@
         "category_id": "ammunition",
         "slug": "9mm-hollow-point",
         "name": "9mm Hollow Point",
-        "description": null,
-        "completed": false,
+        "description": "Hollow Point rounds deform on impact, slowing the target and disabling sprint for a short time.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "crippling_power"
+        ],
+        "cons": [
+            "bullet_velocity",
+            "bullet_penetration"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "lachmann-sub",
         "unlock_level": 13,
@@ -4753,12 +4866,19 @@
         "category_id": "magazines",
         "slug": "40-round-mag",
         "name": "40 Round Mag",
-        "description": null,
-        "completed": false,
+        "description": "A high -capacity 40-round magazine of 9mm ammunition.",
+        "completed": true,
         "has_errors": false,
-        "comment": null,
-        "pros": [],
-        "cons": [],
+        "comment": "9mm ammo",
+        "pros": [
+            "magazine_ammo_capacity"
+        ],
+        "cons": [
+            "movement_speed",
+            "ads_speed",
+            "reload_quickness",
+            "sprint_to_fire_speed"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "lachmann-sub",
         "unlock_level": 14,
@@ -4769,12 +4889,21 @@
         "category_id": "stocks",
         "slug": "lm-stockless-mod",
         "name": "LM Stockless Mod",
-        "description": null,
-        "completed": false,
+        "description": "Remove the stock for a tactical advantage in speed and maneuverability at the expense of accuracy.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "ads_speed",
+            "sprint_to_fire_speed",
+            "movement_speed",
+            "hip_recoil_control"
+        ],
+        "cons": [
+            "aiming_recoil_control",
+            "aiming_stability",
+            "flinch_resistance"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "lachmann-sub",
         "unlock_level": 15,
@@ -4785,12 +4914,19 @@
         "category_id": "magazines",
         "slug": "15-round-magazine",
         "name": "15 Round Magazine",
-        "description": null,
-        "completed": false,
+        "description": "A standard 15-round magazine of 9mm ammunition.",
+        "completed": true,
         "has_errors": false,
-        "comment": null,
-        "pros": [],
-        "cons": [],
+        "comment": "9mm ammo",
+        "pros": [
+            "movement_speed",
+            "ads_speed",
+            "sprint_to_fire_speed",
+            "reload_quickness"
+        ],
+        "cons": [
+            "magazine_ammo_capacity"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "lachmann-sub",
         "unlock_level": 16,
@@ -4801,12 +4937,21 @@
         "category_id": "barrels",
         "slug": "lachmann-pulsar",
         "name": "Lachmann Pulsar",
-        "description": null,
-        "completed": false,
+        "description": "The smallest barrel for the Lachmann Sub. A significant increase to speed provides an edge in fast-action scenarios.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "ads_speed",
+            "hip_recoil_control",
+            "movement_speed"
+        ],
+        "cons": [
+            "damage_range",
+            "hip_fire_accuracy",
+            "bullet_velocity",
+            "recoil_control"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "lachmann-sub",
         "unlock_level": 17,
@@ -5036,8 +5181,8 @@
     {
         "id": "97c54e95bfe38ed4",
         "category_id": "ammunition",
-        "slug": "556-hight-velocity",
-        "name": "5.56 Hight Velocity",
+        "slug": "556-high-velocity",
+        "name": "5.56 High Velocity",
         "description": "Tapered rounds designed to increase projectile velocity.",
         "completed": true,
         "has_errors": false,
@@ -5561,12 +5706,19 @@
         "category_id": "magazines",
         "slug": "32-round-mag",
         "name": "32 Round Mag",
-        "description": null,
-        "completed": false,
+        "description": "A mid-capacity magazine that holds 32 rounds of 9mm ammunition.",
+        "completed": true,
         "has_errors": false,
-        "comment": null,
-        "pros": [],
-        "cons": [],
+        "comment": "9mm ammo",
+        "pros": [
+            "magazine_ammo_capacity"
+        ],
+        "cons": [
+            "movement_speed",
+            "ads_speed",
+            "reload_quickness",
+            "sprint_to_fire_speed"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "mx9",
         "unlock_level": 2,
@@ -5706,12 +5858,17 @@
         "category_id": "ammunition",
         "slug": "9mm-sub-ap",
         "name": "9mm Sub AP",
-        "description": null,
-        "completed": false,
+        "description": "A tungsten-core round that increases bullet penetration, dealing higher damage when passing through cover. Slight increase to vehicle damage. Subsonic rounds hide enemy death markers.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "bullet_penetration",
+            "vehicle_damage"
+        ],
+        "cons": [
+            "bullet_velocity"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "mx9",
         "unlock_level": 16,
@@ -7822,12 +7979,17 @@
         "category_id": "ammunition",
         "slug": "9mm-frangible",
         "name": "9mm Frangible",
-        "description": null,
-        "completed": false,
+        "description": "Frangible rounds shatter on impact, which temporarily delays healing.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "inflict_wounding_effect"
+        ],
+        "cons": [
+            "bullet_penetration",
+            "damage_range"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "x12",
         "unlock_level": 6,
@@ -8653,12 +8815,18 @@
         "category_id": "barrels",
         "slug": "lachmann-dart-165mm",
         "name": "Lachmann Dart 165mm",
-        "description": null,
-        "completed": false,
+        "description": "A heavier barrel that mitigates some recoil.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "recoil_control",
+            "bullet_velocity"
+        ],
+        "cons": [
+            "movement_speed",
+            "ads_speed"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "vel-46",
         "unlock_level": 4,
@@ -8689,12 +8857,17 @@
         "category_id": "ammunition",
         "slug": "46mm-frangible",
         "name": "4.6mm Frangible",
-        "description": null,
-        "completed": false,
+        "description": "Frangible rounds shatter on impact, which temporarily delays healing.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "inflict_wounding_effect"
+        ],
+        "cons": [
+            "bullet_penetration",
+            "damage_range"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "vel-46",
         "unlock_level": 6,
@@ -8705,12 +8878,19 @@
         "category_id": "magazines",
         "slug": "50-round-mag",
         "name": "50 Round Mag",
-        "description": null,
-        "completed": false,
+        "description": "A magazine that carries 50 rounds of 4.6x30mm ammunition.",
+        "completed": true,
         "has_errors": false,
-        "comment": null,
-        "pros": [],
-        "cons": [],
+        "comment": "4.6x30mm ammo",
+        "pros": [
+            "magazine_ammo_capacity"
+        ],
+        "cons": [
+            "movement_speed",
+            "ads_speed",
+            "reload_quickness",
+            "sprint_to_fire_speed"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "vel-46",
         "unlock_level": 7,
@@ -8720,13 +8900,19 @@
         "id": "97c64689a2a47d0d",
         "category_id": "stocks",
         "slug": "demo-rxt-stock",
-        "name": "DEMO RXT Stock",
-        "description": null,
-        "completed": false,
+        "name": "Demo RXT Stock",
+        "description": "Demo Weapon Systems gunsmiths have created a stock that enhances aim down sight speed.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "crouch_movement_speed",
+            "sprint_speed",
+            "ads_speed"
+        ],
+        "cons": [
+            "recoil_control"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "vel-46",
         "unlock_level": 8,
@@ -8737,12 +8923,19 @@
         "category_id": "barrels",
         "slug": "lach-165-zulu",
         "name": "Lach-165 Zulu",
-        "description": null,
-        "completed": false,
+        "description": "Short and agile, this barrel is ideal for operators who like to move quick.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "ads_speed",
+            "hip_recoil_control"
+        ],
+        "cons": [
+            "damage_range",
+            "hip_fire_accuracy",
+            "bullet_velocity"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "vel-46",
         "unlock_level": 9,
@@ -8753,12 +8946,21 @@
         "category_id": "stocks",
         "slug": "vel-a-568-collapsed",
         "name": "VEL A-568 Collapsed",
-        "description": null,
-        "completed": false,
+        "description": "Retract the factory stock for the VEL 46. Greatly favors speed over accuracy.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "ads_speed",
+            "sprint_to_fire_speed",
+            "movement_speed",
+            "hip_recoil_control"
+        ],
+        "cons": [
+            "aiming_recoil_control",
+            "aiming_stability",
+            "flinch_resistance"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "vel-46",
         "unlock_level": 10,
@@ -8769,12 +8971,21 @@
         "category_id": "barrels",
         "slug": "lm-series-7",
         "name": "LM Series-7",
-        "description": null,
-        "completed": false,
+        "description": "A weighty short barrel with better recoil control and superior speed.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "recoil_control",
+            "hip_recoil_control",
+            "bullet_velocity",
+            "ads_speed"
+        ],
+        "cons": [
+            "damage_range",
+            "movement_speed",
+            "hip_fire_accuracy"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "vel-46",
         "unlock_level": 11,
@@ -8785,12 +8996,16 @@
         "category_id": "rear-grips",
         "slug": "zlr-combat-grip",
         "name": "ZLR Combat Grip",
-        "description": null,
-        "completed": false,
+        "description": "A textured grip from ZLR with superior recoil control.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "recoil_control"
+        ],
+        "cons": [
+            "aiming_stability"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "vel-46",
         "unlock_level": 12,
@@ -8840,14 +9055,20 @@
         "slug": "lach-dx-203mm",
         "name": "Lach-DX 203mm",
         "description": "Better control recoil and precision with this heavy long barrel.",
-        "completed": false,
+        "completed": true,
         "has_errors": false,
         "comment": null,
         "pros": [
             "bullet_velocity",
-            "damage_range"
+            "damage_range",
+            "recoil_control",
+            "hip_fire_accuracy"
         ],
-        "cons": [],
+        "cons": [
+            "ads_speed",
+            "movement_speed",
+            "hip_recoil_control"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "vel-46",
         "unlock_level": 15,
@@ -8883,12 +9104,16 @@
         "category_id": "rear-grips",
         "slug": "sakin-rubber-grip",
         "name": "Sakin Rubber Grip",
-        "description": null,
-        "completed": false,
+        "description": "Stay on target with this rubberized pistol grip from Sakin Arms. Reduces flinch when under fire.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "flinch_resistance"
+        ],
+        "cons": [
+            "aim_walking_movement_speed"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "vel-46",
         "unlock_level": 17,
@@ -8899,12 +9124,19 @@
         "category_id": "magazines",
         "slug": "30-round-mag",
         "name": "30 Round Mag",
-        "description": null,
-        "completed": false,
+        "description": "A magazine that carries 30 rounds of 4.6x30mm ammunition.",
+        "completed": true,
         "has_errors": false,
-        "comment": null,
-        "pros": [],
-        "cons": [],
+        "comment": "4.6x30mm ammo",
+        "pros": [
+            "movement_speed",
+            "ads_speed",
+            "reload_quickness",
+            "sprint_to_fire_speed"
+        ],
+        "cons": [
+            "magazine_ammo_capacity"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "vel-46",
         "unlock_level": 18,
@@ -8913,14 +9145,19 @@
     {
         "id": "97c64170b29509c0",
         "category_id": "ammunition",
-        "slug": "46-mm-hollowpoint",
-        "name": "4.6 mm Hollowpoint",
-        "description": null,
-        "completed": false,
+        "slug": "46mm-hollowpoint",
+        "name": "4.6mm Hollowpoint",
+        "description": "Hollowpoint rounds deform on impact, slowing the target and disabling sprint for a short time.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "crippling_power"
+        ],
+        "cons": [
+            "bullet_velocity",
+            "bullet_penetration"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "vel-46",
         "unlock_level": 19,
@@ -8954,12 +9191,17 @@
         "category_id": "ammunition",
         "slug": "46mm-armor-piercing",
         "name": "4.6mm Armor Piercing",
-        "description": null,
-        "completed": false,
+        "description": "A tungsten-core round that increases bullet penetration, dealing higher damage when passing through cover. Slight increase to vehicle damage.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "bullet_penetration",
+            "vehicle_damage"
+        ],
+        "cons": [
+            "bullet_velocity"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "vel-46",
         "unlock_level": 21,
@@ -8993,12 +9235,17 @@
         "category_id": "stocks",
         "slug": "lm-precision-stock",
         "name": "LM Precision Stock",
-        "description": null,
-        "completed": false,
+        "description": "A polymer stock from Lachmann & Meer. Enhances movement speed while aiming.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "aiming_stability"
+        ],
+        "cons": [
+            "aim_walking_speed",
+            "sprint_speed"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "vel-46",
         "unlock_level": 23,
@@ -9009,12 +9256,16 @@
         "category_id": "ammunition",
         "slug": "46mm-overpressured-p",
         "name": "4.6mm Overpressured +P",
-        "description": null,
-        "completed": false,
+        "description": "Suppress and control with hotter rounds that afflicts the target with increased flinch.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "target_flinch"
+        ],
+        "cons": [
+            "recoil_control"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "vel-46",
         "unlock_level": 24,
@@ -9025,12 +9276,17 @@
         "category_id": "rear-grips",
         "slug": "schlager-solider-grip",
         "name": "Schlager Solider Grip",
-        "description": null,
-        "completed": false,
+        "description": "A Schlager Tactical grip designed for faster aiming.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "sprint_to_fire_speed",
+            "ads_speed"
+        ],
+        "cons": [
+            "recoil_control"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "vel-46",
         "unlock_level": 25,
@@ -9041,12 +9297,19 @@
         "category_id": "magazines",
         "slug": "60-round-mag",
         "name": "60 Round Mag",
-        "description": null,
-        "completed": false,
+        "description": "A magazine that carries 60 rounds of 4.6x30mm ammunition.",
+        "completed": true,
         "has_errors": false,
-        "comment": null,
-        "pros": [],
-        "cons": [],
+        "comment": "4.6x30mm ammo",
+        "pros": [
+            "magazine_ammo_capacity"
+        ],
+        "cons": [
+            "movement_speed",
+            "ads_speed",
+            "reload_quickness",
+            "sprint_to_fire_speed"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "vel-46",
         "unlock_level": 26,
@@ -9151,12 +9414,21 @@
         "category_id": "stocks",
         "slug": "br-stockless-mod",
         "name": "BR Stockless Mod",
-        "description": null,
-        "completed": false,
+        "description": "A modification for those who like to speed across the battlefield. Remove the stock for a significant increase in speed and mobility. Large reduction to accuracy and range.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "ads_speed",
+            "sprint_to_fire_speed",
+            "movement_speed",
+            "hip_recoil_control"
+        ],
+        "cons": [
+            "aiming_recoil_control",
+            "aiming_stability",
+            "flinch_resistance"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "bas-p",
         "unlock_level": 4,
@@ -9187,12 +9459,16 @@
         "category_id": "rear-grips",
         "slug": "bruen-gr-500",
         "name": "Bruen GR-500",
-        "description": null,
-        "completed": false,
+        "description": "Finger grooves and a stippled texture help keep your weapon firmly in hand in combat scenarios. Reduces flinch when under fire.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "flinch_resistance"
+        ],
+        "cons": [
+            "aim_walking_movement_speed"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "bas-p",
         "unlock_level": 6,
@@ -9240,12 +9516,21 @@
         "category_id": "barrels",
         "slug": "4-thunderfire",
         "name": "4'' Thunderfire",
-        "description": null,
-        "completed": false,
+        "description": "A small but dangerous barrel crafted by Bruen gunsmiths. Large emphasis on speed and agility at the expense of accuracy.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "ads_speed",
+            "movement_speed",
+            "hip_recoil_control"
+        ],
+        "cons": [
+            "damage_range",
+            "bullet_velocity",
+            "hip_fire_accuracy",
+            "recoil_control"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "bas-p",
         "unlock_level": 9,
@@ -9256,12 +9541,20 @@
         "category_id": "stocks",
         "slug": "bruen-flash-v4-stock",
         "name": "Bruen Flash v4 Stock",
-        "description": null,
-        "completed": false,
+        "description": "A tactical and fast-action stock. Lightweight materials were used and extra weight was eliminated for a quick and agile stock. Enhanced speed and increased hip accuracy.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "sprint_speed",
+            "aim_walking_speed",
+            "crouch_movement_speed",
+            "ads_speed"
+        ],
+        "cons": [
+            "aiming_stability",
+            "recoil_control"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "bas-p",
         "unlock_level": 10,
@@ -9272,12 +9565,19 @@
         "category_id": "magazines",
         "slug": "20-round-mag",
         "name": "20 Round Mag",
-        "description": null,
-        "completed": false,
+        "description": "A magazine that holds 20 rounds of 9mm ammunition.",
+        "completed": true,
         "has_errors": false,
-        "comment": null,
-        "pros": [],
-        "cons": [],
+        "comment": "9mm ammo",
+        "pros": [
+            "movement_speed",
+            "ads_speed",
+            "sprint_to_fire_speed",
+            "reload_quickness"
+        ],
+        "cons": [
+            "magazine_ammo_capacity"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "bas-p",
         "unlock_level": 11,
@@ -9288,12 +9588,16 @@
         "category_id": "rear-grips",
         "slug": "d37-grip",
         "name": "D37 Grip",
-        "description": null,
-        "completed": false,
+        "description": "A streamlined, tried-and-true pistol grip design for automatic rifles. Provides superior recoil control.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "recoil_control"
+        ],
+        "cons": [
+            "aiming_stability"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "bas-p",
         "unlock_level": 12,
@@ -9304,12 +9608,21 @@
         "category_id": "barrels",
         "slug": "65-bruen-drake",
         "name": "6.5'' Bruen Drake",
-        "description": null,
-        "completed": false,
+        "description": "A short barrel designed to be light and quick. Focus on speed and mobility with a slight decrease to accuracy and range.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "ads_speed",
+            "movement_speed",
+            "hip_recoil_control"
+        ],
+        "cons": [
+            "damage_range",
+            "bullet_velocity",
+            "hip_fire_accuracy",
+            "recoil_control"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "bas-p",
         "unlock_level": 13,
@@ -9367,12 +9680,21 @@
         "category_id": "barrels",
         "slug": "12-bruen-sz-36",
         "name": "12'' Bruen SZ-36",
-        "description": null,
-        "completed": false,
+        "description": "A Bruen-engineered long barrel. The added length and weight improve accuracy and mitigate some recoil.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "bullet_velocity",
+            "damage_range",
+            "recoil_control",
+            "hip_fire_accuracy"
+        ],
+        "cons": [
+            "ads_speed",
+            "movement_speed",
+            "hip_recoil_control"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "bas-p",
         "unlock_level": 16,
@@ -9407,12 +9729,20 @@
         "category_id": "stocks",
         "slug": "ravage-8",
         "name": "Ravage-8",
-        "description": null,
-        "completed": false,
+        "description": "A tactical stock built for increased stability and recoil control.",
+        "completed": true,
         "has_errors": false,
-        "comment": null,
-        "pros": [],
-        "cons": [],
+        "comment": "stability and recoil",
+        "pros": [
+            "aiming_stability",
+            "recoil_control"
+        ],
+        "cons": [
+            "aim_walking_speed",
+            "sprint_speed",
+            "ads_speed",
+            "crouch_movement_speed"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "bas-p",
         "unlock_level": 18,
@@ -9444,12 +9774,19 @@
         "category_id": "magazines",
         "slug": "50-round-drum",
         "name": "50 Round Drum",
-        "description": null,
-        "completed": false,
+        "description": "A drum magazine that holds 50 rounds of 9mm ammunition.",
+        "completed": true,
         "has_errors": false,
-        "comment": null,
-        "pros": [],
-        "cons": [],
+        "comment": "9mm ammo",
+        "pros": [
+            "magazine_ammo_capacity"
+        ],
+        "cons": [
+            "movement_speed",
+            "ads_speed",
+            "reload_quickness",
+            "sprint_to_fire_speed"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "bas-p",
         "unlock_level": 20,
@@ -9460,12 +9797,17 @@
         "category_id": "rear-grips",
         "slug": "bruen-flash-grip",
         "name": "Bruen Flash Grip",
-        "description": null,
-        "completed": false,
+        "description": "This Bruen pistol grip has been engineered for speed. Grippy texture provides faster aiming speed and quicker firing after sprinting.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "sprint_to_fire_speed",
+            "ads_speed"
+        ],
+        "cons": [
+            "recoil_control"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "bas-p",
         "unlock_level": 21,
@@ -9497,12 +9839,20 @@
         "category_id": "barrels",
         "slug": "105-bruen-typhon",
         "name": "10.5'' Bruen Typhon",
-        "description": null,
-        "completed": false,
+        "description": "A short silenced barrel designed for covert operations. Speed and silence are the MO for this Bruen barrel.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "sound_suppression",
+            "hip_fire_accuracy",
+            "bullet_velocity",
+            "damage_range"
+        ],
+        "cons": [
+            "ads_speed",
+            "hip_recoil_control"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "bas-p",
         "unlock_level": 23,
@@ -9620,12 +9970,17 @@
         "category_id": "ammunition",
         "slug": "57x28mm-armor-piercing",
         "name": "5.7x28mm Armor Piercing",
-        "description": null,
-        "completed": false,
+        "description": "A tungsten-core round that increases bullet penetration, dealing higher damage when passing through cover. Slight increase to vehicle damage.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "bullet_penetration",
+            "vehicle_damage"
+        ],
+        "cons": [
+            "bullet_velocity"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "pdsw-528",
         "unlock_level": 8,
@@ -9778,12 +10133,16 @@
         "category_id": "ammunition",
         "slug": "57x28mm-overpressured-p",
         "name": "5.7x28mm Overpressured +P",
-        "description": null,
-        "completed": false,
+        "description": "Suppress and control with hotter rounds that afflict the target with increased flinch.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "target_flinch"
+        ],
+        "cons": [
+            "recoil_control"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "pdsw-528",
         "unlock_level": 17,
@@ -9842,12 +10201,17 @@
         "category_id": "ammunition",
         "slug": "57x28mm-frangible",
         "name": "5.7x28mm Frangible",
-        "description": null,
-        "completed": false,
+        "description": "Frangible rounds shatter on impact, which temporarily delays healing.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "inflict_wounding_effect"
+        ],
+        "cons": [
+            "bullet_penetration",
+            "damage_range"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "pdsw-528",
         "unlock_level": 21,
@@ -15090,7 +15454,7 @@
         "unlock_description": null
     },
     {
-        "id": null,
+        "id": "97ca4e7a98d2e392",
         "category_id": "barrels",
         "slug": "demo-501-factory",
         "name": "DEMO 501 Factory",
@@ -15115,7 +15479,7 @@
         "unlock_description": null
     },
     {
-        "id": null,
+        "id": "97ca4191b7099804",
         "category_id": "stocks",
         "slug": "spetsnaz-s10-stock",
         "name": "Spetsnaz S10 Stock",
@@ -15139,7 +15503,7 @@
         "unlock_description": null
     },
     {
-        "id": null,
+        "id": "97ca46c8b5cb5c68",
         "category_id": "barrels",
         "slug": "kastovia-406",
         "name": "Kastovia 406",
@@ -15162,7 +15526,7 @@
         "unlock_description": null
     },
     {
-        "id": null,
+        "id": "97cb42f99212b786",
         "category_id": "barrels",
         "slug": "22-factory-fourteen-barrel",
         "name": "22'' Factory Fourteen Barrel",
@@ -15185,7 +15549,7 @@
         "unlock_description": null
     },
     {
-        "id": null,
+        "id": "97cb482d921b7bce",
         "category_id": "stocks",
         "slug": "model-1957-stock",
         "name": "Model 1957 Stock",
@@ -15206,7 +15570,7 @@
         "unlock_description": null
     },
     {
-        "id": null,
+        "id": "97cb4badb329d81d",
         "category_id": "stocks",
         "slug": "ftac-rtp-40-stock",
         "name": "FTAC RTP-40 Stock",
@@ -15230,7 +15594,7 @@
         "unlock_description": null
     },
     {
-        "id": null,
+        "id": "97cb4678859c4213",
         "category_id": "rear-grips",
         "slug": "fss-spider-grip",
         "name": "FSS Spider Grip",
@@ -15250,7 +15614,7 @@
         "unlock_description": null
     },
     {
-        "id": null,
+        "id": "97cc4befac7130ca",
         "category_id": "muzzles",
         "slug": "xten-black-kite",
         "name": "XTen Black Kite",
@@ -15272,6 +15636,111 @@
         "unlock_type": "weapon",
         "unlock_id": "pdsw-528",
         "unlock_level": 29,
+        "unlock_description": null
+    },
+    {
+        "id": "97ce4c03bb25b9c5",
+        "category_id": "barrels",
+        "slug": "165-stb-factory",
+        "name": "16.5'' STB Factory",
+        "description": "A lightweight option for the MX9, this STB 556 factory barrel features a chrome-lined bore making this a competitive barrel out of the box.",
+        "completed": true,
+        "has_errors": true,
+        "comment": "unknown unlock",
+        "pros": [
+            "recoil_control",
+            "bullet_velocity"
+        ],
+        "cons": [
+            "movement_speed",
+            "ads_speed"
+        ],
+        "unlock_type": "unknown",
+        "unlock_id": null,
+        "unlock_level": null,
+        "unlock_description": null
+    },
+    {
+        "id": "97ce44e5ac789ee0",
+        "category_id": "stocks",
+        "slug": "bruen-stb-556-stock",
+        "name": "Bruen STB 556 Stock",
+        "description": "This factory stock for the STB 556 is a more stable choice for the MX9 SMG. Enhances recoil control.",
+        "completed": true,
+        "has_errors": true,
+        "comment": "unknown unlock",
+        "pros": [
+            "recoil_control"
+        ],
+        "cons": [
+            "ads_speed",
+            "crouch_movement_speed"
+        ],
+        "unlock_type": "unknown",
+        "unlock_id": null,
+        "unlock_level": null,
+        "unlock_description": null
+    },
+    {
+        "id": "97ce4ad8a1f29ae1",
+        "category_id": "ammunition",
+        "slug": "9mm-sub-fr",
+        "name": "9mm Sub FR",
+        "description": "Frangible rounds shatter on impact, which temporarily delays healing. Subsonic rounds hide enemy death markers.",
+        "completed": true,
+        "has_errors": true,
+        "comment": "unknown unlock",
+        "pros": [
+            "inflict_wounding_effect"
+        ],
+        "cons": [
+            "bullet_penetration",
+            "damage_range"
+        ],
+        "unlock_type": "unknown",
+        "unlock_id": null,
+        "unlock_level": null,
+        "unlock_description": null
+    },
+    {
+        "id": "97ce4af09ead75a9",
+        "category_id": "ammunition",
+        "slug": "9mm-sub-hp",
+        "name": "9mm Sub HP",
+        "description": "Hollowpoint rounds deform on impact, slowing the target and disabling sprint for a short time. Subsonic rounds hide enemy death markers.",
+        "completed": true,
+        "has_errors": true,
+        "comment": "unknown unlock",
+        "pros": [
+            "crippling_power"
+        ],
+        "cons": [
+            "bullet_velocity",
+            "bullet_penetration"
+        ],
+        "unlock_type": "unknown",
+        "unlock_id": null,
+        "unlock_level": null,
+        "unlock_description": null
+    },
+    {
+        "id": "97ce49d388f63f59",
+        "category_id": "ammunition",
+        "slug": "9mm-sub-op",
+        "name": "9mm Sub OP",
+        "description": "Suppress and control with hotter rounds that afflict the target with increased flinch. Subsonic rounds hide enemy death markers.",
+        "completed": true,
+        "has_errors": true,
+        "comment": "unknown unlock",
+        "pros": [
+            "target_flinch"
+        ],
+        "cons": [
+            "recoil_control"
+        ],
+        "unlock_type": "unknown",
+        "unlock_id": null,
+        "unlock_level": null,
         "unlock_description": null
     }
 ]

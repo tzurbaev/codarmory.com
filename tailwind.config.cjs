@@ -1,4 +1,6 @@
 const colors = require('tailwindcss/colors');
+const defaultTheme = require('tailwindcss/defaultTheme');
+const plugin = require('tailwindcss/plugin');
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -10,6 +12,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Poppins', ...defaultTheme.fontFamily.sans],
+      },
       colors: {
         primary: colors.purple,
       },
@@ -17,5 +22,8 @@ module.exports = {
   },
   plugins: [
     require('@tailwindcss/forms'),
+    plugin(function ( { addVariant }) {
+      addVariant('attachments-grid', ':merge(.attachments-grid) &');
+    }),
   ],
 }
