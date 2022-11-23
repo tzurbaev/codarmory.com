@@ -11,14 +11,19 @@
         </div>
 
         <div class="col-span-5">
-          <div class="grid grid-cols-1 gap-4 py-8"
+          <div class="grid grid-cols-1 gap-4 py-8 weapons-grid"
                :class="{
                  'lg:grid-cols-1': weapons.length === 1,
                  'lg:grid-cols-2': weapons.length === 2,
                  'lg:grid-cols-3': weapons.length >= 3,
                }"
           >
-            <WeaponGridCard v-for="weapon in weapons" :key="`WeaponGridCard-${weapon.id}`" :weapon="weapon" />
+            <div v-for="weapon in weapons"
+                 :key="`WeaponGridCard-${weapon.id}`"
+                 class="p-8 rounded-lg shadow-lg hover:shadow-xl bg-gray-900 flex flex-col"
+            >
+              <WeaponCard type="grid" :weapon="weapon" />
+            </div>
           </div>
         </div>
       </div>
@@ -31,7 +36,7 @@ import { computed, ComputedRef } from 'vue';
 import { useWeaponCategoriesMenu, useWeaponCategory } from '@/weapons/composables/categories';
 import { useWeaponsList } from '@/weapons/composables/weapons';
 import PageHeader from '@/layout/components/PageHeader.vue';
-import WeaponGridCard from '@/weapons/components/WeaponGridCard.vue';
+import WeaponCard from '@/weapons/components/WeaponCard.vue';
 import VerticalMenu from '@/layout/components/VerticalMenu.vue';
 
 const props = defineProps<{

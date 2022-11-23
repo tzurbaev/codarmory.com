@@ -1,13 +1,15 @@
-import { computed, ComputedRef } from 'vue';
+import {
+  computed, ComputedRef, ref, Ref, watch,
+} from 'vue';
 import { Weapon } from '@/weapons/types';
 import { useWeaponsStore } from '@/weapons/stores/weapons';
 import { UnlockType } from '@/unlocks/types';
 import { AttachmentsGroup } from '@/attachments/types';
 import { useAttachmentsGroups } from '@/attachments/composables/attachments';
 
-const weaponsStore = useWeaponsStore();
-
 function getParentWeapon(weapon: Weapon): Weapon | null {
+  const weaponsStore = useWeaponsStore();
+
   if (weapon.unlock_type !== UnlockType.Weapon) {
     return null;
   } else if (!weapon.unlock_id) {
@@ -24,6 +26,7 @@ function getParentWeapon(weapon: Weapon): Weapon | null {
 }
 
 export function useWeaponsList(categoryId: ComputedRef<string | null>): { weapons: ComputedRef<Weapon[]> } {
+  const weaponsStore = useWeaponsStore();
   const transformed = computed(() => weaponsStore.extendedWeapons.map((weapon: Weapon) => ({
     ...weapon,
     parent: getParentWeapon(weapon),
@@ -41,6 +44,7 @@ export function useWeaponsList(categoryId: ComputedRef<string | null>): { weapon
 }
 
 export function useWeapon(weaponId: ComputedRef<string | null>): { weapon: ComputedRef<Weapon | null>, groups: ComputedRef<AttachmentsGroup[]> } {
+  const weaponsStore = useWeaponsStore();
   const weapon: ComputedRef<Weapon | null> = computed(() => {
     if (!weaponId.value) {
       return null;
@@ -72,4 +76,61 @@ export function useWeapon(weaponId: ComputedRef<string | null>): { weapon: Compu
     weapon,
     groups,
   };
+}
+
+export function useWeaponUnlockPath(weapon: ComputedRef<Weapon | null>) {
+  const parent: Ref<Weapon[]> = ref([]);
+  const children: Ref<Weapon[]> = ref([]);
+  const { weapons } = useWeaponsList(computed(() => null));
+
+  const findParent = (id: string | null) => {
+    if (!id) {
+      return;
+    }
+
+    const parentItem = weapons.value.find((item: Weapon) => item.id === id);
+
+    if (!parentItem) {
+      return;
+    }
+
+    parent.value.unshift(parentItem);
+
+    if (parentItem.unlock_type === UnlockType.Weapon) {
+      findParent(parentItem.unlock_id);
+    }
+  };
+
+  const findChildren = (id: string | null) => {
+    if (!id) {
+      return;
+    }
+
+    const childrenItems = weapons.value.filter((item: Weapon) => item.unlock_id === id);
+
+    if (!childrenItems.length) {
+      return;
+    }
+
+    childrenItems.forEach((child: Weapon) => {
+      children.value.push(child);
+      findChildren(child.id);
+    });
+  };
+
+  const generate = () => {
+    parent.value = [];
+    children.value = [];
+
+    if (!weapon.value) {
+      return;
+    }
+
+    findParent(weapon.value.unlock_id);
+    findChildren(weapon.value.id);
+  };
+
+  watch(weapon, () => generate(), { immediate: true });
+
+  return { parent, children };
 }

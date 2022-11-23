@@ -24,6 +24,7 @@ module.exports = {
     require('@tailwindcss/forms'),
     plugin(function ( { addVariant }) {
       addVariant('attachments-grid', ':merge(.attachments-grid) &');
+      addVariant('weapons-grid', ':merge(.weapons-grid) &');
     }),
   ],
 }

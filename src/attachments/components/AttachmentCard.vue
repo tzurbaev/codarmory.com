@@ -16,7 +16,7 @@
       </h4>
     </template>
 
-    <AttachmentUnlockDescription :attachment="attachment" class="text-primary-500 attachments-grid:text-sm" />
+    <AttachmentUnlockDescription :attachment="attachment" class="mt-2 text-primary-500 attachments-grid:text-sm" />
     <p v-if="attachment.description" class="mt-4 attachments-grid:mt-2 attachments-grid:text-xs text-white/60">
       {{ attachment.description }}
     </p>
@@ -50,7 +50,7 @@
 
 <script setup lang="ts">
 import { Attachment } from '@/attachments/types';
-import AttachmentUnlockDescription from '@/unlocks/components/AttachmentUnlockDescription.vue';
+import AttachmentUnlockDescription from '@/unlocks/components/attachments/AttachmentUnlockDescription.vue';
 import { computed, ComputedRef } from 'vue';
 
 const props = defineProps<{

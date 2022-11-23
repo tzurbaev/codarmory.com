@@ -2,9 +2,8 @@ import { computed, ComputedRef } from 'vue';
 import { useCategoriesStore } from '@/weapons/stores/categories';
 import { WeaponCategory } from '@/weapons/types';
 
-const categoriesStore = useCategoriesStore();
-
 export function useWeaponCategory(id: ComputedRef<string | null>): { category: ComputedRef<WeaponCategory | null> } {
+  const categoriesStore = useCategoriesStore();
   const category: ComputedRef<WeaponCategory | null> = computed(() => {
     if (!id.value) {
       return null;
@@ -23,6 +22,7 @@ export function useWeaponCategory(id: ComputedRef<string | null>): { category: C
 }
 
 export function useWeaponCategories(): { categories: ComputedRef<WeaponCategory[]> } {
+  const categoriesStore = useCategoriesStore();
   const categories: ComputedRef<WeaponCategory[]> = computed(() => categoriesStore.categories);
 
   return { categories };

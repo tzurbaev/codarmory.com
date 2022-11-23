@@ -1,6 +1,6 @@
 <template>
-  <div v-if="weapon" class="p-8 rounded-lg shadow-lg hover:shadow-xl bg-gray-900">
-    <WeaponCard :weapon="weapon" />
+  <div v-if="weapon" class="p-8 rounded-lg shadow-lg bg-gray-900">
+    <WeaponCard type="page" :weapon="weapon" />
 
     <AttachmentsList v-if="groups.length > 0" class="mt-8" :groups="groups" />
   </div>
