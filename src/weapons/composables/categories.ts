@@ -1,6 +1,7 @@
 import { computed, ComputedRef } from 'vue';
 import { useCategoriesStore } from '@/weapons/stores/categories';
 import { WeaponCategory } from '@/weapons/types';
+import { MenuItem } from '@/layout/types';
 
 export function useWeaponCategory(id: ComputedRef<string | null>): { category: ComputedRef<WeaponCategory | null> } {
   const categoriesStore = useCategoriesStore();
@@ -28,11 +29,12 @@ export function useWeaponCategories(): { categories: ComputedRef<WeaponCategory[
   return { categories };
 }
 
-export function useWeaponCategoriesMenu(id: ComputedRef<string | null>): { menu: ComputedRef<any[]> } {
+export function useWeaponCategoriesMenu(id: ComputedRef<string | null>): { menu: ComputedRef<MenuItem[]> } {
   const { categories } = useWeaponCategories();
 
-  const menu = computed(() => {
+  const menu: ComputedRef<MenuItem[]> = computed(() => {
     const items = categories.value.map((item: WeaponCategory) => ({
+      id: `category-${item.id}`,
       name: item.name,
       active: id.value === item.id,
       route: {
@@ -44,6 +46,7 @@ export function useWeaponCategoriesMenu(id: ComputedRef<string | null>): { menu:
     }));
 
     items.unshift({
+      id: 'all-weapons',
       name: 'All Weapons',
       active: id.value === null,
       route: { name: 'weapons.index' } as any,

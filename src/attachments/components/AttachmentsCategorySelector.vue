@@ -1,19 +1,10 @@
 <template>
   <div>
     <div class="lg:hidden mt-4">
-      <label for="attachment-category-selector" class="sr-only">Select a category</label>
-      <select id="attachment-category-selector"
-              name="tabs"
-              class="block w-full rounded-md border-gray-300 py-2 pl-3 pr-10 text-base focus:border-primary-500 focus:outline-none focus:ring-primary-500 sm:text-sm"
-              v-model="value"
-      >
-        <option v-for="group in groups"
-                :key="group.category.id"
-                :value="group.category.id"
-        >
-          {{ group.category.name }}
-        </option>
-      </select>
+      <SelectInputGroup v-model="value">
+        <InputLabel class="sr-only">Select a category</InputLabel>
+        <SelectInput :options="mobileNavigationItems" />
+      </SelectInputGroup>
     </div>
     <div class="hidden lg:block">
       <div class="border-b border-gray-700">
@@ -36,6 +27,7 @@
 <script setup lang="ts">
 import { computed } from 'vue';
 import { AttachmentsGroup } from '@/attachments/types';
+import { SelectInputGroup, SelectInput, InputLabel } from '@zenky/forms-vue';
 
 const props = defineProps<{
   modelValue: string | null;
@@ -46,4 +38,8 @@ const value = computed({
   get: () => props.modelValue,
   set: (val: string | null) => emit('update:modelValue', val),
 });
+const mobileNavigationItems = computed(() => props.groups.map((group: AttachmentsGroup) => ({
+  id: group.category.id,
+  name: group.category.name,
+})));
 </script>

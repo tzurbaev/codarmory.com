@@ -25,7 +25,10 @@ function getParentWeapon(weapon: Weapon): Weapon | null {
   return weaponsStore.extendedWeapons[index];
 }
 
-export function useWeaponsList(categoryId: ComputedRef<string | null>): { weapons: ComputedRef<Weapon[]> } {
+export function useWeaponsList(
+  categoryId: ComputedRef<string | null>,
+  attachmentId: ComputedRef<string | null>,
+): { weapons: ComputedRef<Weapon[]> } {
   const weaponsStore = useWeaponsStore();
   const transformed = computed(() => weaponsStore.extendedWeapons.map((weapon: Weapon) => ({
     ...weapon,
@@ -33,11 +36,17 @@ export function useWeaponsList(categoryId: ComputedRef<string | null>): { weapon
   })));
 
   const weapons = computed(() => {
-    if (categoryId.value === null) {
-      return transformed.value;
+    let list = transformed.value;
+
+    if (categoryId.value !== null) {
+      list = list.filter((weapon: Weapon) => weapon.category_id === categoryId.value);
     }
 
-    return transformed.value.filter((weapon: Weapon) => weapon.category_id === categoryId.value);
+    if (attachmentId.value !== null) {
+      list = list.filter((weapon: Weapon) => weapon.attachments.indexOf(attachmentId.value as string) !== -1);
+    }
+
+    return list;
   });
 
   return { weapons };
