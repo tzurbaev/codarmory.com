@@ -21,12 +21,12 @@
                'lg:grid-cols-3': weapons.length >= 3,
              }"
         >
-          <div v-for="weapon in weapons"
-               :key="`WeaponGridCard-${weapon.id}`"
-               class="p-4 sm:p-8 rounded-lg border border-gray-700 bg-gray-900 flex flex-col"
+          <Panel v-for="weapon in weapons"
+                 :key="`WeaponGridCard-${weapon.id}`"
+                 class="border border-gray-700 flex flex-col"
           >
             <WeaponCard type="grid" :weapon="weapon" />
-          </div>
+          </Panel>
         </div>
       </template>
 

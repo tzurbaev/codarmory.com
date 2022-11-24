@@ -1,16 +1,14 @@
 <template>
   <div v-if="attachment" class="space-y-8">
-    <div class="p-8 rounded-lg shadow-lg hover:shadow-xl bg-gray-900">
+    <Panel>
       <AttachmentCard type="page" :attachment="attachment" />
-    </div>
+    </Panel>
 
-    <div class="mt-4">
-      <WeaponsList label="Weapons"
-                   :attachment-id="id"
-                   :with-category="true"
-                   :static-filters="['attachment_id']"
-      />
-    </div>
+    <WeaponsList label="Weapons"
+                 :attachment-id="id"
+                 :with-category="true"
+                 :static-filters="['attachment_id']"
+    />
   </div>
 </template>
 
@@ -19,6 +17,7 @@ import { computed } from 'vue';
 import { useAttachment } from '@/attachments/composables/attachments';
 import AttachmentCard from '@/attachments/components/AttachmentCard.vue';
 import WeaponsList from '@/weapons/components/WeaponsList.vue';
+import Panel from '@/layout/components/Panel.vue';
 
 const props = defineProps<{
   slug: string;

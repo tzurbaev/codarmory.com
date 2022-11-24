@@ -7,16 +7,21 @@
         </router-link>
         <span v-if="weapon.platform" class="text-sm text-white/60"> &bull; {{ weapon.platform.name }}</span>
       </p>
-      <h1 class="text-4xl sm:text-5xl font-extrabold text-white leading-normal">
+      <h1 class="text-4xl sm:text-5xl font-extrabold text-white">
         {{ weapon.name }}
       </h1>
     </template>
     <template v-else>
-      <p v-if="weapon.category" class="font-medium text-white/60">
-        {{ weapon.category.name }}
-        <span v-if="weapon.platform" class="text-white/60"> &bull; {{ weapon.platform.name }}</span>
-      </p>
-      <h2 class="text-4xl sm:text-5xl font-extrabold leading-normal">
+      <div v-if="weapon.category || weapon.platform" class="lg:flex lg:flex-col">
+        <p v-if="weapon.category" class="font-medium text-white/60">
+          {{ weapon.category.name }}
+        </p>
+        <p v-if="weapon.platform" class="text-white/60">
+          <span class="lg:hidden">&bull;</span>
+          {{ weapon.platform.name }}
+        </p>
+      </div>
+      <h2 class="text-4xl sm:text-5xl font-extrabold">
         <router-link :to="weaponRoute" class="text-white/90 hover:text-primary-500">
           {{ weapon.name }}
         </router-link>

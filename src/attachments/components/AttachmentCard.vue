@@ -1,31 +1,30 @@
 <template>
-  <div>
-    <template v-if="type !== 'grid'">
-      <p v-if="attachment.category" class="font-medium">
-        <router-link :to="categoryRoute" class="text-primary-600 hover:text-primary-500 hover:underline">
-          {{ attachment.category.name }}
-        </router-link>
+  <div class="space-y-8">
+    <div class="space-y-2">
+      <template v-if="type !== 'grid'">
+        <p v-if="attachment.category" class="font-medium">
+          <router-link :to="categoryRoute" class="text-primary-600 hover:text-primary-500 hover:underline">
+            {{ attachment.category.name }}
+          </router-link>
+        </p>
+        <h1 class="text-4xl sm:text-5xl font-extrabold text-white">{{ attachment.name }}</h1>
+      </template>
+      <template v-else>
+        <h4 class="font-extrabold text-2xl">
+          <router-link :to="attachmentRoute" class="text-white/90 hover:text-primary-500">
+            {{ attachment.name }}
+          </router-link>
+        </h4>
+      </template>
+
+      <AttachmentUnlockDescription :attachment="attachment" class="text-primary-500 attachments-grid:text-sm" />
+
+      <p v-if="attachment.description" class="attachments-grid:text-xs text-white/60">
+        {{ attachment.description }}
       </p>
-      <h1 class="text-5xl font-extrabold text-white leading-normal">{{ attachment.name }}</h1>
-    </template>
-    <template v-else>
-      <h4 class="font-extrabold text-2xl">
-        <router-link :to="attachmentRoute" class="text-white/90 hover:text-primary-500">
-          {{ attachment.name }}
-        </router-link>
-      </h4>
-    </template>
+    </div>
 
-    <AttachmentUnlockDescription :attachment="attachment"
-                                 class="text-primary-500 attachments-grid:text-sm"
-                                 :class="[type === 'grid' ? 'mt-2' : '']"
-    />
-
-    <p v-if="attachment.description" class="mt-4 attachments-grid:mt-2 attachments-grid:text-xs text-white/60">
-      {{ attachment.description }}
-    </p>
-
-    <div v-if="attachment.stats" class="mt-8 attachments-grid:mt-4 grid grid-cols-1 sm:grid-cols-2 attachments-grid:grid-cols-1 max-w-2xl attachments-grid:max-w-auto gap-8 attachments-grid:gap-4">
+    <div v-if="attachment.stats" class="grid grid-cols-1 sm:grid-cols-2 attachments-grid:grid-cols-1 max-w-2xl attachments-grid:max-w-auto gap-8 attachments-grid:gap-4">
       <div>
         <h3 class="text-green-500 text-base attachments-grid:text-xs font-bold">Pros</h3>
         <ul class="list-inside">

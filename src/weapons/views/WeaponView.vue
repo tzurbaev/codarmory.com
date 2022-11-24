@@ -1,8 +1,8 @@
 <template>
   <div v-if="weapon" class="space-y-8">
-    <div class="p-8 rounded-lg shadow-lg bg-gray-900">
+    <Panel>
       <WeaponCard type="page" :weapon="weapon" />
-    </div>
+    </Panel>
 
     <Panel v-if="groups.length > 0" label="Attachments">
       <AttachmentsList :groups="groups" />
