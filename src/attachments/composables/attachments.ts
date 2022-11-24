@@ -204,3 +204,10 @@ export function useAttachmentRoutes(attachment: ComputedRef<Attachment>) {
     attachmentRoute,
   };
 }
+
+export function getAttachmentsList() {
+  const attachmentsStore = useAttachmentsStore();
+  const ids = computed(() => attachmentsStore.attachments.map((item: Attachment) => item.id));
+
+  return useAttachmentsGroups(ids);
+}

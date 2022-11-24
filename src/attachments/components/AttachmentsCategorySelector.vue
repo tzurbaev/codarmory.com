@@ -8,7 +8,7 @@
     </div>
     <div class="hidden lg:block">
       <div class="border-b border-gray-700">
-        <nav class="-mb-px flex space-x-8" aria-label="Tabs">
+        <nav class="-mb-px flex space-x-4" aria-label="Tabs">
           <a v-for="group in groups"
              :key="group.category.id"
              href="javascript:;"
