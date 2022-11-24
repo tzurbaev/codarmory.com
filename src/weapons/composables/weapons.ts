@@ -1,11 +1,18 @@
 import {
   computed, ComputedRef, ref, Ref, watch,
 } from 'vue';
-import { Weapon } from '@/weapons/types';
+import { Weapon, WeaponsFilters } from '@/weapons/types';
 import { useWeaponsStore } from '@/weapons/stores/weapons';
 import { UnlockType } from '@/unlocks/types';
 import { AttachmentsGroup } from '@/attachments/types';
 import { useAttachmentsGroups } from '@/attachments/composables/attachments';
+import { getFilteredRecords } from '@/database/criteria';
+import {
+  getWeaponAttachmentCriterion,
+  getWeaponCategoryCriterion,
+  getWeaponPlatformCriterion,
+  getWeaponSearchCriterion,
+} from '@/weapons/composables/criteria';
 
 function getParentWeapon(weapon: Weapon): Weapon | null {
   const weaponsStore = useWeaponsStore();
@@ -25,10 +32,7 @@ function getParentWeapon(weapon: Weapon): Weapon | null {
   return weaponsStore.extendedWeapons[index];
 }
 
-export function useWeaponsList(
-  categoryId: ComputedRef<string | null>,
-  attachmentId: ComputedRef<string | null>,
-): { weapons: ComputedRef<Weapon[]> } {
+export function useWeaponsList(filters?: Ref<WeaponsFilters>): { weapons: ComputedRef<Weapon[]> } {
   const weaponsStore = useWeaponsStore();
   const transformed = computed(() => weaponsStore.extendedWeapons.map((weapon: Weapon) => ({
     ...weapon,
@@ -36,17 +40,16 @@ export function useWeaponsList(
   })));
 
   const weapons = computed(() => {
-    let list = transformed.value;
-
-    if (categoryId.value !== null) {
-      list = list.filter((weapon: Weapon) => weapon.category_id === categoryId.value);
+    if (!filters) {
+      return transformed.value;
     }
 
-    if (attachmentId.value !== null) {
-      list = list.filter((weapon: Weapon) => weapon.attachments.indexOf(attachmentId.value as string) !== -1);
-    }
-
-    return list;
+    return getFilteredRecords(transformed.value, [
+      getWeaponCategoryCriterion(filters.value.category_id),
+      getWeaponAttachmentCriterion(filters.value.attachment_id),
+      getWeaponPlatformCriterion(filters.value.platform_id),
+      getWeaponSearchCriterion(filters.value.search),
+    ]);
   });
 
   return { weapons };
@@ -90,7 +93,7 @@ export function useWeapon(weaponId: ComputedRef<string | null>): { weapon: Compu
 export function useWeaponUnlockPath(weapon: ComputedRef<Weapon | null>) {
   const parent: Ref<Weapon[]> = ref([]);
   const children: Ref<Weapon[]> = ref([]);
-  const { weapons } = useWeaponsList(computed(() => null), computed(() => null));
+  const { weapons } = useWeaponsList();
 
   const findParent = (id: string | null) => {
     if (!id) {

@@ -5,34 +5,12 @@ import {
   Attachment, AttachmentsFilters, AttachmentStat, AttachmentsGroup,
 } from '@/attachments/types';
 import { useAttachmentsStore } from '@/attachments/stores/attachments';
-
-function passesStatsModeFilter(stats: string[], matchAll: boolean, attachmentStats: string[]): boolean {
-  if (!matchAll) {
-    return attachmentStats.some((item: string) => stats.indexOf(item) !== -1);
-  }
-
-  return stats.every((item: string) => attachmentStats.indexOf(item) !== -1);
-}
-
-function passesStatsFilter(filters: AttachmentsFilters, attachment: Attachment): boolean {
-  if (!filters.pros.length && !filters.cons.length) {
-    return true;
-  } else if (filters.pros.length > 0 && passesStatsModeFilter(filters.pros, filters.matchAllPros, attachment.pros)) {
-    return true;
-  } else if (filters.cons.length > 0 && passesStatsModeFilter(filters.cons, filters.matchAllCons, attachment.cons)) {
-    return true;
-  }
-
-  return false;
-}
-
-function passesSearchFilter(query: string, attachment: Attachment): boolean {
-  if (!query.length) {
-    return true;
-  }
-
-  return attachment.name.toLowerCase().includes(query);
-}
+import { getFilteredRecords } from '@/database/criteria';
+import {
+  getAttachmentConsCriterion,
+  getAttachmentProsCriterion,
+  getAttachmentSearchCriterion,
+} from '@/attachments/composables/criteria';
 
 function getUniqueStats(stats: AttachmentStat[]): AttachmentStat[] {
   const unique: AttachmentStat[] = [];
@@ -162,15 +140,11 @@ export function useFilteredAttachments(group: ComputedRef<AttachmentsGroup | nul
       return group.value?.attachments || [];
     }
 
-    const query = filters.value.search?.toLowerCase();
-
-    return (group.value?.attachments || []).filter((attachment: Attachment) => {
-      if (!passesStatsFilter(filters.value, attachment)) {
-        return false;
-      }
-
-      return passesSearchFilter(query, attachment);
-    });
+    return getFilteredRecords(group.value?.attachments || [], [
+      getAttachmentProsCriterion(filters.value.pros, filters.value.matchAllPros),
+      getAttachmentConsCriterion(filters.value.cons, filters.value.matchAllCons),
+      getAttachmentSearchCriterion(filters.value.search),
+    ]);
   });
 
   const reset = (): void => {
