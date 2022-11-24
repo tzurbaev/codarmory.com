@@ -9,6 +9,7 @@
           <router-link :to="weaponRoute"
                        class="text-white/90 hover:underline"
                        :class="[current ? 'hover:text-primary-100' : 'hover:text-primary-500']"
+                       @click="close()"
           >
             {{ weapon.name }}
           </router-link>
@@ -25,6 +26,7 @@ import { Weapon } from '@/weapons/types';
 import WeaponUnlockDescription from '@/unlocks/components/weapons/WeaponUnlockDescription.vue';
 import { useWeaponRoutes } from '@/weapons/composables/weapons';
 import { computed } from 'vue';
+import { useUnlockModal } from '@/unlocks/composables/unlocks';
 
 const props = defineProps<{
   weapon: Weapon;
@@ -34,4 +36,5 @@ const props = defineProps<{
 }>();
 
 const { weaponRoute } = useWeaponRoutes(computed(() => props.weapon));
+const { close } = useUnlockModal();
 </script>
