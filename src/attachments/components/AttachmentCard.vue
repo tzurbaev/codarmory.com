@@ -32,7 +32,12 @@
               :key="`AttachmentGridCard-${attachment.id}-Pros-${stat.id}`"
               class="text-green-500 text-lg attachments-grid:text-sm"
           >
-            {{ stat.name }}
+            <template v-if="type !== 'grid'">
+              {{ stat.name }}
+            </template>
+            <template v-else>
+              <a href="javascript:;" class="hover:underline" @click="$emit('stat', stat.id, 'pros')">{{ stat.name }}</a>
+            </template>
           </li>
         </ul>
       </div>
@@ -43,7 +48,12 @@
               :key="`AttachmentGridCard-${attachment.id}-Pros-${stat.id}`"
               class="text-red-500 text-lg attachments-grid:text-sm"
           >
-            {{ stat.name }}
+            <template v-if="type !== 'grid'">
+              {{ stat.name }}
+            </template>
+            <template v-else>
+              <a href="javascript:;" class="hover:underline" @click="$emit('stat', stat.id, 'cons')">{{ stat.name }}</a>
+            </template>
           </li>
         </ul>
       </div>
@@ -61,6 +71,8 @@ const props = defineProps<{
   attachment: Attachment;
   type: string;
 }>();
+
+defineEmits(['stat']);
 
 const { categoryRoute, attachmentRoute } = useAttachmentRoutes(computed(() => props.attachment));
 </script>

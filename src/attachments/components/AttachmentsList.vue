@@ -29,7 +29,7 @@
                    :key="`AttachmentGridCard-${attachment.id}`"
                    class="border border-gray-700 rounded-md p-3"
               >
-                <AttachmentCard type="grid" :attachment="attachment" />
+                <AttachmentCard type="grid" :attachment="attachment" @stat="addStatFilter" />
               </div>
             </div>
           </template>
@@ -62,4 +62,11 @@ const {
   filters, reset, hasFilters, pros, cons, attachments,
 } = useFilteredAttachments(group);
 watchForCategory((): void => reset());
+const addStatFilter = (stat: string, type: string) => {
+  if (type === 'pros' && filters.value.pros.indexOf(stat) === -1) {
+    filters.value.pros.push(stat);
+  } else if (type === 'cons' && filters.value.cons.indexOf(stat) === -1) {
+    filters.value.cons.push(stat);
+  }
+};
 </script>
