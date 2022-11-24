@@ -1,8 +1,12 @@
 <template>
-  <div v-if="weapon" class="p-8 rounded-lg shadow-lg bg-gray-900">
-    <WeaponCard type="page" :weapon="weapon" />
+  <div v-if="weapon" class="space-y-8">
+    <div class="p-8 rounded-lg shadow-lg bg-gray-900">
+      <WeaponCard type="page" :weapon="weapon" />
+    </div>
 
-    <AttachmentsList v-if="groups.length > 0" class="mt-8" :groups="groups" />
+    <div class="p-8 rounded-lg shadow-lg bg-gray-900">
+      <AttachmentsList v-if="groups.length > 0" :groups="groups" />
+    </div>
   </div>
 </template>
 

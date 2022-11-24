@@ -2,6 +2,7 @@ import { computed, ComputedRef } from 'vue';
 import { useCategoriesStore } from '@/weapons/stores/categories';
 import { WeaponCategory } from '@/weapons/types';
 import { MenuItem } from '@/layout/types';
+import {SelectInputOption} from "@zenky/forms-vue/dist/types/select/select";
 
 export function useWeaponCategory(id: ComputedRef<string | null>): { category: ComputedRef<WeaponCategory | null> } {
   const categoriesStore = useCategoriesStore();
@@ -27,6 +28,16 @@ export function useWeaponCategories(): { categories: ComputedRef<WeaponCategory[
   const categories: ComputedRef<WeaponCategory[]> = computed(() => categoriesStore.categories);
 
   return { categories };
+}
+
+export function useWeaponCategoriesOptions(): { options: ComputedRef<SelectInputOption[]> } {
+  const { categories } = useWeaponCategories();
+  const options = computed(() => [
+    { id: null, name: 'All Categories' },
+    ...categories.value,
+  ]);
+
+  return { options };
 }
 
 export function useWeaponCategoriesMenu(id: ComputedRef<string | null>): { menu: ComputedRef<MenuItem[]> } {

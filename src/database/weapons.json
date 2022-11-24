@@ -1446,7 +1446,7 @@
         "platform_id": "bruen-ops",
         "name": "BAS-P",
         "unlock_type": "battle-pass",
-        "unlock_id": null,
+        "unlock_id": "A6",
         "unlock_level": 1,
         "unlock_description": null,
         "attachments": [

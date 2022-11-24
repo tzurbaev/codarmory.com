@@ -6,7 +6,7 @@
         <SelectInput :options="menu" />
       </SelectInputGroup>
     </div>
-    <nav class="hidden sm:block space-y-1 py-8" :aria-label="label">
+    <nav class="hidden sm:block space-y-1" :aria-label="label">
       <router-link v-for="item in menu"
                    :key="item.name"
                    :to="item.route"

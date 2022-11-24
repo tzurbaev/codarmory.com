@@ -4,6 +4,7 @@ import { Weapon } from '@/weapons/types';
 export interface AttachmentCategory {
   id: string;
   name: string;
+  sorting: number;
 }
 
 export interface AttachmentStat {

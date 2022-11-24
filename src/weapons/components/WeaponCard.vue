@@ -5,12 +5,16 @@
         <router-link :to="categoryRoute" class="text-primary-600 hover:text-primary-500 hover:underline">
           {{ weapon.category.name }}
         </router-link>
+        <span v-if="weapon.platform" class="text-sm text-white/60"> &bull; {{ weapon.platform.name }}</span>
       </p>
-      <h1 class="text-5xl font-extrabold text-white leading-normal">{{ weapon.name }}</h1>
+      <h1 class="text-5xl font-extrabold text-white leading-normal">
+        {{ weapon.name }}
+      </h1>
     </template>
     <template v-else>
       <p v-if="weapon.category" class="font-medium text-white/60">
         {{ weapon.category.name }}
+        <span v-if="weapon.platform" class="text-white/60"> &bull; {{ weapon.platform.name }}</span>
       </p>
       <h2 class="text-5xl font-extrabold leading-normal">
         <router-link :to="weaponRoute" class="text-white/90 hover:text-primary-500">

@@ -11,27 +11,14 @@
   </div>
 
   <div>
-    <ToggleInputGroup v-model="value.matchAllPros">
-      <ToggleInput />
-      <ToggleInputDescription>
-        <InputLabel>Match all pros</InputLabel>
-        <InputHint>Select to match all choosen pros.</InputHint>
-      </ToggleInputDescription>
-    </ToggleInputGroup>
-  </div>
-
-  <div>
     <ResourceCombobox label="Cons" :items="cons" :multiple="true" v-model="value.cons" />
   </div>
 
   <div>
-    <ToggleInputGroup v-model="value.matchAllCons">
-      <ToggleInput />
-      <ToggleInputDescription>
-        <InputLabel>Match all cons</InputLabel>
-        <InputHint>Select to match all choosen cons.</InputHint>
-      </ToggleInputDescription>
-    </ToggleInputGroup>
+    <SelectInputGroup v-model="statsMode">
+      <InputLabel>Display weapons with</InputLabel>
+      <SelectInput :options="statsOptions" />
+    </SelectInputGroup>
   </div>
 </template>
 
@@ -39,10 +26,10 @@
 import { AttachmentsFilters, AttachmentStat } from '@/attachments/types';
 import {
   InputLabel, TextInputGroup, TextInput,
-  ToggleInputGroup, ToggleInput, ToggleInputDescription, InputHint,
+  SelectInputGroup, SelectInput,
 } from '@zenky/forms-vue';
 import ResourceCombobox from '@/forms/components/ResourceCombobox.vue';
-import { computed } from 'vue';
+import {computed, ref, watch} from 'vue';
 
 const props = defineProps<{
   modelValue: AttachmentsFilters;
@@ -55,5 +42,14 @@ const emit = defineEmits(['update:modelValue', 'reset']);
 const value = computed({
   get: () => props.modelValue,
   set: (val: AttachmentsFilters) => emit('update:modelValue', val),
+});
+const statsMode = ref('or');
+const statsOptions = [
+  { id: 'or', name: 'Any of selected stats' },
+  { id: 'and', name: 'All of selected stats' },
+];
+watch(statsMode, () => {
+  value.value.matchAllPros = statsMode.value === 'and';
+  value.value.matchAllCons = statsMode.value === 'and';
 });
 </script>

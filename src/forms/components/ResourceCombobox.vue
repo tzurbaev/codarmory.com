@@ -13,7 +13,7 @@
     <slot name="values" :has-values="hasMultipleValues" :values="selectedValues" :remove="onRemove">
       <div v-if="hasMultipleValues" class="mt-2 flex flex-col gap-1 items-start">
         <template v-for="selected in selectedValues" :key="`SelectedOption-${selected.id}`">
-          <span class="inline-flex items-center rounded-md bg-primary-100 py-0.5 pl-2 pr-0.5 text-xs font-medium text-primary-700">
+          <span class="inline-flex items-center rounded-md bg-primary-800 py-0.5 pl-2 pr-0.5 text-xs font-medium text-white/90">
             {{ selected.name }}
             <button type="button"
                     class="ml-0.5 inline-flex h-4 w-4 flex-shrink-0 items-center justify-center rounded-full text-primary-400 hover:bg-primary-200 hover:text-primary-500 focus:bg-primary-500 focus:text-white focus:outline-none"

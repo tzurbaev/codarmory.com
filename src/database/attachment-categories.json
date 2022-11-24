@@ -1,74 +1,92 @@
 [
     {
-        "id": "barrels",
-        "name": "Barrels"
-    },
-    {
-        "id": "optics",
-        "name": "Optics"
-    },
-    {
-        "id": "stocks",
-        "name": "Stocks"
-    },
-    {
-        "id": "bolts",
-        "name": "Bolts"
-    },
-    {
-        "id": "rear-grips",
-        "name": "Rear Grips"
-    },
-    {
-        "id": "magazines",
-        "name": "Magazines"
-    },
-    {
-        "id": "ammunition",
-        "name": "Ammunition"
-    },
-    {
-        "id": "underbarrels",
-        "name": "Underbarrels"
-    },
-    {
         "id": "muzzles",
-        "name": "Muzzles"
-    },
-    {
-        "id": "lasers",
-        "name": "Lasers"
-    },
-    {
-        "id": "guards",
-        "name": "Guards"
-    },
-    {
-        "id": "combs",
-        "name": "Combs"
-    },
-    {
-        "id": "trigger-actions",
-        "name": "Trigger Actions"
+        "name": "Muzzles",
+        "sorting": 0
     },
     {
         "id": "receivers",
-        "name": "Receivers"
+        "name": "Receivers",
+        "sorting": 0
     },
     {
-        "id": "rails",
-        "name": "Rails"
+        "id": "barrels",
+        "name": "Barrels",
+        "sorting": 1
+    },
+    {
+        "id": "lasers",
+        "name": "Lasers",
+        "sorting": 2
+    },
+    {
+        "id": "optics",
+        "name": "Optics",
+        "sorting": 3
+    },
+    {
+        "id": "stocks",
+        "name": "Stocks",
+        "sorting": 4
+    },
+    {
+        "id": "rear-grips",
+        "name": "Rear Grips",
+        "sorting": 5
     },
     {
         "id": "rear-grip-comb",
-        "name": "Rear Grip \/ Comb"
+        "name": "Rear Grip \/ Comb",
+        "sorting": 6
+    },
+    {
+        "id": "combs",
+        "name": "Combs",
+        "sorting": 7
+    },
+    {
+        "id": "guards",
+        "name": "Guards",
+        "sorting": 8
+    },
+    {
+        "id": "bolts",
+        "name": "Bolts",
+        "sorting": 9
     },
     {
         "id": "levers",
-        "name": "Levers"
+        "name": "Levers",
+        "sorting": 10
     },
     {
         "id": "loaders",
-        "name": "Loaders"
+        "name": "Loaders",
+        "sorting": 11
+    },
+    {
+        "id": "magazines",
+        "name": "Magazines",
+        "sorting": 12
+    },
+    {
+        "id": "ammunition",
+        "name": "Ammunition",
+        "sorting": 13
+    },
+    {
+        "id": "trigger-actions",
+        "name": "Trigger Actions",
+        "sorting": 14
+    },
+    {
+        "id": "rails",
+        "name": "Rails",
+        "sorting": 15
+    },
+    {
+        "id": "underbarrels",
+        "name": "Underbarrels",
+        "sorting": 16
     }
 ]

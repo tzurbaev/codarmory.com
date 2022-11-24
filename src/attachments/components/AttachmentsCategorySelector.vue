@@ -2,7 +2,7 @@
   <div>
     <div class="lg:hidden mt-4">
       <SelectInputGroup v-model="value">
-        <InputLabel class="sr-only">Select a category</InputLabel>
+        <InputLabel>Category</InputLabel>
         <SelectInput :options="mobileNavigationItems" />
       </SelectInputGroup>
     </div>

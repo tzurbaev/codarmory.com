@@ -58,7 +58,7 @@ export function useAttachmentsGroups(ids: ComputedRef<string[]>): { groups: Comp
       }) - 1;
     });
 
-    return items;
+    return items.sort((a, b) => a.category.sorting - b.category.sorting);
   });
 
   return { groups };

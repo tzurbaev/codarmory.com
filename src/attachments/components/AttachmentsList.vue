@@ -1,24 +1,31 @@
 <template>
   <div>
+    <h2 class="text-2xl text-white font-extrabold mb-4">Attachments</h2>
     <AttachmentsCategorySelector :groups="groups" v-model="category" @select="setCategory" />
 
     <div v-if="group" class="mt-4">
-      <h3 class="font-extrabold text-3xl text-white">{{ group.category.name }}</h3>
-      <p class="text-gray-400 text-sm">
-        <template v-if="group.attachments.length !== attachments.length">
-          Displaying {{ attachments.length }} attachments
-          out of {{ group.attachments.length }}
-        </template>
-        <template v-else>{{ attachments.length }} attachments</template>
-      </p>
-
-      <div class="mt-4 grid grid-cols-1 sm:grid-cols-8 2xl:grid-cols-6 gap-6">
-        <div class="col-span-1 sm:col-span-2 2xl:col-span-1">
-          <div class="space-y-4 lg:sticky lg:top-[10%]">
-            <AttachmentsFiltersForm :pros="pros" :cons="cons" :has-filters="hasFilters" v-model="filters" @reset="reset" />
+      <div class="grid grid-cols-1">
+        <div>
+          <div class="grid grid-cols-1 sm:grid-cols-4 gap-4 mb-8">
+            <AttachmentsFiltersForm :pros="pros"
+                                    :cons="cons"
+                                    :has-filters="hasFilters"
+                                    v-model="filters"
+                                    @reset="reset"
+            />
           </div>
         </div>
-        <div class="col-span-1 sm:col-span-6 2xl:col-span-5">
+        <div>
+          <p class="text-white/60 text-sm mb-4">
+            <template v-if="attachments.length === group.attachments.length">
+              {{ group.attachments.length }} attachments
+            </template>
+            <template v-else>
+              Showing {{ attachments.length }} out of
+              {{ group.attachments.length }} attachments.
+              <a href="javascript:;" class="text-primary-600 hover:text-primary-500 hover:underline" @click="reset()">Reset Filters</a>
+            </template>
+          </p>
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-4 lg:gap-4 attachments-grid">
             <div v-for="attachment in attachments"
                  :key="`AttachmentGridCard-${attachment.id}`"

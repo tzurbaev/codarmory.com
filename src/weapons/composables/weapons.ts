@@ -40,7 +40,7 @@ export function useWeaponsList(filters?: Ref<WeaponsFilters>): { weapons: Comput
   })));
 
   const weapons = computed(() => {
-    if (!filters) {
+    if (!filters || !filters.value) {
       return transformed.value;
     }
 

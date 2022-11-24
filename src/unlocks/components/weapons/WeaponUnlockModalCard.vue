@@ -15,7 +15,7 @@
           </router-link>
           <span v-if="current" class="sr-only">Current</span>
         </p>
-        <WeaponUnlockDescription :weapon="weapon" :class="[current ? 'text-primary-100' : 'text-primary-500']" />
+        <WeaponUnlockDescription :full="true" :weapon="weapon" :class="[current ? 'text-primary-100' : 'text-primary-500']" />
       </div>
     </div>
   </div>
