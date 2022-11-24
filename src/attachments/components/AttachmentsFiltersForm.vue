@@ -29,7 +29,7 @@ import {
   SelectInputGroup, SelectInput,
 } from '@zenky/forms-vue';
 import ResourceCombobox from '@/forms/components/ResourceCombobox.vue';
-import {computed, ref, watch} from 'vue';
+import { computed, ref, watch } from 'vue';
 
 const props = defineProps<{
   modelValue: AttachmentsFilters;

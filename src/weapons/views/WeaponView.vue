@@ -4,9 +4,9 @@
       <WeaponCard type="page" :weapon="weapon" />
     </div>
 
-    <div class="p-8 rounded-lg shadow-lg bg-gray-900">
-      <AttachmentsList v-if="groups.length > 0" :groups="groups" />
-    </div>
+    <Panel v-if="groups.length > 0" label="Attachments">
+      <AttachmentsList :groups="groups" />
+    </Panel>
   </div>
 </template>
 
@@ -15,6 +15,7 @@ import { computed } from 'vue';
 import { useWeapon } from '@/weapons/composables/weapons';
 import WeaponCard from '@/weapons/components/WeaponCard.vue';
 import AttachmentsList from '@/attachments/components/AttachmentsList.vue';
+import Panel from '@/layout/components/Panel.vue';
 
 const props = defineProps<{
   weaponId: string;

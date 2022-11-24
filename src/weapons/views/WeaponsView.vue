@@ -8,6 +8,7 @@
       <WeaponsList class="mt-4 sm:mt-0"
                    :label="category?.name || 'All Weapons'"
                    :category-id="id"
+                   :static-filters="['category_id']"
       />
     </div>
   </div>

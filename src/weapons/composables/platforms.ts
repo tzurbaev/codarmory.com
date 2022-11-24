@@ -1,7 +1,6 @@
 import { usePlatformsStore } from '@/weapons/stores/platforms';
 import { computed, ComputedRef } from 'vue';
 import { WeaponPlatform } from '@/weapons/types';
-import {SelectInputOption} from "@zenky/forms-vue/dist/types/select/select";
 
 export function useWeaponPlatforms(): { platforms: ComputedRef<WeaponPlatform[]> } {
   const platformsStore = usePlatformsStore();
@@ -10,7 +9,7 @@ export function useWeaponPlatforms(): { platforms: ComputedRef<WeaponPlatform[]>
   return { platforms };
 }
 
-export function useWeaponPlatformsOptions() : { options: ComputedRef<SelectInputOption[]> } {
+export function useWeaponPlatformsOptions() : { options: ComputedRef<any[]> } {
   const { platforms } = useWeaponPlatforms();
   const options = computed(() => [
     { id: null, name: 'All Platforms' },

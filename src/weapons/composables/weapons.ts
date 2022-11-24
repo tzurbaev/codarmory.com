@@ -32,6 +32,42 @@ function getParentWeapon(weapon: Weapon): Weapon | null {
   return weaponsStore.extendedWeapons[index];
 }
 
+export function useWeaponsFilters(props: any) {
+  const filters: Ref<WeaponsFilters> = ref({
+    search: null,
+    attachment_id: props.attachmentId,
+    category_id: props.categoryId,
+    platform_id: null,
+  });
+
+  const staticFilters = Array.isArray(props.staticFilters) && props.staticFilters.length > 0 ? props.staticFilters : [];
+
+  const reset = () => {
+    filters.value.search = '';
+    filters.value.attachment_id = staticFilters.indexOf('attachment_id') === -1 ? null : props.attachmentId;
+    filters.value.category_id = staticFilters.indexOf('category_id') === -1 ? null : props.categoryId;
+    filters.value.platform_id = null;
+  };
+
+  const hasFilters = computed(() => {
+    const nonEmpty = Object.keys(filters.value).filter((key: string) => {
+      if (staticFilters.indexOf(key) === -1) {
+        return !!filters.value[key as keyof WeaponsFilters];
+      }
+
+      return false;
+    });
+
+    return nonEmpty.length !== 0;
+  });
+
+  return {
+    filters,
+    reset,
+    hasFilters,
+  };
+}
+
 export function useWeaponsList(filters?: Ref<WeaponsFilters>): { weapons: ComputedRef<Weapon[]> } {
   const weaponsStore = useWeaponsStore();
   const transformed = computed(() => weaponsStore.extendedWeapons.map((weapon: Weapon) => ({

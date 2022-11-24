@@ -5,7 +5,11 @@
     </div>
 
     <div class="mt-4">
-      <WeaponsList label="Weapons" :attachment-id="id" :with-category="true" />
+      <WeaponsList label="Weapons"
+                   :attachment-id="id"
+                   :with-category="true"
+                   :static-filters="['attachment_id']"
+      />
     </div>
   </div>
 </template>
