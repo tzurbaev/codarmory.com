@@ -18,7 +18,7 @@
              :class="{
                'lg:grid-cols-1': weapons.length === 1,
                'lg:grid-cols-2': weapons.length === 2,
-               'lg:grid-cols-3': weapons.length >= 3,
+               'lg:grid-cols-2 xl:grid-cols-3': weapons.length >= 3,
              }"
         >
           <Panel v-for="weapon in weapons"

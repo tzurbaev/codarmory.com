@@ -12,14 +12,14 @@
       </h1>
     </template>
     <template v-else>
-      <div v-if="weapon.category || weapon.platform" class="lg:flex lg:flex-col">
-        <p v-if="weapon.category" class="font-medium text-white/60">
+      <div v-if="weapon.category || weapon.platform" class="xl:flex xl:gap-2 text-white/60">
+        <p v-if="weapon.category">
           {{ weapon.category.name }}
         </p>
-        <p v-if="weapon.platform" class="text-white/60">
-          <span class="lg:hidden">&bull;</span>
-          {{ weapon.platform.name }}
-        </p>
+        <template v-if="weapon.platform">
+          <span class="hidden xl:inline">&bull;</span>
+          <p>{{ weapon.platform.name }}</p>
+        </template>
       </div>
       <h2 class="text-4xl sm:text-5xl font-extrabold">
         <router-link :to="weaponRoute" class="text-white/90 hover:text-primary-500">
