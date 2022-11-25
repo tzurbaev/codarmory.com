@@ -28,6 +28,10 @@
         "name": "Hip Fire Accuracy"
     },
     {
+        "id": "hip_fire_moving_accuracy",
+        "name": "Hip Fire Moving Accuracy"
+    },
+    {
         "id": "hip_recoil_control",
         "name": "Hip Recoil Control"
     },
@@ -208,6 +212,10 @@
         "name": "6.3x Magnification"
     },
     {
+        "id": "66x_magnification",
+        "name": "6.6x Magnification"
+    },
+    {
         "id": "70x_magnification",
         "name": "7.0x Magnification"
     },
@@ -222,6 +230,42 @@
     {
         "id": "87x_magnification",
         "name": "8.7x Magnification"
+    },
+    {
+        "id": "90x_magnification",
+        "name": "9.0x Magnification"
+    },
+    {
+        "id": "95x_magnification",
+        "name": "9.5x Magnification"
+    },
+    {
+        "id": "110x_magnification",
+        "name": "11.0x Magnification"
+    },
+    {
+        "id": "115x_magnification",
+        "name": "11.5x Magnification"
+    },
+    {
+        "id": "125x_magnification",
+        "name": "12.5x Magnification"
+    },
+    {
+        "id": "125x_magnification_toggle",
+        "name": "12.5x Magnification Toggle"
+    },
+    {
+        "id": "130x_magnification",
+        "name": "13.0x Magnification"
+    },
+    {
+        "id": "very_large_sniper_glint",
+        "name": "Very Large Sniper Glint"
+    },
+    {
+        "id": "large_sniper_glint",
+        "name": "Large Sniper Glint"
     },
     {
         "id": "medium_sniper_glint",
@@ -304,6 +348,10 @@
         "name": "Explosive Slug Rounds"
     },
     {
+        "id": "explosive_impact",
+        "name": "Explosive Impact"
+    },
+    {
         "id": "damage_radius",
         "name": "Damage Radius"
     },
@@ -322,5 +370,25 @@
     {
         "id": "rechambering_accuracy",
         "name": "Rechambering Accuracy"
+    },
+    {
+        "id": "bullet_drop_indicator",
+        "name": "Bullet Drop Indicator"
+    },
+    {
+        "id": "pistol_fastdraw",
+        "name": "Pistol Fastdraw"
+    },
+    {
+        "id": "expanded_gunsmithing",
+        "name": "Expanded Gunsmithing"
+    },
+    {
+        "id": "weapon_swap_speed",
+        "name": "Weapon Swap Speed"
+    },
+    {
+        "id": "trigger_response_time",
+        "name": "Trigger Response Time"
     }
 ]
