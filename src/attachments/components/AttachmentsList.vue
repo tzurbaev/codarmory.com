@@ -55,13 +55,17 @@ const props = defineProps<{
 }>();
 
 const currentGroups = computed(() => props.groups);
+
 const {
   category, group, setCategory, watchForCategory,
 } = useCategoryAttachments(currentGroups);
+
 const {
   filters, reset, hasFilters, pros, cons, attachments,
 } = useFilteredAttachments(group);
+
 watchForCategory((): void => reset());
+
 const addStatFilter = (stat: string, type: string) => {
   if (type === 'pros' && filters.value.pros.indexOf(stat) === -1) {
     filters.value.pros.push(stat);

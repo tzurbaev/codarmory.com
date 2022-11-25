@@ -1,7 +1,7 @@
 import {
   computed, ComputedRef, ref, Ref, watch,
 } from 'vue';
-import { Weapon, WeaponsFilters } from '@/weapons/types';
+import {StaticWeaponsFilters, Weapon, WeaponCategory, WeaponsFilters} from '@/weapons/types';
 import { useWeaponsStore } from '@/weapons/stores/weapons';
 import { UnlockType } from '@/unlocks/types';
 import { AttachmentsGroup } from '@/attachments/types';
@@ -32,34 +32,18 @@ function getParentWeapon(weapon: Weapon): Weapon | null {
   return weaponsStore.extendedWeapons[index];
 }
 
-export function useWeaponsFilters(props: any) {
+export function useWeaponsFilters() {
   const filters: Ref<WeaponsFilters> = ref({
     search: null,
-    attachment_id: props.attachmentId,
-    category_id: props.categoryId,
     platform_id: null,
   });
 
-  const staticFilters = Array.isArray(props.staticFilters) && props.staticFilters.length > 0 ? props.staticFilters : [];
-
   const reset = () => {
     filters.value.search = '';
-    filters.value.attachment_id = staticFilters.indexOf('attachment_id') === -1 ? null : props.attachmentId;
-    filters.value.category_id = staticFilters.indexOf('category_id') === -1 ? null : props.categoryId;
     filters.value.platform_id = null;
   };
 
-  const hasFilters = computed(() => {
-    const nonEmpty = Object.keys(filters.value).filter((key: string) => {
-      if (staticFilters.indexOf(key) === -1) {
-        return !!filters.value[key as keyof WeaponsFilters];
-      }
-
-      return false;
-    });
-
-    return nonEmpty.length !== 0;
-  });
+  const hasFilters = computed(() => !!filters.value.search || !!filters.value.platform_id);
 
   return {
     filters,
@@ -68,12 +52,38 @@ export function useWeaponsFilters(props: any) {
   };
 }
 
-export function useWeaponsList(filters?: Ref<WeaponsFilters>): { weapons: ComputedRef<Weapon[]> } {
+export function useWeaponsList(
+  staticFilters?: Ref<StaticWeaponsFilters>,
+  filters?: Ref<WeaponsFilters>,
+): { categories: ComputedRef<WeaponCategory[]>, weapons: ComputedRef<Weapon[]> } {
   const weaponsStore = useWeaponsStore();
-  const transformed = computed(() => weaponsStore.extendedWeapons.map((weapon: Weapon) => ({
-    ...weapon,
-    parent: getParentWeapon(weapon),
-  })));
+  const transformed = computed(() => {
+    const list = weaponsStore.extendedWeapons.map((weapon: Weapon) => ({
+      ...weapon,
+      parent: getParentWeapon(weapon),
+    }));
+
+    if (!staticFilters || !staticFilters.value) {
+      return list;
+    }
+
+    return getFilteredRecords(list, [
+      getWeaponCategoryCriterion(staticFilters.value.category_id),
+      getWeaponAttachmentCriterion(staticFilters.value.attachment_id),
+    ]);
+  });
+
+  const categories = computed(() => {
+    const items: WeaponCategory[] = [];
+
+    transformed.value.forEach((weapon: Weapon) => {
+      if (weapon.category && items.indexOf(weapon.category) === -1) {
+        items.push(weapon.category);
+      }
+    });
+
+    return items;
+  });
 
   const weapons = computed(() => {
     if (!filters || !filters.value) {
@@ -81,14 +91,12 @@ export function useWeaponsList(filters?: Ref<WeaponsFilters>): { weapons: Comput
     }
 
     return getFilteredRecords(transformed.value, [
-      getWeaponCategoryCriterion(filters.value.category_id),
-      getWeaponAttachmentCriterion(filters.value.attachment_id),
       getWeaponPlatformCriterion(filters.value.platform_id),
       getWeaponSearchCriterion(filters.value.search),
     ]);
   });
 
-  return { weapons };
+  return { categories, weapons };
 }
 
 export function useWeapon(weaponId: ComputedRef<string | null>): { weapon: ComputedRef<Weapon | null>, groups: ComputedRef<AttachmentsGroup[]> } {

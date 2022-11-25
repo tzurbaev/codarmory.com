@@ -1,6 +1,6 @@
 <template>
   <Panel :label="label">
-    <WeaponsListFilters :with-category="withCategory" v-model="filters" />
+    <WeaponsListFilters v-model="filters" />
 
     <p class="my-4 text-white/60 text-sm">
       {{ weapons.length }} weapon{{ weapons.length === 1 ? '' : 's' }}
@@ -37,7 +37,7 @@
 </template>
 
 <script setup lang="ts">
-import { watch } from 'vue';
+import {computed, watch} from 'vue';
 import { useWeaponsFilters, useWeaponsList } from '@/weapons/composables/weapons';
 import WeaponCard from '@/weapons/components/WeaponCard.vue';
 import Panel from '@/layout/components/Panel.vue';
@@ -52,8 +52,11 @@ const props = defineProps<{
   staticFilters?: string[];
 }>();
 
-const { filters, hasFilters, reset } = useWeaponsFilters(props);
-const { weapons } = useWeaponsList(filters);
+const { filters, hasFilters, reset } = useWeaponsFilters();
+const { categories, weapons } = useWeaponsList(computed(() => ({
+  category_id: props.categoryId,
+  attachment_id: props.attachmentId,
+})), filters);
 
 watch(props, reset);
 </script>

@@ -6,8 +6,8 @@
 
 <script setup lang="ts">
 import Panel from '@/layout/components/Panel.vue';
-import { getAttachmentsList } from '@/attachments/composables/attachments';
+import { useAttachmentsList } from '@/attachments/composables/attachments';
 import AttachmentsList from '@/attachments/components/AttachmentsList.vue';
 
-const { groups } = getAttachmentsList();
+const { groups } = useAttachmentsList();
 </script>

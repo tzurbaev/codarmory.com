@@ -22,6 +22,11 @@ export interface Weapon extends Unlockable {
   parent?: Weapon | null;
 }
 
+export interface StaticWeaponsFilters {
+  category_id?: string | null;
+  attachment_id?: string | null;
+}
+
 export interface WeaponsFilters {
   category_id?: string | null;
   attachment_id?: string | null;

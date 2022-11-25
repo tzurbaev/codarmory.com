@@ -25,7 +25,7 @@
     </div>
 
     <div v-if="hasStats" class="grid grid-cols-1 sm:grid-cols-2 attachments-grid:grid-cols-1 max-w-2xl attachments-grid:max-w-auto gap-8 attachments-grid:gap-4">
-      <div>
+      <div v-if="attachment.stats.pros.length > 0">
         <h3 class="text-green-500 text-base attachments-grid:text-xs font-bold">Pros</h3>
         <ul class="list-inside">
           <li v-for="stat in attachment.stats.pros"
@@ -41,7 +41,7 @@
           </li>
         </ul>
       </div>
-      <div>
+      <div v-if="attachment.stats.cons.length > 0">
         <h3 class="text-red-500 text-base attachments-grid:text-xs font-bold">Cons</h3>
         <ul class="list-inside">
           <li v-for="stat in attachment.stats.cons"
@@ -80,6 +80,6 @@ const hasStats = computed(() => {
     return false;
   }
 
-  return props.attachment.stats.pros.length > 0 && props.attachment.stats.cons.length > 0;
+  return props.attachment.stats.pros.length > 0 || props.attachment.stats.cons.length > 0;
 });
 </script>

@@ -6,14 +6,6 @@
         <TextInput type="search" placeholder="Filter weapons by name" />
       </TextInputGroup>
     </div>
-    <div v-if="withCategory">
-      <SelectInputGroup v-model="value.category_id">
-        <InputLabel>Category</InputLabel>
-        <SelectInput :options="categoriesOptions">
-          <template #empty>All Categories</template>
-        </SelectInput>
-      </SelectInputGroup>
-    </div>
     <div>
       <SelectInputGroup v-model="value.platform_id">
         <InputLabel>Platform</InputLabel>
@@ -28,7 +20,6 @@
 <script setup lang="ts">
 import { WeaponsFilters } from '@/weapons/types';
 import { computed } from 'vue';
-import { useWeaponCategoriesOptions } from '@/weapons/composables/categories';
 import { useWeaponPlatformsOptions } from '@/weapons/composables/platforms';
 import {
   SelectInputGroup, SelectInput, TextInputGroup, TextInput, InputLabel,
@@ -46,6 +37,5 @@ const value = computed({
   set: (val: WeaponsFilters) => emit('update:modelValue', val),
 });
 
-const { options: categoriesOptions } = useWeaponCategoriesOptions();
 const { options: platformsOptions } = useWeaponPlatformsOptions();
 </script>
