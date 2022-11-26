@@ -5,11 +5,6 @@
         "sorting": 0
     },
     {
-        "id": "receivers",
-        "name": "Receivers",
-        "sorting": 0
-    },
-    {
         "id": "barrels",
         "name": "Barrels",
         "sorting": 1
