@@ -1,6 +1,6 @@
 <template>
   <div>
-    <AttachmentsCategorySelector :groups="groups" v-model="category" @select="setCategory" />
+    <AttachmentsCategorySelector v-if="withCategory" :groups="groups" v-model="category" @select="setCategory" />
 
     <div v-if="group" class="mt-4">
       <div class="grid grid-cols-1 sm:grid-cols-4 gap-4 mb-4">
@@ -45,15 +45,18 @@
 import { AttachmentsGroup } from '@/attachments/types';
 import AttachmentsCategorySelector from '@/attachments/components/AttachmentsCategorySelector.vue';
 import { useCategoryAttachments, useFilteredAttachments } from '@/attachments/composables/attachments';
-import { computed } from 'vue';
+import { computed, watch } from 'vue';
 import AttachmentCard from '@/attachments/components/AttachmentCard.vue';
 import AttachmentsFiltersForm from '@/attachments/components/AttachmentsFiltersForm.vue';
 import EmptyState from '@/layout/components/EmptyState.vue';
 
 const props = defineProps<{
   groups: AttachmentsGroup[];
+  categoryId?: string;
+  withCategory?: boolean;
 }>();
 
+const currentCategoryId = computed(() => props.categoryId);
 const currentGroups = computed(() => props.groups);
 
 const {
@@ -65,6 +68,12 @@ const {
 } = useFilteredAttachments(group);
 
 watchForCategory((): void => reset());
+
+watch(currentCategoryId, () => {
+  if (currentCategoryId.value) {
+    setCategory(currentCategoryId.value);
+  }
+}, { immediate: true });
 
 const addStatFilter = (stat: string, type: string) => {
   if (type === 'pros' && filters.value.pros.indexOf(stat) === -1) {

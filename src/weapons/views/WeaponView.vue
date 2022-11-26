@@ -5,7 +5,7 @@
     </Panel>
 
     <Panel v-if="groups.length > 0" label="Attachments">
-      <AttachmentsList :groups="groups" />
+      <AttachmentsList :groups="groups" :with-category="true" />
     </Panel>
   </div>
 </template>

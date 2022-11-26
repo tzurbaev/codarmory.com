@@ -1,7 +1,9 @@
 import {
   computed, ComputedRef, ref, Ref, watch,
 } from 'vue';
-import {StaticWeaponsFilters, Weapon, WeaponCategory, WeaponsFilters} from '@/weapons/types';
+import {
+  StaticWeaponsFilters, Weapon, WeaponCategory, WeaponsFilters,
+} from '@/weapons/types';
 import { useWeaponsStore } from '@/weapons/stores/weapons';
 import { UnlockType } from '@/unlocks/types';
 import { AttachmentsGroup } from '@/attachments/types';

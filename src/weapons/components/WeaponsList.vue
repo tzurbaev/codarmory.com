@@ -16,9 +16,8 @@
       <template #default>
         <div class="grid grid-cols-1 gap-4 weapons-grid"
              :class="{
-               'lg:grid-cols-1': weapons.length === 1,
                'lg:grid-cols-2': weapons.length === 2,
-               'lg:grid-cols-2 xl:grid-cols-3': weapons.length >= 3,
+               'lg:grid-cols-2 2xl:grid-cols-3': weapons.length >= 3,
              }"
         >
           <Panel v-for="weapon in weapons"
@@ -37,7 +36,7 @@
 </template>
 
 <script setup lang="ts">
-import {computed, watch} from 'vue';
+import { computed, watch } from 'vue';
 import { useWeaponsFilters, useWeaponsList } from '@/weapons/composables/weapons';
 import WeaponCard from '@/weapons/components/WeaponCard.vue';
 import Panel from '@/layout/components/Panel.vue';
