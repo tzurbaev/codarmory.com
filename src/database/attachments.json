@@ -540,12 +540,19 @@
         "category_id": "magazines",
         "slug": "15-round-magazine",
         "name": "15 Round Magazine",
-        "description": null,
-        "completed": false,
+        "description": "A small magazine that holds 15 rounds of 5.56 ammo.",
+        "completed": true,
         "has_errors": false,
-        "comment": null,
-        "pros": [],
-        "cons": [],
+        "comment": "5.56 ammo",
+        "pros": [
+            "movement_speed",
+            "ads_speed",
+            "sprint_to_fire_speed",
+            "reload_quickness"
+        ],
+        "cons": [
+            "magazine_ammo_capacity"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "m16",
         "unlock_level": 7,
@@ -1502,22 +1509,6 @@
         "unlock_type": "weapon",
         "unlock_id": "taq-56",
         "unlock_level": 16,
-        "unlock_description": null
-    },
-    {
-        "id": "97c5427fa8cb86a3",
-        "category_id": "magazines",
-        "slug": "60-round-mag",
-        "name": "60 Round Mag",
-        "description": null,
-        "completed": false,
-        "has_errors": false,
-        "comment": null,
-        "pros": [],
-        "cons": [],
-        "unlock_type": "weapon",
-        "unlock_id": "taq-56",
-        "unlock_level": 17,
         "unlock_description": null
     },
     {
@@ -3157,22 +3148,6 @@
         "unlock_description": null
     },
     {
-        "id": "97c54749b3d3dada",
-        "category_id": "stocks",
-        "slug": "k-bloc-stock",
-        "name": "K-Bloc Stock",
-        "description": null,
-        "completed": false,
-        "has_errors": false,
-        "comment": null,
-        "pros": [],
-        "cons": [],
-        "unlock_type": "weapon",
-        "unlock_id": "kastov-545",
-        "unlock_level": 10,
-        "unlock_description": null
-    },
-    {
         "id": "97c5449a839e2e63",
         "category_id": "ammunition",
         "slug": "545-overpressured-p",
@@ -3370,22 +3345,6 @@
         "unlock_type": "weapon",
         "unlock_id": "kastov-74u",
         "unlock_level": 7,
-        "unlock_description": null
-    },
-    {
-        "id": "97c54912baceb9e3",
-        "category_id": "ammunition",
-        "slug": "545-tracer",
-        "name": "5.45 Tracer",
-        "description": null,
-        "completed": false,
-        "has_errors": false,
-        "comment": null,
-        "pros": [],
-        "cons": [],
-        "unlock_type": "weapon",
-        "unlock_id": "kastov-74u",
-        "unlock_level": 9,
         "unlock_description": null
     },
     {
@@ -3958,22 +3917,6 @@
         "unlock_description": null
     },
     {
-        "id": "97c54271abb2f520",
-        "category_id": "ammunition",
-        "slug": "762-high-velocity",
-        "name": "7.62 High Velocity",
-        "description": null,
-        "completed": false,
-        "has_errors": false,
-        "comment": null,
-        "pros": [],
-        "cons": [],
-        "unlock_type": "weapon",
-        "unlock_id": "lachmann-762",
-        "unlock_level": 12,
-        "unlock_description": null
-    },
-    {
         "id": "97c54be29431cb2c",
         "category_id": "optics",
         "slug": "hybrid-firepoint",
@@ -4062,22 +4005,6 @@
         "unlock_type": "weapon",
         "unlock_id": "lachmann-762",
         "unlock_level": 18,
-        "unlock_description": null
-    },
-    {
-        "id": "97c545a9988b1c87",
-        "category_id": "magazines",
-        "slug": "75-round-mag",
-        "name": "75 Round Mag",
-        "description": null,
-        "completed": false,
-        "has_errors": false,
-        "comment": null,
-        "pros": [],
-        "cons": [],
-        "unlock_type": "weapon",
-        "unlock_id": "rapp-h",
-        "unlock_level": 2,
         "unlock_description": null
     },
     {
@@ -4368,22 +4295,6 @@
         "unlock_type": "weapon",
         "unlock_id": "lachmann-556",
         "unlock_level": 8,
-        "unlock_description": null
-    },
-    {
-        "id": "97c54dccafd16e34",
-        "category_id": "rear-grips",
-        "slug": "tactical-grip",
-        "name": "Tactical Grip",
-        "description": null,
-        "completed": false,
-        "has_errors": false,
-        "comment": null,
-        "pros": [],
-        "cons": [],
-        "unlock_type": "weapon",
-        "unlock_id": "lachmann-556",
-        "unlock_level": 10,
         "unlock_description": null
     },
     {
@@ -5868,12 +5779,17 @@
         "category_id": "ammunition",
         "slug": "762-hollowpoint",
         "name": "7.62 Hollowpoint",
-        "description": null,
-        "completed": false,
+        "description": "Hollowpoint rounds deform on impact, slowing the target and disabling sprint for a short time.",
+        "completed": true,
         "has_errors": false,
-        "comment": null,
-        "pros": [],
-        "cons": [],
+        "comment": "same as kastov",
+        "pros": [
+            "crippling_power"
+        ],
+        "cons": [
+            "bullet_velocity",
+            "bullet_penetration"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "ebr-14",
         "unlock_level": 7,
@@ -6325,22 +6241,6 @@
         "unlock_type": "weapon",
         "unlock_id": "so-14",
         "unlock_level": 20,
-        "unlock_description": null
-    },
-    {
-        "id": "97c54c2e97969c90",
-        "category_id": "ammunition",
-        "slug": "762-overpressured-p",
-        "name": "7.62 Overpressured +P",
-        "description": null,
-        "completed": false,
-        "has_errors": false,
-        "comment": null,
-        "pros": [],
-        "cons": [],
-        "unlock_type": "weapon",
-        "unlock_id": "so-14",
-        "unlock_level": 21,
         "unlock_description": null
     },
     {
@@ -9385,22 +9285,6 @@
         "unlock_description": null
     },
     {
-        "id": "97c645ad850ddb85",
-        "category_id": "stocks",
-        "slug": "vel-a-568-stock",
-        "name": "VEL A-568 Stock",
-        "description": null,
-        "completed": false,
-        "has_errors": false,
-        "comment": null,
-        "pros": [],
-        "cons": [],
-        "unlock_type": "weapon",
-        "unlock_id": "vel-46",
-        "unlock_level": 14,
-        "unlock_description": null
-    },
-    {
         "id": "97c642bb856b9406",
         "category_id": "barrels",
         "slug": "lach-dx-203mm",
@@ -10764,22 +10648,6 @@
         "unlock_description": null
     },
     {
-        "id": "97c64f29a010e383",
-        "category_id": "stocks",
-        "slug": "pdsw-factory-stock",
-        "name": "PDSW Factory Stock",
-        "description": null,
-        "completed": false,
-        "has_errors": false,
-        "comment": null,
-        "pros": [],
-        "cons": [],
-        "unlock_type": "weapon",
-        "unlock_id": "pdsw-528",
-        "unlock_level": 27,
-        "unlock_description": null
-    },
-    {
         "id": "97c64db9a958be4a",
         "category_id": "barrels",
         "slug": "1875-cloak-90",
@@ -10951,22 +10819,6 @@
         "unlock_type": "weapon",
         "unlock_id": "fennec-45",
         "unlock_level": 8,
-        "unlock_description": null
-    },
-    {
-        "id": "97c6498a9ec39b3c",
-        "category_id": "stocks",
-        "slug": "fennec-f45-stock",
-        "name": "Fennec F45 Stock",
-        "description": null,
-        "completed": false,
-        "has_errors": false,
-        "comment": null,
-        "pros": [],
-        "cons": [],
-        "unlock_type": "weapon",
-        "unlock_id": "fennec-45",
-        "unlock_level": 9,
         "unlock_description": null
     },
     {
@@ -11921,22 +11773,6 @@
         "unlock_description": null
     },
     {
-        "id": "97c6431bab3f3475",
-        "category_id": "guards",
-        "slug": "tv-cf40-guard",
-        "name": "TV CF40 Guard",
-        "description": null,
-        "completed": false,
-        "has_errors": false,
-        "comment": null,
-        "pros": [],
-        "cons": [],
-        "unlock_type": "weapon",
-        "unlock_id": "expedite-12",
-        "unlock_level": 3,
-        "unlock_description": null
-    },
-    {
         "id": "97c642fd97c50bb4",
         "category_id": "barrels",
         "slug": "185-emperor-barrel",
@@ -12152,22 +11988,6 @@
         "unlock_type": "weapon",
         "unlock_id": "expedite-12",
         "unlock_level": 13,
-        "unlock_description": null
-    },
-    {
-        "id": "97c64285a70ede8b",
-        "category_id": "guards",
-        "slug": "az-40-shotguard",
-        "name": "AZ-40 Shotguard",
-        "description": null,
-        "completed": false,
-        "has_errors": false,
-        "comment": null,
-        "pros": [],
-        "cons": [],
-        "unlock_type": "weapon",
-        "unlock_id": "expedite-12",
-        "unlock_level": 14,
         "unlock_description": null
     },
     {
@@ -12389,22 +12209,6 @@
         "unlock_description": null
     },
     {
-        "id": "97c643a9bea2bf24",
-        "category_id": "guards",
-        "slug": "azarov-t15",
-        "name": "Azarov T15",
-        "description": null,
-        "completed": false,
-        "has_errors": false,
-        "comment": null,
-        "pros": [],
-        "cons": [],
-        "unlock_type": "weapon",
-        "unlock_id": "expedite-12",
-        "unlock_level": 25,
-        "unlock_description": null
-    },
-    {
         "id": "97c647db99b9cfdb",
         "category_id": "rear-grip-comb",
         "slug": "goliath-77-grip",
@@ -12582,12 +12386,19 @@
         "category_id": "underbarrels",
         "slug": "cronen-wl55",
         "name": "Cronen WL55",
-        "description": null,
-        "completed": false,
+        "description": "A Cronen side grip that provides better control over the Sakin MG38 recoil.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "aiming_idle_stability",
+            "aim_walking_steadiness",
+            "recoil_steadiness"
+        ],
+        "cons": [
+            "sprint_to_fire_speed",
+            "ads_speed"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "sakin-mg38",
         "unlock_level": 7,
@@ -12709,11 +12520,14 @@
         "category_id": "underbarrels",
         "slug": "sakin-side-grip",
         "name": "Sakin Side Grip",
-        "description": null,
-        "completed": false,
+        "description": "A side grip designed for the Sakin MG38.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
+        "pros": [
+            "aiming_idle_stability",
+            "aim_walking_steadiness"
+        ],
         "cons": [],
         "unlock_type": "weapon",
         "unlock_id": "sakin-mg38",
@@ -12773,12 +12587,16 @@
         "category_id": "underbarrels",
         "slug": "soshki",
         "name": "Soshki",
-        "description": null,
-        "completed": false,
+        "description": "An under-barrel bipod that can be deployed to stabilize weapon for considerable increase in accuracy.",
+        "completed": true,
         "has_errors": false,
         "comment": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "bipod_mount"
+        ],
+        "cons": [
+            "ads_speed"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "sakin-mg38",
         "unlock_level": 17,
@@ -16900,22 +16718,6 @@
         "unlock_type": "weapon",
         "unlock_id": "basilisk",
         "unlock_level": 17,
-        "unlock_description": null
-    },
-    {
-        "id": "97c64ab194e37cc1",
-        "category_id": "ammunition",
-        "slug": "500-hollowpoint",
-        "name": ".500 Hollowpoint",
-        "description": null,
-        "completed": false,
-        "has_errors": false,
-        "comment": null,
-        "pros": [],
-        "cons": [],
-        "unlock_type": "weapon",
-        "unlock_id": "basilisk",
-        "unlock_level": 18,
         "unlock_description": null
     },
     {
