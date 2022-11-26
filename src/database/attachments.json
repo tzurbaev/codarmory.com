@@ -11816,7 +11816,7 @@
     },
     {
         "id": "97c6479caa3f6e5f",
-        "category_id": "rear-grip-comb",
+        "category_id": "rear-grips-combs",
         "slug": "schlager-fang-grip",
         "name": "Schlager Fang Grip",
         "description": "A skeletonized grip that helps mitigate the high recoil of 12 gauge shells.",
@@ -11972,7 +11972,7 @@
     },
     {
         "id": "97c6453da2a7bd9f",
-        "category_id": "rear-grip-comb",
+        "category_id": "rear-grips-combs",
         "slug": "fss-ammo-sleeve",
         "name": "FSS Ammo Sleeve",
         "description": "A shotgun shell sleeve made by First Signal Solutions.",
@@ -12036,7 +12036,7 @@
     },
     {
         "id": "97c643bfa4eac52a",
-        "category_id": "rear-grip-comb",
+        "category_id": "rear-grips-combs",
         "slug": "schlager-void-grip",
         "name": "Schlager Void Grip",
         "description": "A streamlined grip from Schlager Tactical. Aim down sights faster for quick, devastating fire.",
@@ -12121,7 +12121,7 @@
     },
     {
         "id": "97c6408aae45bc30",
-        "category_id": "rear-grip-comb",
+        "category_id": "rear-grips-combs",
         "slug": "padded-shotgun-comb",
         "name": "Padded Shotgun Comb",
         "description": "A padded comb for the Expedite 12 shotgun.",
@@ -12210,7 +12210,7 @@
     },
     {
         "id": "97c647db99b9cfdb",
-        "category_id": "rear-grip-comb",
+        "category_id": "rear-grips-combs",
         "slug": "goliath-77-grip",
         "name": "Goliath 77 Grip",
         "description": "Stay calm and on target when under fire with this grooved and controllable grip.",
