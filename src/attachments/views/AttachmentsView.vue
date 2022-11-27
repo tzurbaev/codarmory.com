@@ -1,7 +1,7 @@
 <template>
   <div class="grid grid-cols-1 sm:grid-cols-6 gap-4">
     <div class="col-span-1">
-      <VerticalMenu label="Select Attachments Category" :menu="menu" class="lg:sticky lg:top-[10%]" />
+      <VerticalMenu label="Select Attachments Category" :menu="menu" class="lg:sticky lg:top-[15%]" />
     </div>
 
     <div class="sm:col-span-5">

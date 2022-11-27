@@ -45,8 +45,8 @@ import EmptyState from '@/layout/components/EmptyState.vue';
 
 const props = defineProps<{
   label: string;
-  categoryId?: string;
-  attachmentId?: string;
+  categoryId?: string | null;
+  attachmentId?: string | null;
   withCategory?: boolean;
   staticFilters?: string[];
 }>();

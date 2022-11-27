@@ -1467,7 +1467,7 @@
         "id": "kastov-74u",
         "category_id": "assault-rifles",
         "platform_id": "kastovia",
-        "name": "Kastov 74U",
+        "name": "Kastov 74u",
         "unlock_type": "weapon",
         "unlock_id": "kastov-545",
         "unlock_level": 13,
@@ -5081,7 +5081,7 @@
         "platform_id": "imperatorium",
         "name": "Victus XMR",
         "unlock_type": "battle-pass",
-        "unlock_id": null,
+        "unlock_id": "A7",
         "unlock_level": 1,
         "unlock_description": null,
         "attachments": [
