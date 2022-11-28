@@ -11,11 +11,12 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue';
+import { computed, watch } from 'vue';
 import { useWeapon } from '@/weapons/composables/weapons';
 import WeaponCard from '@/weapons/components/WeaponCard.vue';
 import AttachmentsList from '@/attachments/components/AttachmentsList.vue';
 import Panel from '@/layout/components/Panel.vue';
+import { useHead } from '@vueuse/head';
 
 const props = defineProps<{
   weaponId: string;
@@ -23,4 +24,10 @@ const props = defineProps<{
 
 const id = computed(() => props.weaponId);
 const { weapon, groups } = useWeapon(id);
+
+watch(weapon, () => {
+  if (weapon.value) {
+    useHead({ title: `${weapon.value.name} – ${weapon.value.category?.name} – Weapons` });
+  }
+}, { immediate: true });
 </script>

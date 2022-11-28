@@ -3,7 +3,6 @@
     <div class="px-2 sm:px-6 lg:px-8">
       <div class="relative flex h-16 items-center justify-between">
         <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-          <!-- Mobile menu button-->
           <DisclosureButton class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
             <span class="sr-only">Open main menu</span>
             <Bars3Icon v-if="!open" class="block h-6 w-6" aria-hidden="true" />
@@ -13,8 +12,8 @@
         <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
           <div class="flex flex-shrink-0 items-center">
             <router-link :to="{ name: 'home' }">
-              <img class="block h-8 w-auto lg:hidden" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company" />
-              <img class="hidden h-8 w-auto lg:block" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company" />
+              <img class="block h-8 w-auto lg:hidden" src="/images/logo.png" alt="Your Company" />
+              <img class="hidden h-8 w-auto lg:block" src="/images/logo.png" alt="Your Company" />
             </router-link>
           </div>
           <div class="hidden sm:ml-6 sm:block">
@@ -30,7 +29,7 @@
             </div>
           </div>
         </div>
-        <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+        <div v-if="false" class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
           <button type="button" class="rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
             <span class="sr-only">View notifications</span>
             <BellIcon class="h-6 w-6" aria-hidden="true" />
@@ -88,7 +87,6 @@ import { useRoute } from 'vue-router';
 const navigation = [
   { name: 'Weapons', route: 'weapons.index', path: 'weapons.' },
   { name: 'Attachments', route: 'attachments.index', path: 'attachments.' },
-  { name: 'Loadouts', route: 'weapons.index', path: 'loadouts.' },
 ];
 
 const route = useRoute();

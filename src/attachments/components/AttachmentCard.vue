@@ -77,11 +77,4 @@ const props = defineProps<{
 defineEmits(['stat']);
 
 const { categoryRoute, attachmentRoute } = useAttachmentRoutes(computed(() => props.attachment));
-const hasStats = computed(() => {
-  if (!props.attachment.stats) {
-    return false;
-  }
-
-  return props.attachment.stats.pros.length > 0 || props.attachment.stats.cons.length > 0;
-});
 </script>

@@ -20,7 +20,8 @@ import { useAttachmentsList } from '@/attachments/composables/attachments';
 import AttachmentsList from '@/attachments/components/AttachmentsList.vue';
 import { useAttachmentCategoriesMenu, useAttachmentCategory } from '@/attachments/composables/categories';
 import VerticalMenu from '@/layout/components/VerticalMenu.vue';
-import { computed } from 'vue';
+import { computed, watch } from 'vue';
+import { useHead } from '@vueuse/head';
 
 const props = defineProps<{
   categoryId?: string;
@@ -30,4 +31,12 @@ const id = computed(() => props.categoryId || null);
 const { groups } = useAttachmentsList();
 const { menu } = useAttachmentCategoriesMenu(id);
 const { category } = useAttachmentCategory(id);
+
+watch(category, () => {
+  if (category.value) {
+    useHead({ title: `${category.value.name} – Attachments` });
+  } else {
+    useHead({ title: 'Attachments' });
+  }
+}, { immediate: true });
 </script>

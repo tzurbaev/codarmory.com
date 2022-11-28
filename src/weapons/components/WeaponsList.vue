@@ -52,7 +52,7 @@ const props = defineProps<{
 }>();
 
 const { filters, hasFilters, reset } = useWeaponsFilters();
-const { categories, weapons } = useWeaponsList(computed(() => ({
+const { weapons } = useWeaponsList(computed(() => ({
   category_id: props.categoryId,
   attachment_id: props.attachmentId,
 })), filters);
