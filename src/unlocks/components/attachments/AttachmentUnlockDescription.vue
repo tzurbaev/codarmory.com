@@ -16,6 +16,11 @@
       <template v-else-if="attachment.unlock_type === UnlockType.BattlePass">
         Unlock by progressing in <span class="font-bold">Season 0{{ attachment.unlock_level}} Battle Pass</span>
       </template>
+      <template v-else-if="attachment.unlock_type === UnlockType.Bundle">
+        Unlock by purchasing
+        <span v-if="full && attachment.unlock_id" class="font-bold">{{ attachment.unlock_id }}</span>
+        bundle in store.
+      </template>
       <template v-else-if="attachment.unlock_type === UnlockType.DMZ">
         <template v-if="attachment.unlock_description">{{ attachment.unlock_description }}</template>
         <template v-else>
@@ -23,7 +28,18 @@
         </template>
       </template>
       <template v-else-if="attachment.unlock_type === UnlockType.Unknown">
+        <template v-if="full">
+          This attachment's requirements are not known. It might be already unlocked for you, though.
+        </template>
+        <template v-else>
+          Unknown requirements
+        </template>
+      </template>
+      <template v-else-if="attachment.unlock_type === UnlockType.NotAvailable">
         This attachment is not yet available in game
+        <template v-if="full">
+          even if it listed in progression or attachments UI.
+        </template>
       </template>
     </a>
   </p>
@@ -36,6 +52,7 @@ import { useUnlockModal } from '@/unlocks/composables/unlocks';
 
 defineProps<{
   attachment: Attachment;
+  full?: boolean;
 }>();
 
 const { openAttachment } = useUnlockModal();

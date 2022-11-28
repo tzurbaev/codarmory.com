@@ -17,7 +17,7 @@
         </h4>
       </template>
 
-      <AttachmentUnlockDescription :attachment="attachment" class="text-primary-500 attachments-grid:text-sm" />
+      <AttachmentUnlockDescription :full="type !== 'grid'" :attachment="attachment" class="text-primary-500 attachments-grid:text-sm" />
 
       <p v-if="attachment.description" class="attachments-grid:text-xs text-white/60">
         {{ attachment.description }}

@@ -18,14 +18,14 @@
                 <span>{{ attachment.name }}</span>
                 <span class="sr-only">Current</span>
               </p>
-              <AttachmentUnlockDescription :attachment="attachment" class="text-primary-100" />
+              <AttachmentUnlockDescription :full="true" :attachment="attachment" class="text-primary-100" />
             </div>
           </div>
         </div>
       </template>
     </WeaponUnlockModalBody>
   </template>
-  <AttachmentUnlockDescription v-else :attachment="attachment" class="mt-4 text-white" />
+  <AttachmentUnlockDescription v-else :full="true" :attachment="attachment" class="mt-4 text-white" />
 </template>
 
 <script setup lang="ts">

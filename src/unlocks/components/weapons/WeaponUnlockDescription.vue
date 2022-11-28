@@ -22,6 +22,11 @@
           Unlock in <span class="font-bold">Season 0{{ weapon.unlock_level}} Battle Pass</span>
         </template>
       </template>
+      <template v-else-if="weapon.unlock_type === UnlockType.Bundle">
+        Unlock by purchasing
+        <span v-if="full && weapon.unlock_id" class="font-bold">{{ weapon.unlock_id }}</span>
+        bundle in game store.
+      </template>
       <template v-else-if="weapon.unlock_type === UnlockType.DMZ">
         <template v-if="full && weapon.unlock_description">{{ weapon.unlock_description }}</template>
         <template v-else>

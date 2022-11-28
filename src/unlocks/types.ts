@@ -4,7 +4,9 @@ export enum UnlockType {
   Weapon = 'weapon',
   DMZ = 'dmz',
   BattlePass = 'battle-pass',
+  Bundle = 'bundle',
   Unknown = 'unknown',
+  NotAvailable = 'not-available',
 }
 
 export interface Unlockable {
