@@ -15333,9 +15333,9 @@
         "cons": [
             "magazine_ammo_capacity"
         ],
-        "unlock_type": "unknown",
-        "unlock_id": null,
-        "unlock_level": null,
+        "unlock_type": "weapon",
+        "unlock_id": "rpk",
+        "unlock_level": 10,
         "unlock_description": null
     },
     {
@@ -15353,9 +15353,9 @@
         "cons": [
             "magazine_ammo_capacity"
         ],
-        "unlock_type": "unknown",
-        "unlock_id": null,
-        "unlock_level": null,
+        "unlock_type": "weapon",
+        "unlock_id": "rpk",
+        "unlock_level": 10,
         "unlock_description": null
     },
     {
@@ -15474,9 +15474,9 @@
             "aim_walking_speed",
             "sprint_speed"
         ],
-        "unlock_type": "unknown",
-        "unlock_id": null,
-        "unlock_level": null,
+        "unlock_type": "weapon",
+        "unlock_id": "taq-m",
+        "unlock_level": 7,
         "unlock_description": null
     },
     {
