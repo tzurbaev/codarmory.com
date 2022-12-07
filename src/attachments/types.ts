@@ -18,9 +18,6 @@ export interface Attachment extends Unlockable {
   slug: string;
   name: string;
   description: string | null;
-  completed: boolean;
-  has_errors: boolean;
-  comment: string | null;
   pros: string[];
   cons: string[];
   category?: AttachmentCategory | null;
