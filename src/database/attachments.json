@@ -14782,9 +14782,9 @@
         "cons": [
             "aiming_stability"
         ],
-        "unlock_type": "unknown",
-        "unlock_id": null,
-        "unlock_level": null,
+        "unlock_type": "weapon",
+        "unlock_id": "lachmann-556",
+        "unlock_level": 3,
         "unlock_description": null
     },
     {
@@ -14800,9 +14800,9 @@
         "cons": [
             "recoil_control"
         ],
-        "unlock_type": "unknown",
-        "unlock_id": null,
-        "unlock_level": null,
+        "unlock_type": "weapon",
+        "unlock_id": "lachmann-556",
+        "unlock_level": 10,
         "unlock_description": null
     },
     {
@@ -14865,7 +14865,7 @@
             "aim_walking_speed",
             "recoil_control"
         ],
-        "unlock_type": "unknown",
+        "unlock_type": "auto",
         "unlock_id": null,
         "unlock_level": null,
         "unlock_description": null
@@ -15249,9 +15249,9 @@
         "cons": [
             "magazine_ammo_capacity"
         ],
-        "unlock_type": "unknown",
-        "unlock_id": null,
-        "unlock_level": null,
+        "unlock_type": "weapon",
+        "unlock_id": "hcr-56",
+        "unlock_level": 3,
         "unlock_description": null
     },
     {
@@ -15269,7 +15269,7 @@
             "damage_range",
             "bullet_penetration"
         ],
-        "unlock_type": "unknown",
+        "unlock_type": "not-available",
         "unlock_id": null,
         "unlock_level": null,
         "unlock_description": null
@@ -15372,9 +15372,9 @@
             "bullet_velocity",
             "recoil_control"
         ],
-        "unlock_type": "unknown",
-        "unlock_id": null,
-        "unlock_level": null,
+        "unlock_type": "weapon",
+        "unlock_id": "rapp-h",
+        "unlock_level": 4,
         "unlock_description": null
     },
     {
