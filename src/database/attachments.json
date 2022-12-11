@@ -15493,9 +15493,9 @@
         "cons": [
             "very_large_sniper_glint"
         ],
-        "unlock_type": "bundle",
-        "unlock_id": "VII: Sloth",
-        "unlock_level": null,
+        "unlock_type": "weapon",
+        "unlock_id": "victus-xmr",
+        "unlock_level": 28,
         "unlock_description": null
     },
     {

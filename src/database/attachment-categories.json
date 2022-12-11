@@ -2,86 +2,103 @@
     {
         "id": "muzzles",
         "name": "Muzzles",
+        "singular_name": "Muzzle",
         "sorting": 0
     },
     {
         "id": "barrels",
         "name": "Barrels",
+        "singular_name": "Barrel",
         "sorting": 1
     },
     {
         "id": "lasers",
         "name": "Lasers",
+        "singular_name": "Laser",
         "sorting": 2
     },
     {
         "id": "optics",
         "name": "Optics",
+        "singular_name": "Optic",
         "sorting": 3
     },
     {
         "id": "stocks",
         "name": "Stocks",
+        "singular_name": "Stock",
         "sorting": 4
     },
     {
         "id": "rear-grips",
         "name": "Rear Grips",
+        "singular_name": "Rear Grip",
         "sorting": 5
     },
     {
         "id": "rear-grips-combs",
         "name": "Rear Grips \/ Combs",
+        "singular_name": "Rear Grip \/ Comb",
         "sorting": 6
     },
     {
         "id": "combs",
         "name": "Combs",
+        "singular_name": "Comb",
         "sorting": 7
     },
     {
         "id": "guards",
         "name": "Guards",
+        "singular_name": "Guard",
         "sorting": 8
     },
     {
         "id": "bolts",
         "name": "Bolts",
+        "singular_name": "Bolt",
         "sorting": 9
     },
     {
         "id": "levers",
         "name": "Levers",
+        "singular_name": "Lever",
         "sorting": 10
     },
     {
         "id": "loaders",
         "name": "Loaders",
+        "singular_name": "Loader",
         "sorting": 11
     },
     {
         "id": "magazines",
         "name": "Magazines",
+        "singular_name": "Magazine",
         "sorting": 12
     },
     {
         "id": "ammunition",
         "name": "Ammunition",
+        "singular_name": "Ammunition",
         "sorting": 13
     },
     {
         "id": "trigger-actions",
         "name": "Trigger Actions",
+        "singular_name": "Trigger Action",
         "sorting": 14
     },
     {
         "id": "rails",
         "name": "Rails",
+        "singular_name": "Rail",
         "sorting": 15
     },
     {
         "id": "underbarrels",
         "name": "Underbarrels",
+        "singular_name": "Underbarrel",
         "sorting": 16
     }
 ]
