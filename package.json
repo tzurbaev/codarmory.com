@@ -1,11 +1,13 @@
 {
   "name": "codarmory",
   "private": true,
-  "version": "0.9.8",
+  "version": "0.9.9",
   "type": "module",
   "scripts": {
+    "index:pre": "mv index.html index.dev.html && mv index.prod.html index.html",
+    "index:post": "mv index.html index.prod.html && mv index.dev.html index.html",
     "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build",
+    "build": "npm run index:pre && vue-tsc --noEmit && vite build && npm run index:post",
     "preview": "vite preview",
     "lint": "eslint --fix \"./src/**/*.{vue,ts,html,js}\""
   },
