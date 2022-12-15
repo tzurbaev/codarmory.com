@@ -31,6 +31,12 @@ const routes: RouteRecordRaw[] = [
     props: true,
   },
   {
+    name: 'changelog',
+    path: '/changelog',
+    component: () => import('@/changelog/views/Changelog.vue'),
+    props: true,
+  },
+  {
     path: '/:pathMatch(.*)*',
     name: 'errors.404',
     component: () => import('@/views/Error404.vue'),

@@ -15714,5 +15714,238 @@
         "unlock_id": "basilisk",
         "unlock_level": 30,
         "unlock_description": null
+    },
+    {
+        "id": "97fb4d5c9c5de893",
+        "category_id": "ammunition",
+        "slug": "300-blk-armor-piercing",
+        "name": ".300 BLK Armor Piercing",
+        "description": "A tungsten-core round that increases bullet penetration, dealing higher damage when passing through cover. Slight increase to vehicle damage.",
+        "pros": [
+            "bullet_penetration",
+            "vehicle_damage"
+        ],
+        "cons": [
+            "bullet_velocity"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "chimera",
+        "unlock_level": 4,
+        "unlock_description": null
+    },
+    {
+        "id": "97fb482788eeeaf5",
+        "category_id": "barrels",
+        "slug": "65-exf-op-40",
+        "name": "6.5'' EXF OP-40",
+        "description": "Designed by Expedite Firearms for operators who prefer speed over methodical action.",
+        "pros": [
+            "ads_speed",
+            "movement_speed",
+            "hip_recoil_control"
+        ],
+        "cons": [
+            "recoil_control",
+            "bullet_velocity",
+            "hip_fire_accuracy",
+            "damage_range"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "chimera",
+        "unlock_level": 7,
+        "unlock_description": null
+    },
+    {
+        "id": "97fb4841ac3da310",
+        "category_id": "ammunition",
+        "slug": "300-blk-hollowpoint",
+        "name": ".300 BLK Hollowpoint",
+        "description": "Hollowpoint rounds deform on impact, slowing the target and disabling sprint for a short time.",
+        "pros": [
+            "crippling_power"
+        ],
+        "cons": [
+            "bullet_velocity",
+            "bullet_penetration"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "chimera",
+        "unlock_level": 8,
+        "unlock_description": null
+    },
+    {
+        "id": "97fb41f48c192f65",
+        "category_id": "magazines",
+        "slug": "20-round-mag",
+        "name": "20 Round Mag",
+        "description": "A polymer magazine that holds 20 rounds of .300 BLK ammunition.",
+        "pros": [
+            "movement_speed",
+            "ads_speed",
+            "sprint_to_fire_speed",
+            "reload_quickness"
+        ],
+        "cons": [
+            "magazine_ammo_capacity"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "chimera",
+        "unlock_level": 9,
+        "unlock_description": null
+    },
+    {
+        "id": "97fb439a9f7c867f",
+        "category_id": "ammunition",
+        "slug": "300-blk-frangible",
+        "name": ".300 BLK Frangible",
+        "description": "Frangible rounds shatter on impact, which temporarily delays healing.",
+        "pros": [
+            "inflict_wounding_effect"
+        ],
+        "cons": [
+            "bullet_penetration",
+            "damage_range"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "chimera",
+        "unlock_level": 11,
+        "unlock_description": null
+    },
+    {
+        "id": "97fb4d23a4c483b3",
+        "category_id": "barrels",
+        "slug": "65-exf-vorpal",
+        "name": "6.5'' EXF Vorpal",
+        "description": "A short barrel from Expedite Firearms. Chrome-lined and designed for mobility on the battlefield.",
+        "pros": [
+            "damage_range",
+            "movement_speed",
+            "ads_speed"
+        ],
+        "cons": [
+            "recoil_control",
+            "bullet_velocity"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "chimera",
+        "unlock_level": 12,
+        "unlock_description": null
+    },
+    {
+        "id": "97fb44b5af0a758c",
+        "category_id": "muzzles",
+        "slug": "fr-titan-silencer",
+        "name": "FR Titan Silencer",
+        "description": "Sound-dampening silencer that increases range and bullet velocity with moderate recoil control.",
+        "pros": [
+            "sound_suppression",
+            "recoil_smoothness"
+        ],
+        "cons": [
+            "damage_range"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "chimera",
+        "unlock_level": 13,
+        "unlock_description": null
+    },
+    {
+        "id": "97fb4d54a946d5d3",
+        "category_id": "ammunition",
+        "slug": "300-blk-overpressured-p",
+        "name": ".300 BLK Overpressured +P",
+        "description": "Suppress and control with hotter rounds that afflicts the target with increased flinch.",
+        "pros": [
+            "target_flinch"
+        ],
+        "cons": [
+            "recoil_control"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "chimera",
+        "unlock_level": 14,
+        "unlock_description": null
+    },
+    {
+        "id": "97fb4754822afc71",
+        "category_id": "barrels",
+        "slug": "10-sa-phoenix",
+        "name": "10'' SA Phoenix",
+        "description": "A precision 10'' barrel designed by Singuard Arms. Designed to military specifications, this barrel provides better recoil control and accuracy.",
+        "pros": [
+            "damage_range",
+            "bullet_velocity",
+            "hip_fire_accuracy",
+            "recoil_control"
+        ],
+        "cons": [
+            "ads_speed",
+            "hip_recoil_control",
+            "movement_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "chimera",
+        "unlock_level": 15,
+        "unlock_description": null
+    },
+    {
+        "id": "97fb467a95673941",
+        "category_id": "magazines",
+        "slug": "45-round-mag",
+        "name": "45 Round Mag",
+        "description": "A polymer magazine that holds 45 rounds of .300 BLK ammunition.",
+        "pros": [
+            "magazine_ammo_capacity"
+        ],
+        "cons": [
+            "movement_speed",
+            "ads_speed",
+            "reload_quickness",
+            "sprint_to_fire_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "chimera",
+        "unlock_level": 16,
+        "unlock_description": null
+    },
+    {
+        "id": "97fb43d0bb0e6f92",
+        "category_id": "muzzles",
+        "slug": "sa-leveler-55",
+        "name": "SA Leveler 55",
+        "description": "A level compensator that significantly reduces recoil. Impacts speed.",
+        "pros": [
+            "horizontal_recoil_control",
+            "vertical_recoil_control"
+        ],
+        "cons": [
+            "ads_speed",
+            "aiming_stability"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "chimera",
+        "unlock_level": 17,
+        "unlock_description": null
+    },
+    {
+        "id": "97fb4f638fe2b629",
+        "category_id": "stocks",
+        "slug": "trx-56-stock",
+        "name": "TRX-56 Stock",
+        "description": "A heavy factory stock for the M13B that provides better recoil control and increased stability.",
+        "pros": [
+            "aiming_stability",
+            "recoil_control"
+        ],
+        "cons": [
+            "ads_speed",
+            "crouch_movement_speed",
+            "aim_walking_speed",
+            "sprint_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "m13b",
+        "unlock_level": 1,
+        "unlock_description": null
     }
 ]

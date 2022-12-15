@@ -1,7 +1,7 @@
 {
-  "name": "vite-template",
+  "name": "codarmory",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.9.8",
   "type": "module",
   "scripts": {
     "dev": "vite",

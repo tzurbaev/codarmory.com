@@ -27,7 +27,7 @@
         </router-link>
       </h2>
     </template>
-    <WeaponUnlockDescription :weapon="weapon" class="weapons-grid:align-bottom text-primary-500" />
+    <WeaponUnlockDescription :weapon="weapon" :full="type !== 'grid'" class="weapons-grid:align-bottom text-primary-500" />
     <p v-if="weapon.attachments.length > 0" class="text-white/60">
       {{ weapon.attachments.length }} Attachments
     </p>

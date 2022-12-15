@@ -87,6 +87,7 @@ import { useRoute } from 'vue-router';
 const navigation = [
   { name: 'Weapons', route: 'weapons.index', path: 'weapons.' },
   { name: 'Attachments', route: 'attachments.index', path: 'attachments.' },
+  { name: 'Changelog', route: 'changelog', path: 'changelog' },
 ];
 
 const route = useRoute();

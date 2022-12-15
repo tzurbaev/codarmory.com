@@ -5,6 +5,7 @@ export enum UnlockType {
   DMZ = 'dmz',
   BattlePass = 'battle-pass',
   Bundle = 'bundle',
+  Challenge = 'challenge',
   Unknown = 'unknown',
   NotAvailable = 'not-available',
 }

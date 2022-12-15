@@ -21,6 +21,12 @@
         <span v-if="full && attachment.unlock_id" class="font-bold">{{ attachment.unlock_id }}</span>
         bundle in store.
       </template>
+      <template v-else-if="attachment.unlock_type === UnlockType.Challenge">
+        <template v-if="full && attachment.unlock_description">
+          {{ attachment.unlock_description }}
+        </template>
+        <template v-else>Unlock by completing challenge.</template>
+      </template>
       <template v-else-if="attachment.unlock_type === UnlockType.DMZ">
         <template v-if="attachment.unlock_description">{{ attachment.unlock_description }}</template>
         <template v-else>

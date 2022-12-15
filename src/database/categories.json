@@ -2,51 +2,61 @@
     {
         "id": "assault-rifles",
         "name": "Assault Rifles",
-        "alias": null
+        "alias": null,
+        "slot": "primary"
     },
     {
         "id": "battle-rifles",
         "name": "Battle Rifles",
-        "alias": null
+        "alias": null,
+        "slot": "primary"
     },
     {
         "id": "shotguns",
         "name": "Shotguns",
-        "alias": null
+        "alias": null,
+        "slot": "primary"
     },
     {
         "id": "smgs",
         "name": "SMGs",
-        "alias": "Submachine guns"
+        "alias": "Submachine guns",
+        "slot": "primary"
     },
     {
         "id": "lmgs",
         "name": "LMGs",
-        "alias": "Light machine guns"
+        "alias": "Light machine guns",
+        "slot": "primary"
     },
     {
         "id": "marksman-rifles",
         "name": "Marksman Rifles",
-        "alias": null
+        "alias": null,
+        "slot": "primary"
     },
     {
         "id": "sniper-rifles",
         "name": "Sniper Rifles",
-        "alias": null
+        "alias": null,
+        "slot": "primary"
     },
     {
         "id": "handguns",
         "name": "Handguns",
-        "alias": null
+        "alias": null,
+        "slot": "secondary"
     },
     {
         "id": "launchers",
         "name": "Launchers",
-        "alias": null
+        "alias": null,
+        "slot": "secondary"
     },
     {
         "id": "melee",
         "name": "Melee",
-        "alias": null
+        "alias": null,
+        "slot": "secondary"
     }
 ]
