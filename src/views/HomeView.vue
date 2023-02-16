@@ -2,25 +2,29 @@
   <div class="pb-8 sm:pb-12 lg:pb-12">
     <div class="overflow-hidden pt-8 sm:pt-12 lg:relative lg:py-48">
       <div class="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-2 lg:gap-24 lg:px-8">
-
         <div class="sm:max-w-xl">
+          <div class="flex mb-6">
+            <div class="bg-primary-500 relative rounded-full py-1 px-3 text-sm leading-6 text-primary-100">
+              Season 02
+            </div>
+          </div>
           <h1 class="text-4xl font-bold tracking-tight text-primary-500 sm:text-5xl">
             COD Armory <span class="text-xs align-super">[ beta ]</span>
           </h1>
-          <p class="mt-6 text-xl text-white/90">
+          <p class="mt-6 text-xl text-white/90 leading-relaxed">
             Browse all weapons and attachments for
             <span class="text-white font-extrabold">Call of Duty: Modern Warfare II</span>
             and <span class="text-white font-extrabold">Call of Duty: Warzone 2.0</span>.
           </p>
           <div class="flex items-center mt-8 gap-8">
             <router-link :to="{ name: 'weapons.index' }" class="text-white text-lg hover:text-primary-500">
-              &gt; Browse Weapons
+              <span class="hidden sm:inline">&gt;</span> Browse Weapons
             </router-link>
             <router-link :to="{ name: 'attachments.index' }" class="text-white text-lg hover:text-primary-500">
-              &gt; Browse Attachments
+              <span class="hidden sm:inline">&gt;</span> Browse Attachments
             </router-link>
           </div>
-          <p class="mt-8 text-white/60 text-xs">
+          <p class="mt-8 text-white/60 text-sm">
             This is a fan-made website. We're not affiliated with Activision or Infinity Ward in any way.
           </p>
         </div>
@@ -50,3 +54,9 @@
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+import { useHead } from '@vueuse/head';
+
+useHead({ title: '' });
+</script>

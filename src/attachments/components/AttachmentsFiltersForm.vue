@@ -2,7 +2,7 @@
   <div>
     <TextInputGroup v-model="value.search">
       <InputLabel>Search</InputLabel>
-      <TextInput type="search" placeholder="Filter attachments by name" />
+      <TextInput type="search" placeholder="Filter by name" />
     </TextInputGroup>
   </div>
 

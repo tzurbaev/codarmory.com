@@ -14,8 +14,9 @@
   "dependencies": {
     "@headlessui/vue": "^1.7.4",
     "@heroicons/vue": "^2.0.13",
+    "@tailwindcss/typography": "^0.5.9",
     "@vueuse/head": "^1.0.18",
-    "@zenky/forms-vue": "^0.9.10",
+    "@zenky/forms-vue": "^0.9.12",
     "pinia": "^2.0.22",
     "vue": "^3.2.37",
     "vue-router": "^4.1.5"

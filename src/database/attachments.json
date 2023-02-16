@@ -236,7 +236,7 @@
         "category_id": "rear-grips",
         "slug": "xten-grip",
         "name": "XTen Grip",
-        "description": "A comfortable, contoured grip designed by XTEN for snappy target acqusition.",
+        "description": "A comfortable, contoured grip designed by XTEN for snappy target acquisition.",
         "pros": [
             "sprint_to_fire_speed",
             "ads_speed"
@@ -7527,9 +7527,9 @@
             "aim_walking_speed",
             "aiming_stability"
         ],
-        "unlock_type": "not-available",
-        "unlock_id": null,
-        "unlock_level": null,
+        "unlock_type": "weapon",
+        "unlock_id": "iso-hemlock",
+        "unlock_level": 12,
         "unlock_description": null
     },
     {
@@ -7589,8 +7589,8 @@
             "aiming_stability"
         ],
         "unlock_type": "weapon",
-        "unlock_id": "m13b",
-        "unlock_level": 11,
+        "unlock_id": "iso-hemlock",
+        "unlock_level": 7,
         "unlock_description": null
     },
     {
@@ -9259,7 +9259,7 @@
         "category_id": "underbarrels",
         "slug": "fss-sharkfin-90",
         "name": "FSS Sharkfin 90",
-        "description": "Well-rounded angled foregrip for those who prefer accuract while on the move.",
+        "description": "Well-rounded angled foregrip for those who prefer accuracy while on the move.",
         "pros": [
             "aiming_idle_stability"
         ],
@@ -14684,8 +14684,8 @@
             "aim_walking_movement_speed"
         ],
         "unlock_type": "weapon",
-        "unlock_id": "rapp-h",
-        "unlock_level": 23,
+        "unlock_id": "iso-hemlock",
+        "unlock_level": 5,
         "unlock_description": null
     },
     {
@@ -14724,9 +14724,9 @@
             "ads_speed",
             "hip_walking_speed"
         ],
-        "unlock_type": "not-available",
-        "unlock_id": null,
-        "unlock_level": null,
+        "unlock_type": "weapon",
+        "unlock_id": "iso-hemlock",
+        "unlock_level": 9,
         "unlock_description": null
     },
     {
@@ -15214,8 +15214,8 @@
     {
         "id": "97d040c39a865ef2",
         "category_id": "underbarrels",
-        "slug": "bruen-warrior-grip",
-        "name": "Bruen Warrior Grip",
+        "slug": "bruen-warrior-lmg",
+        "name": "Bruen Warrior LMG",
         "description": "A comfortable side grip for the Sakin MG38, designed for the heavy recoil of an LMG.",
         "pros": [
             "aiming_idle_stability",
@@ -15269,9 +15269,9 @@
             "damage_range",
             "bullet_penetration"
         ],
-        "unlock_type": "not-available",
-        "unlock_id": null,
-        "unlock_level": null,
+        "unlock_type": "weapon",
+        "unlock_id": "iso-hemlock",
+        "unlock_level": 26,
         "unlock_description": null
     },
     {
@@ -15946,6 +15946,977 @@
         "unlock_type": "weapon",
         "unlock_id": "m13b",
         "unlock_level": 1,
+        "unlock_description": null
+    },
+    {
+        "id": "98794f76b5c24081",
+        "category_id": "stocks",
+        "slug": "iso-stockless-mod",
+        "name": "ISO Stockless Mod",
+        "description": "Virtually non-existent, this stock modification was built for rapid engagements. Increased aiming speed, movement, and hip recoil control.",
+        "pros": [
+            "ads_speed",
+            "sprint_to_fire_speed",
+            "movement_speed",
+            "hip_recoil_control"
+        ],
+        "cons": [
+            "aiming_recoil_control",
+            "aiming_stability",
+            "flinch_resistance"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "iso-hemlock",
+        "unlock_level": null,
+        "unlock_description": null
+    },
+    {
+        "id": "9879410c9bf86fc3",
+        "category_id": "barrels",
+        "slug": "rcq-7",
+        "name": "RCQ 7",
+        "description": "This lightweight and short barrel is perfect for room clearing and quick engagements at close to medium range.",
+        "pros": [
+            "ads_speed",
+            "hip_recoil_control",
+            "movement_speed"
+        ],
+        "cons": [
+            "damage_range",
+            "hip_fire_accuracy",
+            "bullet_velocity",
+            "recoil_control"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "iso-hemlock",
+        "unlock_level": 3,
+        "unlock_description": null
+    },
+    {
+        "id": "987947c6b78d7334",
+        "category_id": "magazines",
+        "slug": "20-round-mag",
+        "name": "20 Round Mag",
+        "description": "A polymer magazine that holds 20 rounds of 5.56 ammunition.",
+        "pros": [
+            "movement_speed",
+            "ads_speed",
+            "sprint_to_fire_speed",
+            "reload_quickness"
+        ],
+        "cons": [
+            "magazine_ammo_capacity"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "iso-hemlock",
+        "unlock_level": 4,
+        "unlock_description": null
+    },
+    {
+        "id": "98794e3481173412",
+        "category_id": "rear-grips",
+        "slug": "xten-grip",
+        "name": "XTen Grip",
+        "description": "A comfortable, contoured grip designed by XTEN for snappy target acquisition.",
+        "pros": [
+            "sprint_to_fire_speed",
+            "ads_speed"
+        ],
+        "cons": [
+            "recoil_control"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "iso-hemlock",
+        "unlock_level": 6,
+        "unlock_description": null
+    },
+    {
+        "id": "98794a88bf9c58eb",
+        "category_id": "barrels",
+        "slug": "series-4-mr",
+        "name": "Series 4-MR",
+        "description": "Keep control of every objective with this short and heavy barrel designed for aiming speed and recoil control.",
+        "pros": [
+            "recoil_control",
+            "bullet_velocity",
+            "hip_recoil_control"
+        ],
+        "cons": [
+            "movement_speed",
+            "damage_range",
+            "hip_fire_accuracy",
+            "ads_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "iso-hemlock",
+        "unlock_level": 8,
+        "unlock_description": null
+    },
+    {
+        "id": "9879467198efbc1d",
+        "category_id": "stocks",
+        "slug": "r-com-s4",
+        "name": "R-COM S4",
+        "description": "Minimal, lightweight, and fast, this stock was designed for moving through the battlefield and making the competition pay.",
+        "pros": [
+            "sprint_speed",
+            "aim_walking_speed",
+            "crouch_movement_speed",
+            "ads_speed"
+        ],
+        "cons": [
+            "aiming_stability",
+            "recoil_control"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "iso-hemlock",
+        "unlock_level": 11,
+        "unlock_description": null
+    },
+    {
+        "id": "987945cd82710253",
+        "category_id": "barrels",
+        "slug": "fielder-t50",
+        "name": "Fielder-T50",
+        "description": "Designed for long-range, methodical shots, this heavy and long barrel keeps shots level while increasing accuracy.",
+        "pros": [
+            "damage_range",
+            "bullet_velocity",
+            "hip_fire_accuracy",
+            "recoil_control"
+        ],
+        "cons": [
+            "ads_speed",
+            "hip_recoil_control",
+            "movement_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "iso-hemlock",
+        "unlock_level": 13,
+        "unlock_description": null
+    },
+    {
+        "id": "987942d8b7cf58c5",
+        "category_id": "stocks",
+        "slug": "mace-600",
+        "name": "Mace 600",
+        "description": "Premium materials and construction make this heavy stock ideal for aiming stability and recoil control.",
+        "pros": [
+            "aiming_stability",
+            "recoil_control"
+        ],
+        "cons": [
+            "aim_walking_speed",
+            "sprint_speed",
+            "ads_speed",
+            "crouch_movement_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "iso-hemlock",
+        "unlock_level": 15,
+        "unlock_description": null
+    },
+    {
+        "id": "98794f64a4603881",
+        "category_id": "optics",
+        "slug": "vigilant-30-c-iron",
+        "name": "Vigilant-30 C-Iron",
+        "description": "This 8.0x magnification optic from XTEN features canted iron sights for rapid target engagements at close range.",
+        "pros": [
+            "80x_magnification",
+            "dual_optics_toggle"
+        ],
+        "cons": [
+            "small_sniper_glint",
+            "ads_speed",
+            "aim_walking_movement_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "iso-hemlock",
+        "unlock_level": 16,
+        "unlock_description": null
+    },
+    {
+        "id": "987948d9a9f044b8",
+        "category_id": "ammunition",
+        "slug": "300-blackout",
+        "name": ".300 Blackout",
+        "description": "This hard-hitting rifle round is designed to travel at subsonic speeds while improving upon the impact performance of faster rounds. Subsonic rounds hide enemy death markers.",
+        "pros": [
+            "no_enemy_skulls",
+            "damage"
+        ],
+        "cons": [
+            "bullet_velocity",
+            "fire_rate"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "iso-hemlock",
+        "unlock_level": 17,
+        "unlock_description": null
+    },
+    {
+        "id": "987945489e82b976",
+        "category_id": "magazines",
+        "slug": "45-round-mag",
+        "name": "45 Round Mag",
+        "description": "A polymer magazine that holds 45 rounds of 5.56 ammunition.",
+        "pros": [
+            "magazine_ammo_capacity"
+        ],
+        "cons": [
+            "movement_speed",
+            "ads_speed",
+            "reload_quickness",
+            "sprint_to_fire_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "iso-hemlock",
+        "unlock_level": 18,
+        "unlock_description": null
+    },
+    {
+        "id": "987949d4aba18f2d",
+        "category_id": "barrels",
+        "slug": "lr-3056",
+        "name": "LR-30\/56",
+        "description": "Long and accurate, this barrel is designed to increase accuracy and bullet damage with both .300 and 5.56 ammunition.",
+        "pros": [
+            "damage_range",
+            "hip_fire_accuracy",
+            "bullet_velocity"
+        ],
+        "cons": [
+            "ads_speed",
+            "hip_recoil_control"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "iso-hemlock",
+        "unlock_level": 19,
+        "unlock_description": null
+    },
+    {
+        "id": "987948c7b0c2ab8a",
+        "category_id": "stocks",
+        "slug": "raid-90",
+        "name": "Raid-90",
+        "description": "Stay on the move with this nimble and lightweight stock. Rewards fast action with quick aiming speed and an increase to movement speed.",
+        "pros": [
+            "crouch_movement_speed",
+            "sprint_speed",
+            "ads_speed"
+        ],
+        "cons": [
+            "recoil_control"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "iso-hemlock",
+        "unlock_level": 20,
+        "unlock_description": null
+    },
+    {
+        "id": "98794a3a815cc319",
+        "category_id": "rear-grips",
+        "slug": "phantom-grip",
+        "name": "Phantom Grip",
+        "description": "Streamlined to eliminate any extra weight, this skeletonized grip is as fast as it is aggressive.",
+        "pros": [
+            "sprint_to_fire_speed",
+            "ads_speed"
+        ],
+        "cons": [
+            "recoil_control",
+            "flinch_resistance"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "iso-hemlock",
+        "unlock_level": 14,
+        "unlock_description": null
+    },
+    {
+        "id": "9879470f9e82cdd6",
+        "category_id": "rear-grips",
+        "slug": "sakin-zx-grip",
+        "name": "Sakin ZX Grip",
+        "description": "A comfortable grip designed to help control recoil to keep shots on target.",
+        "pros": [
+            "recoil_control"
+        ],
+        "cons": [
+            "aiming_stability"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "iso-hemlock",
+        "unlock_level": 21,
+        "unlock_description": null
+    },
+    {
+        "id": "98794c56963e5558",
+        "category_id": "underbarrels",
+        "slug": "core-bp2",
+        "name": "Core BP2",
+        "description": "A vertical foregrip with an internal bipod. Can be used for better control and mounting your weapon.",
+        "pros": [
+            "bipod_mount"
+        ],
+        "cons": [],
+        "unlock_type": "weapon",
+        "unlock_id": "iso-hemlock",
+        "unlock_level": 22,
+        "unlock_description": null
+    },
+    {
+        "id": "9879412489f69baa",
+        "category_id": "stocks",
+        "slug": "res-2",
+        "name": "RES-2",
+        "description": "Lightweight and responsive, this minimal stock complements a more agile combat style.",
+        "pros": [
+            "aim_walking_speed",
+            "sprint_speed"
+        ],
+        "cons": [
+            "aiming_stability"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "iso-hemlock",
+        "unlock_level": 23,
+        "unlock_description": null
+    },
+    {
+        "id": "98794f0184e0db1e",
+        "category_id": "barrels",
+        "slug": "cipher-121",
+        "name": "Cipher-121",
+        "description": "Deadly in all arenas, this silenced barrel provides quiet shots for times that call for stealth.",
+        "pros": [
+            "sound_suppression",
+            "recoil_control"
+        ],
+        "cons": [
+            "damage_range"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "iso-hemlock",
+        "unlock_level": 24,
+        "unlock_description": null
+    },
+    {
+        "id": "987948d3a9933280",
+        "category_id": "rear-grips",
+        "slug": "support-cp90-grip",
+        "name": "Support CP90 Grip",
+        "description": "An ergonomic rifle grip with a palm shelf that provides superior stability for precision accuracy.",
+        "pros": [
+            "aiming_stability",
+            "flinch_resistance"
+        ],
+        "cons": [
+            "ads_speed",
+            "aim_walking_movement_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "iso-hemlock",
+        "unlock_level": 25,
+        "unlock_description": null
+    },
+    {
+        "id": "987947ec92779e3b",
+        "category_id": "barrels",
+        "slug": "ltc-b",
+        "name": "LTC-B",
+        "description": "Make quick work of your enemies with this short and lightweight barrel attachment. Increases aiming speed at the cost of accuracy.",
+        "pros": [
+            "ads_speed",
+            "movement_speed",
+            "hip_recoil_control"
+        ],
+        "cons": [
+            "damage_range",
+            "bullet_velocity",
+            "hip_fire_accuracy",
+            "recoil_control"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "kv-broadside",
+        "unlock_level": 3,
+        "unlock_description": null
+    },
+    {
+        "id": "98794636a96403a3",
+        "category_id": "muzzles",
+        "slug": "long-haul-50",
+        "name": "Long Haul 50",
+        "description": "Take control of every shot with this long, ported compensator. Significant increase to recoil control with a slight decrease to handling.",
+        "pros": [
+            "vertical_recoil_control",
+            "horizontal_recoil_control"
+        ],
+        "cons": [
+            "ads_speed",
+            "aiming_stability"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "kv-broadside",
+        "unlock_level": 4,
+        "unlock_description": null
+    },
+    {
+        "id": "9879442091e732cf",
+        "category_id": "barrels",
+        "slug": "velocious-40",
+        "name": "Velocious 40",
+        "description": "Light and tactical, this barrel has been streamlined for aiming speed and enhanced movement.",
+        "pros": [
+            "movement_speed",
+            "ads_speed"
+        ],
+        "cons": [
+            "bullet_velocity",
+            "recoil_control"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "kv-broadside",
+        "unlock_level": 5,
+        "unlock_description": null
+    },
+    {
+        "id": "987942d59e3a189f",
+        "category_id": "magazines",
+        "slug": "12-shell-mag",
+        "name": "12 Shell Mag",
+        "description": "A large magazine that holds twelve 12 gauge shells.",
+        "pros": [
+            "magazine_ammo_capacity"
+        ],
+        "cons": [
+            "movement_speed",
+            "ads_speed",
+            "reload_quickness",
+            "sprint_to_fire_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "kv-broadside",
+        "unlock_level": 7,
+        "unlock_description": null
+    },
+    {
+        "id": "98794934ac012681",
+        "category_id": "barrels",
+        "slug": "range-twelve",
+        "name": "Range Twelve",
+        "description": "Send your enemies to the dirt at range with this long and heavy barrel. Keeps recoil down while increasing damage range and projectile velocity.",
+        "pros": [
+            "damage_range",
+            "hip_fire_accuracy",
+            "bullet_velocity"
+        ],
+        "cons": [
+            "ads_speed",
+            "hip_recoil_control"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "kv-broadside",
+        "unlock_level": 8,
+        "unlock_description": null
+    },
+    {
+        "id": "98794de2a371003e",
+        "category_id": "stocks",
+        "slug": "hardtac-40",
+        "name": "HARDTAC 40",
+        "description": "Agile yet sturdy, this stock is easier to sprint with, enhances aiming walking speed, and improves recoil control.",
+        "pros": [
+            "aim_walking_speed",
+            "sprint_speed",
+            "recoil_control"
+        ],
+        "cons": [
+            "ads_speed",
+            "crouch_movement_speed",
+            "aiming_stability"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "kv-broadside",
+        "unlock_level": 9,
+        "unlock_description": null
+    },
+    {
+        "id": "98794d60a0c12edd",
+        "category_id": "barrels",
+        "slug": "warrior-wolf",
+        "name": "Warrior Wolf",
+        "description": "Strike hard and fast with this short and stable barrel. Designed for enhanced aiming speed and recoil control, both from the hip and when aiming.",
+        "pros": [
+            "recoil_control",
+            "hip_recoil_control",
+            "bullet_velocity"
+        ],
+        "cons": [
+            "damage_range",
+            "movement_speed",
+            "hip_fire_accuracy"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "kv-broadside",
+        "unlock_level": 10,
+        "unlock_description": null
+    },
+    {
+        "id": "987943599c544389",
+        "category_id": "bolts",
+        "slug": "hardbolt-21",
+        "name": "Hardbolt 2.1",
+        "description": "This heavy bolt provides a smoother rechamber, allowing your weapon to stay on target when chambering a new round.",
+        "pros": [
+            "recoil_control"
+        ],
+        "cons": [
+            "fire_rate"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "kv-broadside",
+        "unlock_level": 12,
+        "unlock_description": null
+    },
+    {
+        "id": "98794967a3a18eee",
+        "category_id": "muzzles",
+        "slug": "wolfcall-300",
+        "name": "Wolfcall 300",
+        "description": "A specialized compensator designed to significantly reduce powerful shotgun recoil at the cost of some handling.",
+        "pros": [
+            "horizontal_recoil_control",
+            "vertical_recoil_control"
+        ],
+        "cons": [
+            "ads_speed",
+            "aiming_stability"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "kv-broadside",
+        "unlock_level": 13,
+        "unlock_description": null
+    },
+    {
+        "id": "98794002818f4a2c",
+        "category_id": "barrels",
+        "slug": "deadsight-90",
+        "name": "Deadsight 90",
+        "description": "A heavy, natural wood foregrip and short length make this barrel attachment ideal for those who like to engage enemies at closer range with the help of reduced recoil.",
+        "pros": [
+            "recoil_control",
+            "bullet_velocity"
+        ],
+        "cons": [
+            "movement_speed",
+            "ads_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "kv-broadside",
+        "unlock_level": 14,
+        "unlock_description": null
+    },
+    {
+        "id": "987948e5bcbc49ea",
+        "category_id": "barrels",
+        "slug": "gunner-d20",
+        "name": "Gunner D20",
+        "description": "Engage and conquer at a distance with this long and heavy barrel. Added weight reduces some recoil while the length offers exceptional range and bullet velocity.",
+        "pros": [
+            "damage_range",
+            "bullet_velocity",
+            "hip_fire_accuracy",
+            "recoil_control"
+        ],
+        "cons": [
+            "ads_speed",
+            "hip_recoil_control",
+            "movement_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "kv-broadside",
+        "unlock_level": 16,
+        "unlock_description": null
+    },
+    {
+        "id": "98794021a8d9db54",
+        "category_id": "magazines",
+        "slug": "25-shell-drum",
+        "name": "25 Shell Drum",
+        "description": "A drum magazine that carries 25 rounds of 12 gauge ammunition.",
+        "pros": [
+            "magazine_ammo_capacity"
+        ],
+        "cons": [
+            "movement_speed",
+            "ads_speed",
+            "reload_quickness",
+            "sprint_to_fire_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "kv-broadside",
+        "unlock_level": 17,
+        "unlock_description": null
+    },
+    {
+        "id": "98794aa3963cfac9",
+        "category_id": "barrels",
+        "slug": "zlr-sport-xt",
+        "name": "ZLR Sport XT",
+        "description": "This tactical barrel from ZLR is designed for longer ranges with enhanced bullet velocity and damage range as well as recoil control.",
+        "pros": [
+            "bullet_velocity",
+            "damage_range",
+            "recoil_control",
+            "hip_fire_accuracy"
+        ],
+        "cons": [
+            "ads_speed",
+            "movement_speed",
+            "hip_recoil_control"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "kv-broadside",
+        "unlock_level": 18,
+        "unlock_description": null
+    },
+    {
+        "id": "987943ceb4525cd7",
+        "category_id": "rear-grips",
+        "slug": "brace-ls",
+        "name": "Brace LS",
+        "description": "A weighted rubber grip designed for increased stability while aiming. Reduced flinch when under fire.",
+        "pros": [
+            "aiming_stability",
+            "flinch_resistance"
+        ],
+        "cons": [
+            "ads_speed",
+            "aim_walking_movement_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "kv-broadside",
+        "unlock_level": 19,
+        "unlock_description": null
+    },
+    {
+        "id": "987947bbbb3ef2e3",
+        "category_id": "barrels",
+        "slug": "zlr-sport-8",
+        "name": "ZLR Sport-8",
+        "description": "Sport-shooting barrel with additional weight and length to boost range and mitigate some recoil.",
+        "pros": [
+            "damage_range",
+            "bullet_velocity",
+            "hip_fire_accuracy",
+            "recoil_control"
+        ],
+        "cons": [
+            "ads_speed",
+            "hip_recoil_control",
+            "movement_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "kv-broadside",
+        "unlock_level": 20,
+        "unlock_description": null
+    },
+    {
+        "id": "9879463398841779",
+        "category_id": "bolts",
+        "slug": "dashbolt-60",
+        "name": "Dashbolt 60",
+        "description": "Increase your fire rate and the devastation you send downrange with this lightweight bolt.",
+        "pros": [
+            "fire_rate"
+        ],
+        "cons": [
+            "recoil_control"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "kv-broadside",
+        "unlock_level": 21,
+        "unlock_description": null
+    },
+    {
+        "id": "98794a91998d600a",
+        "category_id": "wires",
+        "slug": "28-strand-cable",
+        "name": "28-Strand Cable",
+        "description": "A heavy cable designed for a more responsive release time. Bolt fires faster and with higher velocity with a slight decrease to accuracy.",
+        "pros": [
+            "bolt_velocity"
+        ],
+        "cons": [
+            "bolt_accuracy",
+            "recoil_control"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "crossbow",
+        "unlock_level": 3,
+        "unlock_description": null
+    },
+    {
+        "id": "98794dda822dd6f3",
+        "category_id": "stocks",
+        "slug": "ft-apex-15",
+        "name": "FT Apex 1.5",
+        "description": "Built expressly for compound crossbows, this heavy stock stabilizes recoil with a slight reduction to aiming speed.",
+        "pros": [
+            "recoil_control"
+        ],
+        "cons": [
+            "ads_speed",
+            "crouch_movement_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "crossbow",
+        "unlock_level": 4,
+        "unlock_description": null
+    },
+    {
+        "id": "98794edbbd685e00",
+        "category_id": "arms",
+        "slug": "thunder-200-lb",
+        "name": "Thunder 200 LB",
+        "description": "A compound limb with heavy, 200lb draw weight. Increases bolt accuracy.",
+        "pros": [
+            "recoil_control",
+            "bolt_accuracy"
+        ],
+        "cons": [
+            "movement_speed",
+            "ads_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "crossbow",
+        "unlock_level": 5,
+        "unlock_description": null
+    },
+    {
+        "id": "987944608dbc18d9",
+        "category_id": "bolts",
+        "slug": "ftac-caustic-20-bolts",
+        "name": "FTAC Caustic 20'' Bolts",
+        "description": "A specialized tear gas canister has been affixed to the arrowhead on these bolts, detonating on impact with soft tissue. Detonated bolts cannot be recovered and are undetectable by trophy systems.",
+        "pros": [
+            "tear_gas_cartridge"
+        ],
+        "cons": [
+            "bolt_accuracy",
+            "bolt_velocity"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "crossbow",
+        "unlock_level": 7,
+        "unlock_description": null
+    },
+    {
+        "id": "98794516a87f4965",
+        "category_id": "arms",
+        "slug": "so-momenti",
+        "name": "SO Momenti",
+        "description": "Send projectiles downrange faster with better bolt velocity and higher damage range.",
+        "pros": [
+            "bolt_velocity",
+            "damage_range"
+        ],
+        "cons": [
+            "ads_speed",
+            "hip_fire_accuracy"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "crossbow",
+        "unlock_level": 9,
+        "unlock_description": null
+    },
+    {
+        "id": "98794448ae34e36e",
+        "category_id": "stocks",
+        "slug": "ftac-piercer",
+        "name": "FTAC Piercer",
+        "description": "Stabilize your aim with this carbon fiber stock that increases accuracy.",
+        "pros": [
+            "aiming_stability"
+        ],
+        "cons": [
+            "aim_walking_speed",
+            "sprint_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "crossbow",
+        "unlock_level": 10,
+        "unlock_description": null
+    },
+    {
+        "id": "98794bd18605e8fb",
+        "category_id": "bolts",
+        "slug": "brightblaze-20-bolts",
+        "name": "Brightblaze 20'' Bolts",
+        "description": "Send a deadly thermite-tipped bolt downrange which sticks to hard surfaces and burns on impact. Detonated bolts cannot be recovered and are undetectable by trophy systems. Effective against Riot Shields.",
+        "pros": [
+            "thermite_tip"
+        ],
+        "cons": [
+            "bolt_accuracy",
+            "bolt_velocity",
+            "ammo_reserve"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "crossbow",
+        "unlock_level": 11,
+        "unlock_description": null
+    },
+    {
+        "id": "9879418382bc3c43",
+        "category_id": "arms",
+        "slug": "carbon-elite-v3",
+        "name": "Carbon Elite V3",
+        "description": "Focus your energy on aiming faster and moving with more agility with these lightweight crossbow arms.",
+        "pros": [
+            "movement_speed",
+            "ads_speed"
+        ],
+        "cons": [
+            "bolt_accuracy",
+            "recoil_control"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "crossbow",
+        "unlock_level": 12,
+        "unlock_description": null
+    },
+    {
+        "id": "98794f70b046bfb6",
+        "category_id": "stocks",
+        "slug": "ft-dart-cb",
+        "name": "FT Dart CB",
+        "description": "This lightweight stock makes it easier to sprint with the crossbow and increases aiming speed.",
+        "pros": [
+            "aim_walking_speed",
+            "sprint_speed"
+        ],
+        "cons": [
+            "aiming_stability"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "crossbow",
+        "unlock_level": 13,
+        "unlock_description": null
+    },
+    {
+        "id": "98794dc89aa0f1f7",
+        "category_id": "wires",
+        "slug": "16-strand-cable",
+        "name": "16-Strand Cable",
+        "description": "A light crossbow cable that increases bolt accuracy and recoil control with a minor delay between trigger pull and firing.",
+        "pros": [
+            "bolt_accuracy",
+            "recoil_control"
+        ],
+        "cons": [
+            "bolt_velocity"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "crossbow",
+        "unlock_level": 14,
+        "unlock_description": null
+    },
+    {
+        "id": "98794c31938f5f74",
+        "category_id": "arms",
+        "slug": "quill-xe-100-lb",
+        "name": "Quill XE 100 LB",
+        "description": "Light and agile, these tactical crossbow limbs are designed for faster aiming and accuracy when letting loose from the hip.",
+        "pros": [
+            "ads_speed",
+            "hip_fire_accuracy"
+        ],
+        "cons": [
+            "bolt_velocity",
+            "damage_range"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "crossbow",
+        "unlock_level": 15,
+        "unlock_description": null
+    },
+    {
+        "id": "987947c6a0574f72",
+        "category_id": "stocks",
+        "slug": "speedtrak-echo",
+        "name": "Speedtrak Echo",
+        "description": "Designed for speed, this stock increases mobility and aiming speed for quick shot-and-run scenarios.",
+        "pros": [
+            "crouch_movement_speed",
+            "sprint_speed",
+            "ads_speed"
+        ],
+        "cons": [
+            "recoil_control"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "crossbow",
+        "unlock_level": 16,
+        "unlock_description": null
+    },
+    {
+        "id": "98794c38833c20c6",
+        "category_id": "bolts",
+        "slug": "blastcap-20-bolts",
+        "name": "Blastcap 20'' Bolts",
+        "description": "Timed explosive bolts that deal area damage and high damage to vehicles and killstreaks. Detonated bolts cannot be recovered and are undetectable by trophy systems.",
+        "pros": [
+            "explosive_tip"
+        ],
+        "cons": [
+            "bolt_velocity",
+            "bolt_accuracy",
+            "ammo_reserve"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "crossbow",
+        "unlock_level": 17,
+        "unlock_description": null
+    },
+    {
+        "id": "987a44edb421fecc",
+        "category_id": "stocks",
+        "slug": "k-bloc-stock",
+        "name": "K-Bloc Stock",
+        "description": "A Kastovia factory stock designed to be lightweight and agile without using advanced materials or construction.",
+        "pros": [
+            "aim_walking_speed",
+            "sprint_speed"
+        ],
+        "cons": [
+            "aiming_stability"
+        ],
+        "unlock_type": "auto",
+        "unlock_id": null,
+        "unlock_level": null,
+        "unlock_description": null
+    },
+    {
+        "id": "987a41d5a4a17dca",
+        "category_id": "stocks",
+        "slug": "broadside-fct",
+        "name": "Broadside FCT",
+        "description": "The factory stock for the KV Broadside. Solid construction and weight improve aiming stability and aiming speed.",
+        "pros": [
+            "crouch_movement_speed",
+            "sprint_speed",
+            "ads_speed",
+            "aiming_stability"
+        ],
+        "cons": [
+            "recoil_control",
+            "aim_walking_speed"
+        ],
+        "unlock_type": "auto",
+        "unlock_id": null,
+        "unlock_level": null,
         "unlock_description": null
     }
 ]

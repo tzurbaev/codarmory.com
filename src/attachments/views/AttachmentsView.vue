@@ -1,17 +1,15 @@
 <template>
-  <div class="grid grid-cols-1 sm:grid-cols-6 gap-4">
-    <div class="col-span-1">
-      <VerticalMenu label="Select Attachments Category" :menu="menu" class="lg:sticky lg:top-[15%]" />
-    </div>
+  <SidebarMenuPage>
+    <template #sidebar>
+      <VerticalMenu label="Select Attachments Category" :menu="menu" />
+    </template>
 
-    <div class="sm:col-span-5">
-      <div class="mt-4 sm:mt-0">
-        <Panel :label="category?.name || 'Attachments'">
-          <AttachmentsList :groups="groups" :category-id="categoryId" />
-        </Panel>
-      </div>
-    </div>
-  </div>
+    <template #default>
+      <Panel :label="panelLabel">
+        <AttachmentsList :groups="groups" :category-id="categoryId" />
+      </Panel>
+    </template>
+  </SidebarMenuPage>
 </template>
 
 <script setup lang="ts">
@@ -20,6 +18,7 @@ import { useAttachmentsList } from '@/attachments/composables/attachments';
 import AttachmentsList from '@/attachments/components/AttachmentsList.vue';
 import { useAttachmentCategoriesMenu, useAttachmentCategory } from '@/attachments/composables/categories';
 import VerticalMenu from '@/layout/components/VerticalMenu.vue';
+import SidebarMenuPage from '@/layout/components/SidebarMenuPage.vue';
 import { computed, watch } from 'vue';
 import { useHead } from '@vueuse/head';
 
@@ -31,10 +30,11 @@ const id = computed(() => props.categoryId || null);
 const { groups } = useAttachmentsList();
 const { menu } = useAttachmentCategoriesMenu(id);
 const { category } = useAttachmentCategory(id);
+const panelLabel = computed(() => category.value?.name || 'Attachments');
 
 watch(category, () => {
   if (category.value) {
-    useHead({ title: `${category.value.name} – Attachments` });
+    useHead({ title: category.value.name });
   } else {
     useHead({ title: 'Attachments' });
   }

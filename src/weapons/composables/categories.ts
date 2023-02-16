@@ -1,7 +1,8 @@
-import { computed, ComputedRef } from 'vue';
+import { computed, ComputedRef, Ref } from 'vue';
 import { useCategoriesStore } from '@/weapons/stores/categories';
 import { WeaponCategory } from '@/weapons/types';
 import { MenuItem } from '@/layout/types';
+import { SearchResult } from '@/search/types';
 
 export function useWeaponCategory(id: ComputedRef<string | null>): { category: ComputedRef<WeaponCategory | null> } {
   const categoriesStore = useCategoriesStore();
@@ -27,16 +28,6 @@ export function useWeaponCategories(): { categories: ComputedRef<WeaponCategory[
   const categories: ComputedRef<WeaponCategory[]> = computed(() => categoriesStore.categories);
 
   return { categories };
-}
-
-export function useWeaponCategoriesOptions(): { options: ComputedRef<any[]> } {
-  const { categories } = useWeaponCategories();
-  const options = computed(() => [
-    { id: null, name: 'All Categories' },
-    ...categories.value,
-  ]);
-
-  return { options };
 }
 
 export function useWeaponCategoriesMenu(id: ComputedRef<string | null>): { menu: ComputedRef<MenuItem[]> } {
@@ -66,4 +57,42 @@ export function useWeaponCategoriesMenu(id: ComputedRef<string | null>): { menu:
   });
 
   return { menu };
+}
+
+export function useWeaponCategoriesSearch(query: Ref<string>) {
+  const { categories } = useWeaponCategories();
+
+  const results: ComputedRef<SearchResult[]> = computed(() => {
+    if (query.value.length < 2) {
+      return [];
+    }
+
+    const lowerCased = query.value.toLowerCase();
+
+    return categories.value.filter((category: WeaponCategory) => {
+      if (category.name.toLowerCase().includes(lowerCased)) {
+        return true;
+      } else if (category.alias && category.alias.toLowerCase().includes(lowerCased)) {
+        return true;
+      } else if (category.id.toLowerCase().includes(lowerCased)) {
+        return true;
+      }
+
+      return false;
+    }).map((category: WeaponCategory) => ({
+      id: category.id,
+      name: category.name,
+      description: '',
+      route: {
+        name: 'weapons.index',
+        params: {
+          categoryId: category.id,
+        },
+      },
+    }));
+  });
+
+  return {
+    results,
+  };
 }

@@ -94,5 +94,9 @@
     {
         "id": "basilisk-500",
         "name": "Basilisk 500 Platform"
+    },
+    {
+        "id": "iso",
+        "name": "ISO Platform"
     }
 ]

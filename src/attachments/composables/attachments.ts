@@ -11,6 +11,7 @@ import {
   getAttachmentProsCriterion,
   getAttachmentSearchCriterion,
 } from '@/attachments/composables/criteria';
+import { SearchResult } from '@/search/types';
 
 function getUniqueStats(stats: AttachmentStat[]): AttachmentStat[] {
   const unique: AttachmentStat[] = [];
@@ -210,4 +211,41 @@ export function useAttachmentsList() {
   const ids = computed(() => attachmentsStore.attachments.map((item: Attachment) => item.id));
 
   return useAttachmentsGroups(ids);
+}
+
+export function useAttachmentsSearch(query: Ref<string>) {
+  const attachmentsStore = useAttachmentsStore();
+  const results: ComputedRef<SearchResult[]> = computed(() => {
+    if (query.value.length < 2) {
+      return [];
+    }
+
+    const lowerCased = query.value.toLowerCase();
+
+    return attachmentsStore.extendedAttachments.filter((attachment: Attachment) => {
+      if (attachment.name.toLowerCase().includes(lowerCased)) {
+        return true;
+      } else if (attachment.slug.toLowerCase().includes(lowerCased)) {
+        return true;
+      }
+
+      return false;
+    }).map((attachment: Attachment) => ({
+      id: attachment.id,
+      name: attachment.name,
+      description: attachment?.category?.name || '',
+      route: {
+        name: 'attachments.show',
+        params: {
+          categoryId: attachment.category ? attachment.category.id : attachment.category_id,
+          slug: attachment.slug,
+          attachmentId: attachment.id,
+        },
+      },
+    }));
+  });
+
+  return {
+    results,
+  };
 }

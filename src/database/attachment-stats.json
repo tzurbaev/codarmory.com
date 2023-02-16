@@ -390,5 +390,33 @@
     {
         "id": "trigger_response_time",
         "name": "Trigger Response Time"
+    },
+    {
+        "id": "damage",
+        "name": "Damage"
+    },
+    {
+        "id": "no_enemy_skulls",
+        "name": "No Enemy Skulls"
+    },
+    {
+        "id": "bolt_accuracy",
+        "name": "Bolt Accuracy"
+    },
+    {
+        "id": "bolt_velocity",
+        "name": "Bolt Velocity"
+    },
+    {
+        "id": "thermite_tip",
+        "name": "Thermite Tip"
+    },
+    {
+        "id": "explosive_tip",
+        "name": "Explosive Tip"
+    },
+    {
+        "id": "tear_gas_cartridge",
+        "name": "Tear Gas Cartridge"
     }
 ]

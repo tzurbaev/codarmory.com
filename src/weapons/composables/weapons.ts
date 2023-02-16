@@ -15,6 +15,7 @@ import {
   getWeaponPlatformCriterion,
   getWeaponSearchCriterion,
 } from '@/weapons/composables/criteria';
+import { SearchResult } from '@/search/types';
 
 function getParentWeapon(weapon: Weapon): Weapon | null {
   const weaponsStore = useWeaponsStore();
@@ -212,5 +213,41 @@ export function useWeaponRoutes(weapon: ComputedRef<Weapon>) {
   return {
     categoryRoute,
     weaponRoute,
+  };
+}
+
+export function useWeaponsSearch(query: Ref<string>) {
+  const weaponsStore = useWeaponsStore();
+  const results: ComputedRef<SearchResult[]> = computed(() => {
+    if (query.value.length < 2) {
+      return [];
+    }
+
+    const lowerCased = query.value.toLowerCase();
+
+    return weaponsStore.extendedWeapons.filter((weapon: Weapon) => {
+      if (weapon.name.toLowerCase().includes(lowerCased)) {
+        return true;
+      } else if (weapon.id.toLowerCase().includes(lowerCased)) {
+        return true;
+      }
+
+      return false;
+    }).map((weapon: Weapon) => ({
+      id: weapon.id,
+      name: weapon.name,
+      description: weapon.category?.name || '',
+      route: {
+        name: 'weapons.show',
+        params: {
+          categoryId: weapon.category ? weapon.category.id : weapon.category_id,
+          weaponId: weapon.id,
+        },
+      },
+    }));
+  });
+
+  return {
+    results,
   };
 }

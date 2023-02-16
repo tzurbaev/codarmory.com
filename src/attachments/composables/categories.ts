@@ -1,6 +1,7 @@
 import { useAttachmentsStore } from '@/attachments/stores/attachments';
-import { computed, ComputedRef } from 'vue';
+import { computed, ComputedRef, Ref } from 'vue';
 import { AttachmentCategory } from '@/attachments/types';
+import { SearchResult } from '@/search/types';
 
 export function useAttachmentCategory(id: ComputedRef<string | null>) {
   const store = useAttachmentsStore();
@@ -36,4 +37,39 @@ export function useAttachmentCategoriesMenu(id: ComputedRef<string | null>) {
   })));
 
   return { menu };
+}
+
+export function useAttachmentCategoriesSearch(query: Ref<string>) {
+  const store = useAttachmentsStore();
+  const results: ComputedRef<SearchResult[]> = computed(() => {
+    if (!query.value) {
+      return [];
+    }
+
+    const lowerCased = query.value.toLowerCase();
+
+    return store.categories.filter((category: AttachmentCategory) => {
+      if (category.name.toLowerCase().includes(lowerCased)) {
+        return true;
+      } else if (category.id.toLowerCase().includes(lowerCased)) {
+        return true;
+      }
+
+      return false;
+    }).map((category: AttachmentCategory) => ({
+      id: category.id,
+      name: category.name,
+      description: '',
+      route: {
+        name: 'attachments.index',
+        params: {
+          categoryId: category.id,
+        },
+      },
+    }));
+  });
+
+  return {
+    results,
+  };
 }

@@ -7,6 +7,8 @@
 
 <script setup lang="ts">
 defineProps<{
-  label?: string;
+  label?: string | null;
+  description?: string | null;
+  route?: any;
 }>();
 </script>

@@ -12,6 +12,12 @@
         "sorting": 1
     },
     {
+        "id": "arms",
+        "name": "Arms",
+        "singular_name": "Arm",
+        "sorting": 1
+    },
+    {
         "id": "lasers",
         "name": "Lasers",
         "singular_name": "Laser",
@@ -75,6 +81,12 @@
         "id": "magazines",
         "name": "Magazines",
         "singular_name": "Magazine",
+        "sorting": 12
+    },
+    {
+        "id": "wires",
+        "name": "Wires",
+        "singular_name": "Wire",
         "sorting": 12
     },
     {
