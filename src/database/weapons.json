@@ -6301,10 +6301,10 @@
         "category_id": "marksman-rifles",
         "platform_id": "m4",
         "name": "Tempus Torrent",
-        "unlock_type": "one_of_challenge",
+        "unlock_type": "one-of-challenge",
         "unlock_id": null,
-        "unlock_level": null,
-        "unlock_description": "(1) Extract weapon from DMZ or (2) Get 25 double kills using a marksman rifle.",
+        "unlock_level": 2,
+        "unlock_description": "- Extract weapon from DMZ;\n- Get 25 double kills using a marksman rifle.",
         "attachments": [
             "97c5465b8dbed9f6",
             "97fb44b5af0a758c",

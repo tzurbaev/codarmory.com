@@ -35,9 +35,11 @@
       </template>
       <template v-else-if="weapon.unlock_type === UnlockType.OneOfChallenge">
         <template v-if="full && weapon.unlock_description">
-          Complete one of the following: <span class="font-bold">{{ weapon.unlock_description }}</span>
+          Complete one of the following:
+          <br>
+          <span class="font-semibold" v-html="weapon.unlock_description.replaceAll(`\n`, '<br>')" />
         </template>
-        <template v-else>Unlock by completing challenge.</template>
+        <template v-else>Unlock by completing one of {{ weapon.unlock_level }} challenges.</template>
       </template>
       <template v-else-if="weapon.unlock_type === UnlockType.DMZ">
         <template v-if="full && weapon.unlock_description">{{ weapon.unlock_description }}</template>
