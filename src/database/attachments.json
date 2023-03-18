@@ -16918,5 +16918,225 @@
         "unlock_id": null,
         "unlock_level": null,
         "unlock_description": null
+    },
+    {
+        "id": "98b74e5a88faa7b0",
+        "category_id": "guards",
+        "slug": "torrent-tac-guard",
+        "name": "Torrent TAC Guard",
+        "description": "A tactical guard for the Tempus Torrent. Improves aiming speed and movement while crouched.",
+        "pros": [
+            "crouch_movement_speed",
+            "ads_speed"
+        ],
+        "cons": [
+            "sprint_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "tempus-torrent",
+        "unlock_level": 2,
+        "unlock_description": null
+    },
+    {
+        "id": "98b74748a7af51f6",
+        "category_id": "barrels",
+        "slug": "16-tour-rp",
+        "name": "16'' Tour RP",
+        "description": "This short barrel reduces length in order to improve aiming speed and recoil control when firing from the hip.",
+        "pros": [
+            "ads_speed",
+            "hip_recoil_control"
+        ],
+        "cons": [
+            "damage_range",
+            "hip_fire_accuracy",
+            "bullet_velocity"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "tempus-torrent",
+        "unlock_level": 3,
+        "unlock_description": null
+    },
+    {
+        "id": "98b7496f8ce9032a",
+        "category_id": "stocks",
+        "slug": "pso-heavy",
+        "name": "PSO Heavy",
+        "description": "This heavy yet versatile stock brings stability and recoil control to any firefight.",
+        "pros": [
+            "aiming_stability",
+            "recoil_control"
+        ],
+        "cons": [
+            "aim_walking_speed",
+            "sprint_speed",
+            "ads_speed",
+            "crouch_movement_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "tempus-torrent",
+        "unlock_level": 5,
+        "unlock_description": null
+    },
+    {
+        "id": "98b747628d5944db",
+        "category_id": "optics",
+        "slug": "luca-field-6",
+        "name": "Luca Field-6",
+        "description": "A variable-zoom optic designed by Luca for mid to long-range shots. Magnification can be toggled between 6.3x and 12x.",
+        "pros": [
+            "63x_magnification",
+            "12x_magnification"
+        ],
+        "cons": [
+            "medium_sniper_glint",
+            "ads_speed",
+            "aim_walking_movement_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "tempus-torrent",
+        "unlock_level": 7,
+        "unlock_description": null
+    },
+    {
+        "id": "98b747a29f29a1b7",
+        "category_id": "barrels",
+        "slug": "125-ruggen-zn",
+        "name": "12.5'' Ruggen ZN",
+        "description": "Lighter and shorter than other Tempus Torrent options, this barrel provides exceptional aiming and movement speed.",
+        "pros": [
+            "ads_speed",
+            "hip_recoil_control",
+            "movement_speed"
+        ],
+        "cons": [
+            "damage_range",
+            "hip_fire_accuracy",
+            "bullet_velocity",
+            "recoil_control"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "tempus-torrent",
+        "unlock_level": 9,
+        "unlock_description": null
+    },
+    {
+        "id": "98b7421e82bb9f01",
+        "category_id": "magazines",
+        "slug": "30-round-mag",
+        "name": "30 Round Mag",
+        "description": "A polymer magazine that holds 30 rounds of 7.62 ammunition.",
+        "pros": [
+            "magazine_ammo_capacity"
+        ],
+        "cons": [
+            "movement_speed",
+            "ads_speed",
+            "reload_quickness",
+            "sprint_to_fire_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "tempus-torrent",
+        "unlock_level": 11,
+        "unlock_description": null
+    },
+    {
+        "id": "98b747199f5d18de",
+        "category_id": "barrels",
+        "slug": "24-outreach-4",
+        "name": "24'' Outreach 4",
+        "description": "Long and stable, this barrel was designed for reaching out to farther and faster with increased damage range and bullet velocity.",
+        "pros": [
+            "damage_range",
+            "hip_fire_accuracy",
+            "bullet_velocity"
+        ],
+        "cons": [
+            "ads_speed",
+            "hip_recoil_control"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "tempus-torrent",
+        "unlock_level": 13,
+        "unlock_description": null
+    },
+    {
+        "id": "98b747808fa4f2be",
+        "category_id": "guards",
+        "slug": "torrent-moc-iv",
+        "name": "Torrent MOC-IV",
+        "description": "This specialized handguard provides superior sprint speed and movement speed when weapon is at the hip.",
+        "pros": [
+            "sprint_speed",
+            "hip_walking_speed"
+        ],
+        "cons": [
+            "flinch_resistance",
+            "recoil_steadiness"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "tempus-torrent",
+        "unlock_level": 14,
+        "unlock_description": null
+    },
+    {
+        "id": "98b74984a02d5a1d",
+        "category_id": "magazines",
+        "slug": "50-round-drum",
+        "name": "50 Round Drum",
+        "description": "A drum magazine that holds 50 rounds of 7.62 ammunition.",
+        "pros": [
+            "magazine_ammo_capacity"
+        ],
+        "cons": [
+            "movement_speed",
+            "ads_speed",
+            "reload_quickness",
+            "sprint_to_fire_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "tempus-torrent",
+        "unlock_level": 15,
+        "unlock_description": null
+    },
+    {
+        "id": "98b74197bc53809e",
+        "category_id": "barrels",
+        "slug": "14-chroma-lrs",
+        "name": "14'' Chroma LRS",
+        "description": "A short barrel with long, integrated suppressor designed for the ultimate in sound suppression. Added length provides an increase to damage range and bullet velocity. Blocks muzzle devices.",
+        "pros": [
+            "sound_suppression",
+            "bullet_velocity",
+            "damage_range",
+            "hip_fire_accuracy"
+        ],
+        "cons": [
+            "ads_speed",
+            "hip_recoil_control",
+            "movement_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "tempus-torrent",
+        "unlock_level": 16,
+        "unlock_description": null
+    },
+    {
+        "id": "98b7476dbfa27b0f",
+        "category_id": "guards",
+        "slug": "tt-hg-40",
+        "name": "TT-HG 40",
+        "description": "A heavy handguard for the Tempus Torrent. Increases recoil control and flinch resistance.",
+        "pros": [
+            "recoil_control",
+            "flinch_resistance"
+        ],
+        "cons": [
+            "ads_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "tempus-torrent",
+        "unlock_level": 17,
+        "unlock_description": null
     }
 ]

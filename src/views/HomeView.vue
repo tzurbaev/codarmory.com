@@ -5,11 +5,11 @@
         <div class="sm:max-w-xl">
           <div class="flex mb-6">
             <div class="bg-primary-500 relative rounded-full py-1 px-3 text-sm leading-6 text-primary-100">
-              Season 02
+              Season 02 Reloaded
             </div>
           </div>
           <h1 class="text-4xl font-bold tracking-tight text-primary-500 sm:text-5xl">
-            COD Armory <span class="text-xs align-super">[ beta ]</span>
+            COD Armory
           </h1>
           <p class="mt-6 text-xl text-white/90 leading-relaxed">
             Browse all weapons and attachments for

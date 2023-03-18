@@ -248,6 +248,10 @@
         "name": "11.5x Magnification"
     },
     {
+        "id": "12x_magnification",
+        "name": "12x Magnification"
+    },
+    {
         "id": "125x_magnification",
         "name": "12.5x Magnification"
     },

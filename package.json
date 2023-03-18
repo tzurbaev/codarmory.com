@@ -4,10 +4,8 @@
   "version": "0.9.9",
   "type": "module",
   "scripts": {
-    "index:pre": "mv index.html index.dev.html && mv index.prod.html index.html",
-    "index:post": "mv index.html index.prod.html && mv index.dev.html index.html",
     "dev": "vite",
-    "build": "npm run index:pre && vue-tsc --noEmit && vite build && npm run index:post",
+    "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
     "lint": "eslint --fix \"./src/**/*.{vue,ts,html,js}\""
   },
