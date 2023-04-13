@@ -15,5 +15,6 @@ export interface Unlockable {
   unlock_type: UnlockType;
   unlock_id: string | null;
   unlock_level: number | null;
+  unlock_summary: string | null;
   unlock_description: string | null;
 }

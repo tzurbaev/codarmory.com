@@ -108,9 +108,15 @@
         "sorting": 15
     },
     {
+        "id": "carry-handles",
+        "name": "Carry Handles",
+        "singular_name": "Carry Handle",
+        "sorting": 16
+    },
+    {
         "id": "underbarrels",
         "name": "Underbarrels",
         "singular_name": "Underbarrel",
-        "sorting": 16
+        "sorting": 17
     }
 ]

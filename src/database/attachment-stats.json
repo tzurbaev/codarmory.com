@@ -313,7 +313,11 @@
     },
     {
         "id": "underbarrel_grenade_launcher",
-        "name": "Underbarrel Grenade Launcher"
+        "name": "Underbarrel 40mm Grenades"
+    },
+    {
+        "id": "underbarrel_drill_charge",
+        "name": "Underbarrel Drill Charge"
     },
     {
         "id": "underbarrel_shotgun",

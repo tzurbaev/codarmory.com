@@ -98,5 +98,13 @@
     {
         "id": "iso",
         "name": "ISO Platform"
+    },
+    {
+        "id": "fjx-imperium",
+        "name": "FJX Imperium Platform"
+    },
+    {
+        "id": "hailfire",
+        "name": "Hailfire Platform"
     }
 ]

@@ -25,6 +25,9 @@
         <template v-if="full && attachment.unlock_description">
           {{ attachment.unlock_description }}
         </template>
+        <template v-else-if="attachment.unlock_summary">
+          {{ attachment.unlock_summary }}
+        </template>
         <template v-else>Unlock by completing challenge.</template>
       </template>
       <template v-else-if="attachment.unlock_type === UnlockType.DMZ">

@@ -31,6 +31,9 @@
         <template v-if="full && weapon.unlock_description">
           {{ weapon.unlock_description }}
         </template>
+        <template v-else-if="weapon.unlock_summary">
+          {{ weapon.unlock_summary }}
+        </template>
         <template v-else>Unlock by completing challenge.</template>
       </template>
       <template v-else-if="weapon.unlock_type === UnlockType.OneOfChallenge">
