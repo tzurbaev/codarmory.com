@@ -106,5 +106,9 @@
     {
         "id": "hailfire",
         "name": "Hailfire Platform"
+    },
+    {
+        "id": "ftag-siege",
+        "name": "FTAC Siege"
     }
 ]

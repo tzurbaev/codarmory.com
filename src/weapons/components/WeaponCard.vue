@@ -28,8 +28,12 @@
       </h2>
     </template>
     <WeaponUnlockDescription :weapon="weapon" :full="type !== 'grid'" class="weapons-grid:align-bottom text-primary-500" />
-    <p v-if="weapon.attachments.length > 0" class="text-white/60">
-      {{ weapon.attachments.length }} Attachments
+    <p class="text-white/60">
+      <template v-if="weapon.attachments.length > 0">
+        {{ weapon.attachments.length }} Attachments
+        <span>&bull;</span>
+      </template>
+      Max Level {{ weapon.max_level }}
     </p>
   </div>
 </template>

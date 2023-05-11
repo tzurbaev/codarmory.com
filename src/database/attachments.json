@@ -18950,5 +18950,527 @@
         "unlock_level": null,
         "unlock_summary": null,
         "unlock_description": null
+    },
+    {
+        "id": "99234481a0b49650",
+        "category_id": "rear-grips",
+        "slug": "sakin-zx-grip",
+        "name": "Sakin ZX Grip",
+        "description": "A comfortable grip designed to help control recoil to keep shots on target.",
+        "pros": [
+            "recoil_control"
+        ],
+        "cons": [
+            "aiming_stability"
+        ],
+        "unlock_type": "challenge",
+        "unlock_id": null,
+        "unlock_level": null,
+        "unlock_summary": "Get 15 Long Shot Kills with the Cronen Squall",
+        "unlock_description": "Get 15 Long Shot Operator Kills with the Cronen Squall"
+    },
+    {
+        "id": "99234084a0b2e127",
+        "category_id": "underbarrels",
+        "slug": "kl40-m2-drill",
+        "name": "KL40-M2 Drill",
+        "description": "This underbarrel launcher fires 40mm thermal lance charges that burrows through surfaces before exploding.",
+        "pros": [
+            "underbarrel_drill_charge",
+            "recoil_stabilization"
+        ],
+        "cons": [
+            "ads_speed"
+        ],
+        "unlock_type": "challenge",
+        "unlock_id": null,
+        "unlock_level": null,
+        "unlock_summary": "Get 10 Sticky Kills with the Drill Charge",
+        "unlock_description": "Get 10 Sticky Kills (sticking an operator) with the Drill Charge"
+    },
+    {
+        "id": "99234a5cb3a8f198",
+        "category_id": "underbarrels",
+        "slug": "hellscream-40mm-drill",
+        "name": "Hellscream 40mm Drill",
+        "description": "This underbarrel launcher fires 40mm thermal lance charges that burrows through surfaces before exploding.",
+        "pros": [
+            "underbarrel_drill_charge",
+            "recoil_stabilization"
+        ],
+        "cons": [
+            "ads_speed"
+        ],
+        "unlock_type": "challenge",
+        "unlock_id": null,
+        "unlock_level": null,
+        "unlock_summary": "Get 20 Kills with the Hellscream 40mm equipped on the TAQ-56",
+        "unlock_description": "Get 20 Operator Kills with the Hellscream 40mm grenade launcher equipped on the TAQ-56"
+    },
+    {
+        "id": "99234b14ac281b53",
+        "category_id": "underbarrels",
+        "slug": "tl40-drill",
+        "name": "TL40 Drill",
+        "description": "This Forge Tac underbarrel grenade launcher fires 40mm thermal lance charges that burrow through surfaces before exploding.",
+        "pros": [
+            "recoil_stabilization",
+            "underbarrel_drill_charge"
+        ],
+        "cons": [
+            "ads_speed"
+        ],
+        "unlock_type": "challenge",
+        "unlock_id": null,
+        "unlock_level": null,
+        "unlock_summary": "Get 20 Kills with the Drill Charge",
+        "unlock_description": "Get 20 Operator Kills with the Drill Charge"
+    },
+    {
+        "id": "992343c08e631058",
+        "category_id": "barrels",
+        "slug": "supertac-vi",
+        "name": "Supertac-VI",
+        "description": "The longest barrel for the FTAC Siege. Excels at delivering damage at further distances while also increasing accuracy.",
+        "pros": [
+            "damage_range",
+            "bullet_velocity",
+            "recoil_control",
+            "hip_fire_accuracy"
+        ],
+        "cons": [
+            "ads_speed",
+            "hip_recoil_control",
+            "movement_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "ftac-siege",
+        "unlock_level": 2,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "99234a4d8e4e3f71",
+        "category_id": "stocks",
+        "slug": "ftac-siege-stock",
+        "name": "FTAC Siege Stock",
+        "description": "Designed to offer exceptional control over the FTAC Siege fire rate, this stock is heavy yet accurate.",
+        "pros": [
+            "aiming_stability",
+            "recoil_control"
+        ],
+        "cons": [
+            "sprint_speed",
+            "aim_walking_speed",
+            "ads_speed",
+            "sprint_to_fire_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "ftac-siege",
+        "unlock_level": 3,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "99234d8684d4f6ed",
+        "category_id": "rear-grips",
+        "slug": "ftac-hold",
+        "name": "FTAC Hold",
+        "description": "A rubber grip from Forge Tac that increases accuracy and reduces flinch when under fire.",
+        "pros": [
+            "flinch_resistance"
+        ],
+        "cons": [
+            "aim_walking_movement_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "ftac-siege",
+        "unlock_level": 5,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "9923406b9e1feff5",
+        "category_id": "underbarrels",
+        "slug": "rebel-hx",
+        "name": "Rebel-HX",
+        "description": "This extended grip provides a better shooting position, increasing accuracy and recoil control at the cost of some mobility and handling.",
+        "pros": [
+            "hip_fire_accuracy",
+            "hip_recoil_control",
+            "recoil_steadiness",
+            "aim_walking_steadiness"
+        ],
+        "cons": [
+            "hip_walking_speed",
+            "ads_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "ftac-siege",
+        "unlock_level": 6,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "99234b5cb096d698",
+        "category_id": "magazines",
+        "slug": "72-round-drum",
+        "name": "72 Round Drum",
+        "description": "A drum magazine that holds 72 rounds of 9mm ammunition.",
+        "pros": [
+            "magazine_ammo_capacity"
+        ],
+        "cons": [
+            "movement_speed",
+            "ads_speed",
+            "reload_quickness",
+            "sprint_to_fire_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "ftac-siege",
+        "unlock_level": 8,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "992348d79a6b6590",
+        "category_id": "muzzles",
+        "slug": "ft-siege-control",
+        "name": "FT Siege Control",
+        "description": "This bespoke suppressor was designed specifically for the FTAC Siege's high rate of fire and light weight. Increases accuracy and recoil control.",
+        "pros": [
+            "sound_suppression",
+            "bullet_velocity",
+            "recoil_smoothness",
+            "recoil_control"
+        ],
+        "cons": [
+            "ads_speed",
+            "aim_walking_speed",
+            "aiming_stability"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "ftac-siege",
+        "unlock_level": 10,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "99234f06be993fb5",
+        "category_id": "barrels",
+        "slug": "ratchet-be",
+        "name": "Ratchet BE",
+        "description": "Streamlined for hip-fire accuracy, this barrel provides an increase to damage and range. Blocks muzzle devices.",
+        "pros": [
+            "damage_range",
+            "hip_fire_accuracy",
+            "bullet_velocity"
+        ],
+        "cons": [
+            "ads_speed",
+            "hip_recoil_control"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "ftac-siege",
+        "unlock_level": 11,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "992348ed980322b3",
+        "category_id": "stocks",
+        "slug": "heist-lw",
+        "name": "Heist-LW",
+        "description": "Foam-wrapped for comfort, this stock is ideal for those looking for outstanding recoil control.",
+        "pros": [
+            "recoil_control",
+            "aiming_stability"
+        ],
+        "cons": [
+            "ads_speed",
+            "crouch_movement_speed",
+            "sprint_speed",
+            "aim_walking_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "ftac-siege",
+        "unlock_level": 12,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "9923434b8799e4fb",
+        "category_id": "magazines",
+        "slug": "20-round-mag",
+        "name": "20 Round Mag",
+        "description": "A magazine that holds 20 rounds of 9mm ammunition.",
+        "pros": [
+            "movement_speed",
+            "ads_speed",
+            "sprint_to_fire_speed",
+            "reload_quickness"
+        ],
+        "cons": [
+            "magazine_ammo_capacity"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "ftac-siege",
+        "unlock_level": 13,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "9923448fae58b593",
+        "category_id": "rear-grips",
+        "slug": "ftac-stead",
+        "name": "FTAC Stead",
+        "description": "A textured grip for better recoil control.",
+        "pros": [
+            "recoil_control"
+        ],
+        "cons": [
+            "aiming_stability"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "ftac-siege",
+        "unlock_level": 14,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "99234bf299cf896a",
+        "category_id": "barrels",
+        "slug": "ratchet-be-tac",
+        "name": "Ratchet BE TAC",
+        "description": "A short and suppressed barrel that stays mobile, quiet, and dangerous at close range. Blocks muzzle devices.",
+        "pros": [
+            "sound_suppression",
+            "recoil_control"
+        ],
+        "cons": [
+            "damage_range"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "ftac-siege",
+        "unlock_level": 15,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "9923476295bcbdc6",
+        "category_id": "underbarrels",
+        "slug": "s40-h-grip",
+        "name": "S40-H Grip",
+        "description": "A comfortable and lightweight foregrip that provides an increase to accuracy.",
+        "pros": [
+            "hip_fire_accuracy",
+            "aim_walking_steadiness"
+        ],
+        "cons": [],
+        "unlock_type": "weapon",
+        "unlock_id": "ftac-siege",
+        "unlock_level": 16,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "992344aeab350409",
+        "category_id": "stocks",
+        "slug": "ftac-folder",
+        "name": "FTAC Folder",
+        "description": "A folding stock for the FTAC Siege with a good balance of accuracy and recoil control.",
+        "pros": [
+            "crouch_movement_speed",
+            "recoil_control",
+            "sprint_speed",
+            "aiming_stability"
+        ],
+        "cons": [
+            "aim_walking_speed",
+            "sprint_to_fire_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "ftac-siege",
+        "unlock_level": 17,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "992347118a45209a",
+        "category_id": "barrels",
+        "slug": "cmrn-50",
+        "name": "CMRN-50",
+        "description": "Slightly longer and ported to handle gas release, this barrel provides an increase to range and recoil control.",
+        "pros": [
+            "recoil_control",
+            "bullet_velocity"
+        ],
+        "cons": [
+            "movement_speed",
+            "ads_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "ftac-siege",
+        "unlock_level": 18,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "99234365890c53d2",
+        "category_id": "magazines",
+        "slug": "50-round-drum",
+        "name": "50 Round Drum",
+        "description": "A drum magazine that holds 50 rounds of 9mm ammunition.",
+        "pros": [
+            "magazine_ammo_capacity"
+        ],
+        "cons": [
+            "movement_speed",
+            "ads_speed",
+            "reload_quickness",
+            "sprint_to_fire_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "ftac-siege",
+        "unlock_level": 19,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "99234b3a94dbea06",
+        "category_id": "barrels",
+        "slug": "streetsweeper-9mm",
+        "name": "Streetsweeper 9mm",
+        "description": "Small and agile, this barrel increases mobility and aiming speed.",
+        "pros": [
+            "movement_speed",
+            "ads_speed"
+        ],
+        "cons": [
+            "bullet_velocity",
+            "recoil_control"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "ftac-siege",
+        "unlock_level": 20,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "99234d158f446c87",
+        "category_id": "stocks",
+        "slug": "siege-wire-stock",
+        "name": "Siege Wire Stock",
+        "description": "Extremely minimal and lightweight, this stock provides in increase to mobility and recoil control.",
+        "pros": [
+            "aim_walking_speed",
+            "recoil_control",
+            "sprint_speed"
+        ],
+        "cons": [
+            "aiming_stability",
+            "ads_speed",
+            "sprint_to_fire_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "ftac-siege",
+        "unlock_level": 21,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "99234c998d0af371",
+        "category_id": "rear-grips",
+        "slug": "sur-160",
+        "name": "SUR-160",
+        "description": "Textured and designed for speed, this grip provides superior weapon handling.",
+        "pros": [
+            "sprint_to_fire_speed",
+            "ads_speed"
+        ],
+        "cons": [
+            "recoil_control"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "ftac-siege",
+        "unlock_level": 22,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "992340e2836a2663",
+        "category_id": "barrels",
+        "slug": "mouse-99",
+        "name": "Mouse 99",
+        "description": "Small, fast, and remarkably lethal, this barrel blocks underbarrels, lasers, and optics, but you won't need any of that to dominate.",
+        "pros": [
+            "ads_speed",
+            "hip_recoil_control"
+        ],
+        "cons": [
+            "damage_range",
+            "hip_fire_accuracy",
+            "bullet_velocity"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "ftac-siege",
+        "unlock_level": 23,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "99234f8797a17027",
+        "category_id": "underbarrels",
+        "slug": "wedge-grip",
+        "name": "Wedge Grip",
+        "description": "Minimal and unassuming, this angled metal foregrip provides the highest increase to accuracy.",
+        "pros": [
+            "aiming_idle_stability",
+            "hip_fire_accuracy"
+        ],
+        "cons": [
+            "walking_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "ftac-siege",
+        "unlock_level": 24,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "99234ad1a39052aa",
+        "category_id": "barrels",
+        "slug": "stf-u",
+        "name": "STF-U",
+        "description": "With an integrated suppressor and substantial length, this barrel increases range while staying silent. Blocks muzzle devices.",
+        "pros": [
+            "sound_suppression",
+            "damage_range",
+            "hip_fire_accuracy",
+            "bullet_velocity"
+        ],
+        "cons": [
+            "ads_speed",
+            "hip_recoil_control"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "ftac-siege",
+        "unlock_level": 25,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "99234d92a645713e",
+        "category_id": "rear-grips",
+        "slug": "gs-magna-akimbo",
+        "name": "GS Magna Akimbo",
+        "description": "Two, fully automatic .50 Cal pistols. If you can control these bucking beasts, you can control the battlefield.",
+        "pros": [],
+        "cons": [],
+        "unlock_type": "weapon",
+        "unlock_id": "gs-magna",
+        "unlock_level": 9,
+        "unlock_summary": null,
+        "unlock_description": null
     }
 ]

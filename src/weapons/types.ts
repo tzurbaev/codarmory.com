@@ -16,6 +16,7 @@ export interface Weapon extends Unlockable {
   category_id: string;
   platform_id: string | null;
   name: string;
+  max_level: number;
   attachments: string[];
   category?: WeaponCategory | null;
   platform?: WeaponPlatform | null;
