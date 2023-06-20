@@ -110,5 +110,9 @@
     {
         "id": "ftag-siege",
         "name": "FTAC Siege"
+    },
+    {
+        "id": "tidal-recon",
+        "name": "Tidal Recon Platform"
     }
 ]

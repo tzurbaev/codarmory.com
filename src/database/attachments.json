@@ -6455,7 +6455,7 @@
         "category_id": "underbarrels",
         "slug": "level-aim-bipod",
         "name": "Level Aim Bipod",
-        "description": "Mount up and land your shots. This bipod stabilizes your shots for long-range kills with a slight decrease to aiming speed.",
+        "description": "Mount up and land your shots. This bipod stabilizes your shots for long-range kills with a slight decrease to aiming speed. Bipod blocks NVGs.",
         "pros": [
             "bipod_mount"
         ],
@@ -17104,11 +17104,14 @@
         "category_id": "underbarrels",
         "slug": "core-bp2",
         "name": "Core BP2",
-        "description": "A vertical foregrip with an internal bipod. Can be used for better control and mounting your weapon.",
+        "description": "A vertical foregrip with an internal bipod. Can be used for better control and mounting your weapon. Bipod blocks NVGs.",
         "pros": [
-            "bipod_mount"
+            "bipod_mount",
+            "hip_recoil_control"
         ],
-        "cons": [],
+        "cons": [
+            "hip_walking_speed"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "iso-hemlock",
         "unlock_level": 22,
@@ -18221,7 +18224,7 @@
         "id": "98ea4176aebca56d",
         "category_id": "ammunition",
         "slug": "408-overpressure-p",
-        "name": ".408 Overpressure +P",
+        "name": ".408 Overpressured +P",
         "description": "Suppress and control with hotter rounds that afflicts the target with increased flinch.",
         "pros": [
             "target_flinch"
@@ -18261,11 +18264,12 @@
         "name": "FJX LUX-7",
         "description": "This light stock is designed for accuracy and mobility on the battlefield.",
         "pros": [
-            "aiming_stability",
             "aim_walking_speed",
             "sprint_speed"
         ],
-        "cons": [],
+        "cons": [
+            "aiming_stability"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "fjx-imperium",
         "unlock_level": 16,
@@ -19470,6 +19474,605 @@
         "unlock_type": "weapon",
         "unlock_id": "gs-magna",
         "unlock_level": 9,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "997447e6858a112c",
+        "category_id": "barrels",
+        "slug": "16-tankr-v",
+        "name": "16'' Tankr-V",
+        "description": "An extra heavy barrel that provides additional recoil control and bullet velocity with a moderate impact to handling.",
+        "pros": [
+            "recoil_control",
+            "bullet_velocity"
+        ],
+        "cons": [
+            "movement_speed",
+            "ads_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "tempus-razorback",
+        "unlock_level": 3,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "99744c378ab1e33b",
+        "category_id": "stocks",
+        "slug": "opr-threat",
+        "name": "OPR Threat",
+        "description": "A heavy yet reliable stock that is slow and extremely stable.",
+        "pros": [
+            "aiming_stability",
+            "recoil_control"
+        ],
+        "cons": [
+            "aim_walking_speed",
+            "sprint_speed",
+            "ads_speed",
+            "crouch_movement_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "tempus-razorback",
+        "unlock_level": 5,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "9974471a989bb05a",
+        "category_id": "underbarrels",
+        "slug": "dm-proto-grip",
+        "name": "DM Proto-Grip",
+        "description": "A unique foregrip that provides best-in-class horizontal control while considerably impacting handling speeds.",
+        "pros": [
+            "aiming_idle_stability",
+            "horizontal_recoil_control",
+            "recoil_stabilization"
+        ],
+        "cons": [
+            "ads_speed",
+            "sprint_to_fire_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "tempus-razorback",
+        "unlock_level": 6,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "997449e0bf00b094",
+        "category_id": "magazines",
+        "slug": "45-round-mag",
+        "name": "45 Round Mag",
+        "description": "A polymer magazine that holds 45 rounds of 5.56 ammunition.",
+        "pros": [
+            "magazine_ammo_capacity"
+        ],
+        "cons": [
+            "movement_speed",
+            "ads_speed",
+            "reload_quickness",
+            "sprint_to_fire_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "tempus-razorback",
+        "unlock_level": 8,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "99744e4cbd48de01",
+        "category_id": "rear-grips",
+        "slug": "erg-x1",
+        "name": "ERG-X1",
+        "description": "Polymerized ergonomic grip designed to keep Operators on target during sustained fire.",
+        "pros": [
+            "recoil_control"
+        ],
+        "cons": [
+            "aiming_stability"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "tempus-razorback",
+        "unlock_level": 9,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "9974474ab1c353ef",
+        "category_id": "combs",
+        "slug": "h1-precision",
+        "name": "H1 Precision",
+        "description": "A heavy yet comfortable cheek rest that provides the support necessary for extended long-range engagements.",
+        "pros": [
+            "aiming_stability",
+            "recoil_steadiness"
+        ],
+        "cons": [
+            "movement_speed",
+            "ads_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "tempus-razorback",
+        "unlock_level": 11,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "997448a2a8ca6723",
+        "category_id": "stocks",
+        "slug": "ta-ergo",
+        "name": "TA Ergo",
+        "description": "An ergonomic and lightweight stock built to maximize mobility.",
+        "pros": [
+            "crouch_movement_speed",
+            "sprint_speed",
+            "ads_speed",
+            "aiming_stability"
+        ],
+        "cons": [
+            "recoil_control",
+            "aim_walking_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "tempus-razorback",
+        "unlock_level": 12,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "99744d6685ac6e5a",
+        "category_id": "rear-grips",
+        "slug": "casus-x",
+        "name": "Casus X",
+        "description": "A light, tactical grip that improves handling with minimal impact to control.",
+        "pros": [
+            "sprint_to_fire_speed",
+            "ads_speed"
+        ],
+        "cons": [
+            "recoil_control"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "tempus-razorback",
+        "unlock_level": 13,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "99744a75a0a5584e",
+        "category_id": "barrels",
+        "slug": "18-tack-2l",
+        "name": "18'' Tack-2L",
+        "description": "A light ultra-long barrel that provides superior damage and range.",
+        "pros": [
+            "damage_range",
+            "hip_fire_accuracy",
+            "bullet_velocity",
+            "movement_speed"
+        ],
+        "cons": [
+            "ads_speed",
+            "hip_recoil_control",
+            "recoil_control"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "tempus-razorback",
+        "unlock_level": 14,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "99744793beff62ff",
+        "category_id": "combs",
+        "slug": "sl-k-trim",
+        "name": "SL-K Trim",
+        "description": "A heavy-duty comb built to withstand opposing fire while minimally impacting handling capabilities. Reduces flinch when under fire.",
+        "pros": [
+            "flinch_resistance"
+        ],
+        "cons": [
+            "sprint_speed",
+            "sprint_to_fire_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "tempus-razorback",
+        "unlock_level": 15,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "99744e9184a0e667",
+        "category_id": "stocks",
+        "slug": "tr-preamble",
+        "name": "TR Preamble",
+        "description": "Compact and efficient, this light stock provides the perfect amount of support for maneuverable ops.",
+        "pros": [
+            "aim_walking_speed",
+            "sprint_speed"
+        ],
+        "cons": [
+            "aiming_stability"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "tempus-razorback",
+        "unlock_level": 16,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "997446bcbaaa04d9",
+        "category_id": "barrels",
+        "slug": "13-frenzy-ix",
+        "name": "13'' Frenzy IX",
+        "description": "A short barrel with an integrated precision dot sight that supports tactical flexibility.",
+        "pros": [
+            "ads_speed",
+            "hip_recoil_control"
+        ],
+        "cons": [
+            "damage_range",
+            "hip_fire_accuracy",
+            "bullet_velocity"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "tempus-razorback",
+        "unlock_level": 17,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "99744dd282a6b1a9",
+        "category_id": "rear-grips",
+        "slug": "flt-22",
+        "name": "FLT-22",
+        "description": "A lightweight grip that provides a substantial improvement to handling at the cost of controllability.",
+        "pros": [
+            "sprint_to_fire_speed",
+            "ads_speed"
+        ],
+        "cons": [
+            "recoil_control",
+            "flinch_resistance"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "tempus-razorback",
+        "unlock_level": 18,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "99744e4d92216997",
+        "category_id": "barrels",
+        "slug": "17-io-xl",
+        "name": "17'' IO-XL",
+        "description": "A heavy barrel with an integrated optic that enhances long-range lethality at the cost of handling. Blocks optics.",
+        "pros": [
+            "40x_magnification",
+            "bullet_velocity",
+            "damage_range",
+            "recoil_control"
+        ],
+        "cons": [
+            "ads_speed",
+            "movement_speed",
+            "hip_recoil_control"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "tempus-razorback",
+        "unlock_level": 19,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "9974441ca25c621c",
+        "category_id": "combs",
+        "slug": "ltx-eclipse",
+        "name": "LTX Eclipse",
+        "description": "A slim, efficient cheek rest that supports rapid target acquisition.",
+        "pros": [
+            "sprint_to_fire_speed",
+            "ads_speed"
+        ],
+        "cons": [
+            "aiming_stability",
+            "aim_walking_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "tempus-razorback",
+        "unlock_level": 20,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "997442289b49473f",
+        "category_id": "magazines",
+        "slug": "60-round-mag",
+        "name": "60 Round Mag",
+        "description": "A polymer magazine that holds 60 rounds of 5.56 ammunition.",
+        "pros": [
+            "magazine_ammo_capacity"
+        ],
+        "cons": [
+            "movement_speed",
+            "ads_speed",
+            "reload_quickness",
+            "sprint_to_fire_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "tempus-razorback",
+        "unlock_level": 21,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "997444da8c159950",
+        "category_id": "stocks",
+        "slug": "mace-650",
+        "name": "Mace 650",
+        "description": "A slow, heavy stock that offers top-notch aiming stability and control.",
+        "pros": [
+            "aiming_stability",
+            "recoil_control"
+        ],
+        "cons": [
+            "aim_walking_speed",
+            "sprint_speed",
+            "ads_speed",
+            "crouch_movement_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "iso-45",
+        "unlock_level": 2,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "9974477d97c78c29",
+        "category_id": "rear-grips",
+        "slug": "a30-stout",
+        "name": "A30 Stout",
+        "description": "A sturdy, yet heavy rear grip that provides excellent control during sustained fire.",
+        "pros": [
+            "recoil_control"
+        ],
+        "cons": [
+            "aiming_stability"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "iso-45",
+        "unlock_level": 4,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "99744090b33ce8c2",
+        "category_id": "barrels",
+        "slug": "7-ex-raptor-v2",
+        "name": "7'' EX Raptor-V2",
+        "description": "A lightweight barrel that offers exceptional mobility with minimal cost to combat effectiveness.",
+        "pros": [
+            "ads_speed",
+            "movement_speed",
+            "hip_recoil_control"
+        ],
+        "cons": [
+            "bullet_velocity",
+            "damage_range",
+            "recoil_control",
+            "hip_fire_accuracy"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "iso-45",
+        "unlock_level": 6,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "997448719c617fe6",
+        "category_id": "magazines",
+        "slug": "12-round-mag",
+        "name": "12 Round Mag",
+        "description": "A small magazine that holds 12 rounds of .45 Auto ammunition. Locks weapon in semi-auto.",
+        "pros": [
+            "movement_speed",
+            "high_grain_ammunition",
+            "ads_speed",
+            "sprint_to_fire_speed"
+        ],
+        "cons": [
+            "magazine_ammo_capacity",
+            "full_auto"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "iso-45",
+        "unlock_level": 8,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "9974493b94f0db64",
+        "category_id": "barrels",
+        "slug": "9-ptx-trainer",
+        "name": "9'' PTX Trainer",
+        "description": "A long, versatile barrel with an efficient design that offers improved combat effectiveness and maneuverability.",
+        "pros": [
+            "damage_range",
+            "hip_fire_accuracy",
+            "movement_speed",
+            "bullet_velocity"
+        ],
+        "cons": [
+            "hip_recoil_control",
+            "ads_speed",
+            "recoil_control"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "iso-45",
+        "unlock_level": 10,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "99744d6bb8d36516",
+        "category_id": "stocks",
+        "slug": "torrent-span-9",
+        "name": "Torrent SPAN-9",
+        "description": "A versatile, medium-weight stock that provides control with a moderate cost to handling.",
+        "pros": [
+            "recoil_control"
+        ],
+        "cons": [
+            "ads_speed",
+            "crouch_movement_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "iso-45",
+        "unlock_level": 12,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "9974472aa56020bf",
+        "category_id": "rear-grips",
+        "slug": "stalwart-gx",
+        "name": "Stalwart GX",
+        "description": "An ergonomic grip that reduces mobility and provides stellar flinch resistance.",
+        "pros": [
+            "flinch_resistance"
+        ],
+        "cons": [
+            "aim_walking_movement_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "iso-45",
+        "unlock_level": 13,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "9974460fb39b60c6",
+        "category_id": "magazines",
+        "slug": "45-round-drum",
+        "name": "45 Round Drum",
+        "description": "A drum magazine that holds 45 rounds of .45 Auto ammunition.",
+        "pros": [
+            "magazine_ammo_capacity"
+        ],
+        "cons": [
+            "movement_speed",
+            "ads_speed",
+            "reload_quickness",
+            "sprint_to_fire_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "iso-45",
+        "unlock_level": 14,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "99744d66b4d6f0be",
+        "category_id": "barrels",
+        "slug": "4-frame-s-1",
+        "name": "4'' Frame S-1",
+        "description": "A CQB-focused, ultra-short barrel with superior handling. Long-range operations will be impacted.",
+        "pros": [
+            "ads_speed",
+            "hip_recoil_control"
+        ],
+        "cons": [
+            "damage_range",
+            "hip_fire_accuracy",
+            "bullet_velocity"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "iso-45",
+        "unlock_level": 15,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "9974413dac3a74ed",
+        "category_id": "stocks",
+        "slug": "demo-fade-tac",
+        "name": "DEMO Fade TAC",
+        "description": "A lightweight stock designed for maximum mobility with minimal impact to aiming stability.",
+        "pros": [
+            "aim_walking_speed",
+            "sprint_speed"
+        ],
+        "cons": [
+            "aiming_stability"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "iso-45",
+        "unlock_level": 16,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "99744691829055f2",
+        "category_id": "rear-grips",
+        "slug": "exp-shear",
+        "name": "EXP Shear",
+        "description": "A lightweight, tactical grip that greatly improves sprint-to-fire capabilities.",
+        "pros": [
+            "sprint_to_fire_speed",
+            "ads_speed"
+        ],
+        "cons": [
+            "recoil_control"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "iso-45",
+        "unlock_level": 17,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "997443d1a5ec1a53",
+        "category_id": "barrels",
+        "slug": "16-xlb-s",
+        "name": "16'' XLB-S",
+        "description": "A long, heavy barrel with an integrated suppressor that increases long-range efficacy at the cost of handling.",
+        "pros": [
+            "sound_suppression",
+            "bullet_velocity",
+            "damage_range",
+            "recoil_control"
+        ],
+        "cons": [
+            "ads_speed",
+            "hip_recoil_control",
+            "movement_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "iso-45",
+        "unlock_level": 18,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "99744b27b3242bb4",
+        "category_id": "stocks",
+        "slug": "sk-3-cheetah",
+        "name": "SK-3 Cheetah",
+        "description": "A lightweight, mobile stock that provides combat maneuverability at the cost of control.",
+        "pros": [
+            "sprint_speed",
+            "crouch_movement_speed",
+            "aim_walking_speed",
+            "ads_speed"
+        ],
+        "cons": [
+            "aiming_stability",
+            "recoil_control"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "iso-45",
+        "unlock_level": 19,
         "unlock_summary": null,
         "unlock_description": null
     }
