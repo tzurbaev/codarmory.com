@@ -7,6 +7,7 @@ export enum UnlockType {
   Bundle = 'bundle',
   Challenge = 'challenge',
   OneOfChallenge = 'one-of-challenge',
+  BattlePassChallenges = 'battle-pass-challenges',
   Unknown = 'unknown',
   NotAvailable = 'not-available',
 }

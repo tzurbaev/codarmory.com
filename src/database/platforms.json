@@ -114,5 +114,9 @@
     {
         "id": "tidal-recon",
         "name": "Tidal Recon Platform"
+    },
+    {
+        "id": "mx-guardian",
+        "name": "MX Guardian Platform"
     }
 ]

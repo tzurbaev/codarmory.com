@@ -44,6 +44,15 @@
         </template>
         <template v-else>Unlock by completing one of {{ weapon.unlock_level }} challenges.</template>
       </template>
+      <template v-else-if="weapon.unlock_type === UnlockType.BattlePassChallenges">
+        <template v-if="full && weapon.unlock_description">
+          Complete <strong>Season 0{{ weapon.unlock_level }} Battle Pass</strong> challenges:
+          <span class="block mt-2 font-semibold" v-html="weapon.unlock_description.replaceAll(`\n`, '<br>')" />
+        </template>
+        <template v-else>
+          Unlock by completing <strong>Season 0{{ weapon.unlock_level }} Battle Pass</strong> challenges.
+        </template>
+      </template>
       <template v-else-if="weapon.unlock_type === UnlockType.DMZ">
         <template v-if="full && weapon.unlock_description">{{ weapon.unlock_description }}</template>
         <template v-else>

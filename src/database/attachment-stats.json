@@ -328,6 +328,14 @@
         "name": "Vehicle Damage"
     },
     {
+        "id": "semi_auto",
+        "name": "Semi-Auto"
+    },
+    {
+        "id": "burst_fire",
+        "name": "Burst Fire"
+    },
+    {
         "id": "full_auto",
         "name": "Full Auto"
     },

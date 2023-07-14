@@ -10261,7 +10261,7 @@
         "category_id": "optics",
         "slug": "daunt-c80",
         "name": "Daunt-C80",
-        "description": "A close-range scope manufactured for combat in tight spaces.",
+        "description": "A 6.3x scope designed for mid-range shots.",
         "pros": [
             "63x_magnification"
         ],
@@ -20072,6 +20072,266 @@
         ],
         "unlock_type": "weapon",
         "unlock_id": "iso-45",
+        "unlock_level": 19,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "99a54827992c7f3f",
+        "category_id": "barrels",
+        "slug": "mx-g-mobile",
+        "name": "MX-G Mobile",
+        "description": "A longer barrel that increases damage range and mobility.",
+        "pros": [
+            "movement_speed",
+            "damage_range",
+            "hip_fire_accuracy"
+        ],
+        "cons": [
+            "recoil_control",
+            "bullet_velocity",
+            "hip_recoil_control",
+            "ads_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "mx-guardian",
+        "unlock_level": 3,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "99a540ef9b5b1d71",
+        "category_id": "stocks",
+        "slug": "mx-dcp-0",
+        "name": "MX DCP-0",
+        "description": "A lightweight and tactical stock that increases mobility for faster action when it counts.",
+        "pros": [
+            "sprint_speed",
+            "aim_walking_speed",
+            "crouch_movement_speed",
+            "ads_speed"
+        ],
+        "cons": [
+            "aiming_stability",
+            "recoil_control"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "mx-guardian",
+        "unlock_level": 4,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "99a5452493a00f1c",
+        "category_id": "trigger-actions",
+        "slug": "semi-auto-trigger",
+        "name": "Semi-Auto Trigger",
+        "description": "This trigger modifies the firing mechanism of the MX Guardian, turning it into a semi-automatic shotgun.",
+        "pros": [
+            "high_grain_ammunition",
+            "semi_auto"
+        ],
+        "cons": [
+            "full_auto",
+            "hip_recoil_control"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "mx-guardian",
+        "unlock_level": 6,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "99a547098e292f31",
+        "category_id": "magazines",
+        "slug": "mx-pro-mag",
+        "name": "MX Pro Mag",
+        "description": "A grippy and textured magazine that provides the same amount of ammunition with an increase in handling.",
+        "pros": [
+            "ads_speed",
+            "sprint_to_fire_speed"
+        ],
+        "cons": [
+            "recoil_control"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "mx-guardian",
+        "unlock_level": 7,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "99a5466dbc10dbaa",
+        "category_id": "rear-grips",
+        "slug": "bruen-b60",
+        "name": "Bruen B60",
+        "description": "Added ridges on this stable grip help to increase recoil control.",
+        "pros": [
+            "recoil_control"
+        ],
+        "cons": [
+            "aiming_stability"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "mx-guardian",
+        "unlock_level": 9,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "99a54082b537c88e",
+        "category_id": "barrels",
+        "slug": "mx-g-short",
+        "name": "MX-G Short",
+        "description": "A short barrel that significantly increases handling with a reduction in accuracy and range.",
+        "pros": [
+            "ads_speed",
+            "hip_recoil_control"
+        ],
+        "cons": [
+            "damage_range",
+            "hip_fire_accuracy",
+            "bullet_velocity"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "mx-guardian",
+        "unlock_level": 11,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "99a5431783169beb",
+        "category_id": "rear-grips",
+        "slug": "cronen-ergo",
+        "name": "Cronen Ergo",
+        "description": "This textured grip provides in increase in accuracy and reduces flinch when under fire.",
+        "pros": [
+            "flinch_resistance"
+        ],
+        "cons": [
+            "aim_walking_movement_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "mx-guardian",
+        "unlock_level": 12,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "99a543a8bf8d16d2",
+        "category_id": "stocks",
+        "slug": "exf-impact-pad",
+        "name": "EXF Impact Pad",
+        "description": "A thick, rubber pad for the MX Guardian stock that absorbs some shock for increased recoil control.",
+        "pros": [
+            "recoil_control"
+        ],
+        "cons": [
+            "ads_speed",
+            "crouch_movement_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "mx-guardian",
+        "unlock_level": 13,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "99a54cd085be86c9",
+        "category_id": "rear-grips",
+        "slug": "xrk-rush",
+        "name": "XRK Rush",
+        "description": "A textured grip wrap that provides a large increase to handling.",
+        "pros": [
+            "sprint_to_fire_speed",
+            "ads_speed"
+        ],
+        "cons": [
+            "recoil_control"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "mx-guardian",
+        "unlock_level": 15,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "99a548039706733c",
+        "category_id": "trigger-actions",
+        "slug": "burst-fire-trigger",
+        "name": "Burst-Fire Trigger",
+        "description": "This trigger modification turns the MX Guardian into a burst-fire shotgun.",
+        "pros": [
+            "high_grain_ammunition",
+            "burst_fire"
+        ],
+        "cons": [
+            "full_auto"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "mx-guardian",
+        "unlock_level": 16,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "99a54d86a7297ee8",
+        "category_id": "barrels",
+        "slug": "hyp-lm",
+        "name": "HYP-LM",
+        "description": "This barrel with a rail system attached offers a superior boost to range and damage.",
+        "pros": [
+            "damage_range",
+            "bullet_velocity",
+            "recoil_control",
+            "hip_fire_accuracy"
+        ],
+        "cons": [
+            "ads_speed",
+            "hip_recoil_control",
+            "movement_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "mx-guardian",
+        "unlock_level": 17,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "99a5472dbf2aacbc",
+        "category_id": "stocks",
+        "slug": "rustler-pad",
+        "name": "Rustler Pad",
+        "description": "This comfortable stock pad offers a significant increase in accuracy at the cost of some mobility.",
+        "pros": [
+            "aiming_stability"
+        ],
+        "cons": [
+            "aim_walking_speed",
+            "sprint_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "mx-guardian",
+        "unlock_level": 18,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "99a54e248d6fbd4d",
+        "category_id": "rear-grips",
+        "slug": "stream-sk",
+        "name": "Stream-SK",
+        "description": "An ultra-light grip with a superior increase to handling for quick and rapid play.",
+        "pros": [
+            "sprint_to_fire_speed",
+            "ads_speed"
+        ],
+        "cons": [
+            "recoil_control",
+            "flinch_resistance"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "mx-guardian",
         "unlock_level": 19,
         "unlock_summary": null,
         "unlock_description": null
