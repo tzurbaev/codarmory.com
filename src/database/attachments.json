@@ -20335,5 +20335,560 @@
         "unlock_level": 19,
         "unlock_summary": null,
         "unlock_description": null
+    },
+    {
+        "id": "99d34295a72d45c1",
+        "category_id": "barrels",
+        "slug": "600mm-fr-longborne",
+        "name": "600mm FR Longborne",
+        "description": "A long, 600mm no-frills barrel designed to increase damage range and accuracy.",
+        "pros": [
+            "damage_range",
+            "hip_fire_accuracy",
+            "bullet_velocity"
+        ],
+        "cons": [
+            "ads_speed",
+            "hip_recoil_control"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "fr-avancer",
+        "unlock_level": 3,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "99d3466281a3b58e",
+        "category_id": "stocks",
+        "slug": "fr-sprinter",
+        "name": "FR Sprinter",
+        "description": "A comfortable and streamlined stock pad that reduces weight for an increase in mobility. Slight reduction to accuracy.",
+        "pros": [
+            "aim_walking_speed",
+            "sprint_speed"
+        ],
+        "cons": [
+            "aiming_stability"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "fr-avancer",
+        "unlock_level": 4,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "99d344fda0ebb58e",
+        "category_id": "rear-grips",
+        "slug": "sa-ion",
+        "name": "SA ION",
+        "description": "A rubberized grip that provides an increase in recoil control.",
+        "pros": [
+            "recoil_control"
+        ],
+        "cons": [
+            "aiming_stability"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "fr-avancer",
+        "unlock_level": 5,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "99d34606be77bb10",
+        "category_id": "combs",
+        "slug": "fr-ton-618",
+        "name": "FR TON-618",
+        "description": "A heavy comb that increases recoil control and accuracy.",
+        "pros": [
+            "aiming_stability",
+            "recoil_steadiness"
+        ],
+        "cons": [
+            "movement_speed",
+            "ads_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "fr-avancer",
+        "unlock_level": 6,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "99d34efca2e3261d",
+        "category_id": "underbarrels",
+        "slug": "fr-avancer-bipod",
+        "name": "FR Avancer Bipod",
+        "description": "This attached bipod allows the weapon to be mounted for increased accuracy and recoil control.",
+        "pros": [
+            "bipod_mount"
+        ],
+        "cons": [
+            "ads_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "fr-avancer",
+        "unlock_level": 8,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "99d344f5b4accb59",
+        "category_id": "magazines",
+        "slug": "45-round-mag",
+        "name": "45 Round Mag",
+        "description": "A steel magazine that holds 45 rounds of 5.56 ammunition.",
+        "pros": [
+            "magazine_ammo_capacity"
+        ],
+        "cons": [
+            "movement_speed",
+            "ads_speed",
+            "reload_quickness",
+            "sprint_to_fire_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "fr-avancer",
+        "unlock_level": 10,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "99d34b1e8aeadca9",
+        "category_id": "barrels",
+        "slug": "435mm-fr435",
+        "name": "435mm FR435",
+        "description": "Short and stable, this FR barrel provides increased recoil control for more shots on target.",
+        "pros": [
+            "recoil_control",
+            "hip_recoil_control",
+            "bullet_velocity"
+        ],
+        "cons": [
+            "movement_speed",
+            "damage_range",
+            "hip_fire_accuracy",
+            "ads_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "fr-avancer",
+        "unlock_level": 12,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "99d34fecb54fb44c",
+        "category_id": "rear-grips",
+        "slug": "fr-tack-3",
+        "name": "FR TACK-3",
+        "description": "An ergonomic grip that reduces flinch when under fire.",
+        "pros": [
+            "flinch_resistance"
+        ],
+        "cons": [
+            "aim_walking_movement_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "fr-avancer",
+        "unlock_level": 13,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "99d34e04909b6318",
+        "category_id": "combs",
+        "slug": "fr-giga",
+        "name": "FR GIGA",
+        "description": "Ergonomic and streamlined, this comb provides an increase to handling for faster engagements.",
+        "pros": [
+            "sprint_to_fire_speed",
+            "ads_speed"
+        ],
+        "cons": [
+            "aiming_stability",
+            "aim_walking_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "fr-avancer",
+        "unlock_level": 14,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "99d3443fa5ee69cd",
+        "category_id": "stocks",
+        "slug": "wmg-tac",
+        "name": "WMG-TAC",
+        "description": "Mobility and handling are increased with this ergonomic tactical stock.",
+        "pros": [
+            "crouch_movement_speed",
+            "sprint_speed",
+            "ads_speed"
+        ],
+        "cons": [
+            "recoil_control"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "fr-avancer",
+        "unlock_level": 15,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "99d345d4bb7eed2a",
+        "category_id": "barrels",
+        "slug": "395mm-fr-minibore",
+        "name": "395mm FR Minibore",
+        "description": "The shortest possible barrel for Feret Platform rifles, this barrel is built for handling and hip-fire accuracy.",
+        "pros": [
+            "ads_speed",
+            "hip_recoil_control"
+        ],
+        "cons": [
+            "damage_range",
+            "hip_fire_accuracy",
+            "bullet_velocity"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "fr-avancer",
+        "unlock_level": 16,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "99d34b5bb5159bba",
+        "category_id": "combs",
+        "slug": "fr-anchor",
+        "name": "FR Anchor",
+        "description": "A tactical comb that reduces flinch when under fire.",
+        "pros": [
+            "flinch_resistance"
+        ],
+        "cons": [
+            "sprint_speed",
+            "sprint_to_fire_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "fr-avancer",
+        "unlock_level": 17,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "99d34d7f9971396d",
+        "category_id": "magazines",
+        "slug": "60-round-mag",
+        "name": "60 Round Mag",
+        "description": "A steel magazine that holds 60 rounds of 5.56 ammunition.",
+        "pros": [
+            "magazine_ammo_capacity"
+        ],
+        "cons": [
+            "movement_speed",
+            "ads_speed",
+            "reload_quickness",
+            "sprint_to_fire_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "fr-avancer",
+        "unlock_level": 18,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "99d34d98a69a98ff",
+        "category_id": "rear-grips",
+        "slug": "rmt-grip",
+        "name": "RMT Grip",
+        "description": "A textured grip that offers a significant increase to handling.",
+        "pros": [
+            "sprint_to_fire_speed",
+            "ads_speed"
+        ],
+        "cons": [
+            "recoil_control"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "fr-avancer",
+        "unlock_level": 19,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "99d34e2fb102b980",
+        "category_id": "barrels",
+        "slug": "26-cf-bipod-barrel",
+        "name": "26'' CF-Bipod Barrel",
+        "description": "The factory barrel for the Carrack .300 with the bipod deployed. Provides increased accuracy and recoil control.",
+        "pros": [
+            "bipod_mount"
+        ],
+        "cons": [
+            "ads_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "carrack-300",
+        "unlock_level": 2,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "99d34d2089da0f54",
+        "category_id": "optics",
+        "slug": "63x-14x-carrack",
+        "name": "6.3x-14x Carrack",
+        "description": "A variable-zoom scope with an eyecup that provides improved eye relief and one of the best-in-class sight pictures.",
+        "pros": [
+            "63x_magnification",
+            "140x_magnification"
+        ],
+        "cons": [
+            "large_sniper_glint"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "carrack-300",
+        "unlock_level": 4,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "99d34aaf8d209458",
+        "category_id": "barrels",
+        "slug": "30-flintline",
+        "name": "30'' Flintline",
+        "description": "A long fluted barrel that increases damage, range, and accuracy.",
+        "pros": [
+            "damage_range",
+            "hip_fire_accuracy",
+            "bullet_velocity"
+        ],
+        "cons": [
+            "ads_speed",
+            "hip_recoil_control"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "carrack-300",
+        "unlock_level": 5,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "99d34f5ab8dac504",
+        "category_id": "rear-grips",
+        "slug": "carrack-palm",
+        "name": "Carrack Palm",
+        "description": "The Carrack .300 factory grip with a palm shelf for added stability. Reduces flinch when under fire.",
+        "pros": [
+            "aiming_stability",
+            "flinch_resistance"
+        ],
+        "cons": [
+            "ads_speed",
+            "aim_walking_movement_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "carrack-300",
+        "unlock_level": 7,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "99d34823bc5c2f87",
+        "category_id": "barrels",
+        "slug": "30-flintfire-bipod",
+        "name": "30'' Flintfire Bipod",
+        "description": "With the bipod mount deployed, this long barrel provides superior recoil control and accuracy for long-distance shooting.",
+        "pros": [
+            "bipod_mount"
+        ],
+        "cons": [
+            "ads_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "carrack-300",
+        "unlock_level": 8,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "99d34f1abb60a718",
+        "category_id": "stocks",
+        "slug": "carrack-ops-stock",
+        "name": "Carrack Ops Stock",
+        "description": "Lightweight and ready for field ops, this stock for the Carrack .300 offers a significant increase to mobility with a decrease to accuracy.",
+        "pros": [
+            "aim_walking_speed",
+            "sprint_speed"
+        ],
+        "cons": [
+            "aiming_stability"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "carrack-300",
+        "unlock_level": 10,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "99d34d0797d46f7d",
+        "category_id": "rear-grips",
+        "slug": "tv-nought-grip",
+        "name": "TV Nought Grip",
+        "description": "Get more hits on target with this textured grip that increases recoil control.",
+        "pros": [
+            "recoil_control"
+        ],
+        "cons": [
+            "aiming_stability"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "carrack-300",
+        "unlock_level": 11,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "99d343788614de98",
+        "category_id": "magazines",
+        "slug": "10-round-mag",
+        "name": "10 Round Mag",
+        "description": "A magazine that carries 10 rounds of .300 magnum ammuniton.",
+        "pros": [
+            "magazine_ammo_capacity"
+        ],
+        "cons": [
+            "movement_speed",
+            "ads_speed",
+            "reload_quickness",
+            "sprint_to_fire_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "carrack-300",
+        "unlock_level": 12,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "99d34567be924df4",
+        "category_id": "barrels",
+        "slug": "heavy-tac-300",
+        "name": "Heavy-Tac 300",
+        "description": "This heavy tactical barrel for military operations increases recoil control, accuracy and range.",
+        "pros": [
+            "recoil_control",
+            "bullet_velocity",
+            "damage_range",
+            "hip_fire_accuracy"
+        ],
+        "cons": [
+            "ads_speed",
+            "movement_speed",
+            "hip_recoil_control"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "carrack-300",
+        "unlock_level": 13,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "99d347d4a04c9b11",
+        "category_id": "rear-grips",
+        "slug": "engage-20-grip",
+        "name": "Engage-20 Grip",
+        "description": "Handle every engagement with speed and lethality with this tactical grip that increases handling.",
+        "pros": [
+            "sprint_to_fire_speed",
+            "ads_speed"
+        ],
+        "cons": [
+            "recoil_control"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "carrack-300",
+        "unlock_level": 14,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "99d34c06bcb4c916",
+        "category_id": "barrels",
+        "slug": "300-subsound",
+        "name": "300 Subsound",
+        "description": "This suppressed sniper barrel offers sound suppression and an increase to recoil control.",
+        "pros": [
+            "sound_suppression",
+            "recoil_control"
+        ],
+        "cons": [
+            "damage_range"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "carrack-300",
+        "unlock_level": 15,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "99d34972a1332858",
+        "category_id": "magazines",
+        "slug": "15-round-mag",
+        "name": "15 Round Mag",
+        "description": "A magazine that carries 15 rounds of .300 magnum ammunition.",
+        "pros": [
+            "magazine_ammo_capacity"
+        ],
+        "cons": [
+            "movement_speed",
+            "ads_speed",
+            "reload_quickness",
+            "sprint_to_fire_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "carrack-300",
+        "unlock_level": 16,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "99d34d50af101092",
+        "category_id": "stocks",
+        "slug": "lex-v14-stock",
+        "name": "Lex V14 Stock",
+        "description": "This tactical stock is lightweight and designed for an increase o mobility and handling.",
+        "pros": [
+            "crouch_movement_speed",
+            "sprint_speed",
+            "ads_speed"
+        ],
+        "cons": [
+            "recoil_control"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "carrack-300",
+        "unlock_level": 17,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "99d34caeb3822f9c",
+        "category_id": "barrels",
+        "slug": "300-subsound-bipod",
+        "name": "300 Subsound Bipod",
+        "description": "A suppressed barrel with a deployed bipod that provides better accuracy and recoil control.",
+        "pros": [
+            "sound_suppression",
+            "bipod_mount",
+            "recoil_control"
+        ],
+        "cons": [
+            "damage_range",
+            "ads_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "carrack-300",
+        "unlock_level": 18,
+        "unlock_summary": null,
+        "unlock_description": null
     }
 ]

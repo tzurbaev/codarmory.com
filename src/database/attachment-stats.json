@@ -264,6 +264,10 @@
         "name": "13.0x Magnification"
     },
     {
+        "id": "140x_magnification",
+        "name": "14.0x Magnification"
+    },
+    {
         "id": "very_large_sniper_glint",
         "name": "Very Large Sniper Glint"
     },

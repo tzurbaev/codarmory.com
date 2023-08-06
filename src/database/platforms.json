@@ -118,5 +118,13 @@
     {
         "id": "mx-guardian",
         "name": "MX Guardian Platform"
+    },
+    {
+        "id": "feret",
+        "name": "Feret Platform"
+    },
+    {
+        "id": "carrack",
+        "name": "Carrack Platform"
     }
 ]
