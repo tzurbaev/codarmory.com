@@ -9074,16 +9074,16 @@
         "category_id": "stocks",
         "slug": "ravage-10",
         "name": "Ravage-10",
-        "description": "A tactical stock modified from the M4 counterpart, built for increased stability and recoil control.",
+        "description": "A tactical stock modified from the M4 counterpart, built to significantly increase accuracy.",
         "pros": [
             "aiming_stability",
-            "recoil_control"
+            "crouch_movement_speed",
+            "ads_speed"
         ],
         "cons": [
             "aim_walking_speed",
-            "sprint_speed",
-            "ads_speed",
-            "crouch_movement_speed"
+            "recoil_control",
+            "sprint_speed"
         ],
         "unlock_type": "weapon",
         "unlock_id": "bas-p",
@@ -20890,5 +20890,132 @@
         "unlock_level": 18,
         "unlock_summary": null,
         "unlock_description": null
+    },
+    {
+        "id": "99f14e8fac1c8dff",
+        "category_id": "stocks",
+        "slug": "m13c-fs-collapsed",
+        "name": "M13C FS Collapsed",
+        "description": "The factory M13C stock, collapsed for a significant increase to mobility and handling.",
+        "pros": [
+            "ads_speed",
+            "sprint_to_fire_speed",
+            "movement_speed",
+            "hip_recoil_control"
+        ],
+        "cons": [
+            "aiming_recoil_control",
+            "aiming_stability",
+            "flinch_resistance"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "m13c",
+        "unlock_level": 4,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "99f141888d7416aa",
+        "category_id": "barrels",
+        "slug": "m13c-factory-barrel",
+        "name": "M13C Factory Barrel",
+        "description": "The factory barrel for the M13C. Increases recoil control and bullet velocity.",
+        "pros": [
+            "recoil_control",
+            "hip_recoil_control",
+            "bullet_velocity"
+        ],
+        "cons": [
+            "damage_range",
+            "movement_speed",
+            "hip_fire_accuracy"
+        ],
+        "unlock_type": "auto",
+        "unlock_id": null,
+        "unlock_level": null,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "99f14960b91b62e7",
+        "category_id": "barrels",
+        "slug": "10-bruen-fct-6",
+        "name": "10'' Bruen FCT-6",
+        "description": "The factory barrel for the Bruen M13B. Increases damage range, bullet velocity, and hip-fire accuracy.",
+        "pros": [
+            "damage_range",
+            "hip_fire_accuracy",
+            "bullet_velocity"
+        ],
+        "cons": [
+            "ads_speed",
+            "hip_recoil_control"
+        ],
+        "unlock_type": "auto",
+        "unlock_id": null,
+        "unlock_level": null,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "99f14727ad32a4e9",
+        "category_id": "barrels",
+        "slug": "7-bruen-c-m20",
+        "name": "7'' Bruen C-M20",
+        "description": "A lightweight barrel from Bruen that provides faster movement and aiming speed with a decrease in range and recoil control.",
+        "pros": [
+            "movement_speed",
+            "ads_speed"
+        ],
+        "cons": [
+            "bullet_velocity",
+            "recoil_control"
+        ],
+        "unlock_type": "auto",
+        "unlock_id": null,
+        "unlock_level": null,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "99f147dabd7dbf70",
+        "category_id": "magazines",
+        "slug": "60-round-mag",
+        "name": "60 Round Mag",
+        "description": "A polymer magazine that holds 60 rounds of .300 BLK ammunition.",
+        "pros": [
+            "magazine_ammo_capacity"
+        ],
+        "cons": [
+            "movement_speed",
+            "ads_speed",
+            "reload_quickness",
+            "sprint_to_fire_speed"
+        ],
+        "unlock_type": "auto",
+        "unlock_id": null,
+        "unlock_level": null,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "99f145fe9d2e099a",
+        "category_id": "underbarrels",
+        "slug": "corvus-torch",
+        "name": "Corvus Torch",
+        "description": "Exert close quarters dominance with this dragon's breath loaded under-barrel shotgun.",
+        "pros": [
+            "underbarrel_shotgun",
+            "incendiary_damage",
+            "recoil_stabilization"
+        ],
+        "cons": [
+            "ads_speed"
+        ],
+        "unlock_type": "challenge",
+        "unlock_id": null,
+        "unlock_level": null,
+        "unlock_summary": "Get 15 point-blank kills with underbarrel shotguns.",
+        "unlock_description": "Get 15 point-blank operator kills with underbarrel shotguns."
     }
 ]
