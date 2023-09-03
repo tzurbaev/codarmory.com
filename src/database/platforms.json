@@ -126,5 +126,9 @@
     {
         "id": "carrack",
         "name": "Carrack Platform"
+    },
+    {
+        "id": "daemon",
+        "name": "Daemon Platform"
     }
 ]

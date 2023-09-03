@@ -7463,8 +7463,8 @@
     {
         "id": "97c54afbb6847c9d",
         "category_id": "muzzles",
-        "slug": "forge-dx90-f",
-        "name": "Forge DX90-F",
+        "slug": "forge-dx30-f",
+        "name": "Forge DX30-F",
         "description": "Reduce your weapon's sound signature and keep your position concealed for covert operations.",
         "pros": [
             "sound_suppression",
@@ -21017,5 +21017,369 @@
         "unlock_level": null,
         "unlock_summary": "Get 15 point-blank kills with underbarrel shotguns.",
         "unlock_description": "Get 15 point-blank operator kills with underbarrel shotguns."
+    },
+    {
+        "id": "9a0b42269504d6fa",
+        "category_id": "barrels",
+        "slug": "114mm-darkstar",
+        "name": "114mm Darkstar",
+        "description": "A short, integrally suppressed barrel that provides a significant increase to mobility and handling.",
+        "pros": [
+            "ads_speed",
+            "hip_recoil_control",
+            "movement_speed"
+        ],
+        "cons": [
+            "damage_range",
+            "hip_fire_accuracy",
+            "bullet_velocity",
+            "recoil_control"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "lachmann-shroud",
+        "unlock_level": 4,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "9a0b45eb8dbe3d24",
+        "category_id": "barrels",
+        "slug": "170mm-grapple-vi",
+        "name": "170mm Grapple VI",
+        "description": "Designed around range and accuracy, this long, suppressed barrel is for those who prefer to tag enemies from a distance.",
+        "pros": [
+            "damage_range",
+            "bullet_velocity",
+            "recoil_control",
+            "hip_fire_accuracy"
+        ],
+        "cons": [
+            "ads_speed",
+            "hip_recoil_control",
+            "movement_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "lachmann-shroud",
+        "unlock_level": 10,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "9a0b4d3289f55cf6",
+        "category_id": "barrels",
+        "slug": "exf-opal-9",
+        "name": "EXF Opal-9",
+        "description": "A grooved and light slide that enhances mobility and handling for rapid engagements.",
+        "pros": [
+            "movement_speed",
+            "ads_speed"
+        ],
+        "cons": [
+            "bullet_velocity",
+            "recoil_control"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "9mm-daemon",
+        "unlock_level": 4,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "9a0b4264821785b2",
+        "category_id": "magazines",
+        "slug": "20-round-mag",
+        "name": "20 Round Mag",
+        "description": "A magazine that holds 20 rounds of 9mm ammunition.",
+        "pros": [
+            "magazine_ammo_capacity"
+        ],
+        "cons": [
+            "movement_speed",
+            "ads_speed",
+            "reload_quickness",
+            "sprint_to_fire_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "9mm-daemon",
+        "unlock_level": 6,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "9a0b4d42912bffe3",
+        "category_id": "trigger-actions",
+        "slug": "precision-trigger",
+        "name": "Precision Trigger",
+        "description": "A heavy trigger that provides increases to accuracy and handling at the expense of fire rate.",
+        "pros": [
+            "aiming_stability",
+            "sprint_to_fire_speed",
+            "ads_speed"
+        ],
+        "cons": [
+            "fire_rate"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "9mm-daemon",
+        "unlock_level": 7,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "9a0b4ef099509097",
+        "category_id": "rear-grips",
+        "slug": "magwell-grip",
+        "name": "Magwell Grip",
+        "description": "This grip's flared magwell helps guide magazines in for an increase in reload quickness.",
+        "pros": [
+            "reload_quickness"
+        ],
+        "cons": [
+            "hip_walking_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "9mm-daemon",
+        "unlock_level": 8,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "9a0b4ece8d957ae0",
+        "category_id": "barrels",
+        "slug": "exf-trope-h",
+        "name": "EXF Trope-H",
+        "description": "A heavy barrel that mitigates some recoil while increasing range and accuracy.",
+        "pros": [
+            "recoil_control",
+            "bullet_velocity"
+        ],
+        "cons": [
+            "movement_speed",
+            "ads_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "9mm-daemon",
+        "unlock_level": 9,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "9a0b431e8c591fec",
+        "category_id": "ammunition",
+        "slug": "9mm-high-velocity",
+        "name": "9mm High Velocity",
+        "description": "Tapered rounds designed to increase projectile velocity.",
+        "pros": [
+            "bullet_velocity"
+        ],
+        "cons": [
+            "recoil_control"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "9mm-daemon",
+        "unlock_level": 10,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "9a0b40008bfd74bb",
+        "category_id": "rear-grips",
+        "slug": "razorleaf-grip",
+        "name": "Razorleaf Grip",
+        "description": "A textured and grippy pistol grip that enhances recoil control.",
+        "pros": [
+            "recoil_control"
+        ],
+        "cons": [
+            "aiming_stability"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "9mm-daemon",
+        "unlock_level": 11,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "9a0b486e9e197378",
+        "category_id": "trigger-actions",
+        "slug": "dex8-trigger",
+        "name": "DEX8 Trigger",
+        "description": "A quick-firing trigger that has been designed for an increase in fire rate and aiming idle stability.",
+        "pros": [
+            "aiming_idle_stability",
+            "fire_rate"
+        ],
+        "cons": [
+            "hip_fire_moving_accuracy"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "9mm-daemon",
+        "unlock_level": 12,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "9a0b48e787c82e5b",
+        "category_id": "barrels",
+        "slug": "ft-competition",
+        "name": "FT Competition",
+        "description": "A sport-shooting barrel with an integrated compensator and reflex optic. Increases recoil control, range, and accuracy.",
+        "pros": [
+            "precision_sight_picture",
+            "damage_range",
+            "recoil_control",
+            "bullet_velocity"
+        ],
+        "cons": [
+            "ads_speed",
+            "hip_recoil_control",
+            "movement_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "9mm-daemon",
+        "unlock_level": 13,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "9a0b485db822c49e",
+        "category_id": "magazines",
+        "slug": "26-round-mag",
+        "name": "26 Round Mag",
+        "description": "A magazine that holds 26 rounds of 9mm ammunition.",
+        "pros": [
+            "magazine_ammo_capacity"
+        ],
+        "cons": [
+            "movement_speed",
+            "ads_speed",
+            "reload_quickness",
+            "sprint_to_fire_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "9mm-daemon",
+        "unlock_level": 14,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "9a0b45ac97d51e4f",
+        "category_id": "barrels",
+        "slug": "xten-windfall",
+        "name": "XTen Windfall",
+        "description": "A short barrel that increases handling and hip-fire recoil control.",
+        "pros": [
+            "ads_speed",
+            "hip_recoil_control"
+        ],
+        "cons": [
+            "damage_range",
+            "hip_fire_accuracy",
+            "bullet_velocity"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "9mm-daemon",
+        "unlock_level": 15,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "9a0b405aa4b11109",
+        "category_id": "rear-grips",
+        "slug": "daemon-hand",
+        "name": "Daemon Hand",
+        "description": "A tactical and comfortable grip that enhances handling for better aiming speed.",
+        "pros": [
+            "pistol_fastdraw",
+            "sprint_to_fire_speed",
+            "ads_speed"
+        ],
+        "cons": [
+            "recoil_control"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "9mm-daemon",
+        "unlock_level": 16,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "9a0b4bdaa5ae61e0",
+        "category_id": "trigger-actions",
+        "slug": "rapid-30-trigger",
+        "name": "Rapid 30 Trigger",
+        "description": "Get the fastest fire rate with this lightweight tactical trigger.",
+        "pros": [
+            "fire_rate"
+        ],
+        "cons": [
+            "sprint_to_fire_speed",
+            "aiming_idle_stability"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "9mm-daemon",
+        "unlock_level": 17,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "9a0b476cad53d22a",
+        "category_id": "barrels",
+        "slug": "sa-longfire",
+        "name": "SA Longfire",
+        "description": "This ported long barrel offers superior range, accuracy, and bullet velocity.",
+        "pros": [
+            "damage_range",
+            "hip_fire_accuracy",
+            "bullet_velocity"
+        ],
+        "cons": [
+            "ads_speed",
+            "hip_recoil_control"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "9mm-daemon",
+        "unlock_level": 18,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "9a0b4c84a62ebd18",
+        "category_id": "rear-grips",
+        "slug": "sgt-grip",
+        "name": "SGT Grip",
+        "description": "Skeletonized for speed, this grip offers a significant increase to handling.",
+        "pros": [
+            "sprint_to_fire_speed",
+            "ads_speed"
+        ],
+        "cons": [
+            "recoil_control",
+            "flinch_resistance"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "9mm-daemon",
+        "unlock_level": 19,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "9a0b44a2bd457dfe",
+        "category_id": "rear-grips",
+        "slug": "akimbo-9mm-daemon",
+        "name": "Akimbo 9mm Daemon",
+        "description": "Dual-wield two 9mm Daemon pistols. Deliver twice that 9mm firepower at the expense of accuracy and aiming.",
+        "pros": [
+            "fire_rate"
+        ],
+        "cons": [
+            "damage_range",
+            "movement_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "9mm-daemon",
+        "unlock_level": 20,
+        "unlock_summary": null,
+        "unlock_description": null
     }
 ]
