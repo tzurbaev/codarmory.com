@@ -130,5 +130,9 @@
     {
         "id": "daemon",
         "name": "Daemon Platform"
+    },
+    {
+        "id": "geist",
+        "name": "Geist Platform"
     }
 ]

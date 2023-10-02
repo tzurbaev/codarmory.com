@@ -21381,5 +21381,458 @@
         "unlock_level": 20,
         "unlock_summary": null,
         "unlock_description": null
+    },
+    {
+        "id": "9a454c8da54ae75e",
+        "category_id": "rear-grips",
+        "slug": "cronen-resistor-grip",
+        "name": "Cronen Resistor Grip",
+        "description": "This rubberized grip cover is designed to greatly improve accuracy and reduce flinch when under fire.",
+        "pros": [
+            "flinch_resistance"
+        ],
+        "cons": [
+            "aim_walking_movement_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "tr-76-geist",
+        "unlock_level": 3,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "9a4540f69a3bcd27",
+        "category_id": "barrels",
+        "slug": "bruen-bridle-60",
+        "name": "Bruen Bridle 60",
+        "description": "Take a controlled approach with this heavy barrel that helps mitigate some recoil.",
+        "pros": [
+            "recoil_control",
+            "bullet_velocity"
+        ],
+        "cons": [
+            "movement_speed",
+            "ads_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "tr-76-geist",
+        "unlock_level": 5,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "9a454de3ae857040",
+        "category_id": "stocks",
+        "slug": "scout-ld-stock-pad",
+        "name": "Scout-LD Stock Pad",
+        "description": "This thick stock pad allows for more comfort and increased accuracy.",
+        "pros": [
+            "aiming_stability"
+        ],
+        "cons": [
+            "aim_walking_speed",
+            "sprint_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "tr-76-geist",
+        "unlock_level": 7,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "9a45405eb43e944f",
+        "category_id": "combs",
+        "slug": "exf-trapper-comb",
+        "name": "EXF Trapper Comb",
+        "description": "A heavier comb that improves accuracy and recoil.",
+        "pros": [
+            "aiming_stability",
+            "recoil_steadiness"
+        ],
+        "cons": [
+            "movement_speed",
+            "ads_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "tr-76-geist",
+        "unlock_level": 8,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "9a454fcf981b5d68",
+        "category_id": "magazines",
+        "slug": "geist-single-tap-mod",
+        "name": "Geist Single-Tap Mod",
+        "description": "This small-capacity 10-round magazine changes the firing mode to semi-auto only. Make sure every shot counts.",
+        "pros": [
+            "high_grain_ammunition",
+            "movement_speed",
+            "ads_speed",
+            "sprint_to_fire_speed"
+        ],
+        "cons": [
+            "magazine_ammo_capacity",
+            "full_auto"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "tr-76-geist",
+        "unlock_level": 10,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "9a454727a656ac57",
+        "category_id": "barrels",
+        "slug": "loc2-short-barrel",
+        "name": "LOC.2 Short Barrel",
+        "description": "A short and basic barrel that improves recoil control and handling.",
+        "pros": [
+            "ads_speed",
+            "hip_recoil_control"
+        ],
+        "cons": [
+            "damage_range",
+            "hip_fire_accuracy",
+            "bullet_velocity"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "tr-76-geist",
+        "unlock_level": 12,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "9a454d3d95a6cef5",
+        "category_id": "rear-grips",
+        "slug": "stip-66-grip",
+        "name": "STIP-66 Grip",
+        "description": "This stippled grip tape is designed to improve recoil control.",
+        "pros": [
+            "recoil_control"
+        ],
+        "cons": [
+            "aiming_stability"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "tr-76-geist",
+        "unlock_level": 13,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "9a45489c9124a88d",
+        "category_id": "stocks",
+        "slug": "expedite-grid-pad",
+        "name": "Expedite Grid Pad",
+        "description": "This lightweight stock pad offers an increase to mobility without sacrificing comfort.",
+        "pros": [
+            "aim_walking_speed",
+            "sprint_speed"
+        ],
+        "cons": [
+            "aiming_stability"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "tr-76-geist",
+        "unlock_level": 14,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "9a4541918a7f48cf",
+        "category_id": "combs",
+        "slug": "schlager-honor-comb",
+        "name": "Schlager Honor Comb",
+        "description": "A textured yet comfortable comb that improves accuracy and reduces flinch when under fire.",
+        "pros": [
+            "flinch_resistance"
+        ],
+        "cons": [
+            "sprint_speed",
+            "sprint_to_fire_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "tr-76-geist",
+        "unlock_level": 15,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "9a454bca9ad40812",
+        "category_id": "barrels",
+        "slug": "loc5-long-barrel",
+        "name": "LOC.5 Long Barrel",
+        "description": "A long, tactical barrel that increases damage, range, and accuracy.",
+        "pros": [
+            "damage_range",
+            "hip_fire_accuracy",
+            "bullet_velocity"
+        ],
+        "cons": [
+            "ads_speed",
+            "hip_recoil_control"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "tr-76-geist",
+        "unlock_level": 16,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "9a454468a53a3386",
+        "category_id": "rear-grips",
+        "slug": "tactical-grip-tape",
+        "name": "Tactical Grip Tape",
+        "description": "Textured grip tape that provides better handling with a slight reduction to recoil control.",
+        "pros": [
+            "sprint_to_fire_speed",
+            "ads_speed"
+        ],
+        "cons": [
+            "recoil_control"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "tr-76-geist",
+        "unlock_level": 17,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "9a4549e388fd38d6",
+        "category_id": "barrels",
+        "slug": "bruen-bridle-heavy",
+        "name": "Bruen Bridle Heavy",
+        "description": "A long, heavy barrel that improves overall weapon performance for distance and patient shooting.",
+        "pros": [
+            "recoil_control",
+            "damage_range",
+            "bullet_velocity",
+            "hip_fire_accuracy"
+        ],
+        "cons": [
+            "ads_speed",
+            "movement_speed",
+            "hip_recoil_control"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "tr-76-geist",
+        "unlock_level": 18,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "9a45451994fb04c7",
+        "category_id": "stocks",
+        "slug": "demo-tac-pad",
+        "name": "DEMO Tac Pad",
+        "description": "A tactical stock from Demo that excels at handling and mobility.",
+        "pros": [
+            "crouch_movement_speed",
+            "sprint_speed",
+            "ads_speed"
+        ],
+        "cons": [
+            "recoil_control"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "tr-76-geist",
+        "unlock_level": 19,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "9a454fb591f87400",
+        "category_id": "magazines",
+        "slug": "45-round-mag",
+        "name": "45 Round Mag",
+        "description": "A magazine that holds 45 rounds of 7.62 ammunition.",
+        "pros": [
+            "magazine_ammo_capacity"
+        ],
+        "cons": [
+            "movement_speed",
+            "ads_speed",
+            "reload_quickness",
+            "sprint_to_fire_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "tr-76-geist",
+        "unlock_level": 20,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "9a454016968d4c6d",
+        "category_id": "combs",
+        "slug": "fss-hardtop-comb",
+        "name": "FSS Hardtop Comb",
+        "description": "A minimal, tactical comb built to improve handling.",
+        "pros": [
+            "sprint_to_fire_speed",
+            "ads_speed"
+        ],
+        "cons": [
+            "aiming_stability",
+            "aim_walking_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "tr-76-geist",
+        "unlock_level": 21,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "9a4540e8ab3be9ed",
+        "category_id": "barrels",
+        "slug": "freight-40-barrel",
+        "name": "Freight-40 Barrel",
+        "description": "Designed for suppressed combat and patient operators, this barrel improves range, accuracy, and recoil control.",
+        "pros": [
+            "sound_suppression",
+            "recoil_control",
+            "bullet_velocity",
+            "hip_fire_accuracy"
+        ],
+        "cons": [
+            "ads_speed",
+            "movement_speed",
+            "hip_recoil_control"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "tr-76-geist",
+        "unlock_level": 22,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "9a454104a95d17df",
+        "category_id": "magazines",
+        "slug": "20-round-mag",
+        "name": "20 Round Mag",
+        "description": "A magazine that carries 20 rounds of 9mm ammunition.",
+        "pros": [
+            "movement_speed",
+            "ads_speed",
+            "sprint_to_fire_speed",
+            "reload_quickness"
+        ],
+        "cons": [
+            "magazine_ammo_capacity"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "iso-9mm",
+        "unlock_level": 7,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "9a454a7d9e426426",
+        "category_id": "stocks",
+        "slug": "collapsed-stock",
+        "name": "Collapsed Stock",
+        "description": "Collapse the stock for an excellent boost to handling and mobility with a dip in accuracy and recoil control.",
+        "pros": [
+            "ads_speed",
+            "sprint_to_fire_speed",
+            "movement_speed",
+            "hip_recoil_control"
+        ],
+        "cons": [
+            "aiming_recoil_control",
+            "aiming_stability",
+            "flinch_resistance"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "iso-9mm",
+        "unlock_level": 9,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "9a454c44b9661478",
+        "category_id": "barrels",
+        "slug": "6-axeblade",
+        "name": "6'' Axeblade",
+        "description": "A short, suppressed barrel that provides a significant boost to overall combat function with an impact to mobility and handling.",
+        "pros": [
+            "sound_suppression",
+            "recoil_control",
+            "bullet_velocity"
+        ],
+        "cons": [
+            "movement_speed",
+            "ads_speed",
+            "damage_range"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "iso-9mm",
+        "unlock_level": 11,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "9a454a2785954f2d",
+        "category_id": "magazines",
+        "slug": "50-round-drum",
+        "name": "50 Round Drum",
+        "description": "A drum magazine that carries 50 rounds of 9mm ammunition.",
+        "pros": [
+            "magazine_ammo_capacity"
+        ],
+        "cons": [
+            "movement_speed",
+            "ads_speed",
+            "reload_quickness",
+            "sprint_to_fire_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "iso-9mm",
+        "unlock_level": 12,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "9a45471ca22fb53b",
+        "category_id": "barrels",
+        "slug": "iso-45-factory",
+        "name": "ISO 45 Factory",
+        "description": "The factory barrel for the ISO 45. Performs well in most scenarios.",
+        "pros": [
+            "damage_range",
+            "hip_fire_accuracy",
+            "bullet_velocity"
+        ],
+        "cons": [
+            "ads_speed",
+            "hip_recoil_control"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "iso-45",
+        "unlock_level": 1,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "9a4543799d6a7282",
+        "category_id": "stocks",
+        "slug": "res-2",
+        "name": "RES 2",
+        "description": "A minimal yet stable stock for the ISO platform.",
+        "pros": [
+            "sprint_speed",
+            "crouch_movement_speed",
+            "aim_walking_speed",
+            "ads_speed"
+        ],
+        "cons": [
+            "aiming_stability",
+            "recoil_control"
+        ],
+        "unlock_type": "auto",
+        "unlock_id": null,
+        "unlock_level": null,
+        "unlock_summary": null,
+        "unlock_description": null
     }
 ]
