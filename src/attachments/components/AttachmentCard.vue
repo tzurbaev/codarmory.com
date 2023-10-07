@@ -1,6 +1,7 @@
 <template>
   <div class="space-y-8">
     <div class="space-y-2">
+      <GameIcon :game="attachment.game_id" :compact="type === 'grid'" />
       <template v-if="type !== 'grid'">
         <p v-if="attachment.category" class="font-medium">
           <router-link :to="categoryRoute" class="text-primary-600 hover:text-primary-500 hover:underline">
@@ -24,7 +25,7 @@
       </p>
     </div>
 
-    <div v-if="attachment.stats"
+    <div v-if="hasAttachments"
          class="grid grid-cols-1 sm:grid-cols-2 attachments-grid:grid-cols-1 max-w-2xl attachments-grid:max-w-auto gap-8 attachments-grid:gap-4"
     >
       <div v-if="attachment.stats.pros.length > 0">
@@ -60,14 +61,19 @@
         </ul>
       </div>
     </div>
+    <p v-else-if="attachment.game_id === Game.MW3" class="text-white/60 text-sm">
+      This MW3 Beta attachment currently has no stats. It might change in future updates or on game release.
+    </p>
   </div>
 </template>
 
 <script setup lang="ts">
-import { Attachment } from '@/attachments/types';
-import AttachmentUnlockDescription from '@/unlocks/components/attachments/AttachmentUnlockDescription.vue';
 import { computed } from 'vue';
+import { Attachment } from '@/attachments/types';
 import { useAttachmentRoutes } from '@/attachments/composables/attachments';
+import AttachmentUnlockDescription from '@/unlocks/components/attachments/AttachmentUnlockDescription.vue';
+import GameIcon from '@/games/components/GameIcon.vue';
+import { Game } from '@/games/types';
 
 const props = defineProps<{
   attachment: Attachment;
@@ -77,4 +83,11 @@ const props = defineProps<{
 defineEmits(['stat']);
 
 const { categoryRoute, attachmentRoute } = useAttachmentRoutes(computed(() => props.attachment));
+const hasAttachments = computed(() => {
+  if (!props.attachment.stats) {
+    return false;
+  }
+
+  return props.attachment.stats.pros.length > 0 || props.attachment.stats.cons.length > 0;
+});
 </script>

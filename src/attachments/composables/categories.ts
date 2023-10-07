@@ -22,12 +22,12 @@ export function useAttachmentCategory(id: ComputedRef<string | null>) {
   return { category };
 }
 
-export function useAttachmentCategoriesMenu(id: ComputedRef<string | null>) {
+export function useAttachmentCategoriesMenu(id?: ComputedRef<string | null> | null) {
   const store = useAttachmentsStore();
   const menu = computed(() => store.categories.map((category: AttachmentCategory, index: number) => ({
     id: `attachments-category-${category.id}`,
     name: category.name,
-    active: id.value === category.id || (id.value === null && index === 0),
+    active: id?.value === category.id || (id?.value === null && index === 0),
     route: {
       name: 'attachments.index',
       params: {

@@ -438,5 +438,105 @@
     {
         "id": "tear_gas_cartridge",
         "name": "Tear Gas Cartridge"
+    },
+    {
+        "id": "hipfire_tacstance_spread",
+        "name": "Hipfire and Tac Stance Spread"
+    },
+    {
+        "id": "tacstance_spread",
+        "name": "Tac Stance Spread"
+    },
+    {
+        "id": "hipfire_spread",
+        "name": "Hipfire Spread"
+    },
+    {
+        "id": "aiming_idle_sway",
+        "name": "Aiming Idle Sway"
+    },
+    {
+        "id": "firing_aim_stability",
+        "name": "Firing Aim Stability"
+    },
+    {
+        "id": "gun_kick_control",
+        "name": "Gun Kick Control"
+    },
+    {
+        "id": "bullet_velocity_range",
+        "name": "Bullet Velocity & Range"
+    },
+    {
+        "id": "laser_flashlight_visibility",
+        "name": "Laser & Flashlight Visible to Enemies"
+    },
+    {
+        "id": "vertical_recoil",
+        "name": "Vertical Recoil"
+    },
+    {
+        "id": "horizontal_recoil",
+        "name": "Horizontal Recoil"
+    },
+    {
+        "id": "undetectable_by_radar",
+        "name": "Undetectable by Radar"
+    },
+    {
+        "id": "25x_magnification",
+        "name": "2.5x Magnification"
+    },
+    {
+        "id": "1_25x_magnification",
+        "name": "1.25x Magnification"
+    },
+    {
+        "id": "150x_magnification",
+        "name": "15.0x Magnification"
+    },
+    {
+        "id": "no_tacstance",
+        "name": "No Tactical Stance"
+    },
+    {
+        "id": "ads_speed_while_jumping",
+        "name": "ADS Speed While Jumping"
+    },
+    {
+        "id": "hip_accuracy_while_jumping",
+        "name": "Hip Accuracy While Jumping"
+    },
+    {
+        "id": "hip_accuracy_while_moving",
+        "name": "Hip Accuracy While Moving"
+    },
+    {
+        "id": "fewer_pellets",
+        "name": "Fewer Pellets"
+    },
+    {
+        "id": "bolo_rounds",
+        "name": "Bolo Rounds"
+    },
+    {
+        "id": "limb_damage",
+        "name": "Limb Damage"
+    },
+    {
+        "id": "allows_for_tacstance",
+        "name": "Allows for Tactical Stance"
+    },
+    {
+        "id": "cqc_accuracy_while_sliding",
+        "name": "CQC Accuracy While Sliding"
+    },
+    {
+        "id": "ranged_damage_falloff",
+        "name": "Ranged Damage Falloff"
+    },
+    {
+        "id": "akimbo",
+        "name": "Akimbo"
     }
 ]

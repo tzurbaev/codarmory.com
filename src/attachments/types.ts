@@ -1,5 +1,6 @@
 import { Unlockable } from '@/unlocks/types';
 import { Weapon } from '@/weapons/types';
+import { Game } from '@/games/types';
 
 export interface AttachmentCategory {
   id: string;
@@ -14,6 +15,7 @@ export interface AttachmentStat {
 
 export interface Attachment extends Unlockable {
   id: string;
+  game_id: Game,
   category_id: string;
   slug: string;
   name: string;
@@ -36,6 +38,7 @@ export interface AttachmentsFilters {
   cons: string[];
   consMode: string;
   matchAllCons: boolean;
+  game_id?: Game | null;
 }
 
 export interface AttachmentsGroup {

@@ -3,12 +3,13 @@
     <AttachmentsCategorySelector v-if="withCategory" :groups="groups" v-model="category" @select="setCategory" />
 
     <div v-if="group" class="mt-4">
-      <div class="grid grid-cols-1 sm:grid-cols-4 gap-4 mb-4">
+      <div class="grid grid-cols-1 gap-4 mb-4" :class="[withGame ? 'sm:grid-cols-3' : 'sm:grid-cols-4']">
         <AttachmentsFiltersForm :pros="pros"
                                 :cons="cons"
                                 :has-filters="hasFilters"
+                                :with-game="withGame"
                                 v-model="filters"
-                                @reset="reset"
+                                @reset="reset(true)"
         />
       </div>
       <div>
@@ -16,13 +17,13 @@
           {{ attachments.length }} attachment{{ attachments.length === 1 ? '' : 's'}}
           <template v-if="attachments.length !== group.attachments.length">
             &bull;
-            <a href="javascript:;" class="text-primary-600 hover:text-primary-500 hover:underline" @click="reset()">
+            <a href="javascript:;" class="text-primary-600 hover:text-primary-500 hover:underline" @click="reset(true)">
               Reset Filters
             </a>
           </template>
         </p>
 
-        <EmptyState :count="attachments.length" @reset="reset">
+        <EmptyState :count="attachments.length" @reset="reset(true)">
           <template #default>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-4 lg:gap-4 attachments-grid">
               <div v-for="attachment in attachments"
@@ -54,6 +55,7 @@ const props = defineProps<{
   groups: AttachmentsGroup[];
   categoryId?: string;
   withCategory?: boolean;
+  withGame?: boolean;
 }>();
 
 const currentCategoryId = computed(() => props.categoryId);
@@ -65,9 +67,9 @@ const {
 
 const {
   filters, reset, hasFilters, pros, cons, attachments,
-} = useFilteredAttachments(group);
+} = useFilteredAttachments(group, props.withGame === true);
 
-watchForCategory((): void => reset());
+watchForCategory((): void => reset(false));
 
 watch(currentCategoryId, () => {
   if (currentCategoryId.value) {

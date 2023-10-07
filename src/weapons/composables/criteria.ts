@@ -1,8 +1,13 @@
 import { Criterion } from '@/database/criteria';
 import { Weapon } from '@/weapons/types';
+import { Game } from '@/games/types';
 
 export function getWeaponCategoryCriterion(category?: string | null): Criterion<Weapon> {
   return (weapon: Weapon): boolean => !category || weapon.category_id === category;
+}
+
+export function getWeaponGameCriterion(game?: Game | null): Criterion<Weapon> {
+  return (weapon: Weapon): boolean => !game || weapon.game_id === game;
 }
 
 export function getWeaponPlatformCriterion(platform?: string | null): Criterion<Weapon> {

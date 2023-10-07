@@ -2,16 +2,18 @@ import {
   computed, ComputedRef, ref, Ref,
 } from 'vue';
 import {
-  Attachment, AttachmentsFilters, AttachmentStat, AttachmentsGroup,
+  Attachment, AttachmentsFilters, AttachmentsGroup, AttachmentStat,
 } from '@/attachments/types';
 import { useAttachmentsStore } from '@/attachments/stores/attachments';
 import { getFilteredRecords } from '@/database/criteria';
 import {
   getAttachmentConsCriterion,
+  getAttachmentGameCriterion,
   getAttachmentProsCriterion,
   getAttachmentSearchCriterion,
 } from '@/attachments/composables/criteria';
 import { SearchResult } from '@/search/types';
+import { storage } from '@/storage';
 
 function getUniqueStats(stats: AttachmentStat[]): AttachmentStat[] {
   const unique: AttachmentStat[] = [];
@@ -103,7 +105,7 @@ export function useCategoryAttachments(groups: ComputedRef<AttachmentsGroup[]>) 
   };
 }
 
-export function useFilteredAttachments(group: ComputedRef<AttachmentsGroup | null>) {
+export function useFilteredAttachments(group: ComputedRef<AttachmentsGroup | null>, filterByGame = true) {
   const filters: Ref<AttachmentsFilters> = ref({
     search: '',
     pros: [],
@@ -112,6 +114,7 @@ export function useFilteredAttachments(group: ComputedRef<AttachmentsGroup | nul
     cons: [],
     consMode: 'or',
     matchAllCons: false,
+    game_id: storage.get('game_id') || null,
   });
 
   const pros: ComputedRef<AttachmentStat[]> = computed(() => {
@@ -134,24 +137,36 @@ export function useFilteredAttachments(group: ComputedRef<AttachmentsGroup | nul
     );
   });
 
-  const hasFilters: ComputedRef<boolean> = computed(() => !!filters.value.search || !!filters.value.pros.length || !!filters.value.cons.length);
+  const hasFilters: ComputedRef<boolean> = computed(() => !!filters.value.search || !!filters.value.game_id || !!filters.value.pros.length || !!filters.value.cons.length);
 
   const attachments: ComputedRef<Attachment[]> = computed(() => {
     if (!hasFilters.value) {
       return group.value?.attachments || [];
     }
 
+    const criteria = [];
+
+    if (filterByGame) {
+      criteria.push(getAttachmentGameCriterion(filters.value.game_id));
+    }
+
     return getFilteredRecords(group.value?.attachments || [], [
+      ...criteria,
       getAttachmentProsCriterion(filters.value.pros, filters.value.matchAllPros),
       getAttachmentConsCriterion(filters.value.cons, filters.value.matchAllCons),
       getAttachmentSearchCriterion(filters.value.search),
     ]);
   });
 
-  const reset = (): void => {
+  const reset = (resetGameId = true): void => {
     filters.value.search = '';
     filters.value.pros = [];
     filters.value.cons = [];
+
+    if (resetGameId) {
+      filters.value.game_id = null;
+      storage.set('game_id', null);
+    }
   };
 
   return {
@@ -232,6 +247,7 @@ export function useAttachmentsSearch(query: Ref<string>) {
       return false;
     }).map((attachment: Attachment) => ({
       id: attachment.id,
+      game_id: attachment.game_id,
       name: attachment.name,
       description: attachment?.category?.name || '',
       route: {

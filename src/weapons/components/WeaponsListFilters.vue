@@ -1,10 +1,20 @@
 <template>
-  <div class="grid grid-cols-1 gap-4" :class="[withCategory ? 'sm:grid-cols-3' : 'sm:grid-cols-2']">
+  <div class="grid grid-cols-1 gap-4" :class="[withCategory ? 'sm:grid-cols-4' : 'sm:grid-cols-3']">
     <div>
       <TextInputGroup v-model="value.search">
         <InputLabel>Search</InputLabel>
         <TextInput type="search" placeholder="Filter weapons by name" />
       </TextInputGroup>
+    </div>
+    <div>
+      <SelectInputGroup v-model="value.game_id">
+        <InputLabel>
+          <span class="text-primary-500">Game</span>
+        </InputLabel>
+        <SelectInput :options="gamesOptions">
+          <template #empty>All games</template>
+        </SelectInput>
+      </SelectInputGroup>
     </div>
     <div>
       <SelectInputGroup v-model="value.platform_id">
@@ -18,12 +28,14 @@
 </template>
 
 <script setup lang="ts">
+import { computed, watch } from 'vue';
 import { WeaponsFilters } from '@/weapons/types';
-import { computed } from 'vue';
-import { useWeaponPlatformsOptions } from '@/weapons/composables/platforms';
 import {
   SelectInputGroup, SelectInput, TextInputGroup, TextInput, InputLabel,
 } from '@zenky/forms-vue';
+import { useWeaponPlatformsOptions } from '@/weapons/composables/platforms';
+import { useGamesOptions } from '@/games/composables/games';
+import { storage } from '@/storage';
 
 const props = defineProps<{
   modelValue: WeaponsFilters;
@@ -38,4 +50,7 @@ const value = computed({
 });
 
 const { options: platformsOptions } = useWeaponPlatformsOptions();
+const { options: gamesOptions } = useGamesOptions();
+
+watch(computed(() => value.value.game_id), (val) => storage.set('game_id', val));
 </script>

@@ -1,5 +1,7 @@
 <template>
   <div class="space-y-2 weapons-grid:space-y-4">
+    <GameIcon :game="weapon.game_id" />
+
     <template v-if="type !== 'grid'">
       <p v-if="weapon.category" class="font-medium">
         <router-link :to="categoryRoute" class="text-primary-600 hover:text-primary-500 hover:underline">
@@ -39,10 +41,11 @@
 </template>
 
 <script setup lang="ts">
-import { Weapon } from '@/weapons/types';
 import { computed } from 'vue';
-import WeaponUnlockDescription from '@/unlocks/components/weapons/WeaponUnlockDescription.vue';
+import { Weapon } from '@/weapons/types';
 import { useWeaponRoutes } from '@/weapons/composables/weapons';
+import WeaponUnlockDescription from '@/unlocks/components/weapons/WeaponUnlockDescription.vue';
+import GameIcon from '@/games/components/GameIcon.vue';
 
 const props = defineProps<{
   weapon: Weapon;

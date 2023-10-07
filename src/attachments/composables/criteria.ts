@@ -1,5 +1,6 @@
 import { Criterion } from '@/database/criteria';
 import { Attachment } from '@/attachments/types';
+import { Game } from '@/games/types';
 
 function passesStatsFilter(stats: string[], matchAll: boolean, attachmentStats: string[]): boolean {
   if (!stats.length) {
@@ -15,6 +16,10 @@ function passesStatsFilter(stats: string[], matchAll: boolean, attachmentStats: 
 
 export function getAttachmentProsCriterion(stats: string[], matchAll: boolean): Criterion<Attachment> {
   return (attachment: Attachment): boolean => passesStatsFilter(stats, matchAll, attachment.pros);
+}
+
+export function getAttachmentGameCriterion(game?: Game | null): Criterion<Attachment> {
+  return (attachment: Attachment): boolean => !game || attachment.game_id === game;
 }
 
 export function getAttachmentConsCriterion(stats: string[], matchAll: boolean): Criterion<Attachment> {

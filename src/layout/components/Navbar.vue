@@ -12,8 +12,8 @@
         <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
           <div class="flex flex-shrink-0 items-center">
             <router-link :to="{ name: 'home' }">
-              <img class="block h-8 w-auto lg:hidden" src="/images/logo.png" alt="Your Company" />
-              <img class="hidden h-8 w-auto lg:block" src="/images/logo.png" alt="Your Company" />
+              <img class="block h-8 w-auto lg:hidden" src="/images/logo.png" alt="Call of Duty Armory" />
+              <img class="hidden h-8 w-auto lg:block" src="/images/logo.png" alt="Call of Duty Armory" />
             </router-link>
           </div>
           <div class="hidden sm:ml-6 sm:block">
@@ -67,7 +67,7 @@ import { useSearchControls } from '@/search/composables/search';
 
 const navigation = [
   { name: 'Weapons', route: 'weapons.index', path: 'weapons.' },
-  { name: 'Attachments', route: 'attachments.index', path: 'attachments.' },
+  { name: 'Attachments', route: 'attachments.categories', path: 'attachments.' },
   { name: 'Changelog', route: 'changelog', path: 'changelog' },
 ];
 

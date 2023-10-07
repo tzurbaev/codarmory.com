@@ -19,8 +19,13 @@ const routes: RouteRecordRaw[] = [
     props: true,
   },
   {
+    name: 'attachments.categories',
+    path: '/attachments',
+    component: () => import('@/attachments/views/AttachmentsIndexView.vue'),
+  },
+  {
     name: 'attachments.index',
-    path: '/attachments/:categoryId?',
+    path: '/attachments/:categoryId',
     component: () => import('@/attachments/views/AttachmentsView.vue'),
     props: true,
   },

@@ -12,10 +12,12 @@ import { getFilteredRecords } from '@/database/criteria';
 import {
   getWeaponAttachmentCriterion,
   getWeaponCategoryCriterion,
+  getWeaponGameCriterion,
   getWeaponPlatformCriterion,
   getWeaponSearchCriterion,
 } from '@/weapons/composables/criteria';
 import { SearchResult } from '@/search/types';
+import { storage } from '@/storage';
 
 function getParentWeapon(weapon: Weapon): Weapon | null {
   const weaponsStore = useWeaponsStore();
@@ -38,15 +40,21 @@ function getParentWeapon(weapon: Weapon): Weapon | null {
 export function useWeaponsFilters() {
   const filters: Ref<WeaponsFilters> = ref({
     search: null,
+    game_id: storage.get('game_id') || null,
     platform_id: null,
   });
 
-  const reset = () => {
+  const reset = (resetGameId = false) => {
     filters.value.search = '';
     filters.value.platform_id = null;
+
+    if (resetGameId) {
+      filters.value.game_id = null;
+      storage.set('game_id', null);
+    }
   };
 
-  const hasFilters = computed(() => !!filters.value.search || !!filters.value.platform_id);
+  const hasFilters = computed(() => !!filters.value.search || !!filters.value.game_id || !!filters.value.platform_id);
 
   return {
     filters,
@@ -94,6 +102,7 @@ export function useWeaponsList(
     }
 
     return getFilteredRecords(transformed.value, [
+      getWeaponGameCriterion(filters.value.game_id),
       getWeaponPlatformCriterion(filters.value.platform_id),
       getWeaponSearchCriterion(filters.value.search),
     ]);
@@ -235,6 +244,7 @@ export function useWeaponsSearch(query: Ref<string>) {
       return false;
     }).map((weapon: Weapon) => ({
       id: weapon.id,
+      game_id: weapon.game_id,
       name: weapon.name,
       description: weapon.category?.name || '',
       route: {

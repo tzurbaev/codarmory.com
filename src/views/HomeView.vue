@@ -5,7 +5,7 @@
         <div class="sm:max-w-xl">
           <div class="flex mb-6">
             <div class="bg-primary-500 relative rounded-full py-1 px-3 text-sm leading-6 text-primary-100">
-              Season 06
+              MW3 Beta
             </div>
           </div>
           <h1 class="text-4xl font-bold tracking-tight text-primary-500 sm:text-5xl">
@@ -13,19 +13,21 @@
           </h1>
           <p class="mt-6 text-xl text-white/90 leading-relaxed">
             Browse all weapons and attachments for
-            <span class="text-white font-extrabold">Call of Duty: Modern Warfare II</span>
-            and <span class="text-white font-extrabold">Call of Duty: Warzone 2.0</span>.
+            <span class="text-white font-extrabold">Call of Duty: Modern Warfare II</span>,
+            <span class="text-white font-extrabold">Call of Duty: Warzone 2.0</span>
+            and
+            <span class="text-primary-500 font-extrabold">Call of Duty: Modern Warfare II Beta</span>.
           </p>
           <div class="flex items-center mt-8 gap-8">
             <router-link :to="{ name: 'weapons.index' }" class="text-white text-lg hover:text-primary-500">
               <span class="hidden sm:inline">&gt;</span> Browse Weapons
             </router-link>
-            <router-link :to="{ name: 'attachments.index' }" class="text-white text-lg hover:text-primary-500">
+            <router-link :to="{ name: 'attachments.categories' }" class="text-white text-lg hover:text-primary-500">
               <span class="hidden sm:inline">&gt;</span> Browse Attachments
             </router-link>
           </div>
           <p class="mt-8 text-white/60 text-sm">
-            This is a fan-made website. We're not affiliated with Activision or Infinity Ward in any way.
+            This fan-made website is not affiliated with Call of Duty developers in any way.
           </p>
         </div>
       </div>

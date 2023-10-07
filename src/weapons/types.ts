@@ -1,4 +1,5 @@
 import { Unlockable } from '@/unlocks/types';
+import { Game } from '@/games/types';
 
 export interface WeaponCategory {
   id: string;
@@ -13,6 +14,7 @@ export interface WeaponPlatform {
 
 export interface Weapon extends Unlockable {
   id: string;
+  game_id: Game,
   category_id: string;
   platform_id: string | null;
   name: string;
@@ -33,4 +35,5 @@ export interface WeaponsFilters {
   attachment_id?: string | null;
   platform_id?: string | null;
   search?: string | null;
+  game_id?: Game | null;
 }

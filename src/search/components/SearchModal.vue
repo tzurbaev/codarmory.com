@@ -30,7 +30,8 @@
                       >
                         <li :class="['flex cursor-pointer select-none items-center rounded-md px-3 py-2', active && 'bg-gray-800 text-white']">
                           <span class="flex-auto truncate">
-                            {{ item.name }}
+                            <GameIcon v-if="item.game_id" :game="item.game_id" compact class="mb-2" />
+                            <span>{{ item.name }}</span>
                             <template v-if="item.description">
                               <br>
                               <span class="text-primary-500 text-sm">{{ item.description }}</span>
@@ -73,6 +74,7 @@ import {
 import { useSearch, useSearchControls } from '@/search/composables/search';
 import { useRouter } from 'vue-router';
 import { SearchResult } from '@/search/types';
+import GameIcon from '@/games/components/GameIcon.vue';
 
 const router = useRouter();
 

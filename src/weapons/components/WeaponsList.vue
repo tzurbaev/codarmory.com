@@ -6,13 +6,13 @@
       {{ weapons.length }} weapon{{ weapons.length === 1 ? '' : 's' }}
       <template v-if="hasFilters">
         &bull;
-        <a href="javascript:;" class="text-primary-600 hover:text-primary-500 hover:underline" @click="reset()">
+        <a href="javascript:;" class="text-primary-600 hover:text-primary-500 hover:underline" @click="reset(true)">
           Reset filters
         </a>
       </template>
     </p>
 
-    <EmptyState :count="weapons.length" @reset="reset">
+    <EmptyState :count="weapons.length" @reset="reset(true)">
       <template #default>
         <div class="grid grid-cols-1 gap-4 weapons-grid"
              :class="{
@@ -57,5 +57,5 @@ const { weapons } = useWeaponsList(computed(() => ({
   attachment_id: props.attachmentId,
 })), filters);
 
-watch(props, reset);
+watch(props, () => reset(false));
 </script>
