@@ -25,7 +25,7 @@
       </p>
     </div>
 
-    <div v-if="hasAttachments"
+    <div v-if="attachment.stats && (attachment.stats.pros.length > 0 || attachment.stats.cons.length > 0)"
          class="grid grid-cols-1 sm:grid-cols-2 attachments-grid:grid-cols-1 max-w-2xl attachments-grid:max-w-auto gap-8 attachments-grid:gap-4"
     >
       <div v-if="attachment.stats.pros.length > 0">
@@ -83,11 +83,4 @@ const props = defineProps<{
 defineEmits(['stat']);
 
 const { categoryRoute, attachmentRoute } = useAttachmentRoutes(computed(() => props.attachment));
-const hasAttachments = computed(() => {
-  if (!props.attachment.stats) {
-    return false;
-  }
-
-  return props.attachment.stats.pros.length > 0 || props.attachment.stats.cons.length > 0;
-});
 </script>
