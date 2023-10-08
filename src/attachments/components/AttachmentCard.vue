@@ -64,6 +64,10 @@
     <p v-else-if="attachment.game_id === Game.MW3" class="text-white/60 text-sm">
       This MW3 Beta attachment currently has no stats. It might change in future updates or on game release.
     </p>
+    <p v-if="type !== 'grid' && attachment.game_id === Game.MW3" class="text-xs text-white/60">
+      This is a MW3 Beta attachment. Its name, stats, unlock requirements or list of available weapons
+      might change in future updates or on game release.
+    </p>
   </div>
 </template>
 
