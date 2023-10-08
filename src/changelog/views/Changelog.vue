@@ -1,21 +1,18 @@
 <template>
   <Panel label="Changelog">
-    <div class="space-y-8 prose max-w-4xl prose-invert">
-      <div v-for="item in changelog" :key="`ChangelogItem-${item.date}`">
-        <h3 class="text-primary-500">{{ item.date }}</h3>
-        <ul>
-          <li v-for="(line, index) in item.lines" :key="`ChangelogItem-${item.date}-Line-${index}`">
-            {{ line }}
-          </li>
-        </ul>
-      </div>
-    </div>
+    <div class="space-y-8 prose max-w-4xl prose-invert prose-h2:text-primary-500" v-html="html" />
   </Panel>
 </template>
 
 <script setup lang="ts">
+import { computed } from 'vue';
+import { useHead } from '@vueuse/head';
 import Panel from '@/layout/components/Panel.vue';
-import { useChangelog } from '@/changelog/composables/changelog';
+import * as changelog from '@/changelog/markdown/changelog.md';
 
-const { changelog } = useChangelog();
+useHead({
+  title: 'Changelog',
+});
+
+const html = computed(() => (changelog as any)?.html);
 </script>

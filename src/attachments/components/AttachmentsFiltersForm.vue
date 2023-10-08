@@ -42,6 +42,7 @@ import {
 } from '@zenky/forms-vue';
 import ResourceCombobox from '@/forms/components/ResourceCombobox.vue';
 import { useGamesOptions } from '@/games/composables/games';
+import { storage } from '@/storage';
 
 const props = defineProps<{
   modelValue: AttachmentsFilters;
@@ -67,4 +68,6 @@ watch(statsMode, () => {
   value.value.matchAllPros = statsMode.value === 'and';
   value.value.matchAllCons = statsMode.value === 'and';
 });
+
+watch(computed(() => value.value.game_id), (val) => storage.set('game_id', val));
 </script>

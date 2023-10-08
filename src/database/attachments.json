@@ -23558,7 +23558,9 @@
         "slug": "mk23-reflector",
         "name": "MK.23 Reflector",
         "description": null,
-        "pros": [],
+        "pros": [
+            "precision_sight_picture"
+        ],
         "cons": [],
         "unlock_type": "weapon",
         "unlock_id": "mtz-556",
@@ -23965,8 +23967,8 @@
         "id": "9a4f48e79a31388b",
         "game_id": "mw3",
         "category_id": "stocks",
-        "slug": "rival-omh-iv",
-        "name": "Rival OMH IV",
+        "slug": "rival-dmh-iv",
+        "name": "Rival DMH IV",
         "description": null,
         "pros": [
             "ads_speed"
@@ -24236,7 +24238,9 @@
         "slug": "qtg-reflex-sight",
         "name": "QTG Reflex Sight",
         "description": null,
-        "pros": [],
+        "pros": [
+            "precision_sight_picture"
+        ],
         "cons": [],
         "unlock_type": "weapon",
         "unlock_id": "mcw",
@@ -25126,7 +25130,9 @@
         "slug": "nydar-model-2023",
         "name": "Nydar Model 2023",
         "description": null,
-        "pros": [],
+        "pros": [
+            "precision_sight_picture"
+        ],
         "cons": [],
         "unlock_type": "weapon",
         "unlock_id": "bas-b",
@@ -25605,7 +25611,9 @@
         "slug": "caucasus-reflex-sight",
         "name": "Caucasus Reflex Sight",
         "description": null,
-        "pros": [],
+        "pros": [
+            "precision_sight_picture"
+        ],
         "cons": [],
         "unlock_type": "weapon",
         "unlock_id": "rival-9",
@@ -25727,7 +25735,7 @@
     {
         "id": "9a4f4b92b56096a9",
         "game_id": "mw3",
-        "category_id": "stocks",
+        "category_id": "underbarrels",
         "slug": "xrk-edge-bw-4-handstop",
         "name": "XRK Edge BW-4 Handstop",
         "description": null,
@@ -26708,7 +26716,7 @@
     {
         "id": "9a4f455e8a16fc74",
         "game_id": "mw3",
-        "category_id": "rear-grips",
+        "category_id": "underbarrels",
         "slug": "bruen-heavy-support-grip",
         "name": "Bruen Heavy Support Grip",
         "description": null,
@@ -26800,7 +26808,9 @@
         "slug": "slate-reflector",
         "name": "Slate Reflector",
         "description": null,
-        "pros": [],
+        "pros": [
+            "precision_sight_picture"
+        ],
         "cons": [],
         "unlock_type": "weapon",
         "unlock_id": "striker",
@@ -31759,6 +31769,49 @@
         "unlock_type": "weapon",
         "unlock_id": "cor-45",
         "unlock_level": 17,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "9a51404ea7cca78e",
+        "game_id": "mw3",
+        "category_id": "rear-grips",
+        "slug": "rival-sub-grip",
+        "name": "Rival Sub Grip",
+        "description": null,
+        "pros": [
+            "sprint_to_fire_speed",
+            "aim_walking_speed",
+            "ads_speed",
+            "movement_speed"
+        ],
+        "cons": [
+            "flinch_resistance",
+            "gun_kick_control"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "mtz-556",
+        "unlock_level": 22,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "9a514387bff63b63",
+        "game_id": "mw3",
+        "category_id": "underbarrels",
+        "slug": "holger-vertical-grip",
+        "name": "Holger Vertical Grip",
+        "description": null,
+        "pros": [
+            "gun_kick_control",
+            "firing_aim_stability"
+        ],
+        "cons": [
+            "ads_speed"
+        ],
+        "unlock_type": "weapon",
+        "unlock_id": "lockwood-680",
+        "unlock_level": 19,
         "unlock_summary": null,
         "unlock_description": null
     }

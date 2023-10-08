@@ -16,7 +16,7 @@
             <span class="text-white font-extrabold">Call of Duty: Modern Warfare II</span>,
             <span class="text-white font-extrabold">Call of Duty: Warzone 2.0</span>
             and
-            <span class="text-primary-500 font-extrabold">Call of Duty: Modern Warfare II Beta</span>.
+            <span class="text-red-500 font-extrabold">Call of Duty: Modern Warfare III Beta</span>.
           </p>
           <div class="flex items-center mt-8 gap-8">
             <router-link :to="{ name: 'weapons.index' }" class="text-white text-lg hover:text-primary-500">
