@@ -2,7 +2,7 @@
 
 ### Modern Warfare III Beta Update
 
-- Updated attachments list for [MTZ-556](/weapons/assault-rifles/mtz-556) and [MCW](/weapons/assault-rifles/mcw);
+- Updated attachments list for [MTZ-556](/weapons/assault-rifles/mtz-556), [MCW](/weapons/assault-rifles/mcw), and [Striker](/weapons/smgs/striker);
 - Fixed missing pros/cons for several optics;
 - Fixed incorrect attachment category for several underbarrels;
 - Fixed "Game" filter in attachments list, so it stays selected after page reload. 

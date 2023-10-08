@@ -26454,7 +26454,7 @@
     {
         "id": "9a4f4a5f91c28657",
         "game_id": "mw3",
-        "category_id": "ammunition",
+        "category_id": "muzzles",
         "slug": "l4r-flash-hider",
         "name": "L4R Flash Hider",
         "description": null,
@@ -31789,9 +31789,9 @@
             "flinch_resistance",
             "gun_kick_control"
         ],
-        "unlock_type": "weapon",
-        "unlock_id": "mtz-556",
-        "unlock_level": 22,
+        "unlock_type": "unknown",
+        "unlock_id": null,
+        "unlock_level": null,
         "unlock_summary": null,
         "unlock_description": null
     },
@@ -31812,6 +31812,28 @@
         "unlock_type": "weapon",
         "unlock_id": "lockwood-680",
         "unlock_level": 19,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "9a514e12aacb9f83",
+        "game_id": "mw3",
+        "category_id": "magazines",
+        "slug": "48-round-mag",
+        "name": "48 Round Mag",
+        "description": null,
+        "pros": [
+            "magazine_ammo_capacity"
+        ],
+        "cons": [
+            "reload_quickness",
+            "movement_speed",
+            "ads_speed",
+            "aim_walking_speed"
+        ],
+        "unlock_type": "unknown",
+        "unlock_id": null,
+        "unlock_level": null,
         "unlock_summary": null,
         "unlock_description": null
     }
