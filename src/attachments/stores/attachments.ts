@@ -13,6 +13,11 @@ interface AttachmentsState {
   categories: AttachmentCategory[];
 }
 
+function getAttachmentStats(attachmentStats: string[]): AttachmentStat[] {
+  return attachmentStats.map((statId): AttachmentStat | undefined => stats.find((statItem: AttachmentStat) => statItem.id === statId))
+    .filter((stat: AttachmentStat | undefined): boolean => stat !== undefined) as AttachmentStat[];
+}
+
 export const useAttachmentsStore = defineStore({
   id: 'attachments',
   state: () => ({
@@ -29,8 +34,8 @@ export const useAttachmentsStore = defineStore({
         ...attachment,
         category: this.categories.find((category: AttachmentCategory) => category.id === attachment.category_id),
         stats: {
-          pros: this.stats.filter((stat: AttachmentStat) => attachment.pros.indexOf(stat.id) !== -1),
-          cons: this.stats.filter((stat: AttachmentStat) => attachment.cons.indexOf(stat.id) !== -1),
+          pros: getAttachmentStats(attachment.pros),
+          cons: getAttachmentStats(attachment.cons),
         },
         weapon: attachment.unlock_type === UnlockType.Weapon && attachment.unlock_id
           ? weaponsStore.extendedWeapons.find((item: Weapon) => item.id === attachment.unlock_id)
