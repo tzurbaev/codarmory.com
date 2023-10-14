@@ -1,3 +1,10 @@
+## 2023-10-15
+
+### Modern Warfare III Beta Update
+
+- Updated attachments list for [MTZ-762](/weapons/battle-rifles/mtz-762), [SVA-545](/weapons/assault-rifles/sva-545),
+[BAS-B](/weapons/battle-rifles/bas-b), and [Rival-9](/weapons/smgs/rival-9).
+
 ## 2023-10-08 (2)
 
 ### Modern Warfare III Beta Update

@@ -23183,7 +23183,7 @@
     {
         "id": "9a4f40edb11ae9fc",
         "game_id": "mw3",
-        "category_id": "muzzles",
+        "category_id": "barrels",
         "slug": "veiled-serenity-integrated-suppressor",
         "name": "Veiled Serenity Integrated Suppressor",
         "description": null,
@@ -24718,8 +24718,14 @@
         "slug": "bruen-tr-24-assault-grip",
         "name": "Bruen TR-24 Assault Grip",
         "description": null,
-        "pros": [],
-        "cons": [],
+        "pros": [
+            "firing_aim_stability",
+            "gun_kick_control",
+            "recoil_control"
+        ],
+        "cons": [
+            "aiming_idle_sway"
+        ],
         "unlock_type": "weapon",
         "unlock_id": "mtz-762",
         "unlock_level": 6,
@@ -31830,6 +31836,120 @@
             "movement_speed",
             "ads_speed",
             "aim_walking_speed"
+        ],
+        "unlock_type": "unknown",
+        "unlock_id": null,
+        "unlock_level": null,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "9a5e4f3890d64a91",
+        "game_id": "mw3",
+        "category_id": "ammunition",
+        "slug": "277-frangible",
+        "name": ".277 Frangible",
+        "description": null,
+        "pros": [
+            "inflict_wounding_effect"
+        ],
+        "cons": [
+            "bullet_penetration"
+        ],
+        "unlock_type": "unknown",
+        "unlock_id": null,
+        "unlock_level": null,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "9a5e478a923191fb",
+        "game_id": "mw3",
+        "category_id": "ammunition",
+        "slug": "277-hollowpoint",
+        "name": ".277 Hollowpoint",
+        "description": null,
+        "pros": [
+            "crippling_power"
+        ],
+        "cons": [
+            "bullet_penetration"
+        ],
+        "unlock_type": "unknown",
+        "unlock_id": null,
+        "unlock_level": null,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "9a5e411e8e447494",
+        "game_id": "mw3",
+        "category_id": "ammunition",
+        "slug": "277-armor-piercing",
+        "name": ".277 Armor Piercing",
+        "description": null,
+        "pros": [
+            "bullet_penetration",
+            "vehicle_damage"
+        ],
+        "cons": [],
+        "unlock_type": "unknown",
+        "unlock_id": null,
+        "unlock_level": null,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "9a5e400b965689a3",
+        "game_id": "mw3",
+        "category_id": "ammunition",
+        "slug": "277-overpressuredp",
+        "name": ".277 Overpressured+P",
+        "description": null,
+        "pros": [
+            "target_flinch"
+        ],
+        "cons": [],
+        "unlock_type": "unknown",
+        "unlock_id": null,
+        "unlock_level": null,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "9a5e4a5aa4ec8945",
+        "game_id": "mw3",
+        "category_id": "ammunition",
+        "slug": "277-high-velocity",
+        "name": ".277 High Velocity",
+        "description": null,
+        "pros": [
+            "bullet_velocity"
+        ],
+        "cons": [
+            "damage_range"
+        ],
+        "unlock_type": "unknown",
+        "unlock_id": null,
+        "unlock_level": null,
+        "unlock_summary": null,
+        "unlock_description": null
+    },
+    {
+        "id": "9a5e4e338b823d0c",
+        "game_id": "mw3",
+        "category_id": "ammunition",
+        "slug": "277-incendiary",
+        "name": ".277 Incendiary",
+        "description": null,
+        "pros": [
+            "incendiary_damage",
+            "vehicle_damage"
+        ],
+        "cons": [
+            "bullet_velocity",
+            "damage_range",
+            "bullet_penetration"
         ],
         "unlock_type": "unknown",
         "unlock_id": null,
